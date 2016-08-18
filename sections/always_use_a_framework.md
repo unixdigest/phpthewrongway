@@ -47,4 +47,4 @@ Always use the pragmatic approach:
 >
 > -- Collins English Dictionary, Complete and Unabridged, 12th Edition 2014
 
-**The wrong way:** Always use a framework. ![Thumbs down](img/thumbs-down.png)
+**The wrong way:** Always use a framework on top of PHP. ![Thumbs down](img/thumbs-down.png)
