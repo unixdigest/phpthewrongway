@@ -1,0 +1,3 @@
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^phpthewrongway\.com$ [NC]
+RewriteRule ^(.*)$ http://www.phpthewrongway.com/$1 [R=301,L]
