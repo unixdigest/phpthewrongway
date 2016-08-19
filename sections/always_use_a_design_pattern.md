@@ -18,7 +18,7 @@ When we try to improve ourselves, and in this case more specifically our code, w
 
 We shouldn't get to caught up in the philosophy or idea behind a specific pattern or solution. Our main concern is to keep the code as easy to navigate and understand as possible and as a result easy to maintain and easy to keep secure.
 
-We must also remember that there exist such a thing as an anti-pattern. It is a pattern that may be commonly used but is ineffective and/or counterproductive in practice.
+We must also remember that there exists such a thing as an anti-pattern. It is a pattern that may be commonly used but is ineffective and/or counterproductive in practice.
 
 Paul Weaton, a SUN certified Java programmer, has a great short article about [Evil Design Patterns](http://www.javaranch.com/patterns/) that's worth reading.
 
