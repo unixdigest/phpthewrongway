@@ -32,4 +32,4 @@ Always use the pragmatic approach:
 >
 > -- Collins English Dictionary, Complete and Unabridged, 12th Edition 2014
 
-**The wrong way**: Thinking of patterns when solving problems. ![Thumbs down](img/thumbs-down.png)
+**The wrong way**: Looking for a pattern to solve a problem. ![Thumbs down](img/thumbs-down.png)
