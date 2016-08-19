@@ -10,7 +10,7 @@ PHP supports imperative, functional, object-oriented, procedural, and reflective
 
 PHP is all about freedom, fast and scalable solutions, and having many different ways to deal with problems.
 
-When we try to improve ourselves, and in this case more specifically our code, we sometimes get hung up in the philosophy of a particular pattern or idea and tend to forget to think practical.
+When we try to improve ourselves, and in this case more specifically our code, we sometimes get hung up in the philosophy of a particular pattern or idea and tend to forget to think practically.
 
 > When I see patterns in my programs, I consider it a sign of trouble. The shape of a program should reflect only the problem it needs to solve. Any other regularity in the code is a sign, to me at least, that I'm using abstractions that aren't powerful enough - often that I'm generating by hand the expansions of some macro that I need to write.
 >
@@ -18,7 +18,7 @@ When we try to improve ourselves, and in this case more specifically our code, w
 
 We shouldn't get to caught up in the philosophy or idea behind a specific pattern or solution. Our main concern is to keep the code as easy to navigate and understand as possible and as a result easy to maintain and easy to keep secure.
 
-We must also remember that there exist such a thing as an anti-pattern. It is a pattern that may be commonly used but is ineffective and/or counterproductive in practice.
+We must also remember that there exists such a thing as an anti-pattern. It is a pattern that may be commonly used but is ineffective and/or counterproductive in practice.
 
 Paul Weaton, a SUN certified Java programmer, has a great short article about [Evil Design Patterns](http://www.javaranch.com/patterns/) that's worth reading.
 

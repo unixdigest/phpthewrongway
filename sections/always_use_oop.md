@@ -42,7 +42,7 @@ Structured programming is a programming paradigm that improves the clarity, qual
 
 Later procedural programming was derived from structured programming. Procedural programming is based upon the concept of "procedure call". A "procedure call" is just another name for a "function call". Procedures are also known as routines, subroutines or methods. A procedure simply contain a series of computational steps to be carried out. Any given procedure might be called at any point during a programs execution, including by other procedures or itself.
 
-In the beginning all procedures were available to any part of a program as global data. In small programs this didn't present a problem, but as things got more complicated and the size of the program grew, small changes to one part of the program greatly effected many other parts.
+In the beginning all procedures were available to any part of a program as global data. In small programs this didn't present a problem, but as things got more complicated and the size of the program grew, small changes to one part of the program greatly affected many other parts.
 
 Nobody was planning for changes in the program and lots of dependencies existed. A minor change to one procedure would result in a cascade of errors in lots of other procedures that depended on the original code.
 
