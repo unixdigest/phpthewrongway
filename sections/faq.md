@@ -2,9 +2,13 @@
 
 It's easy to misunderstand a written document so lets clarify some issues.
 
+**Q:** _What's the point of this site and why the confrontational approach?_
+
+**A:** To create discussion and thought about current practices and extreme views.
+
 **Q:** _Are you saying the object-oriented programming is bad or wrong?_
 
-**A:** No of course not! We're saying always thinking in and always using the object-oriented paradigm in solving problems is bad. Whenever you think in black and white only, that's wrong.
+**A:** No of course not! We're saying always thinking in and always using only the object-oriented paradigm in solving problems is bad. Whenever you think in black and white only, that's wrong.
 
 Even within a single application different problems exist. Multi-paradigm is sometimes the best solution, it al depends on the problem you're trying to solve.
 
@@ -22,4 +26,4 @@ Getting up and running quickly isn't designing software, it mostly means you hav
 
 **Q:** _Are you saying third party packages are bad?_
 
-**A:** No. We're promoting the use of third party libraries. Code that you easily integrate into your own projects without enforcing any limitations or restrictions what so ever. Those are great!
+**A:** No. We're promoting the use of third party libraries. Code that you can easily integrate into your own projects without enforcing any limitations or restrictions what so ever. Those are great!
