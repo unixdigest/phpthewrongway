@@ -16,9 +16,9 @@
 
 * Web application security is an essential component of any successful project, whether open source PHP applications, web services such as straight through processing, or proprietary business web sites. Hosters (rightly) shun insecure code, and users shun insecure services that lead to fraud. The aim of this Development Guide is to allow businesses, developers, designers and solution architects to produce secure web applications. If done from the earliest stages, secure applications cost about the same to develop as insecure applications, but are far more cost effective in the long run.
 
-[Essential PHP security](https://openlibrary.org/works/OL5965936W/Essential_PHP_security)
+[Survive The Deep End: PHP Security](http://phpsecurity.readthedocs.io/en/latest/)
 
- * This book is for web developers looking to expand their knowledge of creating secure php code, it explains the techniques sometimes used by hackers to gain entry into your website and also explains how to prevent or reduce the chances of those issue occurring to you.
+* As every target of a serious security breach will quickly note in their press releases and websites: Security is very important to them and take it very seriously. Taking this sentiment to heart before you learn it the hard way is recommended.
 
 [Refactoring Improving the Design of Existing Code](https://openlibrary.org/books/OL7407595M/Refactoring)
 
