@@ -22,4 +22,4 @@ If you choose to adopt the standards developed by the PHP-FIG, you have to under
 
 Many industries demand highly scalable, run-time critical, and cost effective software that simply cannot be developed using these standards of the PHP-FIG.
 
-**The wrong way**: Following the PHP-FIG beyond the PSR-1 and PSR-2. ![Thumbs down](img/thumbs-down.png)
+**The wrong way**: Following the PHP-FIG beyond the PSR-1, PSR-2 and PSR-4. ![Thumbs down](img/thumbs-down.png)
