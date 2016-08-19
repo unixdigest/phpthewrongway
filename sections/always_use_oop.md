@@ -24,7 +24,7 @@ Today one of the main strengths of PHP is it's support for both imperative, func
 
 One of the greatest ways to understand a specific programming paradigm is to look at how it first evolved. What was the reason for its development? What problems existed with other programming paradigms that needed a new way of thinking? Was it a real world problem or simply an academic problem? And how has it since evolved?
 
-It doesn't matter what person X says or what definition person Y gives.
+It doesn't matter what person X says or what definition person Y gives, what matters in the context of paradigms is the history that made them.
 
 > There are two ways of constructing a software design.  One way is to make it so simple that there are obviously no deficiencies. And the other way is to make it so complicated that there are no obvious deficiencies.
 >
