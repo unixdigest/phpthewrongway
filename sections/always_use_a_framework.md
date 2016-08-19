@@ -10,7 +10,7 @@ This trend has not emerged and become popular because it in any way improve the 
 
 Many of todays programmers completely ignore the fundamental principles of sound programming and they spend huge amount of time fantasying new layers of complexity in order to appear more clever, more cool, and more acceptable by whomever they regard as their peers.
 
-These people seems to be infatuated by the though of having other people follow their "way of doing things", becoming some kind of PHP community leaders, and having other people use their latest "hip" Open Source tools, that they forget to make sure that the advice they are giving is sound and solid.
+These people seems to be infatuated by the thought of having other people follow their "way of doing things", becoming some kind of PHP community leaders, and having other people use their latest "hip" Open Source tools, that they forget to make sure that the advice they are giving is sound and solid.
 
 In the software industry you can compare a pre-built house to a general purpose framework. Building software using general purpose frameworks doesn't make you a coder or a programmer any more than putting together a pre-built house makes you a carpenter.
 
