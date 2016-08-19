@@ -10,7 +10,7 @@
 
 [OWASP Secure Coding Guidelines](https://www.owasp.org/images/0/08/OWASP_SCP_Quick_Reference_Guide_v2.pdf)
 
-* This technology agnostic document defines a set of general software security coding practices, in a checklist format, that can be integrated into the software development lifecycle. Implementation of these practices will mitigate most common software vulnerabilities.
+* This technology agnostic document defines a set of general software security coding practices, in a checklist format, that can be integrated into the software development life-cycle. Implementation of these practices will mitigate most common software vulnerabilities.
 
 [Security by Design Principles](https://www.owasp.org/index.php/Security_by_Design_Principles)
 
