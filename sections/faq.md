@@ -10,7 +10,7 @@ It's easy to misunderstand a written document so lets clarify some issues.
 
 **A:** No of course not! We're saying always thinking in and always using only the object-oriented paradigm in solving problems is bad. Whenever you think in black and white only, that's wrong.
 
-Even within a single application different problems exist. Multi-paradigm is sometimes the best solution, it al depends on the problem you're trying to solve.
+Even within a single application different problems exist. Multi-paradigm is sometimes the best solution, it all depends on the problem you're trying to solve.
 
 Whenever you force feed a specific problem to an unfit solution bad things happen.
 
