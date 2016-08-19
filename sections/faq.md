@@ -16,11 +16,11 @@ Whenever you force feed a specific problem to an unfit solution bad things happe
 
 **Q:** _Are you saying that all frameworks are bad?_
 
-**W:** We're not trying to judge specific frameworks. We're dealing with the issue of always using a framework on top of PHP.
+**A:** We're not trying to judge specific frameworks. We're dealing with the issue of always using a framework on top of PHP.
 
 **Q:** _If a framework can get me up and running quickly, why is that so bad?_
 
-If you have analyzed the situation and long term implications and you then see that "getting up and running quickly" is the only problem you ever have to deal with, then it's not bad, but then we're hardly dealing with programming or software development, we're dealing mostly with point-n-click solutions.
+**A:** If you have analyzed the situation and long term implications and you then see that "getting up and running quickly" is the only problem you ever have to deal with, then it's not bad, but then we're hardly dealing with programming or software development, we're dealing mostly with point-n-click solutions.
 
 Getting up and running quickly isn't designing software, it mostly means you haven't analyzed the problem you're facing and you haven't understood the long term implications of your choice.
 
