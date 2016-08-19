@@ -33,7 +33,7 @@ When you use a framework in PHP you add a layer of abstraction on top of yet ano
 
 All experience starts with the interface. The interface experience is the result of the underlying technology and the amount of layers of abstraction. The more abstraction you use, the less efficient the interface becomes and the more error-prone the application becomes. The higher the abstraction, the more detail and efficiency is lost.
 
-Understand this clearly: **The ideal number of lines of code in any project is as few as possible!**
+Understand this clearly: **The ideal number of lines of code in any project is as few as possible whilst being as clear and readable as possible!**
 
 > What everyone doesn't need is a general purpose framework. Nobody has a general problem, everyone has a very specific problem they are trying to solve.
 >
