@@ -14,7 +14,7 @@ An insecure application may require extensive redesign to secure it. You must id
 
 Securing critical software resources is more important than ever as the focus of attackers has steadily moved toward the application layer. A 2009 SANS study found that attacks against web applications constitute more than 60% of the total attack attempts observed on the Internet.
 
-PHP is unusual in that it is both a programming language and a web framework at the same time. This means that PHP has a lot of web features build-in to the language that makes it very easy to write insecure code.
+PHP is unusual in that it is both a programming language and a web framework at the same time. This means that PHP has a lot of web features built-in to the language that makes it very easy to write insecure code.
 
 ## Secure by default ##
 
@@ -22,7 +22,7 @@ PHP is unusual in that it is both a programming language and a web framework at 
 >
 > -- Ray Ozzie
 
-In order for applications to be designed and implemented with proper security requirements, secure coding practices and a focus on security risks must be integrated into the day-to-day operations, thoughts, and the development processes itself.
+In order for applications to be designed and implemented with proper security requirements, secure coding practices and a focus on security risks must be integrated into the day-to-day operations, thoughts, and the development processes themselves.
 
 Generally, it is much less expensive to build secure software than to correct security issues after the software package has been completed, not to mention the costs that may be associated with a security breach.
 
