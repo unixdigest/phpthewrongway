@@ -12,11 +12,11 @@ Many software developers, and many companies, feel that object-oriented programm
 
 On programming blogs and forums, there are a great many people who defend object-oriented programming, and who feel certain that they know what they are talking about, despite the lack of any standard definition!
 
-The fact is that so-called object-oriented programming as such often inflict a heavy burden of unneeded complexity!
+The fact is that so-called object-oriented programming as such often inflicts a heavy burden of unneeded complexity!
 
 As computer scientists and programmers we must learn to set aside prejudices and find the best solution to a given problem.
 
-Today one of the main strengths of PHP is it's support for both imperative, functional, object-oriented, procedural, and reflective paradigms. PHP is a huge toolbox with lots of different tools that makes it possible to solve many problems in many different ways - **not just one way!**
+Today, one of the main strengths of PHP is its support for both imperative, functional, object-oriented, procedural, and reflective paradigms. PHP is a huge toolbox with lots of different tools that makes it possible to solve many problems in many different ways - **not just one way!**
 
 **As soon as we try to force-feed different problems within an application to a single specific programming paradigm, we're not thinking creatively and we're not working efficiently!**
 
@@ -30,27 +30,27 @@ It doesn't matter what person X says or what definition person Y gives, what mat
 >
 > -- C.A.R. Hoare
 
-In the past, before the advent of object-oriented programming, around the end of the fifties, much software was developed using programming languages that emphasized unstructured programming, sometimes are referred to as first- and second-generation languages. Unstructured programming (or non-structured programming) is the historical earliest programming paradigm. It was heavily criticized for producing "spaghetti" code.
+In the past, before the advent of object-oriented programming, around the end of the fifties, much software was developed using programming languages that emphasized unstructured programming, sometimes referred to as first- and second-generation languages. Unstructured programming (or non-structured programming) is historically the earliest programming paradigm. It was heavily criticized for producing "spaghetti" code.
 
 There are both high- and low-level programming languages that use non-structured programming. These include early versions of BASIC, COBOL, MUMPS, JOSS, FOCAL, TELCOMP, machine-level code, early assembler systems (those without procedural meta operators) and some scripting languages.
 
 A program in a non-structured language usually consists of sequentially ordered commands, or statements, usually one in each line. The lines are usually numbered or may have labels which allows the flow of execution to jump to any line in the program (like with the unpopular GOTO statement).
 
-Then in the sixties structured programming emerged - mainly due to the famous letter by Edsger W. Dijkstra [Go To statements considered harmful](http://www.u.arizona.edu/~rubinson/copyright_violations/Go_To_Considered_Harmful.html).
+Then, in the sixties, structured programming emerged - mainly due to the famous letter by Edsger W. Dijkstra [Go To statements considered harmful](http://www.u.arizona.edu/~rubinson/copyright_violations/Go_To_Considered_Harmful.html).
 
-Structured programming is a programming paradigm that improves the clarity, quality, and development of software by making use of subroutines, block structures and loops. This is contrast to using simple jumps such as the GOTO statement.
+Structured programming is a programming paradigm that improves the clarity, quality, and development of software by making use of subroutines, block structures and loops. This is in contrast to using simple jumps such as the GOTO statement.
 
-Later procedural programming was derived from structured programming. Procedural programming is based upon the concept of "procedure call". A "procedure call" is just another name for a "function call". Procedures are also known as routines, subroutines or methods. A procedure simply contain a series of computational steps to be carried out. Any given procedure might be called at any point during a programs execution, including by other procedures or itself.
+Later, procedural programming was derived from structured programming. Procedural programming is based upon the concept of "procedure call". A "procedure call" is just another name for a "function call". Procedures are also known as routines, subroutines or methods. A procedure simply contain a series of computational steps to be carried out. Any given procedure might be called at any point during a programs execution, including by other procedures or itself.
 
-In the beginning all procedures were available to any part of a program as global data. In small programs this didn't present a problem, but as things got more complicated and the size of the program grew, small changes to one part of the program greatly affected many other parts.
+In the beginning all procedures were available to any part of a program as global data. In small programs this didn't present a problem, but as things got more complicated and as the size of the program grew, small changes to one part of the program greatly effected many other parts.
 
 Nobody was planning for changes in the program and lots of dependencies existed. A minor change to one procedure would result in a cascade of errors in lots of other procedures that depended on the original code.
 
-A new technique evolved which allowed data to be divided into separated scopes called "objects". Only specific procedures belonging to the same scope could access the same data. This is called data hiding or encapsulation. The result was much better organized code.
+A new technique evolved that allowed data to be divided into separated scopes called "objects". Only specific procedures belonging to the same scope could access the same data. This is called data hiding or encapsulation. The result was much better organized code.
 
-In the beginning objects where not called objects, they where just viewed upon as separate scopes. Later when dependencies were reduced and connections between procedures and variables inside these scopes where viewed upon as isolated segments, the result gave birth to the concepts of "objects" and "object-oriented programming".
+In the beginning objects were not called objects, they were just viewed upon as separate scopes. Later when dependencies were reduced and connections between procedures and variables inside these scopes were viewed upon as isolated segments, the result gave birth to the concepts of "objects" and "object-oriented programming".
 
-Later, mainly due to the development of Java, certain "buzzwords" arose and "a procedure" or "a function" was no longer called a function, but was renamed "a method" when it resided inside a separate scope. Variables was also no longer called "variables", but was renamed "attributes" when they resided inside a separate scope.
+Later, mainly due to the development of Java, certain "buzzwords" arose and "a procedure" or "a function" was no longer called a function, but was renamed "a method" when it resided inside a separate scope. Variables were also no longer called "variables", but were renamed "attributes" when they resided inside a separate scope.
 
 So an object is in essence simply a collection of functions and variables now called "methods and attributes".
 
