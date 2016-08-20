@@ -1,5 +1,9 @@
 # Recommended reading #
 
+[PHP The Wrong Way on Hacker News](https://news.ycombinator.com/item?id=12318615)
+
+* When "PHP The Wrong Way" was launched it spawned a bunch of comments on Hacker News that has many valuable arguments worth reading.
+
 [Coders at work - Reflections on the Craft of Programming](http://codersatwork.com/)
 
 * Based on nearly eighty hours of conversations with fifteen all-time great programmers and computer scientists, the Q&A interviews in Coders at Work provide a multifaceted view into how great programmers learn to program, how they practice their craft, and what they think about the future of programming.
