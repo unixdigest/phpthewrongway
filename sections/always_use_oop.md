@@ -2,11 +2,11 @@
 
 > The problem with object-oriented languages is they’ve got all this implicit environment that they carry around with them. You wanted a banana but what you got was a gorilla holding the banana and the entire jungle.
 >
-> -- Joe Armstrong
+> -- Joe Armstrong in [Coders at work - Reflections on the Craft of Programming](http://codersatwork.com/)
 
 > Abstraction is powerful. What I'm really allergic to, and what I had a reaction to in the '90s, was all the CORBA, COM, DCOM, object-oriented nonsense. Every startup of the day had some crazy thing that would take 200.000 method calls to start up and print "Hello world". That's a travesty! You don't want to be a programmer associated with that sort of thing.
 >
-> -- Brendan Eich
+> -- Brendan Eich in [Coders at work - Reflections on the Craft of Programming](http://codersatwork.com/)
 
 Many software developers, and many companies, feel that object-oriented programming is the only reasonable way to develop software today. Any one who argues against object-oriented programming is immediately made conscious of the fact that they are arguing against the "conventional wisdom" of the industry.
 
@@ -26,9 +26,9 @@ One of the greatest ways to understand a specific programming paradigm is to loo
 
 It doesn't matter what person X says or what definition person Y gives, what matters in the context of paradigms is the history that made them.
 
-> There are two ways of constructing a software design.  One way is to make it so simple that there are obviously no deficiencies. And the other way is to make it so complicated that there are no obvious deficiencies.
+> There are two ways of constructing a software design. One way is to make it so simple that there are obviously no deficiencies. And the other way is to make it so complicated that there are no obvious deficiencies.
 >
-> -- C.A.R. Hoare
+> -- [C.A.R. Hoare](https://en.wikiquote.org/wiki/C._A._R._Hoare)
 
 In the past, before the advent of object-oriented programming, around the end of the fifties, much software was developed using programming languages that emphasized unstructured programming, sometimes referred to as first- and second-generation languages. Unstructured programming (or non-structured programming) is historically the earliest programming paradigm. It was heavily criticized for producing "spaghetti" code.
 
@@ -66,6 +66,6 @@ Object-oriented programming is about organizing code in another way than before.
 
 > The object-oriented model makes it easy to build up programs by accretion. What this often means, in practice, is that it provides a structured way to write spaghetti code.
 >
-> -- Paul Graham
+> -- Paul Graham in [Ansi Common Lisp](https://openlibrary.org/works/OL7944696W/ANSI_Common_Lisp)
 
 **The wrong way**: Always use object-oriented programming. ![Thumbs down](img/thumbs-down.png)
