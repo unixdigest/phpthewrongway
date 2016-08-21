@@ -26,4 +26,4 @@ In order for applications to be designed and implemented with proper security re
 
 Generally, it is much less expensive to build secure software than to correct security issues after the software package has been completed, not to mention the costs that may be associated with a security breach.
 
-**The wrong way**: Not developing secure software by default. ![Thumbs down](img/thumbs-down.png)
+**The wrong way**: Not developing secure software by default. ![Thumbs down](/img/thumbs-down.png)

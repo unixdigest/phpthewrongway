@@ -68,4 +68,4 @@ Object-oriented programming is about organizing code in another way than before.
 >
 > -- Paul Graham in [Ansi Common Lisp](https://openlibrary.org/works/OL7944696W/ANSI_Common_Lisp)
 
-**The wrong way**: Always use object-oriented programming. ![Thumbs down](img/thumbs-down.png)
+**The wrong way**: Always use object-oriented programming. ![Thumbs down](/img/thumbs-down.png)

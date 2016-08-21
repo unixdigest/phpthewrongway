@@ -1,11 +1,11 @@
-# The danger of extremism #
+# Det farlige ved ekstremisme #
 
-One problem with programming rules and guidelines is that they often only serve a purpose within a specific context. Taken out of context, a good rule can become a horrible rule. In fact, every good rule becomes bad when taken to the extreme.
+Et problem med programmeringsregler og retningslinjer er at de ofte kun tjener et formål inden for en specifik kontekst. Når de tages ud af kontekst kan en god regel blive en forfærdelig regel. Faktisk er det sådan at enhver god regel bliver dårlig når den bliver taget til det ekstreme.
 
-This is important to understand because many of the software development principles and rules developed over time and presented by many different people often become misused in the hands of extremists.
+Det er vigtigt at forstå dette fordi mange af de softwareudviklingsprincipper og regler der udvikles over tid, og som præsenteret af mange forskellige mennesker, ofte bliver misbrugt i hænderne på ekstremister.
 
-Experience has taught that misuse of general rules and guidelines always results in complication, lack of security, error-prone results, and in some cases complete and utter disaster.
+Erfaring har lært os at misbrug af en generelle regler og retningslinjer altid resulterer i komplikationer, mangel på sikkerhed, fejlbehæftede resultater, og i nogle tilfælde, fuldstændig og total katastrofe.
 
-The [KISS principle](https://en.wikipedia.org/wiki/KISS_principle), which is an acronym for "Keep It Simple, Stupid", is an extremely wise and good principle that is generally viewed by experienced people as very good advice to follow, but even this great principle becomes a danger to a project if taken to the extreme. There is such a thing as "too simple" resulting in a lack of needed functionality.
+[KISS princippet](https://en.wikipedia.org/wiki/KISS_principle), der er et akronym for "Keep It Simple, Stupid" (Hold Det Simpelt, Dumme), er et meget viis og fornuftigt princip der generelt betragtes af erfarende mennesker som et meget godt råd at følge, men selv dette fremragende princip bliver farligt for et projekt hvis det bliver praktiseret til det ekstreme. Der er sådan en ting som at noget er "for simpelt", et resultat hvor grundlæggende funktionalitet mangler.
 
-**The wrong way**: Religious following of rules and guidelines. ![Thumbs down](img/thumbs-down.png)
+**Den forkerte vej**: Religiøs følgen af regler og retningslinjer. ![Thumbs down](/img/thumbs-down.png)

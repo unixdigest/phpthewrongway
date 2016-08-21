@@ -8,4 +8,4 @@ La experiencia nos enseñada que el mal usa de las reglas y normas siempre termi
 
 El [Principio KISS](https://es.wikipedia.org/wiki/Principio_KISS), del acrónimo inglés "Keep It Simple, Stupid!": «¡Hazlo sencillo, estúpido!», es un muy sabio principio que es generalmente visto por personas experimentadas como un buen consejo a seguir, pero hasta un buen pricipio como este se convierte en un peligro para un proyecto si es llevado al extremo. Tal cosa como "demasiado simple" resulta en falta de funcionalidad necesaria.
 
-**La forma incorrecta**: Seguir religosamente reglas y normas. ![Thumbs down](../img/thumbs-down.png)
+**La forma incorrecta**: Seguir religosamente reglas y normas. ![Thumbs down](/img/thumbs-down.png)

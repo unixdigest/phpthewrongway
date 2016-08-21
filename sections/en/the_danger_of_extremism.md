@@ -8,4 +8,4 @@ Experience has taught that misuse of general rules and guidelines always results
 
 The [KISS principle](https://en.wikipedia.org/wiki/KISS_principle), which is an acronym for "Keep It Simple, Stupid", is an extremely wise and good principle that is generally viewed by experienced people as very good advice to follow, but even this great principle becomes a danger to a project if taken to the extreme. There is such a thing as "too simple" resulting in a lack of needed functionality.
 
-**The wrong way**: Religious following of rules and guidelines. ![Thumbs down](img/thumbs-down.png)
+**The wrong way**: Religious following of rules and guidelines. ![Thumbs down](/img/thumbs-down.png)
