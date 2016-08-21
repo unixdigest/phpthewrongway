@@ -4,6 +4,10 @@
 
 * Da "PHP The Wrong Way" blev lanceret resulterede det i en bunke af kommentarer på Hacker News der har mange værdifulde argumenter der er værd at læse.
 
+[How to program without OOP](https://medium.com/@brianwill/how-to-program-without-oop-74a46e0e47a3#.squpnjz4n)
+
+* Som et frisk og alternativt perspektiv diskuterer Brian Will i tre videoer hvorfor han mener, at objektorienteret programmering er en dårlig idé til at begynde med, og han afslutter serien med nogle kommentarer om hvordan ikke-OOP kode bør skrives.
+
 [Coders at work - Reflections on the Craft of Programming](http://codersatwork.com/)
 
 * Baseret på næsten firs timers samtaler med femten af hvor tids store programmører og dataloger. Spørgsmål og svar interviews i "Coders at Work" giver et multifacetteret indblik i hvordan store programmører lærte at programmerer, hvordan de udvikler deres håndværk, og hvad de tænker på om fremtiden for programmering.
