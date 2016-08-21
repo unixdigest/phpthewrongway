@@ -10,7 +10,7 @@ FINAL_OUTPUT_ES = $(OUTPUT_DIR)es/$(FILENAME)
 
 CREATE_DATE = 2015-11-20
 DATE_FORMAT = +%Y-%m-%d
-HTML_CSS = css/html.css
+HTML_CSS = /css/html.css
 # pygments, kate, monochrome, espresso, haddock, tango, zenburn
 HTML_CODE_STYLE = zenburn
 CREATED_STR = Created:
