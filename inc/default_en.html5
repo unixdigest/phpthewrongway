@@ -26,9 +26,7 @@ $endfor$
 $if(math)$
   $math$
 $endif$
-$for(header-includes)$
-  $header-includes$
-$endfor$
+<meta name="description" content="This website has been created in an attempt to present a pragmatic view on PHP programming. A view dictated by experience and practical consequence rather than popular trends, theory, or academic dogma.">
 </head>
 <body>
 $for(include-before)$
@@ -50,10 +48,10 @@ $if(date)$
 $endif$
 </div>
 </header>
-$endif$
 <div id="cartoon">
-    <img src="/img/deviant-code-1000px.png" alt="cartoon">
+<img src="/img/deviant-code-1000px-en.png" alt="cartoon">
 </div>
+$endif$
 $if(toc)$
 <nav id="$idprefix$TOC">
 $toc$
