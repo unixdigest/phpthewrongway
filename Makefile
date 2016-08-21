@@ -18,15 +18,15 @@ LAST_UPDATED_STR = Last updated:
 TABLE_OF_CONTENTS = Table of Contents
 
 html-da:
-	pandoc -s --highlight-style $(HTML_CODE_STYLE) -S -w html5 --template $(TEMPLATE) --toc -c $(HTML_CSS) -H $(HEADER_FILE) -o $(FINAL_OUTPUT_DA).html $(TOP_FILE) sections/da/welcome.md sections/da/the_danger_of_extremism.md sections/da/always_use_a_framework.md sections/da/always_use_a_design_pattern.md sections/da/always_use_oop.md sections/da/follow_the_php_fig_standards.md sections/da/neglecting_security.md sections/da/faq.md sections/da/recommended_reading.md CONTRIBUTE.md
+	pandoc -s --highlight-style $(HTML_CODE_STYLE) -S -w html5 --template $(TEMPLATE) --toc -c $(HTML_CSS) -H $(HEADER_FILE) -o $(FINAL_OUTPUT_DA).html $(TOP_FILE) sections/da/welcome.md sections/da/the_danger_of_extremism.md sections/da/always_use_a_framework.md sections/da/always_use_a_design_pattern.md sections/da/always_use_oop.md sections/da/being_afraid_of_other_peoples_code.md sections/da/follow_the_php_fig_standards.md sections/da/neglecting_security.md sections/da/faq.md sections/da/recommended_reading.md CONTRIBUTE.md
 	grep -rl "##DATEFIELD##" $(FINAL_OUTPUT_DA).html | xargs sed -i "s/##DATEFIELD##/$(LAST_UPDATED_STR) `date '$(DATE_FORMAT)'`/"
 
 html-en:
-	pandoc -s --highlight-style $(HTML_CODE_STYLE) -S -w html5 --template $(TEMPLATE) --toc -c $(HTML_CSS) -H $(HEADER_FILE) -o $(FINAL_OUTPUT_EN).html $(TOP_FILE) sections/en/welcome.md sections/en/the_danger_of_extremism.md sections/en/always_use_a_framework.md sections/en/always_use_a_design_pattern.md sections/en/always_use_oop.md sections/en/follow_the_php_fig_standards.md sections/en/neglecting_security.md sections/en/faq.md sections/en/recommended_reading.md CONTRIBUTE.md
+	pandoc -s --highlight-style $(HTML_CODE_STYLE) -S -w html5 --template $(TEMPLATE) --toc -c $(HTML_CSS) -H $(HEADER_FILE) -o $(FINAL_OUTPUT_EN).html $(TOP_FILE) sections/en/welcome.md sections/en/the_danger_of_extremism.md sections/en/always_use_a_framework.md sections/en/always_use_a_design_pattern.md sections/en/always_use_oop.md sections/en/being_afraid_of_other_peoples_code.md sections/en/follow_the_php_fig_standards.md sections/en/neglecting_security.md sections/en/faq.md sections/en/recommended_reading.md CONTRIBUTE.md
 	grep -rl "##DATEFIELD##" $(FINAL_OUTPUT_EN).html | xargs sed -i "s/##DATEFIELD##/$(LAST_UPDATED_STR) `date '$(DATE_FORMAT)'`/"
 
 html-es:
-	pandoc -s --highlight-style $(HTML_CODE_STYLE) -S -w html5 --template $(TEMPLATE) --toc -c $(HTML_CSS) -H $(HEADER_FILE) -o $(FINAL_OUTPUT_ES).html $(TOP_FILE) sections/es/welcome.md sections/es/the_danger_of_extremism.md sections/es/always_use_a_framework.md sections/es/always_use_a_design_pattern.md sections/es/always_use_oop.md sections/es/follow_the_php_fig_standards.md sections/es/neglecting_security.md sections/es/faq.md sections/es/recommended_reading.md CONTRIBUTE.md
+	pandoc -s --highlight-style $(HTML_CODE_STYLE) -S -w html5 --template $(TEMPLATE) --toc -c $(HTML_CSS) -H $(HEADER_FILE) -o $(FINAL_OUTPUT_ES).html $(TOP_FILE) sections/es/welcome.md sections/es/the_danger_of_extremism.md sections/es/always_use_a_framework.md sections/es/always_use_a_design_pattern.md sections/es/always_use_oop.md sections/es/being_afraid_of_other_peoples_code.md sections/es/follow_the_php_fig_standards.md sections/es/neglecting_security.md sections/es/faq.md sections/es/recommended_reading.md CONTRIBUTE.md
 	grep -rl "##DATEFIELD##" $(FINAL_OUTPUT_ES).html | xargs sed -i "s/##DATEFIELD##/$(LAST_UPDATED_STR) `date '$(DATE_FORMAT)'`/"
 
 all: html-da html-en html-es
