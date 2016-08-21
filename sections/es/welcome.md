@@ -1,5 +1,7 @@
 # Bienvenido #
 
+Estado: en proceso de traducción.
+
 In the world of PHP programming a set of trends are massively being propagated by some people (in their books and on websites) as "Modern PHP" while all other approaches are frowned upon as backwards, stupid, or just plain wrong.
 
 These people seem to work tirelessly at getting other people to follow their way of doing things.

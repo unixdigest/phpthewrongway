@@ -1,5 +1,7 @@
 # Velkommen #
 
+STATUS: Ved at blive oversat.
+
 I PHP programmeringens verden bliver et sæt af populære regler massivt propaganderet af nogle mennesker (i deres bøger og på deres hjemmesider) som værende "Moderne PHP", alt imens alle andre fremgangsmåder bliver der set ned på som værende gammeldags, dumme eller blot forkerte.
 
 Disse mennesker synes at arbejde utrætteligt mod at få andre mennesker til at følge deres måde at gøre tingene på.
