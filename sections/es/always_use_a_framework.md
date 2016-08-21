@@ -1,6 +1,6 @@
 # Siempre usar un framework #
 
-> All general purpose PHP frameworks suck!
+> ¡Todos los frameworks PHP de propósito general apestan!
 >
 > -- [Rasmus Lerdorf](https://www.youtube.com/watch?v=DuB6UjEsY_Y)
 
@@ -36,7 +36,7 @@ Toda experiencia empieza con la interfaz. La experiencia de interfaz es el resul
 
 Ten en cuenta: **¡El número ideal de línea de código en cualquier proyecto es menor número posible, siendo a la vez lo más claro y legible que se pueda!**
 
-> What everyone doesn't need is a general purpose framework. Nobody has a general problem, everyone has a very specific problem they are trying to solve.
+> Lo que todos necesitan no es un framework de propósito general. Nadie tiene un problema general, todos tienen un problema específico que intentar resolver.
 >
 > -- [Rasmus Lerdorf](https://www.youtube.com/watch?v=anr7DQnMMs0)
 
