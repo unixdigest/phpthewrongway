@@ -2,15 +2,15 @@
 
 Estado: en proceso de traducción.
 
-In the world of PHP programming a set of trends are massively being propagated by some people (in their books and on websites) as "Modern PHP" while all other approaches are frowned upon as backwards, stupid, or just plain wrong.
+En el mundo de la programación en PHP un conjunto de  tendencias están siendo propagadas masivamente por algunas personas (en sus libros y en sus sitios web) como "PHP moderno", mientras que los demás enfoques están siendo vistos como obsoletos, estúpidos, o simplemente incorrectos.
 
-These people seem to work tirelessly at getting other people to follow their way of doing things.
+Estos individuos parecen trabajar sin descanso en conseguir que otras personas sigan sus formas cómo y qué hacer.
 
-This website has been created in an attempt to present a pragmatic view on PHP programming. A view dictated by experience and practical consequence rather than popular trends, theory, or academic dogma.
+Este sitio web ha sido creado en un intento de presentar una vista pragmática de la programación en PHP. Una vista producto de la experiencia y la práctica, en lugar de tendencias populares, teorías o dogmas académicos.
 
-The website [PHP - The Wrong Way](http://www.phpthewrongway.com/) is a living document and will continue to be updated with more information as it become available.
+El sitio web [PHP - The Wrong Way](http://www.phpthewrongway.com/es) es un documento vivo y activo que será actualizado constantemente con información a medida que la misma esté disponible.
 
-Feel free to contribute.
+Siéntete libre de contribuir.
 
 ## Traducciones ##
 
