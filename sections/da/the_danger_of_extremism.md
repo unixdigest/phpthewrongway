@@ -8,4 +8,4 @@ Erfaring har lært os at misbrug af en generelle regler og retningslinjer altid 
 
 [KISS princippet](https://en.wikipedia.org/wiki/KISS_principle), der er et akronym for "Keep It Simple, Stupid" (Hold Det Simpelt, Dumme), er et meget viis og fornuftigt princip der generelt betragtes af erfarende mennesker som et meget godt råd at følge, men selv dette fremragende princip bliver farligt for et projekt hvis det bliver praktiseret til det ekstreme. Der er sådan en ting som at noget er "for simpelt", et resultat hvor grundlæggende funktionalitet mangler.
 
-**Den forkerte vej**: Religiøs følgen af regler og retningslinjer. ![Thumbs down](/img/thumbs-down.png)
+**Den forkerte måde**: Religiøs følgen af regler og retningslinjer. ![Thumbs down](/img/thumbs-down.png)

@@ -2,7 +2,7 @@
 
 > All general purpose PHP frameworks suck!
 >
-> -- Rasmus Lerdorf
+> -- [Rasmus Lerdorf](https://www.youtube.com/watch?v=DuB6UjEsY_Y)
 
 In the PHP community a really bad trend has become de-facto standard for developing web applications and that is by the usage of a popular general purpose framework.
 
@@ -37,7 +37,7 @@ Understand this clearly: **The ideal number of lines of code in any project is a
 
 > What everyone doesn't need is a general purpose framework. Nobody has a general problem, everyone has a very specific problem they are trying to solve.
 >
-> -- Rasmus Lerdorf
+> -- [Rasmus Lerdorf](https://www.youtube.com/watch?v=anr7DQnMMs0)
 
 Some companies began listening to the hype about PHP frameworks and they started their next projects using one of these popular general purpose frameworks only to end up in a disaster. Not only did they discover that the general purpose framework was really bad at solving their very specific need, but it was also extremely slow in doing so. It was impossible to scale and as a result they started ripping the framework apart in a desperate attempt to pull out all those things they really didn't need.
 

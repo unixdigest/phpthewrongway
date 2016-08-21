@@ -1,29 +1,29 @@
-# Neglecting security #
+# At forsømme sikkerhed #
 
-> The trouble with programmers is that you can never tell what a programmer is doing until it’s too late.
+> Problemet med programmører er at du kan aldrig vide hvad en programmør laver før det er for sent.
 >
-> -- Seymour Cray on [defprogramming.com](http://www.defprogramming.com/q/6e61ae30a855/)
+> -- [Seymour Cray](http://www.defprogramming.com/q/6e61ae30a855/)
 
-Secure coding is the practice of writing programs that are resistant to attack by malicious or mischievous people or other programs. Secure coding helps protect data from theft or corruption. In addition, an insecure program can provide access for an attacker to take control of a server or a user's identity, resulting in anything from a denial of service to a single user to the compromise of secrets, loss of service, or damage to the systems of thousands of users.
+Sikker kodning er den praksis at skrive programmer der er modstandsdygtige overfor angreb af ondsindede eller drillesyge mennesker eller andre programmer. Sikker kodning hjælper med at beskytte data imod tyveri eller korruption. Derudover kan et usikkert program give adgang til at en angriber kan tage kontrol over en server eller en brugers identitet, og det kan resultere i alt fra et "denial of service" mod en enkelt bruger til at hemmeligheder kompromitteres, services forsvinder, eller flere tusinde brugere får skade på deres systemer.
 
-Every computer program is a potential target for a security attack. Attackers will try to find security vulnerabilities in your applications. They will then try to use these vulnerabilities to steal secrets, corrupt programs and data, and gain control of servers and networks. Your customers property and your reputation are at stake.
+Ethvert computerprogram er et potentielt mål for et sikkerhedsangreb. Angribere vil forsøge at finde sikkerhedsfejl i dine applikationer. De vil så forsøge at udnytte disse sikkerhedsfejl til at stjæle hemmeligheder, ødelægge programmer og data, og opnå kontrol over servere og netværk. Dine kunders ejendom og dit rygte er på spild.
 
-**Security is not something that can be added to software!**
+**Sikkerhed er ikke noget der kan tilføjes til software!**
 
-An insecure application may require extensive redesign to secure it. You must identify the nature of the threats to your software and incorporate secure coding practices from the beginning and throughout the planning and development of your application.
+En usikker applikation kan kræve omfattende redesign for at sikre den. Du er nød til at identificerer naturen af de trusler din software står overfor, og så inkorporere sikker kodning fra begyndelsen og igennem hele planlægningen og udviklingen af din applikation.
 
-Securing critical software resources is more important than ever as the focus of attackers has steadily moved toward the application layer. A 2009 SANS study found that attacks against web applications constitute more than 60% of the total attack attempts observed on the Internet.
+Det at sikre software ressourcer er blevet mere vigtigt end nogensinde da fokus fra angriberne stødt har bevæget til imod applikationslaget. En 2009 SANS undersøgelse fandt at angreb imod webapplikationer udgør mere end 60% af den samlede mængde af angreb observeret på internettet.
 
-PHP is unusual in that it is both a programming language and a web framework at the same time. This means that PHP has a lot of web features built-in to the language that makes it very easy to write insecure code.
+PHP er usædvanlig i at det både er et programmeringssprog og et web-framework på samme tid. Dette betyder at PHP har en stor del indbygget funktionalitet i sproget der gør det meget let at skrive usikker kode.
 
-## Secure by default ##
+## Sikker som standard ##
 
-> Complexity kills. It sucks the life out of developers, it makes products difficult to plan, build and test, it introduces security challenges and it causes end-user and administrator frustration.
+> Kompleksitet dræber. Det suger livet ud af udviklere, det gør produkter vanskelige at planlægge, bygge og teste, det medfører sikkerhedsmæssige udfordringer, og det forårsager frustrationer for slutbrugeren og administratoren.
 >
 > -- [Ray Ozzie](www.azquotes.com/quote/585933)
 
-In order for applications to be designed and implemented with proper security requirements, secure coding practices and a focus on security risks must be integrated into the day-to-day operations, thoughts, and the development processes themselves.
+For at applikationer skal designes og implementeres med sikkerhedskrav der er i orden, skal sikre kodningsprocedurer og fokus på sikkerhedsrisiko integreres i dag-til-dags operationer, tanker, og i selve udviklingsprocessen.
 
-Generally, it is much less expensive to build secure software than to correct security issues after the software package has been completed, not to mention the costs that may be associated with a security breach.
+Generelt er det meget billigere at bygge sikkert software end det er at rette sikkerhedsfejl efter at et stykke software er blevet færdiggjort, for ikke at tale om omkostningerne forbundet med et sikkerhedsbrist.
 
-**The wrong way**: Not developing secure software by default. ![Thumbs down](/img/thumbs-down.png)
+**Den forkerte måde**: At man ikke udvikler sikker software som standard. ![Thumbs down](/img/thumbs-down.png)

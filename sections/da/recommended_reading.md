@@ -1,41 +1,41 @@
-# Recommended reading #
+# Anbefalet læsning #
 
 [PHP The Wrong Way on Hacker News](https://news.ycombinator.com/item?id=12318615)
 
-* When "PHP The Wrong Way" was launched it spawned a bunch of comments on Hacker News that has many valuable arguments worth reading.
+* Da "PHP The Wrong Way" blev lanceret resulterede det i en bunke af kommentarer på Hacker News der har mange værdifulde argumenter der er værd at læse.
 
 [Coders at work - Reflections on the Craft of Programming](http://codersatwork.com/)
 
-* Based on nearly eighty hours of conversations with fifteen all-time great programmers and computer scientists, the Q&A interviews in Coders at Work provide a multifaceted view into how great programmers learn to program, how they practice their craft, and what they think about the future of programming.
+* Baseret på næsten firs timers samtaler med femten af hvor tids store programmører og dataloger. Spørgsmål og svar interviews i "Coders at Work" giver et multifacetteret indblik i hvordan store programmører lærte at programmerer, hvordan de udvikler deres håndværk, og hvad de tænker på om fremtiden for programmering.
 
 [The traits of a proficient programmer](https://www.oreilly.com/ideas/the-traits-of-a-proficient-programmer)
 
-* Competence means having enough experience and knowledge to get stuff done; proficiency involves knowing why you are doing something in a certain way, and how it fits into the big picture. In other words, a proficient practitioner is always a competent practitioner, but the opposite may not be true.
+* Kompetence betyder at have nok erfaring og viden til at få ting gjort. Dygtighed involverer at du ved hvorfor du gør noget bestemt på en særlig måde, og hvordan det passer ind i det store hele. Med andre ord, en dygtig fagmand er altid en kompetent fagmand, men det modsatte behøver ikke at være sandheden.
 
 [OWASP Secure Coding Guidelines](https://www.owasp.org/images/0/08/OWASP_SCP_Quick_Reference_Guide_v2.pdf)
 
-* This technology agnostic document defines a set of general software security coding practices, in a checklist format, that can be integrated into the software development life-cycle. Implementation of these practices will mitigate most common software vulnerabilities.
+* Dette tekniske dokument definerer - i tjekliste format - et sæt generelle regler angående sikkerhed indenfor udvikling af software der kan integreres i softwareudviklingens cyklus. Implementeringen af disse regler vil forhindre de fleste kendte sårbarheder i software.
 
 [Security by Design Principles](https://www.owasp.org/index.php/Security_by_Design_Principles)
 
-* Web application security is an essential component of any successful project, whether open source PHP applications, web services such as straight through processing, or proprietary business web sites. Hosters (rightly) shun insecure code, and users shun insecure services that lead to fraud. The aim of this Development Guide is to allow businesses, developers, designers and solution architects to produce secure web applications. If done from the earliest stages, secure applications cost about the same to develop as insecure applications, but are far more cost effective in the long run.
+* Sikkerhed indenfor webudvikling er en essentiel komponent i ethvert succesfuldt projekt, uanset om det er PHP applikationer med åben kildekode, webservices som "Straight-through processing (STP)", eller proprietære forretningshjemmesider. Hjemmesidehoteller afskyr (med god ret) usikker kode, og brugere afskyr usikre services der fører til svindel. Formålet med dette udviklingsdokument er at sikre at virksomheder, udviklere, designere, og løsningsarkitekter producerer sikre webapplikationer. Hvis det bliver gjort i de tidligste stadier, så koster en sikre applikationer omtrent det samme at udvikle som usikre applikationer, men de er meget mere omkostningseffektive på det lange sigt.
 
 [Survive The Deep End: PHP Security](http://phpsecurity.readthedocs.io/en/latest/)
 
-* As every target of a serious security breach will quickly note in their press releases and websites: Security is very important to them and take it very seriously. Taking this sentiment to heart before you learn it the hard way is recommended.
+* Enhver der er mål for en alvorlig sikkerhedsbrist vil hurtig nævne i deres pressemeddelelser og på deres hjemmesider: Sikkerhed er meget vigtigt for dem, og det skal tages meget alvorligt. Det er anbefalet at du tager dette synspunkt til hjertet, før du lærer det på den hårde måde.
 
 [Refactoring Improving the Design of Existing Code](https://openlibrary.org/books/OL7407595M/Refactoring)
 
- * Refactoring is about improving the design of existing code. It is the process of changing a software system in such a way that it does not alter the external behavior of the code, yet improves its internal structure. With refactoring you can even take a bad design and rework it into a good one. This book offers a thorough discussion of the principles of refactoring, including where to spot opportunities for refactoring, and how to set up the required tests. There is also a catalog of more than 40 proven refactorings with details as to when and why to use the refactoring, step by step instructions for implementing it, and an example illustrating how it works The book is written using Java as its principle language, but the ideas are applicable to any OO language.
+* Refaktorering handler om at forbedre udformningen af eksisterende kode. Det er processen om at ændre et softwaresystem på en sådan måde, at det ikke ændrer den ydre opførsel af koden, men forbedrer sin interne struktur. Med refaktorering kan du endda tage et dårligt design og omarbejde det til et godt et. Denne bog giver en grundig gennemgang af principperne for refaktorering, herunder hvordan du opdager muligheder for refaktorering, og hvordan du opsætter de nødvendige tests. Der er også et katalog over mere end 40 gennemprøvede refaktoreringer med detaljer om, hvornår og hvorfor du bør bruge refaktorering, trin for trin instruktioner om at iværksætte det, og et eksempel der illustrerer, hvordan det fungerer. Bogen er skrevet med brugen af Java som sit primære sprog, men ideerne er gældende for alle OO sprog.
 
 [The Practice of Programming](https://openlibrary.org/works/OL15333872W/The_Practice_of_Programming_%28Addison-Wesley_Professional_Computing_Series%29)
 
- * A compendium of practical matters of importance to working programmers.
+* En samling af praktiske emner af betydning for programmører.
 
 [The pragmatic programmer](https://openlibrary.org/works/OL5748544W/The_pragmatic_programmer)
 
- * The Pragmatic Programmer: From Journeyman to Master examines the core programming process: taking a requirement and producing working, maintainable code that delights its users. It covers topics ranging from personal responsibility and career development to architectural techniques for keeping code flexible, easy to adapt, and reuse.
+* "The Pragmatic Programmer: From Journeyman to Master" undersøger kernen i programmeringsprocessen, det at tage et behov og producere en virkebar og vedligeholdelsesvenlig kode der glæder sine brugere. Den dækker emner lige fra personligt ansvar og karriereudvikling til arkitektoniske teknikker til at holde koden fleksibel, let at tilpasse, og genbruge.
 
 [Understanding programming languages](https://openlibrary.org/works/OL1875800W/Understanding_programming_languages)
 
- * The choice of a programming language is one of the most important factors that influence the ultimate quality of a software system. Unfortunately, too many programmers have poor linguistic skills: they are passionately in love with their "native" language, but are not able to analyze language constraints. "Understanding Programming Languages" is written for the purpose of explaining what alternatives are available to the language designer; how language constructs should be used in terms of safety and readability; how language constructs are implemented and which ones can be efficiently complied; and what is the role of language in expressing and enforcing abstractions.
+* Valget af et programmeringssprog er en af de vigtigste faktorer, der påvirker den endelige kvalitet af et softwaresystem. Desværre, har for mange programmører dårlige sprogkundskaber: De er lidenskabeligt forelsket i deres "modersmål", og er ikke i stand til at analysere sproglige begrænsninger. "Understanding programming languages" er skrevet med henblik på at forklare, hvad der findes af alternativer til det sprogdesigneren, hvordan sproglige konstruktioner bør anvendes med hensyn til sikkerhed og læsbarhed, hvordan sproglige konstruktioner gennemføres, og hvilke der effektivt kan overholdes, og hvad er sprogets rolle i at udtrykke og håndhæve abstraktioner.
