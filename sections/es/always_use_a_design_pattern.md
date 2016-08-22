@@ -31,4 +31,4 @@ Nuevamente, siempre usa el enfoque pragmático:
 > -- Collins English Dictionary, Complete and Unabridged, 12th Edition 2014
 
 
-**La forma incorrecta**: Buscar patrones para resolver un problema general. ![Thumbs down](/img/thumbs-down.png)
+**La forma incorrecta**: Usar patrones para resolver un problema general. ![Thumbs down](/img/thumbs-down.png)
