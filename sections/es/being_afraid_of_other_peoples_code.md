@@ -18,7 +18,7 @@ Take note from the great masters of programming, read the book [Coders at work -
 
 Some of the largest and most successful codebases in world are codebases that has been developed by hundreds of people who have never even met each other, codebases developed without the use of any kind of framework, codebases done entirely in a procedural programming language without the use of anything but the procedural paradigm, and they wouldn't dream of doing it differently.
 
-The [Linux Kernel](https://www.kernel.org/) consist of more than 28 million lines of code all written entirely using procedural programming by more than 400 participants without the usage of any kind of framework.
+The [Linux Kernel](https://www.kernel.org/) consist of more than 20 million lines of code all written entirely using procedural programming by more than 14.000 participants without the usage of any kind of framework.
 
 The different [BSD](https://en.wikipedia.org/wiki/Berkeley_Software_Distribution) flavors and most of the [Linux GNU userland](https://www.gnu.org/) has been written entirely using procedural programming without the use of any kind of framework.
 
