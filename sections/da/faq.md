@@ -1,29 +1,29 @@
-# FAQ #
+# Spørgsmål og svar #
 
-It's easy to misunderstand a written document so let's clarify some issues.
+Det er nemt at misforstå et skriftligt dokument så lad os præcisere nogle spørgsmål.
 
-**Q:** _What's the point of this site and why the confrontational approach?_
+**Spørgsmål:** _Hvad er pointen med denne hjemmeside? Og hvorfor den konfronterende tilgang?_
 
-**A:** To create discussion and thought about current practices and extreme views.
+**Svar:** Formålet er at skabe diskussion og overvejelse om den nuværende praksis og de ekstreme synspunkter.
 
-**Q:** _Are you saying the object-oriented programming is bad or wrong?_
+**Spørgsmål:** _Siger du at objektorienteret programmering er dårligt eller forkert?_
 
-**A:** No of course not! We're saying always thinking in and always using only the object-oriented paradigm in solving problems is bad. Whenever you think in black and white only, that's wrong.
+**Svar:** Nej, selvfølgelig ikke! Vi siger at det at man altid tænker i, og altid kun bruger det objektorienterede paradigme til at løse problemer er dårligt. Når du tænker i sort og hvidt kun, det er forkert.
 
-Even within a single application different problems exist. Multi-paradigm is sometimes the best solution, it all depends on the problem you're trying to solve.
+Selv indenfor en enkelt applikation eksisterer der forskellige problemer. Et multi-paradigme er nogle gange den bedste løsning, det hele afhænger af det problem du forsøger at løse.
 
-Whenever you force-feed a specific problem to an unfit solution bad things happen.
+Når du stopfodre et specifikt problem til en uegnet løsning sker der dårlige ting.
 
-**Q:** _Are you saying that all frameworks are bad?_
+**Spørgsmål:** _Siger du at at alle frameworks er dårlige?_
 
-**A:** We're not trying to judge specific frameworks. We're dealing with the issue of always using a framework on top of PHP.
+**svar:** Vi forsøger ikke at dømme specifikke frameworks. Vi behandler emnet om altid at bruge et framework ovenpå PHP.
 
-**Q:** _If a framework can get me up and running quickly, why is that so bad?_
+**Spørgsmål:** _Hvis et framework kan få mig hurtigt op og køre, hvorfor er det så dårligt?_
 
-If you have analyzed the situation and long term implications and you then see that "getting up and running quickly" is the only problem you ever have to deal with, then it's not bad, but then we're hardly dealing with programming or software development, we're dealing mostly with point-and-click solutions.
+Hvis du har analyseret situationen og de langsigtede konsekvenser, og du derefter kan se at det "at få det op at køre hurtigt", er det eneste problem du nogensinde bliver nød til at beskæftige dig med, så er det ikke dårligt, men så beskæftiger vi os næppe med programmering eller softwareudvikling, så har vi at gøre det meste med peg-og-klik løsninger.
 
-Getting up and running quickly isn't designing software, it mostly means you haven't analyzed the problem you're facing and you haven't understood the long term implications of your choice.
+At komme op og køre hurtigt er ikke software design, det betyder for det mester, at du ikke har analyseret det problem, du står over for, og at du ikke har forstået de langsigtede konsekvenser af dit valg.
 
-**Q:** _Are you saying third party packages are bad?_
+**Spørgsmål:?** _Siger du at tredjeparts pakker er dårlige?_
 
-**A:** No. We're promoting the use of third party libraries. Code that you can easily integrate into your own projects without enforcing any limitations or restrictions what so ever. Those are great!
+**Svar:** Nej, vi er fremmer brugen af ​​tredjeparts biblioteker. Kode som du nemt kan integrere i dine egne projekter uden at håndhæve eventuelle begrænsninger eller restriktioner overhovedet. Sådanne er fantatiske!
