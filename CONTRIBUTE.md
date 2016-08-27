@@ -1,6 +1,6 @@
 # How to Contribute #
 
-Contribute on [GitHub](https://github.com/bitflop/phpthewrongway).
+Contribute on [GitHub](https://github.com/binarygenius/phpthewrongway).
 
  * Clone and edit.
  * Submit pull request for consideration.
