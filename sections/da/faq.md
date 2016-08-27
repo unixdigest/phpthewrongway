@@ -28,10 +28,10 @@ At komme op og køre hurtigt er ikke software design, det betyder for det mester
 
 **Svar:** Nej, vi er fremmer brugen af ​​tredjeparts biblioteker. Kode som du nemt kan integrere i dine egne projekter uden at håndhæve eventuelle begrænsninger eller restriktioner overhovedet. Sådanne er fantastiske!
 
-**Q:** Hvem er du?
+**Q:** _Hvem er du?_
 
 **A:** Denne hjemmeside handler om ideer og om at bekæmpe ekstremisme i PHP samfundet, den handler ikke om personlig berømmelse eller genkendelse. Offentliggørelse af navne vil kun flytte opmærksomheden væk fra de problemer som hjemmesiden behandler til de mennesker der behandler dem. Bare hold dig fokuseret på ideerne.
 
-**Q:** Hvad er din erfaring med softwareudvikling?
+**Q:** _Hvad er din erfaring med softwareudvikling?_
 
 **A:** Ideerne, tankerne og konklusionerne der udtrykkes på denne hjemmeside, kræver ikke megen erfaring at komme frem til hvis du blot holder fokus på hovedtemaet, hvilket er at man altid gør én bestemt ting, fordi andre mennesker siger, at man skal.

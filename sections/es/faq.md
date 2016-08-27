@@ -28,10 +28,10 @@ Getting up and running quickly isn't designing software, it mostly means you hav
 
 **A:** No. We're promoting the use of third party libraries. Code that you can easily integrate into your own projects without enforcing any limitations or restrictions what so ever. Those are great!
 
-**Q:** Who are you?
+**Q:** _Who are you?_
 
 **A:** This website is about ideas and combating extremism in the PHP community, it's not about personal fame or recognition. Naming people will only shift the focus from the problems addressed on the website to the people addressing the problems. Just stay focused on the ideas.
 
-**Q:** What is your experience in software development?
+**Q:** _What is your experience in software development?_
 
 **A:** The ideas, thoughts, and conclusions expressed on this website doesn't take much experience to reach if you just stay focused on the main theme which is to always do a particular thing because other people says so.
