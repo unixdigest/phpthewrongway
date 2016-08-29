@@ -4,6 +4,10 @@
 
 * When "PHP The Wrong Way" was launched it spawned a bunch of comments on Hacker News that has many valuable arguments worth reading.
 
+[Why bad scientific code beats code following "best practices"](https://news.ycombinator.com/item?id=12377385)
+
+* Simple-minded, care-free near-incompetence can be better than industrial-strength good intentions paving a superhighway to hell. The "real world" outside the computer is full of such examples.
+
 [How to program without OOP](https://medium.com/@brianwill/how-to-program-without-oop-74a46e0e47a3#.squpnjz4n)
 
 * As a fresh and alternative perspective Brian Will discusses in three videos why he thinks object-oriented programming is a bad idea to begin with and he finishes up the series with a couple of notes on how non-OOP code should be written.

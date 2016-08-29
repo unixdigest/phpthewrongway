@@ -4,6 +4,12 @@
 
 * Da "PHP The Wrong Way" blev lanceret resulterede det i en bunke af kommentarer på Hacker News der har mange værdifulde argumenter der er værd at læse.
 
+[Why bad scientific code beats code following "best practices"](https://news.ycombinator.com/item?id=12377385)
+
+* Simple-minded, care-free near-incompetence can be better than industrial-strength good intentions paving a superhighway to hell. The "real world" outside the computer is full of such examples.
+
+* Simpel ligegyldig tæt-på-inkompetence kan være bedre end gode intentioner der baner en super motorvej til helvede. Den "virkelige verden" uden for computeren er fuld af sådanne eksempler.
+
 [How to program without OOP](https://medium.com/@brianwill/how-to-program-without-oop-74a46e0e47a3#.squpnjz4n)
 
 * Som et frisk og alternativt perspektiv diskuterer Brian Will i tre videoer hvorfor han mener, at objektorienteret programmering er en dårlig idé til at begynde med, og han afslutter serien med nogle kommentarer om hvordan ikke-OOP kode bør skrives.
