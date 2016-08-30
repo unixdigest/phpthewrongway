@@ -1,8 +1,8 @@
-# How to Contribute #
+# Como contribuir #
 
-Contribute on [GitHub](https://github.com/bitflop/phpthewrongway).
+Contribua no [GitHub](https://github.com/bitflop/phpthewrongway).
 
- * Clone and edit.
- * Submit pull request for consideration.
+ * Clone e edite.
+ * Envie uma pull request para apreciação.
 
-Add sections to the _sections/LANGUAGE_ directory or edit existing sections.
+Adicione seções no diretório _sections/LANGUAGE_ ou edite uma seção existente.
