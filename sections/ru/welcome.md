@@ -15,5 +15,5 @@
 * [Danish](http://www.phpthewrongway.com/da/)
 * [English](http://www.phpthewrongway.com/)
 * [Portuguese](http://www.phpthewrongway.com/pt_br/)
-* [Russian](http://www.phpthewrongway.com/ru/)
+* [Russian](http://www.phpthewrongway.com/)
 * [Spanish](http://www.phpthewrongway.com/es/)
