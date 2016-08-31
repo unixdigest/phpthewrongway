@@ -1,50 +1,50 @@
-# Always use a framework #
+# Всегда использовать фреймворк. #
 
-> All general purpose PHP frameworks suck!
+> Все PHP-фреймворки общего назначения отстой!
 >
-> -- [Rasmus Lerdorf](https://www.youtube.com/watch?v=DuB6UjEsY_Y)
+> -- [Расмус Лердорф](https://www.youtube.com/watch?v=DuB6UjEsY_Y)
 
-In the PHP community a really bad trend has become de-facto standard for developing web applications and that is by the usage of a popular general purpose framework.
+В PHP сообществе де-факто стандартом разработки веб-приложений стала очень плохая тенденция использовать универсальные фреймворки.
 
-This trend has emerged and become popular not because it in any way improves the result of the developing process, or because it is the right thing to do from a technology and architectural point of view. This trend has become popular because some of the developers of frameworks have managed to sweep away the masses with their polemic against programming from the ground up with stanzas like "Don't re-invent the wheel!" and "Don't do it yourself, others are more skillful than you".
+Эта тенденция возникла и стала популярной не потому, что она каким-либо образом улучшает результат развивающегося процесса, или потому что это правильная вещь с точки зрения архитектуры. Эта тенденция стала популярной, потому что некоторым из разработчиков таких структур удалсь убедить массы в правильности тезисов "Не изобретай велосипед!" или "Не делай это сам, другие умнее, чем ты!"
 
-Many of today's programmers completely ignore the fundamental principles of sound programming and they spend a large amount of time fantasizing new layers of complexity in order to appear more clever, more cool, and more acceptable by whomever they regard as their peers.
+Многие сегодняшние программисты полностью игнорируют фундаментальные принципы здравого программирования, они тратят кучу времени, выдумывая новые уровни сложности, чтобы казаться более умными, более крутыми и более толковыми, нежели их коллеги.
 
-These people seems to be infatuated by the thought of having other people follow their "way of doing things", becoming some kind of PHP community leaders, and having other people use their latest "hip" Open Source tools, that they forget to make sure that the advice they are giving is sound and solid.
+Кажется, что эти люди увлечены мыслью о том, что они стали лидерами PHP сообщества, а другие должны следовать за их способами разработки, использовать их последние модные опенсорсные инструменты. Они забывают убедиться в том, чтобы советы, которые они дают, были бы здравыми и надежными.
 
-In the software industry you can compare a pre-built house to a general purpose framework. Building software using general purpose frameworks doesn't make you a coder or a programmer any more than putting together a pre-built house makes you a carpenter.
+В индустрии программирования фреймворк общего назначения можно сравнить со сборным домом из типовых панелей. Разработка программ на основе таких фреймворков не делает вас кодером или программистом, подобно тому, как сборка такого дома не делает вас столяром или плотником.
 
-On this website, we differentiate between frameworks and libraries in the following way:
+На этом сайте мы различаем фреймворк и библиотеку следующим образом:
 
-* A library is considered a collection of reusable code, like the C standard library, or the Go standard library. It consists of code that you easily integrate into your own projects without enforcing any limitations or restrictions whatsoever. It consists of small pieces of code with one specific functionality each.
-* A framework is not just a collection of reusable code: you cannot simply take a piece of code from the framework and integrate it into your own project. A framework is a system that helps you build software, but at the same time it forces you to work within the limitations and restrictions of the framework itself. The framework itself has lot of interdependent functionality. One piece cannot work without the other.
+* Библитекой является коллекция повторно используемого кода, такая как стандартная библиотека C, или стандартная библиотека Go. Она состоит из кода, который вы можете легко интегрировать в свои собственные проекты без каких-либо условий и ограничений вообще. Она состоит из маленьких кусочков кода с одной конкретной функциональностью каждого.
+* Фреймворк, это не просто набор повторно используемого кода. Вы не можете просто взять кусочек и интегрировать в свой собственный проект. Структура фреймворка представляет собой систему, которая помогает вам создавать программное обеспечение, но в то же время она заставляет вас работать в рамках правил и ограничений самой структуры. Сама структура имеет много взаимосвязанного функционала. Одна часть не может работать без другой.
 
-In the world of Python and Ruby, building websites from the ground up is tiresome because neither Python nor Ruby was originally created to build websites. As a result general-purpose frameworks such as [Django](https://en.wikipedia.org/wiki/Django_%28web_framework%29) and [Ruby on Rails](https://en.wikipedia.org/wiki/Ruby_on_Rails) quickly became popular for building websites in these languages.
+В мире Python и Ruby, создание веб-сайтов с нуля утомительно, потому что ни Python, ни Ruby изначально не были созданы для этого. В итоге фреймворки, такие как [Django](https://en.wikipedia.org/wiki/Django_%28web_framework%29) и [Ruby on Rails](https://en.wikipedia.org/wiki/Ruby_on_Rails) быстро стали популярными для создания веб-сайтов на этих языках.
 
-PHP on the other hand was created in the beginning by Rasmus Lerdorf as a set of tools written in C that would enable you to easily and quickly develop dynamic HTML. As such PHP was, and still is, **a framework in and of itself**.
+Напротив, PHP изначально был создан Расмусом Лердорфом, как набор инструментов, написанных на C, который позволил бы вам легко и быстро разработать динамический HTML. В качестве этого PHP был, и до сих пор является основой сам по себе.
 
-PHP has evolved massively since then and today PHP can be used for much more than building HTML and websites, but viewing PHP as a sort of framework in itself is not wrong. PHP is by nature a layer of abstraction for developing web applications written entirely in a procedural C.
+С тех пор PHP бурно развивался, и сегодня его можно использовать не только для генерации HTML или создания веб-сайтов, но взгляд на него, как на своего рода фреймворк, вовсе не является неверным. PHP сам по себе является определенным уровнем абстракции для разработки веб-приложений, написанный полностью на процедурном C.
 
-Using a library within your project is only natural. PHP itself comes bundled with a set of libraries that you can use to extend your own code. PDO for example is a lightweight library that provides a consistent interface for accessing databases in PHP.
+Использование библиотеки в рамках вашего проекта вполне естественно. Сам PHP поставляется в комплекте с набором библиотек, которые вы можете использовать, чтобы расширить свой собственный код. PDO, например, представляет собой легкую библиотеку, которая обеспечивает последовательный интерфейс для доступа к базам данных в PHP.
 
-Using a framework on top of PHP on the other hand is another matter entirely.
+С другой стороны, использование фреймворка поверх PHP, это совсем другое дело.
 
-When you use a framework in PHP you add a layer of abstraction on top of yet another layer of abstraction, one that was already in place for you to use to begin with. The added layer of abstraction that the framework provides may simply serve to organize your code into a pre-fixed set of patterns, or it may add even more complexity by intertwining hundreds or even thousands of classes and methods into a nightmare of dependencies, either way you're adding layers of complexity to your code that isn't needed!
+Когда вы используете фреймворк в ПХП, вы добавляете новый слой абстракции поверх другого, уже существующего слоя абстракции, который уже был готов для использования. Дополнительный уровень абстракции, обеспечиваемый фреймворком, может просто организовать код в заранее поготовленные шаблоны, а может добавить еще больше сложности за счет переплетения сотен, или даже тысяч классов и методов в кошмар зависимостей. Но так или иначе, вы добавляете в свой код новые уровни сложностей, которые совсем не нужны!
 
-All experience starts with the interface. The interface experience is the result of the underlying technology and the amount of layers of abstraction. The more abstraction you use, the less efficient the interface becomes and the more error-prone the application becomes. The higher the abstraction, the more detail and efficiency is lost.
+Познание программы начинается с интерфейса. Знание интерфейса, это результат знания базовой технологии, а так же и всех уровней абстракции. Чем больше количество уровней абстракции используется, тем менее эффективным становится интерфейс, и тем приложение более подвержено ошибкам. Чем выше уровень абстракции, тем больше деталей и эффективности будет потеряно.
 
-Understand this clearly: **The ideal number of lines of code in any project is as few as possible whilst being as clear and readable as possible!**
+Примите, как очевидное: **Идеальное количество строк в проекте - наименьшее из возможного, без потерь максимальной четкости и читабельности.**
 
-> What everyone doesn't need is a general purpose framework. Nobody has a general problem, everyone has a very specific problem they are trying to solve.
+> То, что вам совершенно не нужно, это фреймворк. Нет общих проблем, каждый человек имеет свою, очень специфичную проблему. Её он и пытается решить.
 >
-> -- [Rasmus Lerdorf](https://www.youtube.com/watch?v=anr7DQnMMs0)
+> -- [Расмус Лердорф](https://www.youtube.com/watch?v=anr7DQnMMs0)
 
-Some companies began listening to the hype about PHP frameworks and they started their next projects using one of these popular general purpose frameworks only to end up in a disaster. Not only did they discover that the general purpose framework was really bad at solving their very specific need, but it was also extremely slow in doing so. It was impossible to scale and as a result they started ripping the framework apart in a desperate attempt to pull out all those things they really didn't need.
+Некоторые компании с воодушевлением приняли фреймворки, и начали свои следующе проекты с использованием одного из них. Только в конце концов это привело к катастрофе. Мало того, что они обнаружили, что фреймворки плохо решают их специфические потребности, но они ещё и очень медленны при том. Их было невозможно масштабировать, и в результате разработчики стали ломать саму основу в попытках удалить оттуда все ненужное.
 
-Always use the pragmatic approach:
+Всегда используйте прагматический подход:
 
-> Action or policy dictated by consideration of the immediate practical consequences rather than by theory or dogma.
+> Действие или мышление продиктованы скорее рассмотрением непосредственных практических последствий чем теориями или догмами.
 >
 > -- Collins English Dictionary, Complete and Unabridged, 12th Edition 2014
 
-**The wrong way:** Always use a framework on top of PHP. ![Thumbs down](/img/thumbs-down.png)
+**Неправильный путь:** Всегда используйте фреймворк поверх PHP. ![Thumbs down](/img/thumbs-down.png)
