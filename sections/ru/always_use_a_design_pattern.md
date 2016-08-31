@@ -1,33 +1,33 @@
-# Always use a design pattern #
+# Всегда используйте шаблоны проектирования. #
 
-> I have this big allergy to ivory-tower design and design patterns. Peter Norvig, when he was at Harlequin, he did this paper about how design patterns are really just flaws in your programming language. Get a better programming language. He’s absolutely right. Worshiping patterns and thinking about, "Oh, I’ll use the X pattern."
+> У меня есть большое отвращение к башням цвета слоновой кости и к шаблонам проектирования. Питер Норвиг, когда он был в Harlequin Inc, написал статью о том, что паттерны представляют собой недостатки языка программирования. Возьмите более лучший язык. И он обсолютно прав. Поклоняясь паттернам можно думать только о том, что "О! Я буду использовать шаблон X!"
 >
-> -- Brendan Eich in [Coders at work - Reflections on the Craft of Programming](http://codersatwork.com/)
+> -- Брендан Айк в ["Кодеры за работой - Размышления о ремесле программирования"](http://codersatwork.com/)
 
-In software engineering, a design pattern is a reusable solution to a commonly occurring problem in software design. A design pattern is not a finished design that can be transformed directly into code. It is a description or an idea for how to solve a problem that can be used in many different situations. Object-oriented design patterns typically show relationships and interactions between classes or objects, without specifying the final application classes or objects that are involved.
+В программной инженерии, шаблон проектирования представляет собой многократно используемое решение для часто встречающихся проблем в разработке программного обеспечения. Дизайн модели - не окончательный дизайн, который может быть преобразован непосредственно в программный код. Это описание или представление о том, как решить проблему, которая может быть использована в различных ситуациях. Шаблоны проектирования в объектно-ориентированных языках, как правило, показывают отношения и взаимодействия между классами или объектами, без указания классов и объектов конечного приложения.
 
-PHP supports imperative, functional, object-oriented, procedural, and reflective paradigms. PHP is a huge toolbox with lots of different tools that makes it possible to solve many problems in many different ways - not just one way.
+PHP поддерживает императив, функциональную парадигму, объектно-ориентированный, процедурный и рефлексивный подход. PHP, это огромная коробка с множеством различных инструментов, которые позволяют решить многие проблемы многими различными способами, а не только в одной форме.
 
-PHP is all about freedom, fast and scalable solutions, and having many different ways to deal with problems.
+PHP, это свобода, быстрые и масштабируемые решения, он предоставляет множество различных путей устранения проблемы. 
 
-When we try to improve ourselves, and in this case more specifically our code, we sometimes get hung up in the philosophy of a particular pattern or idea and tend to forget to think practically.
+Когда мы пытаемся улучшить себя, а в данном случае свой код, и зацикливаемся на философии конкретного паттерна или идеи, то, как правило забываем, как думать практично.
 
-> When I see patterns in my programs, I consider it a sign of trouble. The shape of a program should reflect only the problem it needs to solve. Any other regularity in the code is a sign, to me at least, that I'm using abstractions that aren't powerful enough - often that I'm generating by hand the expansions of some macro that I need to write.
+> Когда я вижу, что в мою программу можно описать шаблонами, я считаю это признаком неисправности. Модель программы должна отражать только ту проблему, которую должна решить. Любая другая закономерность в коде, по крайней мере для меня, является признаком того, что я использую недостаточно мощные абстракции. Например, что я вручную генерирую расширения макросов, которые нужно написать.
 >
-> -- [Paul Graham](http://c2.com/cgi/wiki?AreDesignPatternsMissingLanguageFeatures)
+> -- [Пол Грэм](http://c2.com/cgi/wiki?AreDesignPatternsMissingLanguageFeatures)
 
-We shouldn't get to caught up in the philosophy or idea behind a specific pattern or solution. Our main concern is to keep the code as easy to navigate and understand as possible and as a result easy to maintain and easy to keep secure.
+Мы не должны быть втянуты в философию или идею конкретного шаблона или решения. Наша главная задача - сохранить код, в котором легко ориентироваться и который легко понимать, насколько это возможно. А в результате легко поддерживать и сохранять безопасность.
 
-We must also remember that there exists such a thing as an anti-pattern. It is a pattern that may be commonly used but is ineffective and/or counterproductive in practice.
+Мы также должны помнить, что существует такая вещь, как анти-паттерн. Это тоже шаблон, который может быть использован, но он делает код неэффективным и контрпродуктивным.
 
-> I think patterns started off as generally recognized best solutions for common problems. But now that they have been around for a while and we have experienced applications being made ten times more complicated than they need to be because people try to cram in all the patterns that they have read about ("my application is well architected, because it is loaded to the gills with patterns.") my impression of the value of the pattern has shifted a bit.
+> Я думаю, что паттерны начинали как общепризнанные лучшие решения для общих проблем. Но теперь, когда они окружают нас, мы видим приложения, разрабатываемые в десять раз сложнее, чем должны быть, только потому, что люди пытаются втиснуть в них все шаблоны, о которых когда-либо читали (мое приложение хорошо спроектировано, потому что до краев напичкано разными паттернами), мое впечатление о них немного изменилось.
 >
-> -- Paul Weaton in [Evil Design Patterns](http://www.javaranch.com/patterns/)
+> -- Пол Уитон в ["Зло шаблонов проектирования"](http://www.javaranch.com/patterns/)
 
-Always use the pragmatic approach:
+Всегда используйте прагматический подход:
 
-> Action or policy dictated by consideration of the immediate practical consequences rather than by theory or dogma.
+> Действие или мышление продиктованы скорее рассмотрением непосредственных практических последствий чем теориями или догмами.
 >
 > -- Collins English Dictionary, Complete and Unabridged, 12th Edition 2014
 
-**The wrong way**: Looking for a pattern to solve a problem. ![Thumbs down](/img/thumbs-down.png)
+**Неправильный путь**: Искать шаблон, чтобы решить проблему. ![Thumbs down](/img/thumbs-down.png)
