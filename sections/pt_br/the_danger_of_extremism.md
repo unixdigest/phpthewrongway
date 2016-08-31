@@ -1,11 +1,11 @@
 # O perigo do extremismo #
 
-One problem with programming rules and guidelines is that they often only serve a purpose within a specific context. Taken out of context, a good rule can become a horrible rule. In fact, every good rule becomes bad when taken to the extreme.
+Um problema com regras e diretrizes na programação é que elas geralmente só servem a um propósito em um contexto específico. Saindo desse contexto, uma boa regra pode se tornar uma regra horrível. De fato, toda boa regra se torna ruim quando levada ao extremo.
 
-This is important to understand because many of the software development principles and rules developed over time and presented by many different people often become misused in the hands of extremists.
+Isso é importante entender porque muitos princípios e regras do desenvolvimento de software desenvolvidas ao longo do tempo e apresentadas por diferentes pessoas frequentemente se tornam mal utilizadas nas mãos de extremistas.
 
 Experience has taught that misuse of general rules and guidelines always results in complication, lack of security, error-prone results, and in some cases complete and utter disaster.
 
-The [KISS principle](https://en.wikipedia.org/wiki/KISS_principle), which is an acronym for "Keep It Simple, Stupid", is an extremely wise and good principle that is generally viewed by experienced people as very good advice to follow, but even this great principle becomes a danger to a project if taken to the extreme. There is such a thing as "too simple" resulting in a lack of needed functionality.
+O [princípio KISS](https://en.wikipedia.org/wiki/KISS_principle), que é um acrônimo para "Keep It Simple, Stupid", is an extremely wise and good principle that is generally viewed by experienced people as very good advice to follow, but even this great principle becomes a danger to a project if taken to the extreme. There is such a thing as "too simple" resulting in a lack of needed functionality.
 
-**The wrong way**: Religious following of rules and guidelines. ![Thumbs down](/img/thumbs-down.png)
+**A maneira errada**: Aplicação religiosa de regras e diretrizes. ![Thumbs down](/img/thumbs-down.png)
