@@ -1,4 +1,4 @@
-# Recommended reading #
+# Leitura recomendada #
 
 [PHP The Wrong Way on Hacker News](https://news.ycombinator.com/item?id=12318615)
 

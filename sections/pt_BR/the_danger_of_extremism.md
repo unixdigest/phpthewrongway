@@ -1,4 +1,4 @@
-# The danger of extremism #
+# O perigo do extremismo #
 
 One problem with programming rules and guidelines is that they often only serve a purpose within a specific context. Taken out of context, a good rule can become a horrible rule. In fact, every good rule becomes bad when taken to the extreme.
 
