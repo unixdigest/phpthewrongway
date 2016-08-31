@@ -16,4 +16,4 @@
 * [Английский](http://www.phpthewrongway.com/)
 * [Португальский](http://www.phpthewrongway.com/pt_br/)
 * [Русский](http://www.phpthewrongway.com/)
-* [Испаеский](http://www.phpthewrongway.com/es/)
+* [Испанский](http://www.phpthewrongway.com/es/)
