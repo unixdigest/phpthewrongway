@@ -1,11 +1,11 @@
-# The danger of extremism #
+# Опасность экстремизма (крайностей). #
 
-One problem with programming rules and guidelines is that they often only serve a purpose within a specific context. Taken out of context, a good rule can become a horrible rule. In fact, every good rule becomes bad when taken to the extreme.
+Одной из проблем насаждаемых правил и основных принципов программирования является то, что они часто хороши только для достижения цели в определенном контексте. Будучи вырванным из него, хорошее правило может стать ужасным правилом. Обычно любое хорошее правило становится плохим, если довести его до крайности.
 
-This is important to understand because many of the software development principles and rules developed over time and presented by many different people often become misused in the hands of extremists.
+Это важно понимать, потому что многие правила и принципы разработки программного обеспечения, разрабатываемые разными людьми долгое время, нещадно злоупотребляются, попав в руки к экстремистам. (как то некрасиво, надо поправить)
 
-Experience has taught that misuse of general rules and guidelines always results in complication, lack of security, error-prone results, and in some cases complete and utter disaster.
+Опыт показывает, что неверное использование общих правил и принципов, всегда приводит к усложнению, дырам в безопасности, багам, а в некоторых случаях к полному краху.
 
-The [KISS principle](https://en.wikipedia.org/wiki/KISS_principle), which is an acronym for "Keep It Simple, Stupid", is an extremely wise and good principle that is generally viewed by experienced people as very good advice to follow, but even this great principle becomes a danger to a project if taken to the extreme. There is such a thing as "too simple" resulting in a lack of needed functionality.
+[Принцип KISS](https://en.wikipedia.org/wiki/KISS_principle) (Keep It Simple, Stupid), "делай это проще, тупица", является чрезвычайно мудрым и хорошим принципом. Как правило, он рассматривается опытными людьми, как замечательный совет, которому стоит следовать. Однако даже этот совет приводит к опасности для проекта, если он доведен до крайности. Если всё слишком просто, то это может привести к отсутствию необходимой функциональности.
 
-**The wrong way**: Religious following of rules and guidelines. ![Thumbs down](/img/thumbs-down.png)
+**Неверный путь**: Религиозное следование правилам и руководящим принципам. ![Thumbs down](/img/thumbs-down.png)
