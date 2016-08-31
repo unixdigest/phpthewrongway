@@ -1,37 +1,38 @@
-# Being afraid of other peoples code #
+# Опасайтесь кода других программистов. #
 
-An argument often expressed for the usage of a framework is that people don't want to deal with codebases that has been written from scratch by other people.
+Часто аргументом использования фреймворков приводится то, что кодеры не хотят иметь дело с кодовыми базами, написанными с нуля другими людьми.
 
-This is however a strange mentality, mainly encountered amongst web developers in the PHP community, it's one that exudes a lack of professionalism and experience.
+Этот странный менталитет в основном встречается среди веб-разработчиков PHP сообщества, и он говорит о недостатке профессионализма и опыта. 
 
-Writing software and dealing with other peoples code is normal, it's part of the daily work of a professional programmer, it's not something to be afraid of.
+Работа с чужим кодом при разработке приложений, это нормально, это часть ежедневной работы профессионального программиста, это не то, чего стоит бояться.
 
-A professional programmer doesn't look at other peoples code and start whining about how he or she is at the complete mercy of the former programmer, who perhaps is no longer associated with the company or project, and if only the former programmer had used framework A or framework B the day would have been saved.
+Профессионал не начнет ныть, что он теперь полностью зависит от кода бывшего программиста, который, возможно, больше не связан ни с компанией, ни с проектом, и что вот мол если бы он использовал фреймворк A или B, то это сэкономило бы целый день работы.
 
-This is not the mentality of a professional programmer. Nobody does this.
+Это не менталитет профессиональных программистов. Ни кто из них так не делает.
 
-Perhaps the low barrier to entry in PHP web development plays a part in this kind of mentality. Regardless, it is a sign of a person being in the wrong line of work.
+Возможно низкий порог вхождения в PHP дает о себе знать в развитии такого мышления. Но, независимо от этого, такой человек идет по неправильному пути.
 
-A great part of programming deals with people having to work with other peoples code. It's part of the work trying to improve existing codebase and sometimes that involves a complete re-write.
+Основная часть программирования связана с общением людей, работающих с чужим кодом. Это просто часть работы, пытаться улучшить существующую кодовую базу. А иногда и полностью её переделывать.
 
-Take note from the great masters of programming, read the book [Coders at work - Reflections on the Craft of Programming](http://codersatwork.com/).
+Посмотрите, что говорят великие программисты в книге "Кодеры за работой. Размышления о ремесле программирования".
 
-Some of the largest and most successful codebases in world are codebases that has been developed by hundreds of people who have never even met each other, codebases developed without the use of any kind of framework, codebases done entirely in a procedural programming language without the use of anything but the procedural paradigm, and they wouldn't dream of doing it differently.
+Некоторые крупнейшие и наиболее успешные мировые кодовые базы создавали сотни людей, которые никогда даже не встречались друг с другом. Они разрабоаны без применения каких-либо фреймворков, исключительно на процедурном языке программирования, не используя ничего, кроме процедурной парадигмы, и они не мечтали бы делать это иначе.
 
-The [Linux Kernel](https://www.kernel.org/) consist of more than 20 million lines of code all written entirely using procedural programming by more than 14.000 participants without the usage of any kind of framework.
+[Ядро Linux](https://www.kernel.org/) состоит из более чем 20 миллионов строк кода, написаных полностью на процедурной парадигме. Его разрабатывали более чем 14.000 участников, ни используя никаких фреймворков. 
 
-The different [BSD](https://en.wikipedia.org/wiki/Berkeley_Software_Distribution) flavors and most of the [Linux GNU userland](https://www.gnu.org/) has been written entirely using procedural programming without the use of any kind of framework.
+Различные [BSD](https://en.wikipedia.org/wiki/Berkeley_Software_Distribution) пакеты и большинство пользовательских Linux GNU были написаны полностью с использованием процедурного программирования, без фреймворков.
 
-The same goes for hundreds of Open Source projects around that world that eventually was abandoned by the original programmer(s) only to be picked up by other skillful programmers. Many of these projects had very little documentation (if any at all), no comments in the codebase, and no guidelines or help to offer at all.
+То же самое относится и к сотням опенсорсных проектов по всему миру, которые были брошены первоначальными разработчиками, но были подхвачены и развиты другими умелыми программистами. Многие из этих проектов имели очень скудную документацию (если имели вообще), не снабжались комментариями в коде, никакими указаниями, как это использовать, и вообще ни какой помощи.
 
-The entire PHP codebase is done in C, a pure procedural programming language, without the use of any kind of framework what so ever.
+Вся кодовая база PHP, раз на то пошло, сделана на C, чистой процедурной парадигме и без единого фреймворка.
 
-Whenever you define a class in PHP or whenever you fire up that favorite PHP framework of yours, your running on someones else's pure procedural work!
+Всякий раз, когда вы определяете класс или запускаете свой любимый PHP фреймворк, вы пользуетесь плодами чьей то процедурной работы!
 
-Sure, there exists such a thing as horrible code, code that perhaps wasn't designed from the onset, or code that perhaps has outgrown itself many times but the client didn't want to deal with a re-write, code that's so bad you cannot make heads or tail of it any longer, but no kind of framework would have prevented this situation. This is often the natural growth process of a program. Eventually any kind of framework would have been torn to pieces anyway.
+Конечно, встречается и кошмарный, код, который возможно никак не проектировался, либо код, который ужасно разросся, но клиент не захотел его переделывать. В такой кодовой базе вы не можете найти концов, но никакой фреймворк не защитит вас от этой ситуации. Часто это естественный процесс роста программы. В конце концов в таком случае любой фреймворк будет разорван на куски.
 
-And sure there exists horrible spagetti code, but nobody produces horrible spagetti code on purpose. Sometimes this is a result of lack of experience, often times it's the clients fault because they change the specifications several times in the middle of development, either way in both cases, even if a framework was used, the result would still be spagetti code, and no matter how much of the object-oriented paradigm was used, the result would still be spagetti code.
+И, конечно, существует ужасный спагетти-код, но никто не делает его таким специально. Иногда это является результатом отсутствия опыта, иногда виноват клиент, потому что часто меняет спецификацию в процессе развития. Так или иначе, в обоих случаях вы получите спагетти-код не зависимо от того, используете ли фреймворк или нет. И сколько бы вы не старались применить объектно-ориентированное программирование, результат будет тем же - спагетти.
 
-As programmers we all try to prevent these situations, but **this is normal**, this is **the art of programming**, this is part of what it means **to be a programmer**!
+Как программисты, мы все стараемся предотвратить такие ситуации, и это нормально, это искусство программирования, это часть того, что значит **быть программистом**!
 
-**The wrong way**: Being afraid of other peoples code. ![Thumbs down](/img/thumbs-down.png)
+**Неправильный путь**: Бояться чужого кода. ![Thumbs down](/img/thumbs-down.png)
+
