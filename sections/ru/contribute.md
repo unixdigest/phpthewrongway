@@ -1,8 +1,8 @@
-# How to Contribute #
+# Как внести свой вклад #
 
-Contribute on [GitHub](https://github.com/bitflop/phpthewrongway).
+Сотрудничать на [GitHub](https://github.com/bitflop/phpthewrongway).
 
- * Clone and edit.
- * Submit pull request for consideration.
+ * Клонировать и редактировать.
+ * Отправить pull request.
 
-Add sections to the _sections/LANGUAGE_ directory or edit existing sections.
+Добавить или изменить существующие разделы.
