@@ -17,4 +17,5 @@ Du er velkommen til at bidrage.
 * [Dansk](http://www.phpthewrongway.com/da/)
 * [Engelsk](http://www.phpthewrongway.com/)
 * [Portugisisk](http://www.phpthewrongway.com/pt_br/)
+* [Russisk](http://www.phpthewrongway.com/ru/)
 * [Spansk](http://www.phpthewrongway.com/es/)
