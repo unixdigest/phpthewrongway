@@ -12,8 +12,8 @@
 
 ## Переводы ##
 
-* [Danish](http://www.phpthewrongway.com/da/)
-* [English](http://www.phpthewrongway.com/)
-* [Portuguese](http://www.phpthewrongway.com/pt_br/)
-* [Russian](http://www.phpthewrongway.com/)
-* [Spanish](http://www.phpthewrongway.com/es/)
+* [Датский](http://www.phpthewrongway.com/da/)
+* [Английский](http://www.phpthewrongway.com/)
+* [Португальский](http://www.phpthewrongway.com/pt_br/)
+* [Русский](http://www.phpthewrongway.com/)
+* [Испаеский](http://www.phpthewrongway.com/es/)
