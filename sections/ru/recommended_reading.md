@@ -1,49 +1,54 @@
-# Recommended reading #
+# Рекомендуемая литература #
 
-[PHP The Wrong Way on Hacker News](https://news.ycombinator.com/item?id=12318615)
+[PHP: Неправильный путь — на Hacker News](https://news.ycombinator.com/item?id=12318615)
 
-* When "PHP The Wrong Way" was launched it spawned a bunch of comments on Hacker News that has many valuable arguments worth reading.
+* Когда мы запустили наш сайт, на Hacker News появилось много комментариев, в которых отражено немало ценных аргументов.
 
-[Why bad scientific code beats code following "best practices"](https://news.ycombinator.com/item?id=12377385)
+[Почему наипростейший код бъет "лучшие практики"](https://news.ycombinator.com/item?id=12377385)
 
-* Simple-minded, care-free near-incompetence can be better than industrial-strength good intentions paving a superhighway to hell. The "real world" outside the computer is full of such examples.
+* Простодушная, беззаботная, почти некомпетентность может быть лучше, чем вымощеная тротуарной плиткой дорога в ад. В реальном мире полно таких примеров.
 
-[How to program without OOP](https://medium.com/@brianwill/how-to-program-without-oop-74a46e0e47a3#.squpnjz4n)
+[Как программировать без ООП.](https://medium.com/@brianwill/how-to-program-without-oop-74a46e0e47a3#.squpnjz4n)
 
-* As a fresh and alternative perspective Brian Will discusses in three videos why he thinks object-oriented programming is a bad idea to begin with and he finishes up the series with a couple of notes on how non-OOP code should be written.
+* Свежая и альтернативная точка зрения: Брайан Уилл в трёх видео рассуждает о том, что не стоит начинать с ООП. В завершение он приводит несколько замечаний, как писать не ООП код.
 
-[Coders at work - Reflections on the Craft of Programming](http://codersatwork.com/)
+[Кодеры за работой. Размышления о ремесле программирования.](http://codersatwork.com/)
 
-* Based on nearly eighty hours of conversations with fifteen all-time great programmers and computer scientists, the Q&A interviews in Coders at Work provide a multifaceted view into how great programmers learn to program, how they practice their craft, and what they think about the future of programming.
+*  Интервью основаны почти на 80 часах бесед с 15 величайшими программистами и специалистами по информатике. Здесь вы найдёте многогранный рассказ о том, как они учились программировать, как они оттачивали своё мастерство и что они думают о будущем программирования.
 
-[The traits of a proficient programmer](https://www.oreilly.com/ideas/the-traits-of-a-proficient-programmer)
+[Черты квалифицированного программиста.](https://www.oreilly.com/ideas/the-traits-of-a-proficient-programmer)
 
-* Competence means having enough experience and knowledge to get stuff done; proficiency involves knowing why you are doing something in a certain way, and how it fits into the big picture. In other words, a proficient practitioner is always a competent practitioner, but the opposite may not be true.
+* Компетентность означает достаточное количество опыта и знаний для выполнения задачи. Квалифицированность — знание, почему вы делает что-то именно таким способом и как это укладывается в общую картину. Иными словами, квалифицированный практик всегда компетентный практик, но обратное необязательно верно.
 
-[OWASP Secure Coding Guidelines](https://www.owasp.org/images/0/08/OWASP_SCP_Quick_Reference_Guide_v2.pdf)
+[OWASP Руководства по безопасному программированию.](https://www.owasp.org/images/0/08/OWASP_SCP_Quick_Reference_Guide_v2.pdf)
 
-* This technology agnostic document defines a set of general software security coding practices, in a checklist format, that can be integrated into the software development life-cycle. Implementation of these practices will mitigate most common software vulnerabilities.
+* Не зависящий от технологий документ с набором общих методик безопасного программирования в формате чек-листа, который можно внедрять в жизненный цикл разработки ПО. Используя эти методики, вы избежите большинства распространённых уязвимостей.
 
-[Security by Design Principles](https://www.owasp.org/index.php/Security_by_Design_Principles)
+[Принципы безопасного проектирования.](https://www.owasp.org/index.php/Security_by_Design_Principles)
 
-* Web application security is an essential component of any successful project, whether open source PHP applications, web services such as straight through processing, or proprietary business web sites. Hosters (rightly) shun insecure code, and users shun insecure services that lead to fraud. The aim of this Development Guide is to allow businesses, developers, designers and solution architects to produce secure web applications. If done from the earliest stages, secure applications cost about the same to develop as insecure applications, but are far more cost effective in the long run.
+* Безопасность веб-приложений — неотъемлемый компонент любого успешного проекта, будь то open source приложение, веб-сервис сквозной обработки или проприетарные бизнес-сайты. Хостеры совершенно справедливо остерегаются небезопасного кода, пользователи остерегаются небезопасных серверов. Задача этого руководства — помочь бизнесу, разработчикам, дизайнерам и архитекторам решений создавать безопасные веб-приложения. Если пользоваться им с самых ранних стадий, то стоимость создания безопасных приложений будет сравнима со стоимостью небезопасных, при этом в долгосрочной перспективе финансовая эффективность окажется несравнимо выше.
 
-[Survive The Deep End: PHP Security](http://phpsecurity.readthedocs.io/en/latest/)
+[Выживание на глубине: безопасность в PHP.](http://phpsecurity.readthedocs.io/en/latest/)
 
-* As every target of a serious security breach will quickly note in their press releases and websites: Security is very important to them and take it very seriously. Taking this sentiment to heart before you learn it the hard way is recommended.
+* Все жертвы успешных взломов быстро отмечают в пресс-релизах и на сайтах: безопасность для них крайне важна, и они относятся к ней со всей серьёзностью. Примите это близко к сердцу до того, как прочувствуете на практике.
 
-[Refactoring Improving the Design of Existing Code](https://openlibrary.org/books/OL7407595M/Refactoring)
+[Улучшение существующей структуры кода с помощью рефакторинга](https://openlibrary.org/books/OL7407595M/Refactoring)
 
- * Refactoring is about improving the design of existing code. It is the process of changing a software system in such a way that it does not alter the external behavior of the code, yet improves its internal structure. With refactoring you can even take a bad design and rework it into a good one. This book offers a thorough discussion of the principles of refactoring, including where to spot opportunities for refactoring, and how to set up the required tests. There is also a catalog of more than 40 proven refactorings with details as to when and why to use the refactoring, step by step instructions for implementing it, and an example illustrating how it works The book is written using Java as its principle language, but the ideas are applicable to any OO language.
+ * Рефакторинг позволяет улучшить имеющуюся структуру кода. Это изменение системы таким образом, чтобы внешнее поведение кода не менялось, но при этом внутренняя структура становилось более гармоничной. С помощью рефакторинга вы даже можете превратить плохую структуру в хорошую. В книге обсуждаются принципы рефакторинга, рассказывается, где его стоит применять в первую очередь и как настраивать нужные тесты. Также приведён каталог более чем из 40 проверенных рефакторингов с описанием, когда и зачем их применять, и пошаговые инструкции по внедрению. Заодно иллюстрируются схемы работы рефакторингов. Книга написана на примере Java, но её идеи применимы в любом другом ОО-языке.
 
-[The Practice of Programming](https://openlibrary.org/works/OL15333872W/The_Practice_of_Programming_%28Addison-Wesley_Professional_Computing_Series%29)
+[Практика программирования.](https://openlibrary.org/works/OL15333872W/The_Practice_of_Programming_%28Addison-Wesley_Professional_Computing_Series%29)
 
- * A compendium of practical matters of importance to working programmers.
+ * Сборник практических вопросов, актуальных для программистов.
 
-[The pragmatic programmer](https://openlibrary.org/works/OL5748544W/The_pragmatic_programmer)
+[Прагматичный программист](https://openlibrary.org/works/OL5748544W/The_pragmatic_programmer)
 
- * The Pragmatic Programmer: From Journeyman to Master examines the core programming process: taking a requirement and producing working, maintainable code that delights its users. It covers topics ranging from personal responsibility and career development to architectural techniques for keeping code flexible, easy to adapt, and reuse.
+ * Здесь исследуются ключевые процессы программирования, от подмастерья до мастера: выработка требований, выполнение работ, правильное сопровождение кода. Рассматриваются самые разные вопросы, начиная с личной ответственности и развития карьеры и заканчивая методикой разработки архитектуры ради сохранения гибкости, простоты адаптации и многократного использования кода.
 
-[Understanding programming languages](https://openlibrary.org/works/OL1875800W/Understanding_programming_languages)
+[Понимание языков программирования](https://openlibrary.org/works/OL1875800W/Understanding_programming_languages)
 
- * The choice of a programming language is one of the most important factors that influence the ultimate quality of a software system. Unfortunately, too many programmers have poor linguistic skills: they are passionately in love with their "native" language, but are not able to analyze language constraints. "Understanding Programming Languages" is written for the purpose of explaining what alternatives are available to the language designer; how language constructs should be used in terms of safety and readability; how language constructs are implemented and which ones can be efficiently complied; and what is the role of language in expressing and enforcing abstractions.
+ * Выбор языка программирования — один из важнейших факторов, влияющих на общее качество программной системы. К сожалению, слишком многим программистам не хватает лингвистических навыков: они влюбляются в свой «нативный» язык и не способны критически анализировать его ограничения. Книга «Понимание языков программирования» написана, чтобы объяснить:
+
+какие альтернативы доступны разработчикам,
+какие языковые конструкции лучше использовать для повышения безопасности и читабельности,
+как эти конструкции реализованы и как их можно эффективно компилировать,
+какова роль языка в выражении и усилении абстракций.
