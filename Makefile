@@ -29,11 +29,11 @@ DATE_FORMAT_ES = +%Y-%m-%d
 
 
 # Portuguese
-TOP_FILE_PT_BR = inc/logo_and_date_pt_BR.txt
-TEMPLATE_PT_BR = inc/default_pt_BR.html5
-FINAL_OUTPUT_PT_BR = $(OUTPUT_DIR)pt_BR/$(FILENAME)
-LAST_UPDATED_STR_PT_BR = Última atualização:
-DATE_FORMAT_PT_BR = +%Y-%m-%d
+TOP_FILE_pt_br = inc/logo_and_date_pt_br.txt
+TEMPLATE_pt_br = inc/default_pt_br.html5
+FINAL_OUTPUT_pt_br = $(OUTPUT_DIR)pt_br/$(FILENAME)
+LAST_UPDATED_STR_pt_br = Última atualização:
+DATE_FORMAT_pt_br = +%Y-%m-%d
 
 # Setup for Pandoc
 html-da:
@@ -48,9 +48,9 @@ html-es:
 	pandoc -s --highlight-style $(HTML_CODE_STYLE) -S -w html5 --template $(TEMPLATE_ES) --toc -c $(HTML_CSS) -o $(FINAL_OUTPUT_ES).html $(TOP_FILE_ES) sections/es/welcome.md sections/es/the_danger_of_extremism.md sections/es/always_use_a_framework.md sections/es/always_use_a_design_pattern.md sections/es/always_use_oop.md sections/es/being_afraid_of_other_peoples_code.md sections/es/follow_the_php_fig_standards.md sections/es/neglecting_security.md sections/es/faq.md sections/es/recommended_reading.md sections/es/contribute.md
 	grep -rl "##DATEFIELD##" $(FINAL_OUTPUT_ES).html | xargs sed -i "s/##DATEFIELD##/$(LAST_UPDATED_STR_ES) `date '$(DATE_FORMAT_ES)'`/"
 
-html-pt_BR:
-	pandoc -s --highlight-style $(HTML_CODE_STYLE) -S -w html5 --template $(TEMPLATE_PT_BR) --toc -c $(HTML_CSS) -o $(FINAL_OUTPUT_PT_BR).html $(TOP_FILE_PT_BR) sections/pt_BR/welcome.md sections/pt_BR/the_danger_of_extremism.md sections/pt_BR/always_use_a_framework.md sections/pt_BR/always_use_a_design_pattern.md sections/pt_BR/always_use_oop.md sections/pt_BR/being_afraid_of_other_peoples_code.md sections/pt_BR/follow_the_php_fig_standards.md sections/pt_BR/neglecting_security.md sections/pt_BR/faq.md sections/pt_BR/recommended_reading.md sections/pt_BR/contribute.md
-	grep -rl "##DATEFIELD##" $(FINAL_OUTPUT_PT_BR).html | xargs sed -i "s/##DATEFIELD##/$(LAST_UPDATED_STR_PT_BR) `date '$(DATE_FORMAT_PT_BR)'`/"
+html-pt_br:
+	pandoc -s --highlight-style $(HTML_CODE_STYLE) -S -w html5 --template $(TEMPLATE_pt_br) --toc -c $(HTML_CSS) -o $(FINAL_OUTPUT_pt_br).html $(TOP_FILE_pt_br) sections/pt_br/welcome.md sections/pt_br/the_danger_of_extremism.md sections/pt_br/always_use_a_framework.md sections/pt_br/always_use_a_design_pattern.md sections/pt_br/always_use_oop.md sections/pt_br/being_afraid_of_other_peoples_code.md sections/pt_br/follow_the_php_fig_standards.md sections/pt_br/neglecting_security.md sections/pt_br/faq.md sections/pt_br/recommended_reading.md sections/pt_br/contribute.md
+	grep -rl "##DATEFIELD##" $(FINAL_OUTPUT_pt_br).html | xargs sed -i "s/##DATEFIELD##/$(LAST_UPDATED_STR_pt_br) `date '$(DATE_FORMAT_pt_br)'`/"
 
 
-all: html-da html-en html-es html-pt_BR
+all: html-da html-en html-es html-pt_br

@@ -15,5 +15,6 @@ Siéntete libre de contribuir.
 ## Traducciones ##
 
 * [Danés](http://www.phpthewrongway.com/da/)
-* [Inglés](http://www.phpthewrongway.com/)
 * [Español](http://www.phpthewrongway.com/es/)
+* [Inglés](http://www.phpthewrongway.com/)
+* [Portugués](http://www.phpthewrongway.com/pt_br/)
