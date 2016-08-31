@@ -1,37 +1,37 @@
 # FAQ #
 
-It's easy to misunderstand a written document so let's clarify some issues.
+Всё вышеописанное может быть истолкованно неверно — давайте проясним некоторые вопросы.
 
-**Q:** _What's the point of this site and why the confrontational approach?_
+**Q:** _В чем смысл этого сайта и почему конфронтационный подход?_
 
-**A:** To create discussion and thought about current practices and extreme views.
+**A:** Для того, чтобы начать дискуссию о современных методиках и крайних точках зрения.
 
-**Q:** _Are you saying the object-oriented programming is bad or wrong?_
+**Q:** _Вы говорите, объектно-ориентированное программирование плохо или неправильно?_
 
-**A:** No of course not! We're saying always thinking in and always using only the object-oriented paradigm in solving problems is bad. Whenever you think in black and white only, that's wrong.
+**A:** Нет, конечно, нет! Мы говорим: не стоит решать все проблемы только использованием объектной парадигмы. Нельзя делить всё на чёрное и белое, это неправильно.
 
-Even within a single application different problems exist. Multi-paradigm is sometimes the best solution, it all depends on the problem you're trying to solve.
+В рамках одного приложения могут существовать самые разные проблемы. Иногда мультипарадигма - лучшее решение, это зависит от поставленной задачи
 
-Whenever you force-feed a specific problem to an unfit solution bad things happen.
+А если вы насильно решаете проблему с помощью неподходящего способа, можгут случиться плохие вещи.
 
-**Q:** _Are you saying that all frameworks are bad?_
+**Q:** _Вы говорите, что фреймворки — зло?_
 
-**A:** We're not trying to judge specific frameworks. We're dealing with the issue of always using a framework on top of PHP.
+**A:** Мы не пытаемся судить конкретные фреймворки. Мы осуждаем лишь их постоянное использование поверх PHP.
 
-**Q:** _If a framework can get me up and running quickly, why is that so bad?_
+**Q:** _Если фреймворк помогает мне быстро начать и продолжить работать, что в этом плохого?_
 
-If you have analyzed the situation and long term implications and you then see that "getting up and running quickly" is the only problem you ever have to deal with, then it's not bad, but then we're hardly dealing with programming or software development, we're dealing mostly with point-and-click solutions.
+Если вы проанализируете ситуацию и долгосрочные последствия и поймёте, что "быстро начать и продолжить работать" — единственная проблема, которую вы когда-либо решали, то в этом нет ничего плохого. Но тогда мы говорим не о программировании или разработке ПО, а об использовании point-and-click решений.
 
-Getting up and running quickly isn't designing software, it mostly means you haven't analyzed the problem you're facing and you haven't understood the long term implications of your choice.
+Быстро начать и продолжить работать, это не проектирование приложения. Это значит, что вы не анализировали проблему и не осознали долгосрочных последствий своего выбора.
 
-**Q:** _Are you saying third party packages are bad?_
+**Q:** _Вы хотите сказать, что сторонние пакеты — это плохо?_
 
-**A:** No. We're promoting the use of third party libraries. Code that you can easily integrate into your own projects without enforcing any limitations or restrictions what so ever. Those are great!
+**A:** Нет. Мы рекомендуем использовать сторонние библиотеки. Код, который вы можете легко и без ограничений внедрять в свои проекты. Это здорово!
 
-**Q:** _Who are you?_
+**Q:** _Кто вы?_
 
-**A:** This website is about ideas and combating extremism in the PHP community, it's not about personal fame or recognition. Naming people will only shift the focus from the problems addressed on the website to the people addressing the problems. Just stay focused on the ideas.
+**A:** Наш сайт посвящён идее борьбы с экстремизмом в PHP-сообществе, а не личному продвижению или признания. Если мы раскроем имена — это лишь отвлечёт внимание от поднятых на сайте проблем. Давайте просто оставаться сосредоточенными на идеях.
 
-**Q:** _What is your experience in software development?_
+**Q:** _Каков ваш опыт в разработке программного обеспечения?_
 
-**A:** The ideas, thoughts, and conclusions expressed on this website doesn't take much experience to reach if you just stay focused on the main theme which is to always do a particular thing because other people says so.
+**A:** Чтобы прийти к идеям, мыслям и решениям, отражённым на нашем сайте, не требуется большого опыта, если вы всегда делаете то, что говорят другие.
