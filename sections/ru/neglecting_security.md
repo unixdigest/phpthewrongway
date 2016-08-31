@@ -1,29 +1,29 @@
-# Neglecting security #
+# Пренебрежение безопасностью #
 
-> The trouble with programmers is that you can never tell what a programmer is doing until it’s too late.
+> С программистами есть одна проблема: вы никогда не знаете, что делает программист, пока не становится слишком поздно.
 >
-> -- Seymour Cray on [defprogramming.com](http://www.defprogramming.com/q/6e61ae30a855/)
+> -- Сеймур Крей в [defprogramming.com](http://www.defprogramming.com/q/6e61ae30a855/)
 
-Secure coding is the practice of writing programs that are resistant to attack by malicious or mischievous people or other programs. Secure coding helps protect data from theft or corruption. In addition, an insecure program can provide access for an attacker to take control of a server or a user's identity, resulting in anything from a denial of service to a single user to the compromise of secrets, loss of service, or damage to the systems of thousands of users.
+Безопасный код, это практика написания программ, устойчивых к атакам злонамеренных хакеров или просто развлекающихся людей, а так же вредоносных программ. Безопасное кодирование помогает защитить данные от кражи или повреждения. Кроме того, небезопасная программа может предоставить злоумышленнику доступ к серверу или учетным данным пользователя, в результате чего наступит отказ в его обслуживании, доступ к его секретной информации, а так же может выйти из строя вся служба или повредиться тысячи аккаунтов. 
 
-Every computer program is a potential target for a security attack. Attackers will try to find security vulnerabilities in your applications. They will then try to use these vulnerabilities to steal secrets, corrupt programs and data, and gain control of servers and networks. Your customers property and your reputation are at stake.
+Каждая компьютерная программа является потенциальной мишенью для атаки. Злоумышленники будут пытаться найти уязвимости в системе безопасности ваших приложений, чтобы похитить важную информацию, нарушить целостность программ и данных, получить контроль над серверами и сетями. Собственность клиентов и ваша репутация под угрозой.
 
-**Security is not something that can be added to software!**
+Безопасность, это не то, что можно добавить к программному обеспечению!
 
-An insecure application may require extensive redesign to secure it. You must identify the nature of the threats to your software and incorporate secure coding practices from the beginning and throughout the planning and development of your application.
+Небезопасное приложение может потребовать обширной редизайн, чтобы обеспечить её. Вы должны определить характер угрозы для вашего программного обеспечения и использовать практику безопасного кодирования начиная с проектирования, и на протяжении всего развития вашего приложения.
 
-Securing critical software resources is more important than ever as the focus of attackers has steadily moved toward the application layer. A 2009 SANS study found that attacks against web applications constitute more than 60% of the total attack attempts observed on the Internet.
+Защита критически важных ресурсов программного обеспечения сегодня является важным, как никогда, так как внимание злоумышленников постоянно перемещается на прикладной уровень. Исследование, проведенное SANS 2009 показало, что атаки на веб-приложения составляют более 60% от общего количества атак, наблюдаемых в Интернете.
 
-PHP is unusual in that it is both a programming language and a web framework at the same time. This means that PHP has a lot of web features built-in to the language that makes it very easy to write insecure code.
+PHP необычен тем, что это одновременно и язык программирования и веб-платформа. Это означает, что PHP имеет много веб-функций, встроенных в язык, что делает возможным очень просто написать небезопасный код.
 
-## Secure by default ##
+## Безопасность по умолчанию ##
 
-> Complexity kills. It sucks the life out of developers, it makes products difficult to plan, build and test, it introduces security challenges and it causes end-user and administrator frustration.
+> Сложность убивает. Она высасывает жизнь из разработчиков, затрудняет планирование продуктов, их создание и тестирование, ставит перед нами вызовы в сфере безопасности и приводит конечных пользователей и администраторов к разочарованию.
 >
-> -- [Ray Ozzie](www.azquotes.com/quote/585933)
+> -- [Рей Оззи](www.azquotes.com/quote/585933)
 
-In order for applications to be designed and implemented with proper security requirements, secure coding practices and a focus on security risks must be integrated into the day-to-day operations, thoughts, and the development processes themselves.
+Для того, чтобы разрабатывать приложения с надлежащими требованиями безопасности, методы безопасного кодирования с акцентами на всевозможные угрозы должны постоянно, изо дня в день, внедряться в процессы, операции и даже мысли.
 
-Generally, it is much less expensive to build secure software than to correct security issues after the software package has been completed, not to mention the costs that may be associated with a security breach.
+Как правило, гораздо дешевле построить безопасное приложение изначально, чем исправлять проблемы безопасности после того, как пакет программного обеспечения уже завершен. Не говоря уже о том, что расходы могут быть связаны с нарушением безопасности.
 
-**The wrong way**: Not developing secure software by default. ![Thumbs down](/img/thumbs-down.png)
+**Неправильный путь**: Не разрабатывать приложение безопасным по умолчанию. ![Thumbs down](/img/thumbs-down.png)
