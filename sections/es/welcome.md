@@ -17,4 +17,5 @@ Siéntete libre de contribuir.
 * [Danés](http://www.phpthewrongway.com/da/)
 * [Español](http://www.phpthewrongway.com/es/)
 * [Inglés](http://www.phpthewrongway.com/)
+* [Ruso](http://www.phpthewrongway.com/ru)
 * [Portugués](http://www.phpthewrongway.com/pt_br/)

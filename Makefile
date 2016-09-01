@@ -27,13 +27,19 @@ FINAL_OUTPUT_ES = $(OUTPUT_DIR)es/$(FILENAME)
 LAST_UPDATED_STR_ES = Última actualización:
 DATE_FORMAT_ES = +%Y-%m-%d
 
-
 # Portuguese
 TOP_FILE_pt_br = inc/logo_and_date_pt_br.txt
 TEMPLATE_pt_br = inc/default_pt_br.html5
 FINAL_OUTPUT_pt_br = $(OUTPUT_DIR)pt_br/$(FILENAME)
 LAST_UPDATED_STR_pt_br = Última atualização:
 DATE_FORMAT_pt_br = +%Y-%m-%d
+
+# Russian
+TOP_FILE_ES = inc/logo_and_date_ru.txt
+TEMPLATE_ES = inc/default_ru.html5
+FINAL_OUTPUT_ES = $(OUTPUT_DIR)ru/$(FILENAME)
+LAST_UPDATED_STR_ES = Última actualización:
+DATE_FORMAT_ES = +%Y-%m-%d
 
 # Setup for Pandoc
 html-da:
@@ -52,5 +58,8 @@ html-pt_br:
 	pandoc -s --highlight-style $(HTML_CODE_STYLE) -S -w html5 --template $(TEMPLATE_pt_br) --toc -c $(HTML_CSS) -o $(FINAL_OUTPUT_pt_br).html $(TOP_FILE_pt_br) sections/pt_br/welcome.md sections/pt_br/the_danger_of_extremism.md sections/pt_br/always_use_a_framework.md sections/pt_br/always_use_a_design_pattern.md sections/pt_br/always_use_oop.md sections/pt_br/being_afraid_of_other_peoples_code.md sections/pt_br/follow_the_php_fig_standards.md sections/pt_br/neglecting_security.md sections/pt_br/faq.md sections/pt_br/recommended_reading.md sections/pt_br/contribute.md
 	grep -rl "##DATEFIELD##" $(FINAL_OUTPUT_pt_br).html | xargs sed -i "s/##DATEFIELD##/$(LAST_UPDATED_STR_pt_br) `date '$(DATE_FORMAT_pt_br)'`/"
 
+html-ru:
+	pandoc -s --highlight-style $(HTML_CODE_STYLE) -S -w html5 --template $(TEMPLATE_ru) --toc -c $(HTML_CSS) -o $(FINAL_OUTPUT_ru).html $(TOP_FILE_ru) sections/ru/welcome.md sections/ru/the_danger_of_extremism.md sections/ru/always_use_a_framework.md sections/ru/always_use_a_design_pattern.md sections/ru/always_use_oop.md sections/ru/being_afraid_of_other_peoples_code.md sections/ru/follow_the_php_fig_standards.md sections/ru/neglecting_security.md sections/ru/faq.md sections/ru/recommended_reading.md sections/ru/contribute.md
+	grep -rl "##DATEFIELD##" $(FINAL_OUTPUT_pt_br).html | xargs sed -i "s/##DATEFIELD##/$(LAST_UPDATED_STR_pt_br) `date '$(DATE_FORMAT_pt_br)'`/"
 
-all: html-da html-en html-es html-pt_br
+all: html-da html-en html-es html-pt_br html-ru

@@ -15,4 +15,5 @@ Sinta-se livre para contribuir.
 * [Dinamarquês](http://www.phpthewrongway.com/da/)
 * [Espanhol](http://www.phpthewrongway.com/es/)
 * [Inglês](http://www.phpthewrongway.com/)
+* [Russo](http://www.phpthewrongway.com/ru)
 * [Português](http://www.phpthewrongway.com/pt_BR)
