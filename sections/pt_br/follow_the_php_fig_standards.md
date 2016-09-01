@@ -1,4 +1,4 @@
-# Follow the PHP-FIG standards #
+# Siga os padrões PHP-FIG #
 
 The FIG stands for "Framework Interoperability Group".
 

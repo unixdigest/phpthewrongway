@@ -1,4 +1,4 @@
-# Always use a framework #
+# Sempre use um framework #
 
 > All general purpose PHP frameworks suck!
 >
