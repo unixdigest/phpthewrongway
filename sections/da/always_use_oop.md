@@ -68,4 +68,4 @@ Objektorienteret programmering handler om at organisere kode på en anden måde 
 >
 > -- Paul Graham i [Ansi Common Lisp](https://openlibrary.org/works/OL7944696W/ANSI_Common_Lisp)
 
-**Den forkerte måde**: Altid at bruge objektoriented programmering. ![Thumbs down](/img/thumbs-down.png)
+**Den forkerte måde**: Altid at bruge objektorienteret programmering. ![Thumbs down](/img/thumbs-down.png)
