@@ -18,7 +18,7 @@ Take note from the great masters of programming, read the book [Coders at work -
 
 Some of the largest and most successful codebases in world are codebases that has been developed by hundreds of people who have never even met each other, codebases developed without the use of any kind of framework, codebases done entirely in a procedural programming language without the use of anything but the procedural paradigm, and they wouldn't dream of doing it differently.
 
-The [Linux Kernel](https://www.kernel.org/) consists of more than 20 million lines of code all written entirely using procedural programming by more than 14,000 participants without the use of any kind of framework.
+The [Linux Kernel](https://www.kernel.org/) consists of more than 20 million lines of code all written entirely using procedural programming by more than 14 000 participants without the use of any kind of framework.
 
 The different [BSD](https://en.wikipedia.org/wiki/Berkeley_Software_Distribution) flavors and most of the [Linux GNU userland](https://www.gnu.org/) has been written entirely using procedural programming without the use of any kind of framework.
 
@@ -26,7 +26,7 @@ The same goes for hundreds of Open Source projects around the world that were ev
 
 The entire PHP codebase is done in C, a pure procedural programming language, without the use of any kind of framework whatsoever.
 
-Whenever you define a class in PHP or whenever you fire up that favorite PHP framework of yours, you're running on someones else's pure procedural work!
+Whenever you define a class in PHP or whenever you fire up that favorite PHP framework of yours, you're running on someone else's pure procedural work!
 
 Sure, there exists such a thing as horrible code, code that perhaps wasn't designed from the onset, or code that perhaps has outgrown itself many times but the client didn't want to deal with a re-write, code that's so bad you cannot make heads or tail of it any longer, but no kind of framework would have prevented this situation. This is often the natural growth process of a program. Eventually any kind of framework would have been torn to pieces anyway.
 
