@@ -69,4 +69,4 @@
 >
 > -- Пол Грэм в [Ansi Common Lisp](https://openlibrary.org/works/OL7944696W/ANSI_Common_Lisp)
 
-**Неправильный путь**: Всегда использовать объектно-ориентированное программирование. ![Thumbs down](/img/thumbs-down.png)[Thumbs down](/img/thumbs-down.png)
+**Неправильный путь**: Всегда использовать объектно-ориентированное программирование. ![Thumbs down](/img/thumbs-down.png)
