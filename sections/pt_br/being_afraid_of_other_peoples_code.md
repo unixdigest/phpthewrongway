@@ -1,4 +1,4 @@
-# Being afraid of other peoples code #
+# Ter medo do código de outras pessoas #
 
 An argument often expressed for the usage of a framework is that people don't want to deal with codebases that has been written from scratch by other people.
 
