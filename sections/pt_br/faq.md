@@ -1,37 +1,37 @@
 # FAQ #
 
-It's easy to misunderstand a written document so let's clarify some issues.
+É fácil interpretar de forma errada um documento escrito, então vamos esclarecer algumas coisas.
 
-**Q:** _What's the point of this site and why the confrontational approach?_
+**P:** _Qual é a intenção desse site e por que essa abordagem de confronto?_
 
-**A:** To create discussion and thought about current practices and extreme views.
+**R:** Para criar uma discussão e reflexão sobre as práticas atuais e visões extremas.
 
-**Q:** _Are you saying the object-oriented programming is bad or wrong?_
+**P:** _Você está dizendo que a programação orientada à objetos é ruim ou errada?_
 
-**A:** No of course not! We're saying always thinking in and always using only the object-oriented paradigm in solving problems is bad. Whenever you think in black and white only, that's wrong.
+**R:** Não, claro que não! Nós estamos dizendo que "sempre pensar e sempre usar somente o paradigma de orientação à objetos na resolução de problemas é ruim". Sempre que você pensa em preto e branco somente, isso é errado.
 
-Even within a single application different problems exist. Multi-paradigm is sometimes the best solution, it all depends on the problem you're trying to solve.
+Mesmo dentro de uma única aplicação existem diferentes problemas. Multi-paradigma é, por vezes, a melhor solução, tudo depende do problema que você está tentando resolver.
 
-Whenever you force-feed a specific problem to an unfit solution bad things happen.
+Sempre que você força soluções impróprias para um problema específico, coisas ruins acontecem.
 
-**Q:** _Are you saying that all frameworks are bad?_
+**P:** _Você está dizendo que todos os frameworks são ruins?_
 
-**A:** We're not trying to judge specific frameworks. We're dealing with the issue of always using a framework on top of PHP.
+**R:** Nós não estamos tentando julgar frameworks específicos. Estamos lidando com a questão de sempre usar um framework para trabalhar com PHP.
 
-**Q:** _If a framework can get me up and running quickly, why is that so bad?_
+**P:** _Se um framework pode me ajudar e executa rápido, por que é tão ruim?_
 
-If you have analyzed the situation and long term implications and you then see that "getting up and running quickly" is the only problem you ever have to deal with, then it's not bad, but then we're hardly dealing with programming or software development, we're dealing mostly with point-and-click solutions.
+**R:** Se você analisar a situação e as implicações a longo prazo e, em seguida, ver que "executar rapidamente" é o único problema que você sempre tem que lidar, não é ruim, mas então não estamos trabalhando com programação ou desenvolvimento de software, estamos lidando principalmente com soluções "apontar e clicar".
 
-Getting up and running quickly isn't designing software, it mostly means you haven't analyzed the problem you're facing and you haven't understood the long term implications of your choice.
+Executar rapidamente não é projetar um software, isso significa, principalmente, que você não analisou o problema que você está enfrentando e você não ter entendeu as implicações a longo prazo de sua escolha.
 
-**Q:** _Are you saying third party packages are bad?_
+**P:** _Você está dizendo que bibliotecas de terceiros são ruins?_
 
-**A:** No. We're promoting the use of third party libraries. Code that you can easily integrate into your own projects without enforcing any limitations or restrictions what so ever. Those are great!
+**R:** Não. Nós estamos promovendo o uso de bibliotecas de terceiros. O código que você pode facilmente integrar em seus próprios projetos sem nunca impor quaisquer limitações ou restrições. Esses são ótimos!
 
-**Q:** _Who are you?_
+**P:** _Quem é você?_
 
-**A:** This website is about ideas and combating extremism in the PHP community, it's not about personal fame or recognition. Naming people will only shift the focus from the problems addressed on the website to the people addressing the problems. Just stay focused on the ideas.
+**R:** Este site é sobre algumas ideias e sobre combater o extremismo na comunidade PHP, não é sobre a fama pessoal ou reconhecimento. Nomear pessoas só vai mudar o foco dos problemas abordados no site para as pessoas que tratam os problemas. Vamos manter o foco nas idéias.
 
-**Q:** _What is your experience in software development?_
+**P:** _Qual é a sua experiência no desenvolvimento de software?_
 
-**A:** The ideas, thoughts, and conclusions expressed on this website doesn't take much experience to reach if you just stay focused on the main theme which is to always do a particular thing because other people says so.
+**R:** As ideias, pensamentos e conclusões expressas neste site não necessitam de muita experiência para serem alcançadas, se você apenas manter o foco sobre o tema principal, que é fazer sempre uma coisa em particular porque outras pessoas dizem isso.
