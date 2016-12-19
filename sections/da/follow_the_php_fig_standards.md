@@ -22,4 +22,4 @@ Hvis du vælger at adoptere de standarder, der er udviklet af PHP-FIG, er du nø
 
 Mange virksomheder kræver meget skalerbar, run-time kritisk og omkostningseffektiv software, der simpelthen ikke kan udvikles ved hjælp af disse standarder fra PHP-FIG.
 
-**Den forkerte måde**: At følge PHP-FIG udover PSR-1 og PSR-2. ![Thumbs down](/img/thumbs-down.png)
+**Den forkerte måde**: At følge PHP-FIG religiøst. ![Thumbs down](/img/thumbs-down.png)
