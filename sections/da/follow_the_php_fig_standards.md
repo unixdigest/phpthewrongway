@@ -1,4 +1,4 @@
-# At følge PHP-FIG standarderne #
+# At følge PHP-FIG standarderne religiøst #
 
 FIG står for "Framework Interoperability Group".
 
