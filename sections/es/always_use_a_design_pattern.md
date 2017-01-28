@@ -10,7 +10,7 @@ PHP soporta el paradigma imperativo, funcional, orientado a objetos, procedural 
 
 PHP se trata de libertad, soluciones rápidas y escalables, teniendo muchas formas de enfrentar los problemas.
 
-Cuando intentamos mejorarnos a nosotros mismo, y en este caso específico; nuestro código, aveces nos enganchamos en la filosofía de un patrón o idea en particular, tendiendo a olvidar cómo pensar de forma práctica.
+Cuando intentamos mejorarnos a nosotros mismo, y en este caso específico; nuestro código, a veces nos enganchamos en la filosofía de un patrón o idea en particular, tendiendo a olvidar cómo pensar de forma práctica.
 
 > Cuando veo patrones en mis programas, lo considero como signo de problemas. La forma de un programa solo debería reflejar el problema que necesita resolver. Cualquier otra regularidad en el código es un signo, al menos para mí, de que estoy usando abstraciones que no son los suficientemente potentes -  a menudo que estoy generando manualmente las expansiones de algunos macros que tengo que escribir.
 >
