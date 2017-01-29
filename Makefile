@@ -43,6 +43,7 @@ DATE_FORMAT_RU = +%Y-%m-%d
 
 # Setup for Pandoc
 html-da:
+	mkdir -p $(OUTPUT_DIR)da
 	pandoc -s --highlight-style $(HTML_CODE_STYLE) -S -w html5 --template $(TEMPLATE_DA) --toc -c $(HTML_CSS) -o $(FINAL_OUTPUT_DA).html $(TOP_FILE_DA) sections/da/welcome.md sections/da/the_danger_of_extremism.md sections/da/always_use_a_framework.md sections/da/always_use_a_design_pattern.md sections/da/always_use_oop.md sections/da/being_afraid_of_other_peoples_code.md sections/da/follow_the_php_fig_standards.md sections/da/neglecting_security.md sections/da/faq.md sections/da/recommended_reading.md sections/da/contribute.md
 	grep -rl "##DATEFIELD##" $(FINAL_OUTPUT_DA).html | xargs sed -i "s/##DATEFIELD##/$(LAST_UPDATED_STR_DA) `date '$(DATE_FORMAT_DA)'`/"
 
@@ -51,14 +52,17 @@ html-en:
 	grep -rl "##DATEFIELD##" $(FINAL_OUTPUT_EN).html | xargs sed -i "s/##DATEFIELD##/$(LAST_UPDATED_STR_EN) `date '$(DATE_FORMAT_EN)'`/"
 
 html-es:
+	mkdir -p $(OUTPUT_DIR)es
 	pandoc -s --highlight-style $(HTML_CODE_STYLE) -S -w html5 --template $(TEMPLATE_ES) --toc -c $(HTML_CSS) -o $(FINAL_OUTPUT_ES).html $(TOP_FILE_ES) sections/es/welcome.md sections/es/the_danger_of_extremism.md sections/es/always_use_a_framework.md sections/es/always_use_a_design_pattern.md sections/es/always_use_oop.md sections/es/being_afraid_of_other_peoples_code.md sections/es/follow_the_php_fig_standards.md sections/es/neglecting_security.md sections/es/faq.md sections/es/recommended_reading.md sections/es/contribute.md
 	grep -rl "##DATEFIELD##" $(FINAL_OUTPUT_ES).html | xargs sed -i "s/##DATEFIELD##/$(LAST_UPDATED_STR_ES) `date '$(DATE_FORMAT_ES)'`/"
 
 html-pt_br:
+	mkdir -p $(OUTPUT_DIR)pt_br
 	pandoc -s --highlight-style $(HTML_CODE_STYLE) -S -w html5 --template $(TEMPLATE_PT_BR) --toc -c $(HTML_CSS) -o $(FINAL_OUTPUT_PT_BR).html $(TOP_FILE_PT_BR) sections/pt_br/welcome.md sections/pt_br/the_danger_of_extremism.md sections/pt_br/always_use_a_framework.md sections/pt_br/always_use_a_design_pattern.md sections/pt_br/always_use_oop.md sections/pt_br/being_afraid_of_other_peoples_code.md sections/pt_br/follow_the_php_fig_standards.md sections/pt_br/neglecting_security.md sections/pt_br/faq.md sections/pt_br/recommended_reading.md sections/pt_br/contribute.md
 	grep -rl "##DATEFIELD##" $(FINAL_OUTPUT_PT_BR).html | xargs sed -i "s/##DATEFIELD##/$(LAST_UPDATED_STR_PT_BR) `date '$(DATE_FORMAT_PT_BR)'`/"
 
 html-ru:
+	mkdir -p $(OUTPUT_DIR)ru
 	pandoc -s --highlight-style $(HTML_CODE_STYLE) -S -w html5 --template $(TEMPLATE_RU) --toc -c $(HTML_CSS) -o $(FINAL_OUTPUT_RU).html $(TOP_FILE_RU) sections/ru/welcome.md sections/ru/the_danger_of_extremism.md sections/ru/always_use_a_framework.md sections/ru/always_use_a_design_pattern.md sections/ru/always_use_oop.md sections/ru/being_afraid_of_other_peoples_code.md sections/ru/follow_the_php_fig_standards.md sections/ru/neglecting_security.md sections/ru/faq.md sections/ru/recommended_reading.md sections/ru/contribute.md
 	grep -rl "##DATEFIELD##" $(FINAL_OUTPUT_RU).html | xargs sed -i "s/##DATEFIELD##/$(LAST_UPDATED_STR_RU) `date '$(DATE_FORMAT_RU)'`/"
 
