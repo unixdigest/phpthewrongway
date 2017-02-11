@@ -1,12 +1,12 @@
-# Always use object-oriented Programming #
+# Siempre usa Programación Orientada a Objetos #
 
-> The problem with object-oriented languages is they’ve got all this implicit environment that they carry around with them. You wanted a banana but what you got was a gorilla holding the banana and the entire jungle.
+> El problema con los lenguajes de programación orientado a objetos es que tienen todo este entorno implícito que llevan con ellos. Tu buscas una banana pero lo que encuentras es un gorila sosteniendo la banana y en medio de la selva.
 >
-> -- Joe Armstrong in [Coders at work - Reflections on the Craft of Programming](http://codersatwork.com/)
+> -- Joe Armstrong en [Coders at work - Reflections on the Craft of Programming](http://codersatwork.com/)
 
-> Abstraction is powerful. What I'm really allergic to, and what I had a reaction to in the '90s, was all the CORBA, COM, DCOM, object-oriented nonsense. Every startup of the day had some crazy thing that would take 200.000 method calls to start up and print "Hello world". That's a travesty! You don't want to be a programmer associated with that sort of thing.
+> La abstracción es poderosa. A lo que en realidad soy alérgico, y a lo que reaccioné en los años noventa, fue el sin sentido de: CORBA, COM, DCOM y orientado a objetos. Cada nuevo día me encontraba con una cosa loca, necesitaría 200.000 llamadas a métodos para comenzar e imprimir un "Hola Mundo". ¡Eso es un travesti! Tu no deseas se un programador asociado a este tipo de cosas.
 >
-> -- Brendan Eich in [Coders at work - Reflections on the Craft of Programming](http://codersatwork.com/)
+> -- Brendan Eich en [Coders at work - Reflections on the Craft of Programming](http://codersatwork.com/)
 
 Many software developers, and many companies, feel that object-oriented programming is the only reasonable way to develop software today. Any one who argues against object-oriented programming is immediately made conscious of the fact that they are arguing against the "conventional wisdom" of the industry.
 
