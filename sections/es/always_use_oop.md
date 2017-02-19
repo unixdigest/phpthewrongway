@@ -8,17 +8,17 @@
 >
 > -- Brendan Eich en [Coders at work - Reflections on the Craft of Programming](http://codersatwork.com/)
 
-Many software developers, and many companies, feel that object-oriented programming is the only reasonable way to develop software today. Any one who argues against object-oriented programming is immediately made conscious of the fact that they are arguing against the "conventional wisdom" of the industry.
+Muchos desarrolladores y compañias de software creen que la programación orientada a objetos es la única manera razonable para desarrollar software hoy en día. Quien argumenta en contra de la programación orientada a objetos se da cuenta inmediatamente que está argumentando contra la "sabiduría convencional" de la industria.
 
-On programming blogs and forums, there are a great many people who defend object-oriented programming, and who feel certain that they know what they are talking about, despite the lack of any standard definition!
+En blogs y foros de programación hay una gran cantidad de personas que defienden la programación orientada a objetos y que creen en la certeza indubitable de lo que están diciendo, a pesar de la falta de una definición estándar!
 
-The fact is that so-called object-oriented programming as such often inflicts a heavy burden of unneeded complexity!
+El hecho es que la así llamada programación orientada a objetos frecuentemente conlleva una pesada carga de complejidad innecesaria.
 
-As computer scientists and programmers we must learn to set aside prejudices and find the best solution to a given problem.
+Como cientifícos y programadores de computadora debemos aprender a dejar de lado los prejuicios y encontrar la mejor solución para el problema planteado.
 
-Today, one of the main strengths of PHP is its support for both imperative, functional, object-oriented, procedural, and reflective paradigms. PHP is a huge toolbox with lots of different tools that makes it possible to solve many problems in many different ways - **not just one way!**
+Hoy, una de las principales fortalezas de PHP es que soporta al mismo tiempo los paradigmas de programación imperativa, funcional, orientada a objetos y procedimental. PHP es una gran caja de herramienta con muchas herramientas que hacen posible resolver muchos problemas de muchas maneras diferentes, *¡no solo de una manera!*
 
-**As soon as we try to force-feed different problems within an application to a single specific programming paradigm, we're not thinking creatively and we're not working efficiently!**
+**¡En el momento que intentamos por la fuerza resolver los diferentes problemas de una aplicación con un paradigma de programación específico, no estamos pensando creativamente y no estamos trabajando eficientemente!**
 
 ## A small history lesson ##
 
