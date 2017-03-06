@@ -34,9 +34,9 @@ En el pasado, antes de la llegada de la programación orientada a objetos, final
 
 Existen tanto lenguajes de programación de alto como de bajo nivel que usan programación no estructurada. Estos incluyen las primeras versiones de BASIC, COBOL, MUMPS, JOSS, FOCAL, TELCOMP, código de lenguaje de máquina, primeros sistemas ensamblador (sin los meta operadores procedimentales) y algunos lenguajes de guiones.
 
-Un programa en lenguaje no estructurado normalmente consiste en una secuencia ordenada de comandos, o sentencias, normalmente una en cada linea. Las lineas están normalmente numeradas o pueden tener etiquetas que permiten al flujo de ejecución saltar hacia cualquier linea en el programa (como la impopular sentencia GOTO)
+Un programa en lenguaje no estructurado normalmente consiste en una secuencia ordenada de comandos, o sentencias, normalmente uno en cada linea. Las lineas están normalmente numeradas o pueden tener etiquetas que permiten al flujo de ejecución saltar hacia cualquier linea en el programa (como la impopular sentencia GOTO)
 
-Luego, en los sesentas, la progrmación estructurada surgió, principalmente debido a la famosa carta de Edsger W. Dijkstra [Go To statements considered harmful](http://www.u.arizona.edu/~rubinson/copyright_violations/Go_To_Considered_Harmful.html).
+Luego, en los sesentas, la programación estructurada surgió, principalmente debido a la famosa carta de Edsger W. Dijkstra [Go To statements considered harmful](http://www.u.arizona.edu/~rubinson/copyright_violations/Go_To_Considered_Harmful.html).
 
 La programación estructurada es un paradigma de programación que mejora la claridad, calidad y el desarrollo de software haciendo uso de subrutimas, estructuras de bloque y bucles. Esto en contraste con el uso simple de saltos como la declaración GOTO.
 
@@ -44,15 +44,15 @@ Luego, la programación por procedimiento se derivo de la programación estructu
 
 En el comienzo todos los procedimientos estaban disponibles en cualquier parte de un programa como datos globales. En pequeños programas esto no representa un problema, pero como las cosas se volvieron más complicadas y como el tamaño del programa creció, pequeños cambios en una parte del programa afectaron enormemente muchas otras partes.
 
-Nadie planeo los cambios en el programa ni la cantidad dependencias existentes. Un cambio menor en un procedimiento podría resultar en una cascada de errores en muchos de los otros procedimientos que dependen del código original.
+Nadie planeo los cambios en el programa ni la cantidad de dependencias existentes. Un cambio menor en un procedimiento podría resultar en una cascada de errores en muchos de los otros procedimientos que dependen del código original.
 
-Una nueva técnica desarrollada permitió que los datos fueran divididos en diferentes ámbitos llamados "objetos". Solo procedimientos específicos pertenecientes al mismo alcance podrían conseguir acceso a los mismos datos. Esto es llamado esconder datos o encapsulamiento. El resultado fue código mucho mejor organizado.
+Una nueva técnica desarrollada permitió que los datos fueran divididos en diferentes ámbitos llamados "objetos". Solo procedimientos específicos pertenecientes al mismo ámbito podrían conseguir acceso a los mismos datos. Esto se conoce como esconder datos o encapsulamiento. El resultado fue código mucho mejor organizado.
 
-En el comienzo los objetos no fueron llamados objetos, ellos fueron vistos solo como ámbitos separados. Luego cuando las dependencias fueron reducidas y las conexiones entre procedimientos y variables dentro de estos ámbitos fueron vistos como segmentos aislados, el resultado dió con el nacimiento del concepto de "objeto" y la "programación orientada a objetos".
+En el comienzo los objetos no fueron llamados objetos, ellos fueron vistos solo como ámbitos separados. Luego, las dependencias fueron reducidas y las conexiones entre procedimientos y variables dentro de estos ámbitos fueron vistos como segmentos aislados, el resultado fue el nacimiento del concepto de "objeto" y la "programación orientada a objetos".
 
 Luego, principalmente por el desarrollo de Java, determinadas "palabras de moda" surgieron y "un procedimiento" o "una función" no fue más llamada una función, en su lugar fue renombrada "un método" cuando este se encuentra dentro de un ámbito separado. Además, las variables no fueron más llamadas "variables", en su lugar fueron renombradas "atributos" cuando ellas se encuentran dentro de un ámbito separado.
 
-Así un objeto es en esencia una simple colección de funciones y variables que ahora se llaman "métodos y atributos".
+Así, un objeto es en esencia una simple colección de funciones y variables que ahora se llaman "métodos y atributos".
 
 La manera en que los métodos y los atributos son mantenidos aislados dentro de un ámbito separado es mediante el uso de "una clase". Una clase, una vez que esta instanciada, es llamada un objeto.
 
