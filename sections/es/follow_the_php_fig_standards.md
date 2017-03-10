@@ -1,25 +1,25 @@
-# Following the PHP-FIG standards religiously #
+# Seguir los estándares PHP-FIG religiosamente #
 
-The FIG stands for "Framework Interoperability Group".
+FIG significa "Framework Interoperability Group".
 
-The [PHP-FIG](http://www.php-fig.org/) was created by a number of framework developers at php|tek in 2009. Since then various other members have applied and been voted in, increasing the size of the group from the first 5 to over 20.
+El [PHP-FIG](http://www.php-fig.org/) fue creado por un número de desarrolladores de framework en el php|tek de 2009. Desde entonces varios otras miembros han ingresado y han votado, incrementando el tamaño del grupo desde 5 a mas de 20.
 
-A lot of controversy exists regarding the PHP-FIG. Some people consider the PHP-FIG the best thing that has happened to the PHP community since PHP itself while others considers the group as something best to be forgotten.
+Mucho de controversia existe con respecto al PHP-FIG. Algunas personas consideran a PHP-FIG la mejor cosa que ha pasado en la comunidad de PHP desde PHP mismo, mientras otros consideran al grupo como algo que es mejor olvidar.
 
-One of the problems with PHP-FIG is that it presents itself like this in their [FAQ](http://www.php-fig.org/faqs/):
+Uno de los problemas con PHP-FIG es que él mismo se presenta en sus [FAQ](http://www.php-fig.org/faqs/) como:
 
-> The idea behind the group is for project representatives to talk about the commonalities between our projects and find ways we can work together. Our main audience is each other, but we’re very aware that the rest of the PHP community is watching. If other folks want to adopt what we’re doing they are welcome to do so, but that is not the aim. Nobody in the group wants to tell you, as a programmer, how to build your application.
+> La idea detrás del grupo es para que los representantes de los proyectos hablen sobre los elementos comunes de nuestros proyectos y encontrar vías para que podamos trabajar juntos. Nuestra principal audiencia es cada uno de nosotros, pero nosotros somos muy conscientes de que el resto de la comunidad de PHP esta mirando. Si otros compañeros desean adoptar lo que nosotros estamos haciendo ellos son bienvenidos a hacerlo, pero esto no es nuestro propósito. Nadie en el grupo quiere decirte, como programador, como construyes tu aplicación.
 
-However, when we view the work of several members of the group, we can clearly see that the objective is quite contrary to the above statement. These members work tirelessly in an attempt to make PHP-FIG become an accepted "PHP standards group", **which also was the original name of the group**. They do this by classifying the work of the PHP-FIG as "Modern PHP" in their books, on their websites, blog-posts, forums, etc., and by classifying other ways as backwards.
+Sin embargo, cuando vemos el trabajo de varios de los miembros del grupo, nosotros podemos claramente ver que el objetivo es bastante contrario a la declaración anterior. Estos miembros trabajan incansablemente en un intento de convertir a PHP-FIG en un "Grupo promotor de estándares de PHP" aceptado (PHP standards group), **que de hecho fue el nombre original de grupo**. Ellos hacen esto calificando el trabajo de PHP-FIG de "PHP Moderno" en sus libros, sitios web, blogs, foros, etc., y calificando a las otras maneras como anticuadas.
 
-One of the problems with the PHP-FIG is that even though many frameworks and Open Source projects has adopted several of their standards, these standards mainly deal with problems from a "framework perspective", which renders them pretty unusable in many real-life industry situations.
+Otro de los problemas con PHP-FIG es que aun cuando muchos frameworks y proyectos de Código Abierto han adoptado varios de sus estándares, estos estándares principalmente atienden los problemas desde una "perspectiva de framework", esto los convierte en gran medida inútiles en muchas situaciones reales de la industria.
 
-Many people develop software for the industry that has to be extremely efficient, secure, and cost-effective, software that customers are willing to buy and use. They cannot be bothered with standards that has to conform to the needs of framework fanatics. If they tried to be it would be a disaster for business.
+Muchas personas desarrollan software para la industria que tiene que ser extremadamente eficiente, seguro y rentable, software que los clientes están dispuestos a comprar y usar. A ellos no les gusta los estándares que se ajustan a las necesidades de frameworks fantásticos. Si ellos intentaran hacerlo sería un desastre para el negocio.
 
-If some kind of standards group needs to be created it has to reflect the interests of the entire PHP community, not just framework and Open Source CMS project developers. It has to be represented by the developers of the PHP programming language itself and it has to be represented by a much larger membership with the right to vote.
+Si algún tipo de grupo promotor de estándares necesita ser creado este tiene que reflejar el interés de la comunidad de PHP entera, no solo de los desarrolladores de frameworks o los desarrolladores de los CMS de Código Abierto. Este tiene que ser representado por los propios desarrolladores del lenguaje de programación PHP y tiene que ser representado por un número mayor de miembros con derecho a voto.
 
-If you choose to adopt the standards developed by the PHP-FIG, you have to understand that some of these standards - such as the autoloader standards PSR-0 and PSR-4 and several other standards - has a direct effect upon how you code your software.
+Si eliges adoptar el estándar desarrollado por PHP-FIG, tienes que entender que algunos de estos estándares (como el estándar PSR-0, el PSR-4 y varios otros estándares) tiene un efecto directo sobre como se escribe tu código.
 
-Many industries demand highly scalable, run-time critical, and cost-effective software that simply cannot be developed using these standards of the PHP-FIG.
+Muchas industrias exigen principalmente software escalable, rápido y rentable que simplemente no es alcanzado usando los estándares de PHP-FIG.
 
-**The wrong way**: Following the PHP-FIG religiously. ![Thumbs down](/img/thumbs-down.png)
+**La forma incorrecta**: Seguir a PHP-FIG religiosamente. ![Thumbs down](/img/thumbs-down.png)
