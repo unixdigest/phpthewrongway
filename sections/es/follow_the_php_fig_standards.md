@@ -2,15 +2,15 @@
 
 FIG significa "Framework Interoperability Group".
 
-El [PHP-FIG](http://www.php-fig.org/) fue creado por un número de desarrolladores de framework en el php|tek de 2009. Desde entonces varios otras miembros han ingresado y han votado, incrementando el tamaño del grupo desde 5 a mas de 20.
+El [PHP-FIG](http://www.php-fig.org/) fue creado por un número de desarrolladores de frameworks en el php|tek de 2009. Desde entonces varios otras miembros han ingresado y votado, incrementando el tamaño del grupo desde 5 a más de 20.
 
-Mucho de controversia existe con respecto al PHP-FIG. Algunas personas consideran a PHP-FIG la mejor cosa que ha pasado en la comunidad de PHP desde PHP mismo, mientras otros consideran al grupo como algo que es mejor olvidar.
+Mucha controversia existe con respecto al PHP-FIG. Algunas personas consideran a PHP-FIG la mejor cosa que ha pasado en la comunidad de PHP desde PHP mismo, mientras otros consideran al grupo como algo que es mejor olvidar.
 
-Uno de los problemas con PHP-FIG es que él mismo se presenta en sus [FAQ](http://www.php-fig.org/faqs/) como:
+Uno de los problemas con PHP-FIG es que él mismo se presenta en su [FAQ](http://www.php-fig.org/faqs/) como:
 
-> La idea detrás del grupo es para que los representantes de los proyectos hablen sobre los elementos comunes de nuestros proyectos y encontrar vías para que podamos trabajar juntos. Nuestra principal audiencia es cada uno de nosotros, pero nosotros somos muy conscientes de que el resto de la comunidad de PHP esta mirando. Si otros compañeros desean adoptar lo que nosotros estamos haciendo ellos son bienvenidos a hacerlo, pero esto no es nuestro propósito. Nadie en el grupo quiere decirte, como programador, como construyes tu aplicación.
+> La idea detrás del grupo es que los representantes de los proyectos hablen sobre los elementos comunes de nuestros proyectos y encontrar vías para que podamos trabajar juntos. Nuestra principal audiencia es cada uno de nosotros, pero nosotros somos muy conscientes de que el resto de la comunidad de PHP esta mirando. Si otros compañeros desean adoptar lo que nosotros estamos haciendo ellos son bienvenidos a hacerlo, pero este no es nuestro propósito. Nadie en el grupo quiere decirte, como programador, como construir tu aplicación.
 
-Sin embargo, cuando vemos el trabajo de varios de los miembros del grupo, nosotros podemos claramente ver que el objetivo es bastante contrario a la declaración anterior. Estos miembros trabajan incansablemente en un intento de convertir a PHP-FIG en un "Grupo promotor de estándares de PHP" aceptado (PHP standards group), **que de hecho fue el nombre original de grupo**. Ellos hacen esto calificando el trabajo de PHP-FIG de "PHP Moderno" en sus libros, sitios web, blogs, foros, etc., y calificando a las otras maneras como anticuadas.
+Sin embargo, cuando vemos el trabajo de varios de los miembros del grupo, podemos claramente ver que el objetivo es bastante contrario a la declaración anterior. Estos miembros trabajan incansablemente en un intento de convertir a PHP-FIG en un "Grupo promotor de estándares de PHP" aceptado (PHP standards group), **que de hecho fue el nombre original del grupo**. Ellos hacen esto calificando el trabajo de PHP-FIG de "PHP Moderno" en sus libros, sitios web, blogs, foros, etc., y calificando a las otras maneras como anticuadas.
 
 Otro de los problemas con PHP-FIG es que aun cuando muchos frameworks y proyectos de Código Abierto han adoptado varios de sus estándares, estos estándares principalmente atienden los problemas desde una "perspectiva de framework", esto los convierte en gran medida inútiles en muchas situaciones reales de la industria.
 
@@ -20,6 +20,6 @@ Si algún tipo de grupo promotor de estándares necesita ser creado este tiene q
 
 Si eliges adoptar el estándar desarrollado por PHP-FIG, tienes que entender que algunos de estos estándares (como el estándar PSR-0, el PSR-4 y varios otros estándares) tiene un efecto directo sobre como se escribe tu código.
 
-Muchas industrias exigen principalmente software escalable, rápido y rentable que simplemente no es alcanzado usando los estándares de PHP-FIG.
+Muchas industrias exigen principalmente software escalable, rápido y rentable; objetivo que simplemente no es alcanzado usando los estándares de PHP-FIG.
 
 **La forma incorrecta**: Seguir a PHP-FIG religiosamente. ![Thumbs down](/img/thumbs-down.png)
