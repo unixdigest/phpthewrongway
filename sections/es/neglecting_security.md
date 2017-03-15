@@ -22,8 +22,8 @@ PHP es inusual en el hecho de que es al mismo tiempo un lenguaje de programació
 >
 > -- [Ray Ozzie](www.azquotes.com/quote/585933)
 
-In order for applications to be designed and implemented with proper security requirements, secure coding practices and a focus on security risks must be integrated into the day-to-day operations, thoughts, and the development processes themselves.
+Para que las aplicaciones sean diseñadas e implemetadas con los necesidades apropiadas de seguridad, las practicas de programación segura y un enfoque sobre los riesgos de seguridad deden ser integrados en las operaciones diarias, pensamientos y el proceso de desarrollo mismo.
 
-Generally, it is much less expensive to build secure software than to correct security issues after the software package has been completed, not to mention the costs that may be associated with a security breach.
+En general, es mucho menos costoso construir software seguro que corregir problemas de seguridad despues de que el paquete de software ha sido terminado, para no mencionar los costos que pueden ser asociados con una violación de seguridad.
 
-**The wrong way**: Not developing secure software by default. ![Thumbs down](/img/thumbs-down.png)
+**La forma incorrecta**: No desarrollar software seguro desde el comienzo. ![Thumbs down](/img/thumbs-down.png)
