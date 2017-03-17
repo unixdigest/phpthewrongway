@@ -1,29 +1,29 @@
-# Neglecting security #
+# Seguridad negligente #
 
-> The trouble with programmers is that you can never tell what a programmer is doing until it’s too late.
+> El problema con los programadores es que nunca puedes decir lo que un programador esta haciendo hasta que es demasiado tarde.
 >
 > -- Seymour Cray on [defprogramming.com](http://www.defprogramming.com/q/6e61ae30a855/)
 
-Secure coding is the practice of writing programs that are resistant to attack by malicious or mischievous people or other programs. Secure coding helps protect data from theft or corruption. In addition, an insecure program can provide access for an attacker to take control of a server or a user's identity, resulting in anything from a denial of service to a single user to the compromise of secrets, loss of service, or damage to the systems of thousands of users.
+La programación segura es la practica de escribir programas que son resistentes a ataques de gente maliciosa y traviesa y de otros programas. La programación segura ayuda a proteger los datos de robos y corrupción. Además, un programa inseguro puede permitir el acceso de un atacante para tomar control de un servidor o la identidad de un usuario, resultando en cosas como denegación de servicio a un usuario comprometiendo sus secretos, pérdida del servicio o daño a los sistemas de miles de usuarios.
 
-Every computer program is a potential target for a security attack. Attackers will try to find security vulnerabilities in your applications. They will then try to use these vulnerabilities to steal secrets, corrupt programs and data, and gain control of servers and networks. Your customers property and your reputation are at stake.
+Cada programa de computadora es un potencial objetivo para un ataque a la seguridad. Los atacantes intentarán encontrar problemas de seguridad en la aplicación. Ellos intentarán usar estas vulnerabilidades para robar secretos, corromper programas y datos y obtener el control de servidores y redes. La propiedad de tus clientes y su reputación estarán en juego.
 
-**Security is not something that can be added to software!**
+**La seguridad no es una cosa que puede ser agregada al software!**
 
-An insecure application may require extensive redesign to secure it. You must identify the nature of the threats to your software and incorporate secure coding practices from the beginning and throughout the planning and development of your application.
+Una aplicación insegura puede necesitar un extenso rediseño para asegurarla. Se debe identificar la naturaleza de las amenazas del software e incorporar las practicas de la programación segura desde el comienzo y durante la planificación y desarrollo de la aplicación.
 
-Securing critical software resources is more important than ever as the focus of attackers has steadily moved toward the application layer. A 2009 SANS study found that attacks against web applications constitute more than 60% of the total attack attempts observed on the Internet.
+Tener software seguro frente a ataques críticos es más importante que nunca cuando el foco de los atacantes se ha movido a un ritmo constante hacia la capa de aplicación. Un estudio de SANS del 2009 encontró que los ataques contra las aplicaciones web constituyen más del 60% del total de los intentos de ataque observados en internet.
 
-PHP is unusual in that it is both a programming language and a web framework at the same time. This means that PHP has a lot of web features built-in to the language that makes it very easy to write insecure code.
+PHP es inusual por el hecho de que es al mismo tiempo un lenguaje de programación y un framework web. Esto significa que PHP tiene muchas características web incorporadas al lenguaje que hace muy facíl escribir código inseguro.
 
-## Secure by default ##
+## Seguridad desde el comienzo ##
 
-> Complexity kills. It sucks the life out of developers, it makes products difficult to plan, build and test, it introduces security challenges and it causes end-user and administrator frustration.
+> La complejidad mata. Ella succiona la vida de los desarrolladores, hace productos difíciles de planificar, construir y probar, agrega desafíos de seguridad y causa la frustación de los administradores y los usuarios finales.
 >
 > -- [Ray Ozzie](www.azquotes.com/quote/585933)
 
-In order for applications to be designed and implemented with proper security requirements, secure coding practices and a focus on security risks must be integrated into the day-to-day operations, thoughts, and the development processes themselves.
+Para que las aplicaciones sean diseñadas e implementadas con las necesidades apropiadas de seguridad, las practicas de programación segura y un enfoque sobre los riesgos de seguridad deben ser integrados en las operaciones diarias, pensamientos y en el proceso de desarrollo mismo.
 
-Generally, it is much less expensive to build secure software than to correct security issues after the software package has been completed, not to mention the costs that may be associated with a security breach.
+En general, es mucho menos costoso construir software seguro que corregir problemas de seguridad después de que el paquete de software ha sido terminado, para no mencionar los costos que pueden ser asociados con una violación de seguridad.
 
-**The wrong way**: Not developing secure software by default. ![Thumbs down](/img/thumbs-down.png)
+**La forma incorrecta**: No desarrollar software seguro desde el comienzo. ![Thumbs down](/img/thumbs-down.png)
