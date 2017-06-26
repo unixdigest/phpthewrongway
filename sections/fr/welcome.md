@@ -1,16 +1,17 @@
-# Welcome #
+# Bienvenue #
 
-In the world of PHP programming a set of trends are massively being propagated by some people (in their books and on websites) as "Modern PHP" while all other approaches are frowned upon as backwards, stupid, or just plain wrong.
+Dans le monde de la programmation en PHP, un ensemble de tendances est massivement propagé par certaines personnes en tant que « PHP moderne » (dans leurs livres et sur leurs sites web), tandis que les autres approches sont considérées comme arriérées, stupides ou fausses.
 
-These people seem to work tirelessly at getting other people to follow their way of doing things.
+Ces personnes semblent travailler sans relâche pour que d'autres suivent leur manière de faire.
 
-This website has been created in an attempt to present a pragmatic view on PHP programming. A view dictated by experience and practical consequence rather than popular trends, theory, or academic dogma.
+Ce site web a été créé dans le but de présenter une vision pragmatique de la programmation en PHP. Une vision dictée par l'expérience et les conséquences pratiques plutôt que par les tendances, la théorie ou le dogme académique.
 
-The website [PHP - The Wrong Way](http://www.phpthewrongway.com/) is a living document and will continue to be updated with more information as it become available.
+Ce site web [PHP - La mauvaise manière](http://www.phpthewrongway.com/fr/) est un document évolutif et continuera à être mis à jour avec davantage d'informations quand elles seront disponibles.
 
-Feel free to contribute.
 
-## Translations ##
+N'hésitez pas à contribuer.
+
+## Traductions ##
 
 * [Anglais](http://www.phpthewrongway.com/)
 * [Danois](http://www.phpthewrongway.com/da/)
