@@ -49,6 +49,13 @@ FINAL_OUTPUT_FA = $(OUTPUT_DIR)fa/$(FILENAME)
 LAST_UPDATED_STR_FA = آخرین بروزرسانی:
 DATE_FORMAT_FA = +%d-%m-%Y
 
+# French
+TOP_FILE_FR = inc/logo_and_date_fr.txt
+TEMPLATE_FR = inc/default_fr.html5
+FINAL_OUTPUT_FR = $(OUTPUT_DIR)fr/$(FILENAME)
+LAST_UPDATED_STR_FR = Dernière mise à jour :
+DATE_FORMAT_FR = +%d\/%m\/%Y
+
 # Setup for Pandoc
 html-da:
 	mkdir -p $(OUTPUT_DIR)da
@@ -78,5 +85,10 @@ html-fa:
 	mkdir -p $(OUTPUT_DIR)fa
 	pandoc -s --highlight-style $(HTML_CODE_STYLE) -S -w html5 --template $(TEMPLATE_FA) --toc -c $(HTML_CSS_RTL) -o $(FINAL_OUTPUT_FA).html $(TOP_FILE_FA) sections/fa/welcome.md sections/fa/the_danger_of_extremism.md sections/fa/always_use_a_framework.md sections/fa/always_use_a_design_pattern.md sections/fa/always_use_oop.md sections/fa/being_afraid_of_other_peoples_code.md sections/fa/follow_the_php_fig_standards.md sections/fa/neglecting_security.md sections/fa/faq.md sections/fa/recommended_reading.md sections/fa/contribute.md
 	grep -rl "##DATEFIELD##" $(FINAL_OUTPUT_FA).html | xargs sed -i "s/##DATEFIELD##/$(LAST_UPDATED_STR_FA) `date '$(DATE_FORMAT_FA)'`/"
+	
+html-fr:
+	mkdir -p $(OUTPUT_DIR)fr
+	pandoc -s --highlight-style $(HTML_CODE_STYLE) -S -w html5 --template $(TEMPLATE_FR) --toc -c $(HTML_CSS) -o $(FINAL_OUTPUT_FR).html $(TOP_FILE_FR) sections/fr/welcome.md sections/fr/the_danger_of_extremism.md sections/fr/always_use_a_framework.md sections/fr/always_use_a_design_pattern.md sections/fr/always_use_oop.md sections/fr/being_afraid_of_other_peoples_code.md sections/fr/follow_the_php_fig_standards.md sections/fr/neglecting_security.md sections/fr/faq.md sections/fr/recommended_reading.md sections/fr/contribute.md
+	grep -rl "##DATEFIELD##" $(FINAL_OUTPUT_FR).html | xargs sed -i "s/##DATEFIELD##/$(LAST_UPDATED_STR_FR) `date '$(DATE_FORMAT_FR)'`/"
 
-all: html-da html-en html-es html-fa html-pt_br html-ru
+all: html-da html-en html-es html-fa html-pt_br html-ru html-fr
