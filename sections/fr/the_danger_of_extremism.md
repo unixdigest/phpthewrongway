@@ -1,11 +1,11 @@
-# The danger of extremism #
+# Le danger de l'extrémisme #
 
-One problem with programming rules and guidelines is that they often only serve a purpose within a specific context. Taken out of context, a good rule can become a horrible rule. In fact, every good rule becomes bad when taken to the extreme.
+Le problème avec les règles et lignes de conduite en programmation, c'est qu'elles servent un but dans un contexte précis. Sortie du contexte, une bonne règle peut devenir une horrible règle. En effet, toute bonne règle devient mauvaise lorsqu'elle est poussée à l'extrême.
 
-This is important to understand because many of the software development principles and rules developed over time and presented by many different people often become misused in the hands of extremists.
+Ceci est important à comprendre car beaucoup de principes et de règles de développement logiciel développés au cours du temps et présentés par plusieurs personnes deviennent souvent mal utilisées dans les mains d'extrémistes.
 
-Experience has taught that misuse of general rules and guidelines always results in complication, lack of security, error-prone results, and in some cases complete and utter disaster.
+L'expérience nous a appris que la mauvaise utilisation de règles générales et de lignes de conduite a toujours pour effet une complication, un problème de sécurité, des résultats eronnés et dans certains cas un désastre complet.
 
-The [KISS principle](https://en.wikipedia.org/wiki/KISS_principle), which is an acronym for "Keep It Simple, Stupid", is an extremely wise and good principle that is generally viewed by experienced people as very good advice to follow, but even this great principle becomes a danger to a project if taken to the extreme. There is such a thing as "too simple" resulting in a lack of needed functionality.
+Le [principe KISS](https://fr.wikipedia.org/wiki/Principe_KISS) qui est un acronyme anglais pour "Keep It Simple, Stupid" (« Garde ça simple, stupide »), est un bon et sage principe qui est généralement vu par les développeurs expérimentés comme un très bon conseil à suivre, mais même ce grand principe devient un danger pour un projet s'il est suivi à la lettre. Une chose « trop simple » résulte en un manque de fonctionnalité.
 
-**The wrong way**: Religious following of rules and guidelines. ![Thumbs down](/img/thumbs-down.png)
+**La mauvaise manière**: Suivre religieusement les règles et lignes de conduite ![Thumbs down](/img/thumbs-down.png)
