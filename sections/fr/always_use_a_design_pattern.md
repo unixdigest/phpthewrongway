@@ -1,33 +1,33 @@
-# Always use a design pattern #
+# Toujours utiliser un patron de conception #
 
-> I have this big allergy to ivory-tower design and design patterns. Peter Norvig, when he was at Harlequin, he did this paper about how design patterns are really just flaws in your programming language. Get a better programming language. He’s absolutely right. Worshiping patterns and thinking about, "Oh, I’ll use the X pattern."
+> J'ai cette grande allergie envers les conceptions et les patrons de conceptions en tour d'ivoire. Peter Norvig, quand il était à Harlequin, écrivit ce papier sur la manière dont les patrons de conception sont en réalité des défauts dans votre langage de programmation. Trouvez un meilleur langage de programmation. Il a absolument raison. Vénerer les patrons et penser : « Oh, je vais utiliser le patron X ».
 >
-> -- Brendan Eich in [Coders at work - Reflections on the Craft of Programming](http://codersatwork.com/)
+> -- Brendan Eich dans [Coders at work - Reflections on the Craft of Programming](http://codersatwork.com/)
 
-In software engineering, a design pattern is a reusable solution to a commonly occurring problem in software design. A design pattern is not a finished design that can be transformed directly into code. It is a description or an idea for how to solve a problem that can be used in many different situations. Object-oriented design patterns typically show relationships and interactions between classes or objects, without specifying the final application classes or objects that are involved.
+En ingénierie logicielle, un patron de conception est une solution réutilisable pour un problème récurrent arrivant en conception logicielle. Un patron de conception n'est pas une conception finie qui peut être transposée directement en code. C'est une description ou une idée sur la manière de résoudre un problème qui peut être utilisée dans différentes situations. Les patrons de conceptions orientés objets montrent typiquement les relations et interactions entre des classes et des objets, sans spécifier l'application finale des classes et objets impliqués.
 
-PHP supports imperative, functional, object-oriented, procedural, and reflective paradigms. PHP is a huge toolbox with lots of different tools that makes it possible to solve many problems in many different ways - not just one way.
+PHP supporte les paradigmes impératif, fonctionnel, orienté objet, procédural et réflectif. PHP est une énorme trousse à outils avec beaucoup de différents outils avec lesquels il est possible de résoudre divers problèmes de manières différentes – pas uniquement une seule.
 
-PHP is all about freedom, fast and scalable solutions, and having many different ways to deal with problems.
+PHP c'est avant tout la liberté, des solutions rapides et extensibles, et possédant de multiples façons de traiter les problèmes.
 
-When we try to improve ourselves, and in this case more specifically our code, we sometimes get hung up in the philosophy of a particular pattern or idea and tend to forget to think practically.
+Lorsque nous tentons de nous améliorer, et notre code dans ce cas, nous nous accrochons parfois à la philosophie d'un idée ou d'un patron particulier et tendons à oublier de penser de manière pratique.
 
-> When I see patterns in my programs, I consider it a sign of trouble. The shape of a program should reflect only the problem it needs to solve. Any other regularity in the code is a sign, to me at least, that I'm using abstractions that aren't powerful enough - often that I'm generating by hand the expansions of some macro that I need to write.
+> Quand je vois des patrons dans mes programmes, je le considère comme une signal d'alarme. La structure d'un programme ne devrait refléter seulement que le problème qu'il tente de résoudre. Tout autre singularité dans le code est un problème, pour moi au moins, que je suis en train d'utiliser des abstractions pas suffisamment efficaces — et souvent que je génère à la main des expansions de quelque macro que j'ai besoin d'écrire.
 >
 > -- [Paul Graham](http://c2.com/cgi/wiki?AreDesignPatternsMissingLanguageFeatures)
 
-We shouldn't get to caught up in the philosophy or idea behind a specific pattern or solution. Our main concern is to keep the code as easy to navigate and understand as possible and as a result easy to maintain and easy to keep secure.
+Nous ne devrions avoir à nous accrocher à une philosophie ou une idée derrière un patron ou une solution spécifique. Notre souci principal est de garder le code aussi facile à naviguer et comprendre que possible et de ce fait facile à maintenir et garder sécurisé.
 
-We must also remember that there exists such a thing as an anti-pattern. It is a pattern that may be commonly used but is ineffective and/or counterproductive in practice.
+Nous devons aussi nous souvenir qu'il existe une chose appelée anti-patron. C'est un patron qui peut être couramment utilisé mais qui n'est pas efficace et / ou contre-productif en pratique.
 
-> I think patterns started off as generally recognized best solutions for common problems. But now that they have been around for a while and we have experienced applications being made ten times more complicated than they need to be because people try to cram in all the patterns that they have read about ("my application is well architected, because it is loaded to the gills with patterns.") my impression of the value of the pattern has shifted a bit.
+> Je pense que les patrons ont commencé comme les meilleures solutions généralement reconnues pour les problèmes habituels. Mais maintenant qu'ils sont là depuis un moment et que nous subissons des applications dix fois plus compliquées que nécessaires parce que les gens tentent de placer tous les patrons dont ils ont entendu parler (« mon application est bien architecturée, parce qu'elle est construite avec des patrons »), mon impression de la valeur des patrons a changé.
 >
-> -- Paul Weaton in [Evil Design Patterns](http://www.javaranch.com/patterns/)
+> -- Paul Wheaton dans [Evil Design Patterns](http://www.javaranch.com/patterns/)
 
-Always use the pragmatic approach:
+Utilisez toujours l'approche pragramatique :
 
-> Action or policy dictated by consideration of the immediate practical consequences rather than by theory or dogma.
+> Une action ou une conduite dictée par la considération de conséquences pratiques immédiates plutôt que par la théorie ou le dogme.
 >
-> -- Collins English Dictionary, Complete and Unabridged, 12th Edition 2014
+> -- Dictionnaire anglais Collins, complet et intégral, 12e édition 2014
 
-**The wrong way**: Looking for a pattern to solve a problem. ![Thumbs down](/img/thumbs-down.png)
+**La mauvaise manière** : Chercher un patron pour résoudre un problème ![Thumbs down](/img/thumbs-down.png)

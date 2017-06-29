@@ -39,7 +39,7 @@ Comprenez bien : **Le nombre idéal de lignes de code dans tout projet est aussi
 >
 > -- [Rasmus Lerdorf](https://www.youtube.com/watch?v=anr7DQnMMs0)
 
-Quelques entreprises commencèrent à entendre l'effet de mode autour des cadriciels PHP et lancèrent leur nouveaux projets en utilisant l'un de ces populaires cadriciels généralistes, pour ne finir que dans un désastre. Non seulement ils découvrirent que le cadriciel généraliste était mauvais pour résoudre leur problème précis, mais il était aussi extrêmement lent à le faire. Il était impossible de suivre les montées en charge des besoins et de ce fait ils commencèrent à déchirer le cadriciel en morceaux dans une tentative désespérée de sortir les parties dont ils n'avaient pas vraiment besoin.
+Quelques entreprises commencèrent à entendre l'effet de mode autour des cadriciels PHP et lancèrent leur nouveaux projets en utilisant l'un de ces populaires cadriciels généralistes, pour ne finir que dans un désastre. Non seulement ils découvrirent que le cadriciel généraliste était mauvais pour résoudre leur problème précis, mais il était aussi extrêmement lent à le faire. Il était impossible de suivre l'extensibilité des besoins et de ce fait ils commencèrent à déchirer le cadriciel en morceaux dans une tentative désespérée de sortir les parties dont ils n'avaient pas vraiment besoin.
 
 Utilisez toujours l'approche pragmatique :
 
@@ -47,4 +47,4 @@ Utilisez toujours l'approche pragmatique :
 >
 > -- Dictionnaire anglais Collins, complet et intégral, 12e édition 2014
 
-**La mauvais manière :** Toujours utiliser un cadriciel au-dessus de PHP ![Thumbs down](/img/thumbs-down.png)
+**La mauvaise manière** : Toujours utiliser un cadriciel au-dessus de PHP ![Thumbs down](/img/thumbs-down.png)
