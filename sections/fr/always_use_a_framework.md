@@ -1,50 +1,50 @@
-# Always use a framework #
+# Toujours utiliser un cadriciel #
 
-> All general purpose PHP frameworks suck!
+> Tous les cadriciels PHP généralistes craignent !
 >
 > -- [Rasmus Lerdorf](https://www.youtube.com/watch?v=DuB6UjEsY_Y)
 
-In the PHP community a really bad trend has become de-facto standard for developing web applications and that is by the usage of a popular general purpose framework.
+Dans la communauté PHP, une très mauvaise tendance est devenue un standard de-facto dans le développement des applications web, c'est-à-dire l'utilisation d'un cadriciel généraliste populaire.
 
-This trend has emerged and become popular not because it in any way improves the result of the developing process, or because it is the right thing to do from a technology and architectural point of view. This trend has become popular because some of the developers of frameworks have managed to sweep away the masses with their polemic against programming from the ground up with stanzas like "Don't re-invent the wheel!" and "Don't do it yourself, others are more skillful than you".
+Cette tendance a émergé et est devenue populaire, non pas parce qu'elle améliore le résultat du processus de développement d'une quelconque façon ou parce que c'est la bonne chose à faire d'un point de vue technologique et architectural. Cette tendance est devenue populaire parce que certains développeurs de cadriciels ont réussi à entraîner les masses dans leur polémique envers la programmation à partir de zéro avec des strophes telles que « Ne réinventez pas la roue ! » et « Ne le faites pas vous-même, d'autres sont plus compétents que vous ».
 
-Many of today's programmers completely ignore the fundamental principles of sound programming and they spend a large amount of time fantasizing new layers of complexity in order to appear more clever, more cool, and more acceptable by whomever they regard as their peers.
+Nombre de développeurs actuels ignore complètement les principes fondamentaux de la programmation sonore et passe une grande partie de leurs temps à rêver à de nouvelles couches de complexité dans le but d'apparaître plus intelligents, plus cool ou plus acceptables par ceux qu'ils considèrent comme leurs pairs.
 
-These people seems to be infatuated by the thought of having other people follow their "way of doing things", becoming some kind of PHP community leaders, and having other people use their latest "hip" Open Source tools, that they forget to make sure that the advice they are giving is sound and solid.
+Ces personnes semblent tirer leur fierté dans l'idée d'avoir d'autres gens qui suivent leur « manière de faire les choses », devenant en quelque sorte un meneur de la communauté PHP, et voyant d'autres gens utiliser leurs derniers outils Open Source à la mode, au point d'oublier de s'assurer que le conseil qu'ils donnent est valide.
 
-In the software industry you can compare a pre-built house to a general purpose framework. Building software using general purpose frameworks doesn't make you a coder or a programmer any more than putting together a pre-built house makes you a carpenter.
+Dans l'industrie logicielle, vous pouvez comparer une maison pré-fabriquée à un cadriciel généraliste. Construire un logiciel avec un cadriciel généraliste ne fait pas plus de vous un programmeur qu'assembler une maison pré-fabriquée fait de vous un charpentier.
 
-On this website, we differentiate between frameworks and libraries in the following way:
+Sur ce site, nous différencierons les cadriciels et les bibliothèques de la manière suivante :
 
-* A library is considered a collection of reusable code, like the C standard library, or the Go standard library. It consists of code that you easily integrate into your own projects without enforcing any limitations or restrictions whatsoever. It consists of small pieces of code with one specific functionality each.
-* A framework is not just a collection of reusable code: you cannot simply take a piece of code from the framework and integrate it into your own project. A framework is a system that helps you build software, but at the same time it forces you to work within the limitations and restrictions of the framework itself. The framework itself has lot of interdependent functionality. One piece cannot work without the other.
+* Une bibliothèque est considérée comme une collection de code réutilisable, telle que la bibliothèque standard C, ou la bibliothèque standard Go. Cela consiste en un code que vous pouvez facilement intégrer dans vos propres projets sans limitation ou restriction de quelque sorte.
+* Un cadriciel n'est pas seulement une collection de code réutilisable : vous ne pouvez pas simplement prendre un bout de code d'un cadriciel et l'intégrer dans votre propre projet. Un cadriciel est un système qui vous aide à construire un logiciel, mais dans le même temps il vous force à travailler dans les limitations et restrictions du cadriciel lui-même. Le cadriciel a beaucoup de fonctionnalités interdépendantes. Un bout ne peut pas marcher sans l'autre.
 
-In the world of Python and Ruby, building websites from the ground up is tiresome because neither Python nor Ruby was originally created to build websites. As a result general-purpose frameworks such as [Django](https://en.wikipedia.org/wiki/Django_%28web_framework%29) and [Ruby on Rails](https://en.wikipedia.org/wiki/Ruby_on_Rails) quickly became popular for building websites in these languages.
+Dans le monde de Python et Ruby, construire des sites web à partir de zéro est fatiguant parce que ni Python, ni Ruby n'ont été créés originellement pour construire des sites web. De ce fait, les cadriciels généralistes tels que [Django](https://fr.wikipedia.org/wiki/Django_(framework)) et [Ruby on Rails](https://fr.wikipedia.org/wiki/Ruby_on_Rails) devinrent rapidement populaires pour construire des site web dans ces langages.
 
-PHP on the other hand was created in the beginning by Rasmus Lerdorf as a set of tools written in C that would enable you to easily and quickly develop dynamic HTML. As such PHP was, and still is, **a framework in and of itself**.
+PHP d'un autre côté a été créé dès le départ par Rasmus Lerdorf comme une trousse à outils écrite en C qui vous permet de développer du HTML dynamique facilement et rapidement. Cela faisait de PHP, et fait toujours, **un cadriciel par lui-même**.
 
-PHP has evolved massively since then and today PHP can be used for much more than building HTML and websites, but viewing PHP as a sort of framework in itself is not wrong. PHP is by nature a layer of abstraction for developing web applications written entirely in a procedural C.
+PHP a évolué massivement depuis lors, et PHP peut désormais être utilisé pour davantage de choses que construire du HTML et des sites web, mais voir PHP comme une sorte de cadriciel n'est pas faux. PHP est par nature une couche d'abstraction pour le développement d'applications web écrit entièrement en C procédural.
 
-Using a library within your project is only natural. PHP itself comes bundled with a set of libraries that you can use to extend your own code. PDO for example is a lightweight library that provides a consistent interface for accessing databases in PHP.
+Utiliser une bibliothèque dans votre projet est tout ce qu'il y a de plus naturel. PHP lui-même est livré avec un ensemble de bibliothèques que vous pouvez utiliser pour étendre votre code. PDO par exemple est une bibliothèque légère qui fournit une interface unifiée pour accéder aux bases de données en PHP.
 
-Using a framework on top of PHP on the other hand is another matter entirely.
+Utiliser un cadriciel au-dessus de PHP est une toute autre question.
 
-When you use a framework in PHP you add a layer of abstraction on top of yet another layer of abstraction, one that was already in place for you to use to begin with. The added layer of abstraction that the framework provides may simply serve to organize your code into a pre-fixed set of patterns, or it may add even more complexity by intertwining hundreds or even thousands of classes and methods into a nightmare of dependencies, either way you're adding layers of complexity to your code that isn't needed!
+Lorsque vous utilisez un cadriciel en PHP, vous ajoutez une couche d'abstraction au-dessus d'une autre couche d'abstraction, celle qui était déjà en place pour que vous commenciez. La couche d'abstraction ajoutée que le cadriciel fournit peut simplement servir à organiser votre code en un ensemble pré-établi de schémas, ou il peut ajouter encore plus de complexité en interconnectant des centaines ou des milliers de classes et méthodes en un cauchemar de dépendances, dans tous les cas en ajoutant des couches de complexité à votre code qui ne sont pas nécessaires !
 
-All experience starts with the interface. The interface experience is the result of the underlying technology and the amount of layers of abstraction. The more abstraction you use, the less efficient the interface becomes and the more error-prone the application becomes. The higher the abstraction, the more detail and efficiency is lost.
+Toute l'expérience commence par l'interface. L'expérience de l'interface est le résultat de la technologie sous-jacente et du nombre de couches d'abstraction. Plus vous utilisez d'abstractions, moins l'interface est efficace et plus l'application est sujette aux erreurs. Plus l'interface est haut niveau, plus le détail et l'efficacité sont perdus.
 
-Understand this clearly: **The ideal number of lines of code in any project is as few as possible whilst being as clear and readable as possible!**
+Comprenez bien : **Le nombre idéal de lignes de code dans tout projet est aussi peu que possible tout en étant le plus clair et lisible que possible !**
 
-> What everyone doesn't need is a general purpose framework. Nobody has a general problem, everyone has a very specific problem they are trying to solve.
+> Ce dont tout le monde n'a pas besoin, c'est d'un cadriciel généraliste. Personne n'a un problème général, tout le monde a un problème très précis qu'il tente de résoudre.
 >
 > -- [Rasmus Lerdorf](https://www.youtube.com/watch?v=anr7DQnMMs0)
 
-Some companies began listening to the hype about PHP frameworks and they started their next projects using one of these popular general purpose frameworks only to end up in a disaster. Not only did they discover that the general purpose framework was really bad at solving their very specific need, but it was also extremely slow in doing so. It was impossible to scale and as a result they started ripping the framework apart in a desperate attempt to pull out all those things they really didn't need.
+Quelques entreprises commencèrent à entendre l'effet de mode autour des cadriciels PHP et lancèrent leur nouveaux projets en utilisant l'un de ces populaires cadriciels généralistes, pour ne finir que dans un désastre. Non seulement ils découvrirent que le cadriciel généraliste était mauvais pour résoudre leur problème précis, mais il était aussi extrêmement lent à le faire. Il était impossible de suivre les montées en charge des besoins et de ce fait ils commencèrent à déchirer le cadriciel en morceaux dans une tentative désespérée de sortir les parties dont ils n'avaient pas vraiment besoin.
 
-Always use the pragmatic approach:
+Utilisez toujours l'approche pragmatique :
 
-> Action or policy dictated by consideration of the immediate practical consequences rather than by theory or dogma.
+> Une action ou une conduite dictée par la considération de conséquences pratiques immédiates plutôt que par la théorie ou le dogme.
 >
-> -- Collins English Dictionary, Complete and Unabridged, 12th Edition 2014
+> -- Dictionnaire anglais Collins, complet et intégral, 12e édition 2014
 
-**The wrong way:** Always use a framework on top of PHP. ![Thumbs down](/img/thumbs-down.png)
+**La mauvais manière :** Toujours utiliser un cadriciel au-dessus de PHP ![Thumbs down](/img/thumbs-down.png)
