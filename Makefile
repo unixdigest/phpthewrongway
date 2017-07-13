@@ -41,6 +41,14 @@ FINAL_OUTPUT_RU = $(OUTPUT_DIR)ru/$(FILENAME)
 LAST_UPDATED_STR_RU = Последнее обновление:
 DATE_FORMAT_RU = +%Y-%m-%d
 
+# Persian (Farsi)
+TOP_FILE_FA = inc/logo_and_date_fa.txt
+TEMPLATE_FA = inc/default_fa.html5
+HTML_CSS_RTL = /css/html-rtl.css
+FINAL_OUTPUT_FA = $(OUTPUT_DIR)$(FILENAME)
+LAST_UPDATED_STR_FA = آخرین بروزرسانی:
+DATE_FORMAT_FA = +%d-%m-%Y
+
 # Setup for Pandoc
 html-da:
 	mkdir -p $(OUTPUT_DIR)da
@@ -66,4 +74,8 @@ html-ru:
 	pandoc -s --highlight-style $(HTML_CODE_STYLE) -S -w html5 --template $(TEMPLATE_RU) --toc -c $(HTML_CSS) -o $(FINAL_OUTPUT_RU).html $(TOP_FILE_RU) sections/ru/welcome.md sections/ru/the_danger_of_extremism.md sections/ru/always_use_a_framework.md sections/ru/always_use_a_design_pattern.md sections/ru/always_use_oop.md sections/ru/being_afraid_of_other_peoples_code.md sections/ru/follow_the_php_fig_standards.md sections/ru/neglecting_security.md sections/ru/faq.md sections/ru/recommended_reading.md sections/ru/contribute.md
 	grep -rl "##DATEFIELD##" $(FINAL_OUTPUT_RU).html | xargs sed -i "s/##DATEFIELD##/$(LAST_UPDATED_STR_RU) `date '$(DATE_FORMAT_RU)'`/"
 
-all: html-da html-en html-es html-pt_br html-ru
+html-fa:
+	pandoc -s --highlight-style $(HTML_CODE_STYLE) -S -w html5 --template $(TEMPLATE_FA) --toc -c $(HTML_CSS_RTL) -o $(FINAL_OUTPUT_FA).html $(TOP_FILE_FA) sections/fa/welcome.md sections/fa/the_danger_of_extremism.md sections/fa/always_use_a_framework.md sections/fa/always_use_a_design_pattern.md sections/fa/always_use_oop.md sections/fa/being_afraid_of_other_peoples_code.md sections/fa/follow_the_php_fig_standards.md sections/fa/neglecting_security.md sections/fa/faq.md sections/fa/recommended_reading.md sections/fa/contribute.md
+	grep -rl "##DATEFIELD##" $(FINAL_OUTPUT_FA).html | xargs sed -i "s/##DATEFIELD##/$(LAST_UPDATED_STR_FA) `date '$(DATE_FORMAT_FA)'`/"
+
+all: html-da html-en html-es html-pt_br html-ru html-fa
