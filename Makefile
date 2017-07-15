@@ -75,7 +75,8 @@ html-ru:
 	grep -rl "##DATEFIELD##" $(FINAL_OUTPUT_RU).html | xargs sed -i "s/##DATEFIELD##/$(LAST_UPDATED_STR_RU) `date '$(DATE_FORMAT_RU)'`/"
 
 html-fa:
+	mkdir -p $(OUTPUT_DIR)fa
 	pandoc -s --highlight-style $(HTML_CODE_STYLE) -S -w html5 --template $(TEMPLATE_FA) --toc -c $(HTML_CSS_RTL) -o $(FINAL_OUTPUT_FA).html $(TOP_FILE_FA) sections/fa/welcome.md sections/fa/the_danger_of_extremism.md sections/fa/always_use_a_framework.md sections/fa/always_use_a_design_pattern.md sections/fa/always_use_oop.md sections/fa/being_afraid_of_other_peoples_code.md sections/fa/follow_the_php_fig_standards.md sections/fa/neglecting_security.md sections/fa/faq.md sections/fa/recommended_reading.md sections/fa/contribute.md
 	grep -rl "##DATEFIELD##" $(FINAL_OUTPUT_FA).html | xargs sed -i "s/##DATEFIELD##/$(LAST_UPDATED_STR_FA) `date '$(DATE_FORMAT_FA)'`/"
 
-all: html-da html-en html-es html-pt_br html-ru html-fa
+all: html-da html-en html-es html-fa html-pt_br html-ru

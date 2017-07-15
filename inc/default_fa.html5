@@ -29,37 +29,37 @@ $endif$
 <meta name="description" content="این وبسایت به منظور ارائه دیدگاهی عملگرا در برنامه‌نویسی PHP ایجاد شده است. دیدگاهی که مبتنی بر تجربه و عمل قبلی باشد تا اینکه بر اساس نظریه، رویه‌های محبوب یا مفاهیم دشوار دانشگاهی پیش رود.">
 </head>
 <body>
-$for(include-before)$
-$include-before$
-$endfor$
-$if(title)$
-<header>
-<div id="header-top">
-<a href="https://github.com/binarygenius/phpthewrongway"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/652c5b9acfaddf3a9c326fa6bde407b87f7be0f4/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6f72616e67655f6666373630302e706e67" alt="Fork me on GitHub" data-canonical-src="/img/github-clone-rtl.png"></a>
-<h1>$title$</h1>
-$if(subtitle)$
-<h1>$subtitle$</h1>
-$endif$
-$for(author)$
-<h2>$author$</h2>
-$endfor$
-$if(date)$
-<div id="date">$date$</div>
-$endif$
-</div>
-</header>
-<div id="cartoon">
-<img src="/img/deviant-code-1000px-fa.png" alt="cartoon">
-</div>
-$endif$
-$if(toc)$
-<nav id="$idprefix$TOC">
-$toc$
-</nav>
-$endif$
-$body$
-$for(include-after)$
-$include-after$
-$endfor$
+  $for(include-before)$
+  $include-before$
+  $endfor$
+  $if(title)$
+  <header>
+    <div id="header-top">
+    <a href="https://github.com/binarygenius/phpthewrongway"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/652c5b9acfaddf3a9c326fa6bde407b87f7be0f4/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6f72616e67655f6666373630302e706e67" alt="Fork me on GitHub" data-canonical-src="/img/github-clone-rtl.png"></a>
+    <h1>$title$</h1>
+    $if(subtitle)$
+    <h1>$subtitle$</h1>
+    $endif$
+    $for(author)$
+    <h2>$author$</h2>
+    $endfor$
+    $if(date)$
+    <div id="date">$date$</div>
+    $endif$
+    </div>
+  </header>
+  <div id="cartoon">
+    <img src="/img/deviant-code-1000px-fa.png" alt="cartoon">
+  </div>
+  $endif$
+  $if(toc)$
+  <nav id="$idprefix$TOC">
+    $toc$
+  </nav>
+  $endif$
+  $body$
+  $for(include-after)$
+  $include-after$
+  $endfor$
 </body>
 </html>
