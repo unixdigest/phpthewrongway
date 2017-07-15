@@ -44,8 +44,8 @@ DATE_FORMAT_RU = +%Y-%m-%d
 # Persian (Farsi)
 TOP_FILE_FA = inc/logo_and_date_fa.txt
 TEMPLATE_FA = inc/default_fa.html5
-HTML_CSS_RTL = /css/html-rtl.css
-FINAL_OUTPUT_FA = $(OUTPUT_DIR)$(FILENAME)
+HTML_CSS_RTL = ../css/html-rtl.css
+FINAL_OUTPUT_FA = $(OUTPUT_DIR)fa/$(FILENAME)
 LAST_UPDATED_STR_FA = آخرین بروزرسانی:
 DATE_FORMAT_FA = +%d-%m-%Y
 

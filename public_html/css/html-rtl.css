@@ -5,15 +5,15 @@
   font-family:'Vazir';
   font-style:normal;
   font-weight:400;
-  src:url('/fonts/vazir.eot'); /* IE9 Compat Modes */
-  src:local('Vazir Regular'),
-       url('/fonts/vazir.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('/fonts/vazir.woff2') format('woff2'), /* Super Modern Browsers */
-       url('/fonts/vazir.woff') format('woff'), /* Modern Browsers */
-       url('/fonts/vazir.ttf') format('truetype'), /* Safari, Android, iOS */
+  src:url('../fonts/vazir.eot'), /* IE9 Compat Modes */
+      url('../fonts/vazir.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+      url('../fonts/vazir.woff2') format('woff2'), /* Super Modern Browsers */
+      url('../fonts/vazir.woff') format('woff'), /* Modern Browsers */
+      url('../fonts/vazir.ttf') format('truetype'), /* Safari, Android, iOS */
 }
 
 body {
+    direction: rtl;
     color:#444;
     overflow-x:hidden;
     background:#fefefe;

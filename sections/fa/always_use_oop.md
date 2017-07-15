@@ -68,4 +68,4 @@
 >
 > -- پل گراهام در [Ansi Common Lisp](https://openlibrary.org/works/OL7944696W/ANSI_Common_Lisp)
 
-**مسیر اشتباه**: همیشه از برنامه‌نویسی شی-گرا استفاده کنید. ![Thumbs down](/img/thumbs-down-rtl.png)
+**مسیر اشتباه**: همیشه از برنامه‌نویسی شی-گرا استفاده کنید. ![Thumbs down](../img/thumbs-down-rtl.png)
