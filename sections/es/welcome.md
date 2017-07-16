@@ -18,4 +18,5 @@ Siéntete libre de contribuir.
 * [Español](http://www.phpthewrongway.com/es/)
 * [Inglés](http://www.phpthewrongway.com/)
 * [Ruso](http://www.phpthewrongway.com/ru)
+* [Persa](http://www.phpthewrongway.com/fa/)
 * [Portugués](http://www.phpthewrongway.com/pt_br/)
