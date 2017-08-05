@@ -21,7 +21,7 @@ Sur ce site, nous différencierons les cadriciels et les bibliothèques de la ma
 
 Dans le monde de Python et Ruby, construire des sites web à partir de zéro est fatiguant parce que ni Python, ni Ruby n'ont été créés originellement pour construire des sites web. De ce fait, les cadriciels généralistes tels que [Django](https://fr.wikipedia.org/wiki/Django_(framework)) et [Ruby on Rails](https://fr.wikipedia.org/wiki/Ruby_on_Rails) devinrent rapidement populaires pour construire des site web dans ces langages.
 
-PHP d'un autre côté a été créé dès le départ par Rasmus Lerdorf comme une trousse à outils écrite en C qui vous permet de développer du HTML dynamique facilement et rapidement. Cela faisait de PHP, et fait toujours, **un cadriciel par lui-même**.
+PHP d'un autre côté a été créé dès le départ par Rasmus Lerdorf comme une trousse à outils écrite en C qui vous permet de développer du HTML dynamique facilement et rapidement. Cela faisait de PHP, et fait toujours, **un cadriciel lui-même**.
 
 PHP a évolué massivement depuis lors, et PHP peut désormais être utilisé pour davantage de choses que construire du HTML et des sites web, mais voir PHP comme une sorte de cadriciel n'est pas faux. PHP est par nature une couche d'abstraction pour le développement d'applications web écrit entièrement en C procédural.
 

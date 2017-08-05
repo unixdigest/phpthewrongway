@@ -19,6 +19,8 @@ define translation
 	grep -rl "##DATEFIELD##" $(4) | xargs sed -i "s/##DATEFIELD##/$(2) `date '$(3)'`/"
 endef
 
+default: all
+
 # Danish
 da:
 	$(call translation,da,Sidst opdateret:,+%d\/%m-%Y,$(OUTPUT_DIR)da/$(FILENAME).html,html.css)
@@ -37,7 +39,7 @@ fa:
 
 # French
 fr:
-$(call translation,fr,Dernière mise à jour :,+%d\/%m\/%Y,$(OUTPUT_DIR)fr/$(FILENAME).html,html.css)
+	$(call translation,fr,Dernière mise à jour :,+%d\/%m\/%Y,$(OUTPUT_DIR)fr/$(FILENAME).html,html.css)
 
 # Portuguese
 pt_br:

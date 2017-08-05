@@ -6,6 +6,6 @@ Ceci est important à comprendre car beaucoup de principes et de règles de dév
 
 L'expérience nous a appris que la mauvaise utilisation de règles générales et de lignes de conduite a toujours pour effet une complication, un problème de sécurité, des résultats eronnés et dans certains cas un désastre complet.
 
-Le [principe KISS](https://fr.wikipedia.org/wiki/Principe_KISS) qui est un acronyme anglais pour "Keep It Simple, Stupid" (« Garde ça simple, stupide »), est un bon et sage principe qui est généralement vu par les développeurs expérimentés comme un très bon conseil à suivre, mais même ce grand principe devient un danger pour un projet s'il est suivi à la lettre. Une chose « trop simple » résulte en un manque de fonctionnalité.
+Le [principe KISS](https://fr.wikipedia.org/wiki/Principe_KISS) qui est un acronyme anglais pour "Keep It Simple, Stupid" (« Garde ça simple, stupide »), est un bon et sage principe qui est généralement vu par les développeurs expérimentés comme un très bon conseil à suivre, mais même ce grand principe devient un danger pour un projet s'il est suivi à la lettre. Une chose « trop simple » conduit à un manque de fonctionnalité.
 
 **La mauvaise manière** : Suivre religieusement les règles et lignes de conduite ![Thumbs down](/img/thumbs-down.png)
