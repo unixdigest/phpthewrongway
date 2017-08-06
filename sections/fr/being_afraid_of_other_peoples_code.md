@@ -1,37 +1,38 @@
-# Being afraid of other people's code #
+# Avoir peur du code d'autrui #
 
-An argument often expressed for the usage of a framework is that people don't want to deal with codebases that have been written from scratch by other people.
+Un argument souvent entendu en faveur de l'usage de cadriciel est que les gens ne veulent pas gérer les codes écrits de zéro par d'autres.
 
-This is however a strange mentality, mainly encountered amongst web developers in the PHP community. It's one that exudes a lack of professionalism and experience.
+C'est une mentalité étrange cependant, principalement rencontrée parmi les web développeurs de la communauté PHP. Elle reflète un manque d'expérience et de professionnalisme.
 
-Writing software and dealing with other people's code is normal. It's part of the daily work of a professional programmer. It's not something to be afraid of.
+Écrire un logiciel et gérer le code d'autrui est normal. C'est une part du travail journalier d'un programmeur professionnel. Ce n'est pas quelques chose dont on doit avoir peur.
 
-A professional programmer doesn't look at other people's code and start whining about how he or she is at the complete mercy of the former programmer, who is perhaps no longer associated with the company or project, and if only the former programmer had used framework A or framework B the day would have been saved.
+Un programmeur professionnel ne regarde pas le code d'autrui pour commencer à se plaindre qu'il est à la merci du programmeur précédent, qui n'est probablement plus associé à l'entreprise ou au projet, et si seulement le programmeur précédent avait utilisé le cadriciel A ou B, la vie aurait été plus facile.
 
-This is not the mentality of a professional programmer. Nobody does this.
+Ce n'est pas la mentalité d'un programmeur professionnel. Personne ne fait ça.
 
-Perhaps the low barrier to entry in PHP web development plays a part in this kind of mentality. Regardless, it is a sign of a person being in the wrong line of work.
+Peut-être que la facilité d'entrée dans le développement web PHP joue un rôle dans ce genre de mentalité. Quoiqu'il en soit, c'est le signe d'une personne étant dans une mauvaise ligne de conduite.
 
-A great part of programming deals with people having to work with other people's code. It's part of the work trying to improve existing codebase and sometimes that involves a complete re-write.
+Une grande partie de la programmation est d'avoir à travailler avec le code d'autrui. C'est une part du travail d'essayer d'améliorer le code existant et parfois cela implique une réécriture complète.
 
-Take note from the great masters of programming, read the book [Coders at work - Reflections on the Craft of Programming](http://codersatwork.com/).
+Prenez note sur les grands maîtres de la programmation en lisant le livre [Coders at work - Reflections on the Craft of Programming](http://codersatwork.com/).
 
-Some of the largest and most successful codebases in world are codebases that has been developed by hundreds of people who have never even met each other, codebases developed without the use of any kind of framework, codebases done entirely in a procedural programming language without the use of anything but the procedural paradigm, and they wouldn't dream of doing it differently.
+Certaines des plus grandes et des plus réussies bases de code dans le monde sont des bases de code qui ont été développées par des centaines de personnes qui ne se sont jamais rencontrées, des bases de code développées sans l'utilisation d'aucun cadriciel, des bases de code faites entièrement dans un langage procédural sans rien d'autre que le paradigme procédural, et ils ne rêveraient pas d'en faire autrement.
 
-The [Linux Kernel](https://www.kernel.org/) consists of more than 20 million lines of code all written entirely using procedural programming by more than 14 000 participants without the use of any kind of framework.
+Le [noyau Linux](https://www.kernel.org/) consiste en plus de 20 millions de lignes de code toutes écrites utilisant la programmation procédurale par plus de 14 000 participants sans aucun cadriciel d'aucune sorte.
 
-The different [BSD](https://en.wikipedia.org/wiki/Berkeley_Software_Distribution) flavors and most of the [Linux GNU userland](https://www.gnu.org/) has been written entirely using procedural programming without the use of any kind of framework.
+La projet [BSD](https://en.wikipedia.org/wiki/Berkeley_Software_Distribution) et une grande partie de l'[espace utilisateur GNU Linux](https://www.gnu.org/) ont été écrits utilisant la programmation procédurale sans aucun cadriciel.
 
-The same goes for hundreds of Open Source projects around the world that were eventually abandoned by the original programmer(s) only to be picked up by other skillful programmers. Many of these projects had very little documentation (if any at all), no comments in the codebase, and no guidelines or help to offer at all.
+Même chose pour des centaines de projets Open Source autour du globe qui ont éventuellement été abandonnés par le(s) programmeur(s) original(s) pour être repris par d'autres programmeurs talentueux. Nombre de ces projets ont peu de documentation (voire aucune), aucun commentaire dans le code et aucun guide ou aide à proposer.
 
-The entire PHP codebase is done in C, a pure procedural programming language, without the use of any kind of framework whatsoever.
+Le code PHP est fait en C, un langage de programmation procédural pur, sans cadriciel.
 
-Whenever you define a class in PHP or whenever you fire up that favorite PHP framework of yours, you're running on someone else's pure procedural work!
+Lorsque vous définissez une classe en PHP ou quand vous démarrez votre cadriciel PHP favoris, vous lancez le code procédural de quelqu'un d'autre !
 
-Sure, there exists such a thing as horrible code, code that perhaps wasn't designed from the onset, or code that perhaps has outgrown itself many times but the client didn't want to deal with a re-write, code that's so bad you cannot make heads or tail of it any longer, but no kind of framework would have prevented this situation. This is often the natural growth process of a program. Eventually any kind of framework would have been torn to pieces anyway.
+Certes, le code horrible existe, le code qui n'a pas été conçu dès le départ, ou le code qui est devenu trop grand pour lui-même mais dont le client ne veut pas gérer une réécriture, le code tellement mauvais que vous ne savez pas par quel bout le prendre, mais aucun cadriciel ne pourrait empêcher ça. C'est souvent le processus normal de croissance d'un programme. Probablement que n'importe quel cadriciel aurait été découpé en morceaux.
 
-And sure there exists horrible spagetti code, but nobody produces horrible spagetti code on purpose. Sometimes this is a result of lack of experience, often times it's the clients fault because they change the specifications several times in the middle of development, either way in both cases, even if a framework was used, the result would still be spaghetti code, and no matter how much of the object-oriented paradigm was used, the result would still be spaghetti code.
+Et bien sûr qu'il existe du code spaghetti, mais personne n'écrit du code spaghetti intentionnellement. Parfois, c'est le résultat d'un manque d'expérience, souvent c'est de la faute du client qui change les spécifications plusieurs fois en cours de développement, ou les deux, bien qu'un cadriciel ait été utilisé, le résultat serait quand même du code spaghetti ; peu importe à quel point la programmation orienté objet a été respectée, cela resterait du code spaghetti.
 
-As programmers we all try to prevent these situations, but **this is normal**, this is **the art of programming**, this is part of what it means **to be a programmer**!
+En tant que programmeurs, nous essayons tous de prévenir ces situations, mais **c'est normal**, c'est **l'art de la programmation**, c'est une partie de ce que ça veut dire d'**être programmeur** !
 
-**The wrong way**: Being afraid of other people's code. ![Thumbs down](/img/thumbs-down.png)
+
+**La mauvaise manière**: Avoir peur du code d'autrui ![Thumbs down](/img/thumbs-down.png)
