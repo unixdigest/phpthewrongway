@@ -1,71 +1,71 @@
-# Always use object-oriented Programming #
+# Toujours utiliser la programmation orientée objet #
 
-> The problem with object-oriented languages is they’ve got all this implicit environment that they carry around with them. You wanted a banana but what you got was a gorilla holding the banana and the entire jungle.
+> Le problème avec les langages orientés objet est qu'ils ont tout cet environnement implicite autour d'eux. Vous vouliez une banane mais ce que vous obtenez c'est un gorille tenant une banane et la jungle tout entière.
 >
-> -- Joe Armstrong in [Coders at work - Reflections on the Craft of Programming](http://codersatwork.com/)
+> -- Joe Armstrong dans [Coders at work - Reflections on the Craft of Programming](http://codersatwork.com/)
 
-> Abstraction is powerful. What I'm really allergic to, and what I had a reaction to in the '90s, was all the CORBA, COM, DCOM, object-oriented nonsense. Every startup of the day had some crazy thing that would take 200.000 method calls to start up and print "Hello world". That's a travesty! You don't want to be a programmer associated with that sort of thing.
+> L'abstraction est puissante. Ce dont je suis réellement allergique et à quoi j'ai réagi dans les années 90, était tout ces non sens orientés objet tels CORBA, COM, DCOM. Toutes les startups du jour avaient ces bizarreries qui prenaient 200 000 appels de méthodes pour démarrer et afficher un « Hello world ». Quel travestissement ! Vous ne voulez pas être un programmeur associé à ce genre de chose.
 >
-> -- Brendan Eich in [Coders at work - Reflections on the Craft of Programming](http://codersatwork.com/)
+> -- Brendan Eich dans [Coders at work - Reflections on the Craft of Programming](http://codersatwork.com/)
 
-Many software developers, and many companies, feel that object-oriented programming is the only reasonable way to develop software today. Any one who argues against object-oriented programming is immediately made conscious of the fact that they are arguing against the "conventional wisdom" of the industry.
+Beaucoup de développeurs, et beaucoup d'entreprises, ont le sentiment que la programmation orientée objet est la seule méthode raisonnable pour développer des logiciels de nos jours. Quiconque conteste la programmation orientée objet prend immédiatement conscience qu'il conteste la « sagesse conventionnelle » de l'industrie.
 
-On programming blogs and forums, there are a great many people who defend object-oriented programming, and who feel certain that they know what they are talking about, despite the lack of any standard definition!
+Sur les forums et les blogs de programmation, il y a une quantité de personnes formidables qui défendent la programmation orientée objet, et qui sont certains qu'ils savent de quoi ils parlent, en dépit du manque d'une définition standard.
 
-The fact is that so-called object-oriented programming as such often inflicts a heavy burden of unneeded complexity!
+Le fait est que cette soit-disant programmation orientée objet inflige souvent un lourd fardeau de complexité non nécessaire !
 
-As computer scientists and programmers we must learn to set aside prejudices and find the best solution to a given problem.
+En tant que informaticiens et programmeurs, nous devons apprendre à mettre de côté nos préjugés et trouver la meilleure solution à un problème donné.
 
-Today, one of the main strengths of PHP is its support for both imperative, functional, object-oriented, procedural, and reflective paradigms. PHP is a huge toolbox with lots of different tools that makes it possible to solve many problems in many different ways - **not just one way!**
+De nos jours, l'une des forces principales de PHP est son support des paradigmes impératif, fonctionnel, orienté objet, procédural et réflectif. PHP est une énorme trousse à outil avec beaucoup d'outils différents qui lui permet de résoudre quantité de problèmes de différentes façons - **pas seulement une seule !**
 
-**As soon as we try to force-feed different problems within an application to a single specific programming paradigm, we're not thinking creatively and we're not working efficiently!**
+**Aussi longtemps que nous essayons d'imposer aux différents problèmes d'une application un unique et spécifique paradigme de programmation, nous ne pensons pas de manière créative et nous ne travaillons pas efficacement !**
 
-## A small history lesson ##
+## Une petite leçon d'histoire ##
 
-One of the greatest ways to understand a specific programming paradigm is to look at how it first evolved. What was the reason for its development? What problems existed with other programming paradigms that needed a new way of thinking? Was it a real world problem or simply an academic problem? And how has it since evolved?
+L'une des meilleures manières de comprendre un paradigme de programmation spécifique est de regarder comment il a évolué au préalable. Quelle était la raison de son développement ? Quels problèmes existaient avec les autres paradigmes de programmation qui ont nécessité une nouvelle manière de penser ? Était-ce un problème réel ou un problème académique ? Et comment a-t-il évolué depuis ?
 
-It doesn't matter what person X says or what definition person Y gives, what matters in the context of paradigms is the history that made them.
+Cela n'a pas d'importance ce que Untel a dit ou quelle définition Unetelle donne, ce qui est important dans le contexte des paradigmes est l'histoire qui les a créé.
 
-> There are two ways of constructing a software design. One way is to make it so simple that there are obviously no deficiencies. And the other way is to make it so complicated that there are no obvious deficiencies.
+> Il y a deux manières de construire une conception logicielle. La première est de la faire si simple qu'il n'y a évidemment aucun défaut. L'autre manière est de la faire si complexe qu'il n'y a aucun défaut évident.
 >
 > -- [C.A.R. Hoare](https://en.wikiquote.org/wiki/C._A._R._Hoare)
 
-In the past, before the advent of object-oriented programming, around the end of the fifties, much software was developed using programming languages that emphasized unstructured programming, sometimes referred to as first- and second-generation languages. Unstructured programming (or non-structured programming) is historically the earliest programming paradigm. It was heavily criticized for producing "spaghetti" code.
+Dans le passé, avant la venue de la programmation orientée objet, à la fin des années 50, nombre de programmes étaient développés en utilisant des langages mettant en avant une programmation destructurée, parfois appelée langages de première et deuxième génération. La programmation destructurée (ou programmation sans structure) est historiquement le premier des paradigmes de programmation. Il fut massivement accusé de produire du code « spaghetti ».
 
-There are both high- and low-level programming languages that use non-structured programming. These include early versions of BASIC, COBOL, MUMPS, JOSS, FOCAL, TELCOMP, machine-level code, early assembler systems (those without procedural meta operators) and some scripting languages.
+Il existe des langages de programmation de haut et de bas niveaux qui utilisent la programmation non structurée. Ceux-ci incluent les premières versions de BASIC, COBOL, MUMPS, JOSS, FOCAL, TELCOMP, le code machine, les premiers systèmes assembleurs (ceux sans les méta-opérateurs procéduraux) et quelques langages de script.
 
-A program in a non-structured language usually consists of sequentially ordered commands, or statements, usually one in each line. The lines are usually numbered or may have labels which allows the flow of execution to jump to any line in the program (like with the unpopular GOTO statement).
+Un programme dans un langage non structuré consiste habituellement en une séquence ordonnée de commandes, ou instructions, généralement une par ligne. Les lignes sont habituellement numérotées ou peuvent avoir des étiquettes qui permet au flux d'exécution de sauter vers n'importe quelle ligne du programme (comme l'impopulaire instruction GOTO).
 
-Then, in the sixties, structured programming emerged - mainly due to the famous letter by Edsger W. Dijkstra [Go To statements considered harmful](http://www.u.arizona.edu/~rubinson/copyright_violations/Go_To_Considered_Harmful.html).
+Puis, dans les années 60, la programmation structurée émergea - principalement due au célèbre Edsger W. Dijkstra [L'instruction Go To est considérée dangereuse](http://www.u.arizona.edu/~rubinson/copyright_violations/Go_To_Considered_Harmful.html).
 
-Structured programming is a programming paradigm that improves the clarity, quality, and development of software by making use of subroutines, block structures and loops. This is in contrast to using simple jumps such as the GOTO statement.
+La programmation structurée est un paradigme de programmation qui améliore la clarté, la qualité et le développement logiciel par l'utilisation de sous-routines, de blocs de structure et de boucles. C'est un contraste à l'utilisation de simples sauts tels que l'instruction GOTO.
 
-Later, procedural programming was derived from structured programming. Procedural programming is based upon the concept of "procedure call". A "procedure call" is just another name for a "function call". Procedures are also known as routines, subroutines or methods. A procedure simply contain a series of computational steps to be carried out. Any given procedure might be called at any point during a programs execution, including by other procedures or itself.
+Plus tard, la programmation procédurale fut dérivée de la programmation structurée. La programmation procédurale est basée sur le concept d'« appels de procédures ». Un « appel de procédure » est simplement un autre nom pour « appel de fonction ». Les procédures sont aussi appelées routines, sous-routines ou méthodes. Une procédure contient simplement une séries d'étapes calculatoires à effectuer. Toute procédure peut être appelée à n'importe quel endroit durant l'éxécution du programme, y compris au sein des autres procédures, ou d'elle-même.
 
-In the beginning all procedures were available to any part of a program as global data. In small programs this didn't present a problem, but as things got more complicated and as the size of the program grew, small changes to one part of the program greatly effected many other parts.
+Au départ, toutes les procédures étaient disponibles à n'importe quelle partie du programme en tant que données globales. Dans les petits programmes cela ne représentait aucun problème, mais les choses devinrent plus complexes lorsque la taille du programme augmentait, les petits changements d'une partie du programme affectant beaucoup d'autres parties.
 
-Nobody was planning for changes in the program and lots of dependencies existed. A minor change to one procedure would result in a cascade of errors in lots of other procedures that depended on the original code.
+Personne ne prévoyait de changements dans le programme et il existait quantité de dépendances. Un changement mineur dans une procédure aurait impliqué une cascade d'erreurs dans beaucoup de procédures qui dépendaient du code originel.
 
-A new technique evolved that allowed data to be divided into separated scopes called "objects". Only specific procedures belonging to the same scope could access the same data. This is called data hiding or encapsulation. The result was much better organized code.
+Une nouvelle technique qui permettait aux données d'être divisées en portées cloisonnées appelées « objets » évolua. Seules les procédures appartenant spécifiquement à la même portée pouvaient accéder à la même donnée. On l'appela masquage de données, ou encapsulation. Cela résultat en un code mieux organisé.
 
-In the beginning objects were not called objects, they were just viewed upon as separate scopes. Later when dependencies were reduced and connections between procedures and variables inside these scopes were viewed upon as isolated segments, the result gave birth to the concepts of "objects" and "object-oriented programming".
+À l'origine, les objets ne s'appelaient pas objets, ils étaient juste vus comme des portées séparées. Plus tard, quand les dépendances furent réduites et les connexions entre les procédures et les variables dans ces portées furent considérées comme des segments isolés, le résultat donna naissance au concept d'« objets » et à la « programmation orientée objet ».
 
-Later, mainly due to the development of Java, certain "buzzwords" arose and "a procedure" or "a function" was no longer called a function, but was renamed "a method" when it resided inside a separate scope. Variables were also no longer called "variables", but were renamed "attributes" when they resided inside a separate scope.
+Plus tard, principalement dû au développement de Java, certains « buzzwords » ont émergé et « une procédure » ou « une fonction » n'était plus appelée une fonction, mais fut renommée « une méthode » quand elle se trouvait dans une portée séparée. Les variables n'étaient plus non plus appelée « variables », mais furent renommées « attributs » quand elles se trouvaient dans une portée séparée.
 
-So an object is in essence simply a collection of functions and variables now called "methods and attributes".
+Ainsi, un objet est par essence simplement une collection de fonctions et variables désormais appelées « méthodes et attributs ».
 
-The way methods and attributes are kept isolated inside a separate scope is by the usage of "a class". A class, once it is instantiated, is called an object.
+La façon dont les méthodes et attributs sont gardées isolées dans une portée séparée est dans l'usage « une classe ». Une classe, une fois instanciée, est appelée un objet.
 
-Objects can reference each other and by such a reference the methods (functions) inside can "communicate" with each other. Objects can also "inherit" methods from other objects thereby extending such, this is called "inheritance".  It is a way to reuse code and allow independent extensions of the software via public classes and interfaces. The relationships of objects give rise to a hierarchy. Inheritance was invented in 1967 for the programming language [Simula 67](http://en.wikipedia.org/wiki/Simula).
+Les objets peuvent se référencer les uns les autres et ainsi, les méthodes à l'intérieur (fonctions) peuvent communiquer. Les objets peuvent aussi « hériter » de méthodes d'autres objets par ce qui est appelé « l'héritage ». Il s'agit d'une méthode pour réutiliser le code et permettre les extensions indépendantes du logiciel via les classes publiques et les interfaces. Les relations d'objets donnent lieu à une hiérarchie. L'héritage fut inventé en 1967 pour le langage de programmation [Simula 67](http://en.wikipedia.org/wiki/Simula).
 
-Objects can also inherit methods from other objects and "override" these with added or changed functionality, this is called "polymorphism".
+Les objets peuvent aussi hériter de méthodes d'autres objets et les « surcharger » en ajoutant ou changeant des fonctionnalités, cela s'appelle le « polymorphisme ».
 
-How these different ideas are implemented vary greatly from programming language to programming language.
+Comment ces différentes idées sont implémentées varie grandement d'un langage de programmation à un autre.
 
-Object-oriented programming is about organizing code in another way than before. It is an extension of procedural programming and it is about hiding data (encapsulation) and avoiding a global scope. It is about extending functions by "borrowing" their blueprints without actually affecting the original code (inheritance). And it is about overriding functions without affecting the original code (polymorphism).
+La programmation orientée objet est une autre manière d'organiser le code qu'auparavant. C'est une extension de la programmation procédurale visant à cacher les données (encapsulation) et éviter la portée globale. Il s'agit d'étendre les fonctions en « empruntant » leurs plans directeurs sans affecter le code originel (héritage). Et il s'agit de surcharger les fonctions sans affecter le code originel (polymorphisme).
 
-> The object-oriented model makes it easy to build up programs by accretion. What this often means, in practice, is that it provides a structured way to write spaghetti code.
+> Le modèle orienté objet facilite la construction de programmmes, par l'accrétion. Ce qui signifie souvent, en pratique, que ça fournit une manière structurée d'écrire du code spaghetti.
 >
-> -- Paul Graham in [Ansi Common Lisp](https://openlibrary.org/works/OL7944696W/ANSI_Common_Lisp)
+> -- Paul Graham dans [Ansi Common Lisp](https://openlibrary.org/works/OL7944696W/ANSI_Common_Lisp)
 
-**The wrong way**: Always use object-oriented programming. ![Thumbs down](/img/thumbs-down.png)
+**La mauvaise manière**: Toujours utiliser la programmation orientée objet ![Thumbs down](/img/thumbs-down.png)
