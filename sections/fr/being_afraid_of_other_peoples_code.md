@@ -35,4 +35,4 @@ Et bien sûr qu'il existe du code spaghetti, mais personne n'écrit du code spag
 En tant que programmeurs, nous essayons tous de prévenir ces situations, mais **c'est normal**, c'est **l'art de la programmation**, c'est une partie de ce que ça veut dire d'**être programmeur** !
 
 
-**La mauvaise manière**: Avoir peur du code d'autrui ![Thumbs down](/img/thumbs-down.png)
+**La mauvaise manière**: Avoir peur du code d'autrui. ![Thumbs down](/img/thumbs-down.png)

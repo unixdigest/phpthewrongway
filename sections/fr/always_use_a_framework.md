@@ -47,4 +47,4 @@ Utilisez toujours l'approche pragmatique :
 >
 > -- Dictionnaire anglais Collins, complet et intégral, 12e édition 2014
 
-**La mauvaise manière** : Toujours utiliser un cadriciel au-dessus de PHP ![Thumbs down](/img/thumbs-down.png)
+**La mauvaise manière** : Toujours utiliser un cadriciel au-dessus de PHP.  ![Thumbs down](/img/thumbs-down.png)

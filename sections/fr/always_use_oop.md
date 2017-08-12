@@ -68,4 +68,4 @@ La programmation orientée objet est une autre manière d'organiser le code qu'a
 >
 > -- Paul Graham dans [Ansi Common Lisp](https://openlibrary.org/works/OL7944696W/ANSI_Common_Lisp)
 
-**La mauvaise manière**: Toujours utiliser la programmation orientée objet ![Thumbs down](/img/thumbs-down.png)
+**La mauvaise manière**: Toujours utiliser la programmation orientée objet. ![Thumbs down](/img/thumbs-down.png)

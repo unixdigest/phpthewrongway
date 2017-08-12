@@ -24,10 +24,10 @@ Nous devons aussi nous souvenir qu'il existe une chose appelée anti-patron. C'e
 >
 > -- Paul Wheaton dans [Evil Design Patterns](http://www.javaranch.com/patterns/)
 
-Utilisez toujours l'approche pragramatique :
+Utilisez toujours l'approche pragmatique :
 
 > Une action ou une conduite dictée par la considération de conséquences pratiques immédiates plutôt que par la théorie ou le dogme.
 >
 > -- Dictionnaire anglais Collins, complet et intégral, 12e édition 2014
 
-**La mauvaise manière** : Chercher un patron pour résoudre un problème ![Thumbs down](/img/thumbs-down.png)
+**La mauvaise manière** : Chercher un patron pour résoudre un problème. ![Thumbs down](/img/thumbs-down.png)
