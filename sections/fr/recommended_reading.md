@@ -1,49 +1,49 @@
-# Recommended reading #
+# Lecture recommandée #
 
-[PHP The Wrong Way on Hacker News](https://news.ycombinator.com/item?id=12318615)
+[PHP The Wrong Way sur Hacker News (en)](https://news.ycombinator.com/item?id=12318615)
 
-* When "PHP The Wrong Way" was launched it spawned a bunch of comments on Hacker News that has many valuable arguments worth reading.
+ * Quand « PHP La mauvaise manière » a été lancé, il généra un paquet de commentaires sur Hacker News avec de précieux arguments à lire.
 
-[Why bad scientific code beats code following "best practices"](https://news.ycombinator.com/item?id=12377385)
+[Pourquoi un mauvais code scientifique bat le code suivant les « bonnes pratiques » (en)](https://news.ycombinator.com/item?id=12377385)
 
-* Simple-minded, care-free near-incompetence can be better than industrial-strength good intentions paving a superhighway to hell. The "real world" outside the computer is full of such examples.
+ * Une incompétence simple et sans soin peut être meilleure que de bonnes intentions de l'industrie menant à une autoroute vers l'enfer. Le « vrai monde » en dehors de l'ordinateur est rempli de ces exemples.
 
-[How to program without OOP](https://medium.com/@brianwill/how-to-program-without-oop-74a46e0e47a3#.squpnjz4n)
+[Comment programmer sans Programmation Orientée Objet (en)](https://medium.com/@brianwill/how-to-program-without-oop-74a46e0e47a3#.squpnjz4n)
 
-* As a fresh and alternative perspective Brian Will discusses in three videos why he thinks object-oriented programming is a bad idea to begin with and he finishes up the series with a couple of notes on how non-OOP code should be written.
+ * Pour une perspective fraîche et alternative, Brian Will discute dans trois vidéos pourquoi il pense que la programmation orientée objet est une mauvaise idée avec laquelle commencer et finit la série avec un couple de note sur la manière dont le code non POO doit être écrit.
 
-[Coders at work - Reflections on the Craft of Programming](http://codersatwork.com/)
+[Coders at work - Reflections on the Craft of Programming (en)](http://codersatwork.com/)
 
-* Based on nearly eighty hours of conversations with fifteen all-time great programmers and computer scientists, the Q&A interviews in Coders at Work provide a multifaceted view into how great programmers learn to program, how they practice their craft, and what they think about the future of programming.
+ * Basée sur pratiquement quatre-vingt heures de conversations avec quinze grands programmeurs et informaticiens, les entrevues dans « Coders at Work » récoltent une vue multiforme sur la façon dont les grands programmeurs apprennent à programmer, comment ils pratiquent leur art, et ce qu'ils pensent de l'avenir de la programmation.
 
-[The traits of a proficient programmer](https://www.oreilly.com/ideas/the-traits-of-a-proficient-programmer)
+[Les traits d'un programmeur efficace (en)](https://www.oreilly.com/ideas/the-traits-of-a-proficient-programmer)
 
-* Competence means having enough experience and knowledge to get stuff done; proficiency involves knowing why you are doing something in a certain way, and how it fits into the big picture. In other words, a proficient practitioner is always a competent practitioner, but the opposite may not be true.
+ * La compétence signifie avoir assez d'expérience et de connaissances pour que le travail soit fait ; l'efficacité implique de savoir pourquoi vous faites quelques chose d'une certaine manière, et comment il s'intègre dans l'image globale. En d'autres termes, un pratiquant efficace est toujours un pratiquant compétent, mais l'inverse n'est pas toujours vrai.
 
-[OWASP Secure Coding Guidelines](https://www.owasp.org/images/0/08/OWASP_SCP_Quick_Reference_Guide_v2.pdf)
+[Lignes de conduite OWASP de la programmation sécurisée (en)](https://www.owasp.org/images/0/08/OWASP_SCP_Quick_Reference_Guide_v2.pdf)
 
-* This technology agnostic document defines a set of general software security coding practices, in a checklist format, that can be integrated into the software development life-cycle. Implementation of these practices will mitigate most common software vulnerabilities.
+ * Ce document agnostique de toute technologie définit un set de pratiques générales de programmation sécurisée, dans un format check-list, qui peut être intégré dans le cycle de vie de développement du logiciel. L'implémentation de ces pratiques atténuera les vulnérabilités logicielles les plus communes.
 
-[Security by Design Principles](https://www.owasp.org/index.php/Security_by_Design_Principles)
+[Principes de Sécurité par conception (en)](https://www.owasp.org/index.php/Security_by_Design_Principles)
 
-* Web application security is an essential component of any successful project, whether open source PHP applications, web services such as straight through processing, or proprietary business web sites. Hosters (rightly) shun insecure code, and users shun insecure services that lead to fraud. The aim of this Development Guide is to allow businesses, developers, designers and solution architects to produce secure web applications. If done from the earliest stages, secure applications cost about the same to develop as insecure applications, but are far more cost effective in the long run.
+ * La sécurité d'une application Web est un composant essentiel de tout projet à succès, que ce soit les applications PHP Open Source, les webservices ou les les sites web métiers propriétaires. Les hébergeurs évitent le code non sécurisé et les utilisateurs finaux évitent les services non sécurisés qui sont sujet à la fraude. Le but de ce Guide de Développement est de permettre aux métiers, développeurs, designers et architectes de produire les applications web sécurisées. Si cela est fait dès les premières étapes, les applications sécurisées ont le même coût de développement que les application non sécurisées, mais sont bien moins coûteuses sur le long terme.
 
-[Survive The Deep End: PHP Security](http://phpsecurity.readthedocs.io/en/latest/)
+[Survivre à la Grande Fin : la Sécurité PHP (en)](http://phpsecurity.readthedocs.io/en/latest/)
 
-* As every target of a serious security breach will quickly note in their press releases and websites: Security is very important to them and take it very seriously. Taking this sentiment to heart before you learn it the hard way is recommended.
+ * Comme toute cible d'une sérieuse brêche de sécurité le notera rapidement sur leurs notes de livraison et leurs sites web : la sécurité est très importante pour eux et ils la prennent très aux sérieux. Prendre ce sentiment à bras le corps avant que vous ne l'appreniez à la dure est recommandé.
 
-[Refactoring Improving the Design of Existing Code](https://openlibrary.org/books/OL7407595M/Refactoring)
+[La refactorisation pour améliorer la conception de code existant (en)](https://openlibrary.org/books/OL7407595M/Refactoring)
 
- * Refactoring is about improving the design of existing code. It is the process of changing a software system in such a way that it does not alter the external behavior of the code, yet improves its internal structure. With refactoring you can even take a bad design and rework it into a good one. This book offers a thorough discussion of the principles of refactoring, including where to spot opportunities for refactoring, and how to set up the required tests. There is also a catalog of more than 40 proven refactorings with details as to when and why to use the refactoring, step by step instructions for implementing it, and an example illustrating how it works The book is written using Java as its principle language, but the ideas are applicable to any OO language.
+ * La refactorisation est une amélioration de la conception d'un code existant. Il s'agit d'un processus de changement d'un système logiciel d'une façon qui n'altère pas le comportement extérieur du code, en améliorant sa structure interne. Par la refactorisation, vous pouvez même transformer une mauvaise conception en une bonne. Ce livre offre une discussion approfondie sur les principes de refactorisation, y compris où trouver les opportunités de refactorisation et comment créer les tests essentiels. Il y a aussi un catalogue de plus de 40 refactorisations prouvées avec des détails tels que quand et pourquoi utiliser la refactorisation, des instructions pas à pas sur l'implémentation ainsi qu'un exemple illustrant son fonctionnement. Ce livre est écrit avec Java comme langage, mais les idées sont applicables à tout langage objet.
 
-[The Practice of Programming](https://openlibrary.org/works/OL15333872W/The_Practice_of_Programming_%28Addison-Wesley_Professional_Computing_Series%29)
+[La Pratique de la Programmation (en)](https://openlibrary.org/works/OL15333872W/The_Practice_of_Programming_%28Addison-Wesley_Professional_Computing_Series%29)
 
- * A compendium of practical matters of importance to working programmers.
+* Un compendium de sujets pratiques sur l'importance des programmeurs.
 
-[The pragmatic programmer](https://openlibrary.org/works/OL5748544W/The_pragmatic_programmer)
+[Le programmeur pragmatique (en)](https://openlibrary.org/works/OL5748544W/The_pragmatic_programmer)
 
- * The Pragmatic Programmer: From Journeyman to Master examines the core programming process: taking a requirement and producing working, maintainable code that delights its users. It covers topics ranging from personal responsibility and career development to architectural techniques for keeping code flexible, easy to adapt, and reuse.
+ * Le programmeur pragmatique : de débutant à expert, examine le cœur du processus de développement : prendre une spécification et produire un code fonctionnel et maintenable qui satisfait ses utilisateurs. Il couvre des sujets allant de la responsabilité personnelle et la carrière personnelle, aux techniques d'architecture pour conserver un code flexible, facile à adapter et réutilisable.
 
-[Understanding programming languages](https://openlibrary.org/works/OL1875800W/Understanding_programming_languages)
+[Comprendre les langages de programmation (en)](https://openlibrary.org/works/OL1875800W/Understanding_programming_languages)
 
- * The choice of a programming language is one of the most important factors that influence the ultimate quality of a software system. Unfortunately, too many programmers have poor linguistic skills: they are passionately in love with their "native" language, but are not able to analyze language constraints. "Understanding Programming Languages" is written for the purpose of explaining what alternatives are available to the language designer; how language constructs should be used in terms of safety and readability; how language constructs are implemented and which ones can be efficiently complied; and what is the role of language in expressing and enforcing abstractions.
+ * Le choix d'un langage de programmation est l'un des plus importants facteurs qui influencent la qualité d'un système logiciel. Malheureusement, trop de développeurs ont de pauvres compétences linguistiques : ils sont passionnés par leur langage « natif », mais ne sont pas capable d'analyser les contraintes du langage. « Comprendre les langages de programmation » est écrit dans le but d'expliquer quelles alternatives sont disponibles pour le concepteur du langage ; comment les constructions du langages devraient être utilisées en terme de sécurité et lisbilité ; comment les constructions du langages sont implémentées et lesquelles peuvent être compilées efficacement ; et bien sûr quel est le rôle du langage dans l'expression et le renforcement des abstractions.

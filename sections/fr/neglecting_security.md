@@ -2,7 +2,7 @@
 
 > Le problème avec les développeurs, c'est que vous ne pouvez jamais dire ce qu'un développeur fait, jusqu'à ce qu'il soit trop tard.
 >
-> -- Seymour Cray on [defprogramming.com](http://www.defprogramming.com/q/6e61ae30a855/)
+> -- Seymour Cray sur [defprogramming.com (en)](http://www.defprogramming.com/q/6e61ae30a855/)
 
 La programmation sécurisée est la façon d'écrire des programmes résistant à l'attaque de personnes malveillantes ou de d'autres programmes. La programmation sécurisée aide à protéger les données contre le vol et la corruption. De plus, un programme non sécurisé peut permettre à un attaquant de prendre le contrôle d'un serveur ou de l'identité d'une personne, avec des résultats allant d'un déni de service pour un simple utilisateur à la compromission de secrets, une perte de service ou des dommages sur les systèmes pour les milliers d'utilisateurs.
 
@@ -20,7 +20,7 @@ PHP est inhabituel en ce qu'il est à la fois un programme informatique et un ca
 
 > La complexité tue. Elle aspire la vie des développeurs, elle rend les produits difficiles à planifier, construire et tester, elle introduit des défis des sécurité et cause une frustration des utilisateurs finaux et des administrateurs.
 >
-> -- [Ray Ozzie](www.azquotes.com/quote/585933)
+> -- [Ray Ozzie (en)](www.azquotes.com/quote/585933)
 
 Afin que les applications soient conçues et implémentées avec de bonnes spécifications de sécurité, les pratiques de programmation sécurisées et une attention sur les risques de sécurités doivent être intégrées dans les opérations journalières et les processus de développement eux-mêmes.
 

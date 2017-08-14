@@ -2,11 +2,11 @@
 
 > Le problème avec les langages orientés objet est qu'ils ont tout cet environnement implicite autour d'eux. Vous vouliez une banane mais ce que vous obtenez c'est un gorille tenant une banane et la jungle tout entière.
 >
-> -- Joe Armstrong dans [Coders at work - Reflections on the Craft of Programming](http://codersatwork.com/)
+> -- Joe Armstrong dans [Coders at work - Reflections on the Craft of Programming (en)](http://codersatwork.com/)
 
 > L'abstraction est puissante. Ce dont je suis réellement allergique et à quoi j'ai réagi dans les années 90, était tout ces non sens orientés objet tels CORBA, COM, DCOM. Toutes les startups du jour avaient ces bizarreries qui prenaient 200 000 appels de méthodes pour démarrer et afficher un « Hello world ». Quel travestissement ! Vous ne voulez pas être un programmeur associé à ce genre de chose.
 >
-> -- Brendan Eich dans [Coders at work - Reflections on the Craft of Programming](http://codersatwork.com/)
+> -- Brendan Eich dans [Coders at work - Reflections on the Craft of Programming (en)](http://codersatwork.com/)
 
 Beaucoup de développeurs, et beaucoup d'entreprises, ont le sentiment que la programmation orientée objet est la seule méthode raisonnable pour développer des logiciels de nos jours. Quiconque conteste la programmation orientée objet prend immédiatement conscience qu'il conteste la « sagesse conventionnelle » de l'industrie.
 
@@ -28,7 +28,7 @@ Cela n'a pas d'importance ce que Untel a dit ou quelle définition Unetelle donn
 
 > Il y a deux manières de construire une conception logicielle. La première est de la faire si simple qu'il n'y a évidemment aucun défaut. L'autre manière est de la faire si complexe qu'il n'y a aucun défaut évident.
 >
-> -- [C.A.R. Hoare](https://en.wikiquote.org/wiki/C._A._R._Hoare)
+> -- [C.A.R. Hoare (en)](https://en.wikiquote.org/wiki/C._A._R._Hoare)
 
 Dans le passé, avant la venue de la programmation orientée objet, à la fin des années 50, nombre de programmes étaient développés en utilisant des langages mettant en avant une programmation destructurée, parfois appelée langages de première et deuxième génération. La programmation destructurée (ou programmation sans structure) est historiquement le premier des paradigmes de programmation. Il fut massivement accusé de produire du code « spaghetti ».
 
@@ -36,7 +36,7 @@ Il existe des langages de programmation de haut et de bas niveaux qui utilisent 
 
 Un programme dans un langage non structuré consiste habituellement en une séquence ordonnée de commandes, ou instructions, généralement une par ligne. Les lignes sont habituellement numérotées ou peuvent avoir des étiquettes qui permet au flux d'exécution de sauter vers n'importe quelle ligne du programme (comme l'impopulaire instruction GOTO).
 
-Puis, dans les années 60, la programmation structurée émergea - principalement due au célèbre Edsger W. Dijkstra [L'instruction Go To est considérée dangereuse](http://www.u.arizona.edu/~rubinson/copyright_violations/Go_To_Considered_Harmful.html).
+Puis, dans les années 60, la programmation structurée émergea - principalement due au célèbre Edsger W. Dijkstra [L'instruction Go To est considérée dangereuse (en)](http://www.u.arizona.edu/~rubinson/copyright_violations/Go_To_Considered_Harmful.html).
 
 La programmation structurée est un paradigme de programmation qui améliore la clarté, la qualité et le développement logiciel par l'utilisation de sous-routines, de blocs de structure et de boucles. C'est un contraste à l'utilisation de simples sauts tels que l'instruction GOTO.
 
@@ -56,7 +56,7 @@ Ainsi, un objet est par essence simplement une collection de fonctions et variab
 
 La façon dont les méthodes et attributs sont gardées isolées dans une portée séparée est dans l'usage « une classe ». Une classe, une fois instanciée, est appelée un objet.
 
-Les objets peuvent se référencer les uns les autres et ainsi, les méthodes à l'intérieur (fonctions) peuvent communiquer. Les objets peuvent aussi « hériter » de méthodes d'autres objets par ce qui est appelé « l'héritage ». Il s'agit d'une méthode pour réutiliser le code et permettre les extensions indépendantes du logiciel via les classes publiques et les interfaces. Les relations d'objets donnent lieu à une hiérarchie. L'héritage fut inventé en 1967 pour le langage de programmation [Simula 67](http://en.wikipedia.org/wiki/Simula).
+Les objets peuvent se référencer les uns les autres et ainsi, les méthodes à l'intérieur (fonctions) peuvent communiquer. Les objets peuvent aussi « hériter » de méthodes d'autres objets par ce qui est appelé « l'héritage ». Il s'agit d'une méthode pour réutiliser le code et permettre les extensions indépendantes du logiciel via les classes publiques et les interfaces. Les relations d'objets donnent lieu à une hiérarchie. L'héritage fut inventé en 1967 pour le langage de programmation [Simula 67](https://fr.wikipedia.org/wiki/Simula).
 
 Les objets peuvent aussi hériter de méthodes d'autres objets et les « surcharger » en ajoutant ou changeant des fonctionnalités, cela s'appelle le « polymorphisme ».
 
@@ -66,6 +66,6 @@ La programmation orientée objet est une autre manière d'organiser le code qu'a
 
 > Le modèle orienté objet facilite la construction de programmmes, par l'accrétion. Ce qui signifie souvent, en pratique, que ça fournit une manière structurée d'écrire du code spaghetti.
 >
-> -- Paul Graham dans [Ansi Common Lisp](https://openlibrary.org/works/OL7944696W/ANSI_Common_Lisp)
+> -- Paul Graham dans [Ansi Common Lisp (en)](https://openlibrary.org/works/OL7944696W/ANSI_Common_Lisp)
 
-**La mauvaise manière**: Toujours utiliser la programmation orientée objet. ![Thumbs down](/img/thumbs-down.png)
+**La mauvaise manière** : Toujours utiliser la programmation orientée objet. ![Thumbs down](/img/thumbs-down.png)

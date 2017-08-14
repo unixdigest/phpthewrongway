@@ -2,7 +2,7 @@
 
 > Tous les cadriciels PHP généralistes craignent !
 >
-> -- [Rasmus Lerdorf](https://www.youtube.com/watch?v=DuB6UjEsY_Y)
+> -- [Rasmus Lerdorf (en)](https://www.youtube.com/watch?v=DuB6UjEsY_Y)
 
 Dans la communauté PHP, une très mauvaise tendance est devenue un standard de-facto dans le développement des applications web, c'est-à-dire l'utilisation d'un cadriciel généraliste populaire.
 
@@ -37,7 +37,7 @@ Comprenez bien : **Le nombre idéal de lignes de code dans tout projet est aussi
 
 > Ce dont tout le monde n'a pas besoin, c'est d'un cadriciel généraliste. Personne n'a un problème général, tout le monde a un problème très précis qu'il tente de résoudre.
 >
-> -- [Rasmus Lerdorf](https://www.youtube.com/watch?v=anr7DQnMMs0)
+> -- [Rasmus Lerdorf (en)](https://www.youtube.com/watch?v=anr7DQnMMs0)
 
 Quelques entreprises commencèrent à entendre l'effet de mode autour des cadriciels PHP et lancèrent leur nouveaux projets en utilisant l'un de ces populaires cadriciels généralistes, pour ne finir que dans un désastre. Non seulement ils découvrirent que le cadriciel généraliste était mauvais pour résoudre leur problème précis, mais il était aussi extrêmement lent à le faire. Il était impossible de suivre l'extensibilité des besoins et de ce fait ils commencèrent à déchirer le cadriciel en morceaux dans une tentative désespérée de sortir les parties dont ils n'avaient pas vraiment besoin.
 

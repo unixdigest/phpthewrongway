@@ -22,4 +22,4 @@ Si vous décider d'adopter les standards développés par le PHP-FIG, vous devez
 
 Quantité d'industries demandent des logiciels extensibles, fiables et à coûts réduits, ce qui ne peut simplement pas être effectué en suivant les standards du PHP-FIG.
 
-**La mauvaise manière**: Suivre le PHP-FIG religieusement. ![Thumbs down](/img/thumbs-down.png)
+**La mauvaise manière** : Suivre le PHP-FIG religieusement. ![Thumbs down](/img/thumbs-down.png)

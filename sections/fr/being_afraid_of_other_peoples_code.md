@@ -14,13 +14,13 @@ Peut-être que la facilité d'entrée dans le développement web PHP joue un rô
 
 Une grande partie de la programmation est d'avoir à travailler avec le code d'autrui. C'est une part du travail d'essayer d'améliorer le code existant et parfois cela implique une réécriture complète.
 
-Prenez note sur les grands maîtres de la programmation en lisant le livre [Coders at work - Reflections on the Craft of Programming](http://codersatwork.com/).
+Prenez note sur les grands maîtres de la programmation en lisant le livre [Coders at work - Reflections on the Craft of Programming (en)](http://codersatwork.com/).
 
 Certaines des plus grandes et des plus réussies bases de code dans le monde sont des bases de code qui ont été développées par des centaines de personnes qui ne se sont jamais rencontrées, des bases de code développées sans l'utilisation d'aucun cadriciel, des bases de code faites entièrement dans un langage procédural sans rien d'autre que le paradigme procédural, et ils ne rêveraient pas d'en faire autrement.
 
-Le [noyau Linux](https://www.kernel.org/) consiste en plus de 20 millions de lignes de code toutes écrites utilisant la programmation procédurale par plus de 14 000 participants sans aucun cadriciel d'aucune sorte.
+Le [noyau Linux (en)](https://www.kernel.org/) consiste en plus de 20 millions de lignes de code toutes écrites utilisant la programmation procédurale par plus de 14 000 participants sans aucun cadriciel d'aucune sorte.
 
-La projet [BSD](https://en.wikipedia.org/wiki/Berkeley_Software_Distribution) et une grande partie de l'[espace utilisateur GNU Linux](https://www.gnu.org/) ont été écrits utilisant la programmation procédurale sans aucun cadriciel.
+La projet [BSD](https://fr.wikipedia.org/wiki/Berkeley_Software_Distribution) et une grande partie de l'[espace utilisateur GNU Linux (en)](https://www.gnu.org/) ont été écrits utilisant la programmation procédurale sans aucun cadriciel.
 
 Même chose pour des centaines de projets Open Source autour du globe qui ont éventuellement été abandonnés par le(s) programmeur(s) original(s) pour être repris par d'autres programmeurs talentueux. Nombre de ces projets ont peu de documentation (voire aucune), aucun commentaire dans le code et aucun guide ou aide à proposer.
 
@@ -35,4 +35,4 @@ Et bien sûr qu'il existe du code spaghetti, mais personne n'écrit du code spag
 En tant que programmeurs, nous essayons tous de prévenir ces situations, mais **c'est normal**, c'est **l'art de la programmation**, c'est une partie de ce que ça veut dire d'**être programmeur** !
 
 
-**La mauvaise manière**: Avoir peur du code d'autrui. ![Thumbs down](/img/thumbs-down.png)
+**La mauvaise manière** : Avoir peur du code d'autrui. ![Thumbs down](/img/thumbs-down.png)
