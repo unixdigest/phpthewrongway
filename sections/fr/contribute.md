@@ -1,8 +1,7 @@
-# How to Contribute #
+# Comment contribuer #
 
-Contribute on [GitHub](https://github.com/binarygenius/phpthewrongway).
+Contribuer sur [GitHub](https://github.com/binarygenius/phpthewrongway).
 
- * Clone and edit.
- * Submit pull request for consideration.
+Clonez, éditez et soumettez la pull request pour examen.
 
-Add sections to the _sections/LANGUAGE_ directory or edit existing sections.
+Ajoutez les sections dans les répertoires _sections/LANGUAGE_ ou éditer les sections existantes
