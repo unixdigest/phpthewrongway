@@ -27,7 +27,7 @@ da:
 
 # English
 en:
-	$(call translation,en,Last updated:,+%Y-%m-%d,$(OUTPUT_DIR)$(FILENAME).html,html.css)
+	$(call translation,en,Last updated:,+%Y-%m-%d,$(OUTPUT_DIR)en/$(FILENAME).html,html.css)
 
 # Spanish
 es:
