@@ -1,0 +1,3 @@
+Aaaah ! Qu'est-ce-qui ne va pas chez toi ?!
+Tu n'as pas utilisé de framework et
+tu n'as pas utilisé de patrons de conception ! HÉRÉTIQUE !!!

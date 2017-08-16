@@ -13,8 +13,8 @@
 
 * [Английский](http://www.phpthewrongway.com/)
 * [Датский](http://www.phpthewrongway.com/da/)
+* [Французский](http://www.phpthewrongway.com/fr/)
 * [Испанский](http://www.phpthewrongway.com/es/)
 * [Персидский](http://www.phpthewrongway.com/fa/)
 * [Португальский](http://www.phpthewrongway.com/pt_br/)
-* [Русский](http://www.phpthewrongway.com/ru)
-
+* [Русский](http://www.phpthewrongway.com/ru/)
