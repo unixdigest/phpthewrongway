@@ -49,7 +49,7 @@ $endif$
 </div>
 </header>
 <div id="cartoon">
-<img src="/img/deviant-code-1000px-en.png" alt="cartoon">
+<img src="/img/deviant-code-1000px-fr.png" alt="cartoon">
 </div>
 $endif$
 $if(toc)$
