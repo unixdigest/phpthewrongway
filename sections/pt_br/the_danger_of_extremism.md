@@ -6,6 +6,8 @@ Isso é importante entender porque muitos princípios e regras do desenvolviment
 
 Experience has taught that misuse of general rules and guidelines always results in complication, lack of security, error-prone results, and in some cases complete and utter disaster.
 
-O [princípio KISS](https://en.wikipedia.org/wiki/KISS_principle), que é um acrônimo para "Keep It Simple, Stupid", is an extremely wise and good principle that is generally viewed by experienced people as very good advice to follow, but even this great principle becomes a danger to a project if taken to the extreme. There is such a thing as "too simple" resulting in a lack of needed functionality.
+A experiência ensinou que o uso indevido de regras e diretrizes gerais sempre resulta em complicações, falta de segurança, resultados propensos a erros e, em alguns casos, desastre total e completo.
+
+O [princípio KISS](https://en.wikipedia.org/wiki/KISS_principle), que é um acrônimo para "Keep It Simple, Stupid", é um bom e extremamente sábio princípio que geralmente é visto por pessoas experientes como um conselho muito bom a seguir, mas mesmo este grande princípio torna-se um perigo para um projeto, se levado ao extremo. Existe tal coisa como "muito simples" resultando em falta de funcionalidade necessária.
 
 **A maneira errada**: Aplicação religiosa de regras e diretrizes. ![Thumbs down](/img/thumbs-down.png)
