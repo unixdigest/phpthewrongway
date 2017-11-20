@@ -26,7 +26,7 @@ $endfor$
 $if(math)$
   $math$
 $endif$
-<meta name="description" content="This website has been created in an attempt to present a pragmatic view on PHP programming. A view dictated by experience and practical consequence rather than popular trends, theory, or academic dogma.">
+<meta name="description" content="このウェブサイトは、PHP プログラミングに関する現実的な見解を提示するために作成されたものです。流行りのトレンド、理論、学問的教示ではなく、経験と実践の帰着によって書き記された視点。">
 </head>
 <body>
 $for(include-before)$

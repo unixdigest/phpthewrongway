@@ -15,6 +15,7 @@ Sinta-se livre para contribuir.
 * [Dinamarquês](http://www.phpthewrongway.com/da/)
 * [Espanhol](http://www.phpthewrongway.com/es/)
 * [Francês](http://www.phpthewrongway.com/fr/)
+* [Japonês](http://www.phpthewrongway.com/ja/)
 * [Inglês](http://www.phpthewrongway.com/)
 * [Persa](http://www.phpthewrongway.com/fa/)
 * [Português](http://www.phpthewrongway.com/pt_BR/)
