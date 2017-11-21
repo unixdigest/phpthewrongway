@@ -49,4 +49,8 @@ pt_br:
 ru:
 	$(call translation,ru,Последнее обновление:,+%Y-%m-%d,$(OUTPUT_DIR)ru/$(FILENAME).html,html.css)
 
-all: da en es fa pt_br ru fr
+# Japanese
+ja:
+	$(call translation,ja,最終更新日:,+%Y-%m-%d,$(OUTPUT_DIR)ja/$(FILENAME).html,html.css)
+
+all: da en es fa pt_br ru fr ja
