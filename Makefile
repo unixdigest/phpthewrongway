@@ -15,7 +15,7 @@ HTML_CODE_STYLE = zenburn
 define translation
 	@echo "\n### Building : $(1)"
 	mkdir -p $(OUTPUT_DIR)$(1)
-	pandoc -s --highlight-style $(HTML_CODE_STYLE) -S -w html5 --template inc/default_$(1).html5 --toc -c /css/$(5) -o $(4) inc/logo_and_date_$(1).txt sections/$(1)/welcome.md sections/$(1)/the_danger_of_extremism.md sections/$(1)/always_use_a_framework.md sections/$(1)/always_use_a_design_pattern.md sections/$(1)/always_use_oop.md sections/$(1)/being_afraid_of_other_peoples_code.md sections/$(1)/follow_the_php_fig_standards.md sections/$(1)/neglecting_security.md sections/$(1)/faq.md sections/$(1)/recommended_reading.md sections/$(1)/contribute.md
+	pandoc -s --highlight-style $(HTML_CODE_STYLE) -f markdown+smart -t markdown-smart -w html5 --template inc/default_$(1).html5 --toc -c /css/$(5) -o $(4) inc/logo_and_date_$(1).txt sections/$(1)/welcome.md sections/$(1)/the_danger_of_extremism.md sections/$(1)/always_use_a_framework.md sections/$(1)/always_use_a_design_pattern.md sections/$(1)/always_use_oop.md sections/$(1)/being_afraid_of_other_peoples_code.md sections/$(1)/follow_the_php_fig_standards.md sections/$(1)/neglecting_security.md sections/$(1)/faq.md sections/$(1)/recommended_reading.md sections/$(1)/contribute.md
 	grep -rl "##DATEFIELD##" $(4) | xargs sed -i "s/##DATEFIELD##/$(2) `date '$(3)'`/"
 endef
 
