@@ -14,7 +14,10 @@
 
 * [اسپانیایی](http://www.phpthewrongway.com/es/)
 * [انگلیسی](http://www.phpthewrongway.com/)
+* [فرانسوی](http://www.phpthewrongway.com/fr/)
+* [ژاپنی](http://www.phpthewrongway.com/ja/)
 * [پرتغالی](http://www.phpthewrongway.com/pt_br/)
 * [دانمارکی](http://www.phpthewrongway.com/da/)
 * [روسی](http://www.phpthewrongway.com/ru/)
 * [فارسی](http://www.phpthewrongway.com/fa/)
+<!-- todo: add French and Japanese -->
