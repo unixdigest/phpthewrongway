@@ -1,6 +1,6 @@
 # Как внести свой вклад #
 
-Сотрудничать на [GitHub](https://github.com/binarygenius/phpthewrongway).
+Сотрудничать на [GitHub](https://github.com/binarysanity/phpthewrongway).
 
  * Клонировать и редактировать.
  * Отправить pull request.
