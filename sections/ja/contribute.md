@@ -1,6 +1,6 @@
 # コントリビュートするには #
 
-[GitHub](https://github.com/binarygenius/phpthewrongway) でコントリビュートします。
+[GitHub](https://github.com/binarysanity/phpthewrongway) でコントリビュートします。
 
  * クローンして編集してください。
  * 検討のためにプルリクエストを提出してください。
