@@ -1,5 +1,5 @@
 FILENAME = index
-OUTPUT_DIR = public_html/
+OUTPUT_DIR = docs/
 # pygments, kate, monochrome, espresso, haddock, tango, zenburn
 HTML_CODE_STYLE = zenburn
 

@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <meta name="author" content="Den forkerte måde">
+  <title>PHP - The Wrong Way</title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <link rel="stylesheet" href="/css/html.css">
+<meta name="description" content="Denne hjemmeside er blevet lavet i et forsøg på at præsenterer et pragmatisk syn på PHP programmering. Et syn dikteret af erfaring og praktisk konsekvens fremfor populære tendenser, teori eller akademisk dogme.">
+</head>
+<body>
+<header>
+<div id="header-top">
+<a href="https://github.com/binarysanity/phpthewrongway"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/652c5b9acfaddf3a9c326fa6bde407b87f7be0f4/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6f72616e67655f6666373630302e706e67" alt="Fork me on GitHub" data-canonical-src="/img/github-clone.png"></a>
+<h1>PHP</h1>
+<h2>Den forkerte måde</h2>
+<div id="date">Sidst opdateret: 13/12-2017</div>
+</div>
+</header>
+<div id="cartoon">
+<img src="/img/deviant-code-1000px-da.png" alt="cartoon">
+</div>
+<nav id="TOC">
+<ul>
+<li><a href="#velkommen">Velkommen</a><ul>
+<li><a href="#oversættelser">Oversættelser</a></li>
+</ul></li>
+<li><a href="#det-farlige-ved-ekstremisme">Det farlige ved ekstremisme</a></li>
+<li><a href="#altid-bruge-et-framework">Altid bruge et framework</a></li>
+<li><a href="#altid-bruge-et-designmønster">Altid bruge et designmønster</a></li>
+<li><a href="#altid-bruge-objektorienteret-programmering">Altid bruge objektorienteret programmering</a><ul>
+<li><a href="#en-lille-historielektion">En lille historielektion</a></li>
+</ul></li>
+<li><a href="#at-være-bange-for-andre-menneskers-kode">At være bange for andre menneskers kode</a></li>
+<li><a href="#at-følge-php-fig-standarderne-religiøst">At følge PHP-FIG standarderne religiøst</a></li>
+<li><a href="#at-forsømme-sikkerhed">At forsømme sikkerhed</a><ul>
+<li><a href="#sikker-som-standard">Sikker som standard</a></li>
+</ul></li>
+<li><a href="#spørgsmål-og-svar">Spørgsmål og svar</a></li>
+<li><a href="#anbefalet-læsning">Anbefalet læsning</a></li>
+<li><a href="#hvordan-du-kan-hjælpe">Hvordan du kan hjælpe</a></li>
+</ul>
+</nav>
+<h1 id="velkommen">Velkommen</h1>
+<p>I PHP programmeringens verden bliver et sæt af populære regler massivt propaganderet af nogle mennesker (i deres bøger og på deres hjemmesider) som værende “Moderne PHP”, alt imens alle andre fremgangsmåder bliver der set ned på som værende gammeldags, dumme eller blot forkerte.</p>
+<p>Disse mennesker synes at arbejde utrætteligt mod at få andre mennesker til at følge deres måde at gøre tingene på.</p>
+<p>Denne hjemmeside er blevet lavet i et forsøg på at præsenterer et pragmatisk syn på PHP programmering. Et syn dikteret af erfaring og praktisk konsekvens fremfor populære tendenser, teori eller akademisk dogme.</p>
+<p>Hjemmesiden <a href="http://www.phpthewrongway.com/">PHP - The Wrong Way</a> er et levende dokument og det vil fortsætte med at blive opdateret med mere information efterhånden som det bliver gjort tilgængeligt.</p>
+<p>Du er velkommen til at bidrage.</p>
+<h2 id="oversættelser">Oversættelser</h2>
+<ul>
+<li><a href="http://www.phpthewrongway.com/da/">Dansk</a></li>
+<li><a href="http://www.phpthewrongway.com/">Engelsk</a></li>
+<li><a href="http://www.phpthewrongway.com/fr/">Fransk</a></li>
+<li><a href="http://www.phpthewrongway.com/ja/">Japanese</a></li>
+<li><a href="http://www.phpthewrongway.com/fa/">Persisk</a></li>
+<li><a href="http://www.phpthewrongway.com/pt_br/">Portugisisk</a></li>
+<li><a href="http://www.phpthewrongway.com/ru/">Russisk</a></li>
+<li><a href="http://www.phpthewrongway.com/es/">Spansk</a></li>
+</ul>
+<h1 id="det-farlige-ved-ekstremisme">Det farlige ved ekstremisme</h1>
+<p>Et problem med programmeringsregler og retningslinjer er at de ofte kun tjener et formål inden for en specifik kontekst. Når de tages ud af kontekst kan en god regel blive en forfærdelig regel. Faktisk er det sådan at enhver god regel bliver dårlig når den bliver taget til det ekstreme.</p>
+<p>Det er vigtigt at forstå dette fordi mange af de softwareudviklingsprincipper og regler der udvikles over tid, og som præsenteret af mange forskellige mennesker, ofte bliver misbrugt i hænderne på ekstremister.</p>
+<p>Erfaring har lært os at misbrug af en generelle regler og retningslinjer altid resulterer i komplikationer, mangel på sikkerhed, fejlbehæftede resultater, og i nogle tilfælde, fuldstændig og total katastrofe.</p>
+<p><a href="https://en.wikipedia.org/wiki/KISS_principle">KISS princippet</a>, der er et akronym for “Keep It Simple, Stupid” (Hold Det Simpelt, Dumme), er et meget viis og fornuftigt princip der generelt betragtes af erfarende mennesker som et meget godt råd at følge, men selv dette fremragende princip bliver farligt for et projekt hvis det bliver praktiseret til det ekstreme. Der er sådan en ting som at noget er “for simpelt”, et resultat hvor grundlæggende funktionalitet mangler.</p>
+<p><strong>Den forkerte måde</strong>: Religiøs følgen af regler og retningslinjer. <img src="/img/thumbs-down.png" alt="Thumbs down" /></p>
+<h1 id="altid-bruge-et-framework">Altid bruge et framework</h1>
+<blockquote>
+<p>Alle PHP frameworks der har et generelt formål stinker!</p>
+<p>– <a href="https://www.youtube.com/watch?v=DuB6UjEsY_Y">Rasmus Lerdorf</a></p>
+</blockquote>
+<p>I PHP samfundet er en virkelig dårlig tendens blevet “de-facto” standard for udvikling af web-applikationer, og det er ved brugen af et populært framework der har et generelt formål.</p>
+<p>Denne tendens er ikke opstået og blevet populær fordi det på nogen måde forbedrer resultatet af udviklingsprocessen, eller fordi det er det rigtige at gøre fra et teknologisk og arkitektonisk synspunkt. Denne tendens er blevet populær fordi nogle af udviklerne af disse frameworks har formået at forføre masserne med deres polemik imod at programmere fra bunden af, det har de gjort med strofer som “Du skal ikke genopfinde den dybe tallerken!” og “Du må ikke gøre det selv, andre er dygtigere end dig”.</p>
+<p>Mange af hvor tids programmører ignorerer fuldstændigt de grundlæggende principper for forsvarlig programmering, og de bruger en stor mængde tid på at fantasere nye lag af kompleksitet for at fremstå mere kloge, mere “cool”, og mere acceptable af hvem de nu betragter som deres jævnaldrende.</p>
+<p>Disse mennesker synes at være betagede af tanken om at have andre mennesker følge deres “måde at gøre tingene på”, at blive en form for PHP samfundsledere, og have andre mennesker til at bruge deres nyeste “hippe” Open Source værktøjer, at de helt glemmer at sørge for at den rådgivning de giver er sund og solid.</p>
+<p>I softwareindustrien kan du sammenligne et præ-bygget hus med et framework med et generelt formål. Udvikling af software ved hjælp af generelle formåls frameworks gør dig ikke til en koder eller en programmør mere end at sammensætte et præ-bygget hus gør dig til en tømrer.</p>
+<p>På denne hjemmeside skælner vi imellem frameworks og bibliotekker på følgende måde:</p>
+<ul>
+<li>Et bibliotek betragtes som en samling af genanvendelig kode, ligesom C standard bibliotekket, eller Go standard biblioteket. Det består af kode som du nemt integrere i dine egne projekter uden at håndhæve begrænsninger eller restriktioner overhovedet. Det består af små stykker kode med én specifik funktionalitet hver.</li>
+<li>Et framework er ikke bare en samling af genanvendelig kode: du kan ikke bare tage et stykke kode fra frameworket og integrere den i dit eget projekt. Et framework er et system, der hjælper dig med at opbygge software, men på samme tid tvinger det dig til at arbejde inden for de begrænsninger og restriktioner som frameworket selv giver. Frameworket har selv masser af indbyrdes afhængige funktionalitet. Et stykke kan ikke fungere uden det andet.</li>
+</ul>
+<p>I Python og Ruby’s verden er opbygning af hjemmesider fra bunden af trættende fordi hverken Python eller Ruby oprindeligt blev udviklet til at bygge hjemmesider. Som et resultat udvikledes frameworks med generelle formål som <a href="https://en.wikipedia.org/wiki/Django_%28web_framework%29">Django</a> og <a href="https://en.wikipedia.org/wiki/Ruby_on_Rails">Ruby on Rails</a> og de blev hurtigt populære til opbygning af hjemmesider i disse sprog.</p>
+<p>PHP blev på den anden side udviklet i begyndelsen af Rasmus Lerdorf som et sæt af værktøjer skrevet i C, som ville give dig mulighed for nemt og hurtigt at udvikle dynamisk HTML. Som sådan var og er PHP stadig <strong>et frameworks i sig selv</strong>.</p>
+<p>PHP har udviklet sig massivt siden da, og i dag PHP kan bruges til meget mere end at bygge HTML og hjemmesider, men at betragte PHP som et slags ramme i sig selv er ikke forkert. PHP er af natur et lag af abstraktion til at udvikle web-applikationer skrevet helt i en proceduremæssig C.</p>
+<p>At bruge et bibliotek i dit projekt er kun naturligt. PHP selv kommer med et sæt af biblioteker som du kan bruge til at udvide din egen kode. PDO for eksempel er et letvægts bibliotek der giver en ensartet grænseflade til at få adgang til databaser i PHP.</p>
+<p>At bruge et framework ovenpå PHP er på den anden side en helt anden sag.</p>
+<p>Når du bruger et framework i PHP tilføjer du et lag af abstraktion oven på endnu et lag af abstraktion, et, der allerede var på plads til at bruge til at begynde med. Det ekstra lag af abstraktion som frameworks giver kan f.eks. tjene til at organisere din kode ind i et på forhånd fastsat sæt af mønstre, eller det kan tilføje endnu mere kompleksitet ved at sammenflette hundredvis eller endda tusindvis af klasser og metoder til et mareridt af afhængigheder, uanset så tilføjer du flere lag af kompleksitet til din kode der ikke er nødvendige!</p>
+<p>Al erfaring starter med brugerfladen. Oplevelsen af brugerfladen er resultatet af den underliggende teknologi og mængden af lag af abstraktion. Jo mere abstraktion du bruger, jo mindre effektiv bliver brugerfladen, og jo mere fejlbehæftede bliver applikationen. Jo højere abstraktionsniveau desto mere tabes detaljer og effektivitet.</p>
+<p>Forstå dette klart: <strong>Det ideelle antal linjer af kode i ethvert projekt er så få som mulige samtidig med at være så klare og letlæselige som muligt</strong>!</p>
+<blockquote>
+<p>Hvad ingen har brug for er et framework med et generelt formål. Der er ingen der har et generelt problem, alle har et specifikt problem de forsøger at løse.</p>
+<p>– <a href="https://www.youtube.com/watch?v=anr7DQnMMs0">Rasmus Lerdorf</a></p>
+</blockquote>
+<p>Nogle virksomheder begyndte at lytte til hypen om PHP frameworks og de opstartede deres næste projekter ved hjælp af et af disse populære frameworks kun for at ende i en katastrofe. Ikke alene opdagede de at frameworket var virkelig dårlig til at løse deres meget specifikke behov, men det var også meget langsom til at gøre det. Det var umuligt at skalere, og som et resultat begyndte de at rive frameworket fra hinanden i et desperat forsøg på at trække alle de ting ud de ikke havde brug for.</p>
+<p>Brug altid den pragmatiske tilgang:</p>
+<blockquote>
+<p>Handling eller politik dikteret af hensyn til de umiddelbare praktiske konsekvenser snarere end af teori eller dogme.</p>
+<p>– Collins English Dictionary, Complete and Unabridged, 12th Edition 2014</p>
+</blockquote>
+<p><strong>Den forkerte måde</strong>: Altid at bruge et framework ovenpå PHP. <img src="/img/thumbs-down.png" alt="Thumbs down" /></p>
+<h1 id="altid-bruge-et-designmønster">Altid bruge et designmønster</h1>
+<blockquote>
+<p>Jeg har den her store allergi overfor elfenbenstårn designs og designmønstre. Peter Norvig, da han var på Harlequin, skrev han dette papir om hvordan designmønstre i virkeligheden bare udgør fejl i dit programmeringssprog. Få et bedre programmeringssprog. Han har fuldstændig ret. Tilbede mønstre og tænke: “Åh, jeg skal bruge mønster X.”</p>
+<p>– Brendan Eich i <a href="http://codersatwork.com/">Coders at work - Reflections on the Craft of Programming</a></p>
+</blockquote>
+<p>Indenfor software udviklingen er et designmønster en genbrugelig løsning på et almindeligt forekommende problem i software design. Et designmønster er ikke et færdigt design som kan transformeres direkte til kode. Det er en beskrivelse eller en idé til hvordan man løser et problem, der kan anvendes i mange forskellige situationer. Objektorienteret designmønstre viser typisk relationer og interaktioner mellem klasser eller genstande, uden at specificere den endelige implementering af klasser eller objekter, der er involveret.</p>
+<p>PHP understøtter imperativ, funktionel, objekt-orienteret, proceduremæssig og reflektiv paradigmer. PHP er en kæmpe værktøjskasse med masser af forskellige værktøjer som gør det muligt at løse mange problemer på mange forskellige måder - ikke blot på én måde.</p>
+<p>PHP handler om frihed, hurtige og skalerbare løsninger, og at have mange forskellige måder at håndtere problemer på.</p>
+<p>Når vi forsøger at forbedre os selv, og i dette tilfælde mere specifikt vores kode, så bliver vi nogle gange låst fast i filosofien om et bestemt mønster eller en idé, og har tendens til at glemme at tænke praktisk.</p>
+<blockquote>
+<p>Når jeg ser mønstre i mine programmer, ser jeg det som et tegn på problemer. Formen af et program bør kun afspejle det problem det skal løse. Enhver anden regelmæssighed i koden er et tegn, for mig i hvert fald, på at jeg bruger abstraktioner, der ikke er stærke nok - ofte, at jeg genererer i hånden udvidelser af en makro, som jeg har brug for at skrive.</p>
+<p>– <a href="http://c2.com/cgi/wiki?AreDesignPatternsMissingLanguageFeatures">Paul Graham</a></p>
+</blockquote>
+<p>Vi bør ikke blive fanget i filosofien eller ideen bag et bestemt mønster eller løsning. Vores største bekymring er at holde koden så let at navigere og forstå som muligt, og som et resultat let at vedligeholde og nem at holde sikker.</p>
+<p>Vi skal også huske at der findes sådan noget som et anti-mønster. Det er et mønster som kan blive almindeligt anvendt, men som er ineffektiv og/eller kontraproduktiv i praksis.</p>
+<blockquote>
+<p>Jeg tror mønstre startede som almindeligt anerkendte bedste løsninger til almindelige problemer. Men nu hvor de har eksisteret et stykke tid, og vi har oplevet applikationer blive gjort ti gange mere kompliceret end de behøver at være, fordi folk forsøger at proppe alle de mønstre, som de har læst om (“min applikation er godt designet, fordi den er fyldt til randen med mønstre”), har mit indtryk af værdien af mønstre ændret sig lidt.</p>
+<p>– Paul Weaton i <a href="http://www.javaranch.com/patterns/">Evil Design Patterns</a></p>
+</blockquote>
+<p>Brug altid den pragmatiske tilgang:</p>
+<blockquote>
+<p>Handling eller politik dikteret af hensyn til de umiddelbare praktiske konsekvenser snarere end af teori eller dogme.</p>
+<p>– Collins English Dictionary, Complete and Unabridged, 12th Edition 2014</p>
+</blockquote>
+<p><strong>Den forkerte måde</strong>: At lede efter et mønster for at løse et problem. <img src="/img/thumbs-down.png" alt="Thumbs down" /></p>
+<h1 id="altid-bruge-objektorienteret-programmering">Altid bruge objektorienteret programmering</h1>
+<blockquote>
+<p>Problemet med objektorienterede sprog er at de har fået alt det her implicitte miljø, som de bærer rundt med dem. Du ville have en banan, men det du fik var en gorilla der holder banane og hele junglen.</p>
+<p>– Joe Armstrong i <a href="http://codersatwork.com/">Coders at work - Reflections on the Craft of Programming</a></p>
+</blockquote>
+<blockquote>
+<p>Abstraktion er kraftfuldt. Hvad jeg er virkelig allergisk over for, og hvad jeg havde en reaktion på i 90’erne, var alt det CORBA, COM, DCOM, objektorienteret nonsens. Hver nystartet virksomhed havde en eller anden vanvittig ting der ville tage 200.000 metodekald at starte og skrive “Hello world”. Det er en forvrængning! Du vil ikke være en programmør der sættes i forbindelse med den slags ting.</p>
+<p>– Brendan Eich i <a href="http://codersatwork.com/">Coders at work - Reflections on the Craft of Programming</a></p>
+</blockquote>
+<p>Mange softwareudviklere, og mange virksomheder, føler, at objektorienteret programmering er den eneste fornuftige måde at udvikle software på i dag. Enhver der taler imod objektorienteret programmering bliver straks gjort opmærksomme på at de argumenterer imod industriens “konventionelle visdom”.</p>
+<p>På programmeringsblogs og programmeringsfora er der rigtig mange mennesker der forsvarer objektorienteret programmering, og som føler sikre på, at de ved, hvad de taler om, på trods af manglen på en standard definition!</p>
+<p>Faktum er, at såkaldt objektorienteret programmering som sådan ofte påfører en tung byrde af unødvendig kompleksitet!</p>
+<p>Som dataloger og programmører må vi lære at afsætte fordomme og finde den bedste løsning på et givet problem.</p>
+<p>I dag er en af ​​de største styrker i PHP dets støtte til både imperativ, funktionel, objektorienteret, proceduremæssig, og reflekterende paradigmer. PHP er en enorm værktøjskasse med masser af forskellige værktøjer, som gør det muligt at løse mange problemer på mange forskellige måder - <strong>ikke blot på en måde!</strong></p>
+<p><strong>Så snart vi forsøger at tvangsfodre forskellige problemer i en applikation til et enkelt og specifikt programmeringsparadigme, tænker vi ikke kreativt, og vi arbejder ikke effektivt!</strong></p>
+<h2 id="en-lille-historielektion">En lille historielektion</h2>
+<p>En af de bedste måder at forstå et bestemt programmeringsparadigme på er ved at se på hvordan det først udviklede sig. Hvad var grunden til dets udvikling? Hvilke problemer eksisterede der med andre programmeringsparadigmer, der nødvendiggjorde en ny måde at tænke på? Var det et problem fra den virkelig verden eller var det blot et akademisk problem? Og hvordan har det siden udviklet sig?</p>
+<p>Det er ligegyldigt hvad personen X siger, eller hvilke definitionen personen Y giver, det der betyder noget i forbindelse med paradigmer er historien bag.</p>
+<blockquote>
+<p>Der findes to måder at konstruere et software design på. En måde er at gøre det så enkelt at der naturligvis ingen mangler findes. Og den anden måde er at gøre det så kompliceret at der ikke er nogen åbenlyse mangler.</p>
+<p>– <a href="https://en.wikiquote.org/wiki/C._A._R._Hoare">C.A.R. Hoare</a></p>
+</blockquote>
+<p>Før i tiden, før indførelsen af ​​objektorienteret programmering, omkring slutningen af ​​halvtredserne, blev meget software er udviklet ved hjælp programmeringssprog der understregede ustruktureret programmering, sommetider omtalt som første- og andengenerationssprog. Ustruktureret programmering (eller ikke-struktureret programmering) er historisk det tidligste programmeringsparadigme. Det blev stærkt kritiseret for at producere “spaghetti” kode.</p>
+<p>Der findes både høj og lav-niveau programmeringssprog, der bruger ikke-struktureret programmering. Disse omfatter tidlige versioner af BASIC, COBOL, MUMPS, JOSS, FOCAL, TELCOMP, maskinkode, tidlige assemblersystemer (dem uden proceduremæssige meta operatører) og nogle scriptsprog.</p>
+<p>Et program i et ikke-struktureret sprog består normalt af sekventielle kommandoer, eller sætninger, som regel én i hver linje. Linjerne er normalt nummereret eller kan have etiketter der tillader strømmen af ​​udførelse at springe til enhver linje i programmet (ligesom med den upopulære GOTO erklæring).</p>
+<p>I tresserne opstod struktureret programmering så - primært på grund af det berømte dokument af Edsger Dijkstra <a href="http://www.u.arizona.edu/~rubinson/copyright_violations/Go_To_Considered_Harmful.html">Go To udsagn anses for skadelige</a>.</p>
+<p>Struktureret programmering er et programmeringsparadigme der forbedrer klarhed, kvalitet og udvikling af software ved at gøre brug af subrutiner, blok strukturer og sløjfer. Dette er i modsætning til brugen af simple spring såsom GOTO-sætningen.</p>
+<p>Senere blev proceduremæssig programmering udledt fra struktureret programmering. Procedural programmering er baseret på begrebet “procedure kald”. Et “procedure kald” er blot et andet navn for et “funktionskald”. Procedurer er også kendt som rutiner, underprogrammer eller metoder. En procedure indeholder blot en række beregningsmæssige trin der skal udføres. Enhver given procedure kan kaldes på ethvert tidspunkt under programmets udførelse, herunder igennem andre procedurer eller igennem sig selv.</p>
+<p>I starten var enhver procedurer tilrådige for enhver del af et program som global data. I små programmer er dette ikke et problem, men som tingene blev mere komplicerede, og som størrelsen af ​​programmerne voksede, blev små ændringer i en del af programmet et problem mange andre steder.</p>
+<p>Ingen havde planer om at ændre programmet og en masse afhængigheder eksisterede. En mindre ændring i en procedure ville resultere i en kaskade af fejl i masser af andre procedurer, som afhang af den oprindelige kode.</p>
+<p>En ny teknik blev udviklet der tillod data at blive opdelt i adskilte rækkevidder kaldet “objekter”. Kun specifikke procedurer der tilhørte samme rækkevidde kunne få adgang til de samme data. Dette kaldes “at skjule data” eller “indkapsling”. Resultatet var en meget bedre organiseret kode.</p>
+<p>I begyndelsen blev objekter ikke kaldt for objekter, de blev blot betragtet som adskilte områder. Senere da afhængigheder blev reduceret og forbindelser imellem procedurer og variabler indefor disse områder blev betragtet som isolerede segmenter, blev begreberne “objekter” og “objekt-orienteret programmering” født.</p>
+<p>Senere, hovedsageligt på grund af udviklingen af ​​Java, opståd visse “buzzwords” og “en procedure” eller “en funktion” blev ikke længere kaldt en funktion, men blev omdøbt til “en metode”, når det boede inde i et separat område. Variabler blev heller ikke længere kaldt “variabler”, men blev omdøbt til “attributter”, når de boede inde i et separat område.</p>
+<p>Så et objekt er i dets essens blot en samling af funktioner og variabler nu kaldet for “metoder og attributter”.</p>
+<p>Den måde metoder og attributter holdes isoleret i et adskilt område er ved brugen af “en klasse”. En klasse, når den er startet, kaldes for et objekt.</p>
+<p>Objekter kan referere til hinanden og igennem en sådan reference kan metoder (funktioner) “kommunikere” med hinanden. Objekter kan også “arve” metoder fra andre objekter og dermed udvide disse, dette kaldes “arv”. Det er en måde at genbruge kode og tillade uafhængige udvidelser af software via offentlige klasser og grænseflader. Relationerne mellem objekter giver anledning til et hierarki. Arv blev opfundet i 1967 til programmeringssproget <a href="http://en.wikipedia.org/wiki/Simula">Simula 67</a>.</p>
+<p>Objekter kan også arve metoder fra andre objekter og “overskrive” disse med tilføjet eller ændret funktionalitet, dette kaldes “polymorfi”.</p>
+<p>Hvordan disse forskellige ideer implementeres, varierer meget fra programmeringssprog til programmeringssprog.</p>
+<p>Objektorienteret programmering handler om at organisere kode på en anden måde end før. Det er en udvidelse af proceduremæssig programmering og det handler om at skjule data (indkapsling) og at undgå global rækkevidde. Det handler om at udvide funktioner ved “låne” deres opbgning uden faktisk at påvirke den oprindelige kode (arv). Og det handler om overskrive funktioner uden at påvirke den oprindelige kode (polymorfi).</p>
+<blockquote>
+<p>Den objektorienterede model gør det nemt at opbygge programmer ved aggregation. Hvad dette ofte betyder i praksis, er at det giver en struktureret måde at skrive spaghetti kode på.</p>
+<p>– Paul Graham i <a href="https://openlibrary.org/works/OL7944696W/ANSI_Common_Lisp">Ansi Common Lisp</a></p>
+</blockquote>
+<p><strong>Den forkerte måde</strong>: Altid at bruge objektorienteret programmering. <img src="/img/thumbs-down.png" alt="Thumbs down" /></p>
+<h1 id="at-være-bange-for-andre-menneskers-kode">At være bange for andre menneskers kode</h1>
+<p>Et argument der ofte udtrykkes for brugen af et framework er, at folk ikke ønsker at beskæftige sig med kodebaser, der er blevet skrevet fra bunden af andre mennesker.</p>
+<p>Dette er imidlertid en mærkelig mentalitet, primært stødt på blandt webudviklere i PHP samfundet, det er en mentalitet der udstråler en mangel på professionalisme og erfaring.</p>
+<p>At skrivning software og beskæftige sig med andre folks kode er normalt, det er en del af det daglige arbejde i en professionel programmørs hverv, og det er ikke noget at være bange for.</p>
+<p>En professionel programmør ser ikke på andre folks kode og begynder at klynke over, hvordan han eller hun er fuldstændig prisgivet den tidligere programmør, som måske ikke længere er forbundet med virksomheden eller projektet, og hvis bare den tidligere programmør havde brugt framework A eller framework B så ville dagen have været reddet.</p>
+<p>Dette er ikke en professionel programmørs mentalitet. Ingen gør dette.</p>
+<p>Måske skyldes denne mentalitet den lave adgangsbarriere til PHP web udvikling. Uanset, er det et tegn på en person der er i den helt forkerte branche.</p>
+<p>En stor del af programmering handler om at skulle arbejde med andre menneskers kode. Det er en del af arbejdet at forsøge at forbedre den eksisterende kodebase, og nogle gange involverer det sågar en fuldstændig omskrivning.</p>
+<p>Tag ved lære af de store programmeringsmestre, læs bogen <a href="http://codersatwork.com/">Coders at work - Reflections on the Craft of Programming</a>.</p>
+<p>Nogle af de største og mest succesfulde kodebaser i verden er kodebaser der er blevet udviklet af hundredvis af mennesker, der aldrig har mødt hinanden, kodebaser udviklet uden brug af nogen former for frameworks, kodebaser udelukkende udført i et proceduremæssig programmeringssprog uden brug af andet end det proceduremæssige paradigme, og de ville aldrig drømme om at gøre det anderledes.</p>
+<p>[Linux Kernen] (https://www.kernel.org/) består af mere end 20 millioner linjer kode alle skrevet udelukkende ved hjælp proceduremæssig programmering af mere end 14.000 deltagere uden brug af nogen former for frameworks.</p>
+<p>De forskellige [BSD] (https://en.wikipedia.org/wiki/Berkeley_Software_Distribution) varianter og det meste af [Linux GNU userland] (https://www.gnu.org/) er blevet skrevet udelukkende via proceduremæssig programmering uden anvendelsen af nogen former for frameworks.</p>
+<p>Det samme gælder for hundredvis af Open Source projekter rundt om i verdenen der til sidst blev opgivet af de oprindelige programmører kun at blive adopteret af andre dygtige programmører. Mange af disse projekter havde meget lidt dokumentation (hvis nogen overhovedet), ingen kommentarer i kodebasen, og ingen retningslinjer eller hjælp at tilbyde overhovedet.</p>
+<p>Hele PHP kodebasen er skrevet i C, et rent proceduremæssigt programmeringssprog, uden anvendelse af nogen former frameworks overhovedet.</p>
+<p>Når du definerer en klasse i PHP eller når du fyre op for dit favorit PHP framework, så kører du på en eller andens proceduremæssige arbejde!</p>
+<p>Selvfølgelig eksisterer der sådan en ting som forfærdelig kode, kode der måske ikke er designet fra starten af, eller kode der måske er vokset fra sig selv mange gange, men kunden ønskede ikke at foretage en renskrivning, kode der er så slem at du kan ikke kan finde hovede eller hale på det længere, men intet framework ville have forhindret denne situation. Dette er ofte den naturlige vækstproces af et program. Til sidst ville ethvert framework være blevet sønderrevet alligevel.</p>
+<p>Og ja, der findes forfærdelig spagetti kode, men ingen skriver forfærdelig spagetti kode med vilje. Nogle gange sker det som et resultat af manglende erfaring, ofte er det kundens skyld fordi de ændrer specifikationen flere gange undervejs i udviklingen, men uanset, i begge tilfælde, selv hvis der blev brugt et framework, så ville resultatet stadig være spagetti kode, og uanset hvor meget af det objektorienterede paradigme der blev anvendt, så ville resultatet stadig være spagetti kode.</p>
+<p>Som programmører forsøger vi alle at forhindre disse situationer, men <strong>det er normalt</strong>, det er <strong>kunsten at programmerer</strong>, det er en del af hvad det vil sige <strong>at være programmør</strong>!</p>
+<p><strong>Den forkerte måde</strong>: At være bange for andre menneskers kode <img src="/img/thumbs-down.png" alt="Thumbs down" /></p>
+<h1 id="at-følge-php-fig-standarderne-religiøst">At følge PHP-FIG standarderne religiøst</h1>
+<p>FIG står for “Framework Interoperability Group”.</p>
+<p><a href="http://www.php-fig.org/">PHP-FIG</a> blev udviklet af en gruppe framework udviklere ved php|tek 2009. Siden da har forskellige andre medlemmer tilmeldt sig, og er blevet stemt ind.</p>
+<p>Der eksisterer en masse kontroverser angående PHP-fig. Nogle mennesker mener at PHP-FIG er det bedste der er sket for PHP samfundet siden PHP selv, mens andre betragter gruppen som noget der skal gå i glemmebogen.</p>
+<p>Et af problemerne med PHP-FIG er at den præsenterer sig selv på følgende måde i deres <a href="http://www.php-fig.org/faqs/">spørgsmål/svar sektion</a>:</p>
+<blockquote>
+<p>Ideen bag gruppen er at projektrepræsentanter kan tale om fællestræk mellem vores projekter, og finde måder vi kan arbejde sammen på. Vores primære målgruppe er hinanden, men vi er meget opmærksomme på at resten af PHP samfundet ser på. Hvis andre folk ønsker at adopterer det vi laver, så er de velkomne til at gøre det, men det er ikke målet. Ingen i gruppen ønsker at fortælle dig som programmør hvordan du skal bygge din applikation.</p>
+</blockquote>
+<p>Men når vi ser på hvordan flere medlemmer af gruppen arbejder, kan vi tydeligt se at formålet er ganske i strid med ovenstående udtalelse. Disse medlemmer arbejder utrætteligt i et forsøg på at gøre PHP-FIG til en accepteret “PHP-standard gruppe”, <strong>hvilket også var det oprindelige navn på gruppen</strong>. Dette gør de ved at klassificere PHP-FIG’s arbejde som “Moderne PHP” i deres bøger, på deres hjemmesider, blog-indlæg, fora, osv., og ved at klassificere andre måder som værende bagud.</p>
+<p>Et af problemerne med PHP-FIG er at selvom mange frameworks og Open Source projekter har vedtaget flere af deres standarder, så beskæftiger disse standarder sig primært med problemer fra et “framework perspektiv”, hvilket gør dem temmelig ubrugelige i industriens virkelige liv.</p>
+<p>Mange mennesker udvikler software til industrien der skal være yderst effektiv, sikker og omkostningseffektiv. Software som kunderne er villige til at købe og bruge. De kan ikke blive generet med standarder der skal være i overensstemmelse med de behov framework fanatikere stiller. Hvis de forsøgte ville det være en katastrofe for erhvervslivet.</p>
+<p>Hvis der er behov for at oprette en slags standardgruppe, skal denne afspejle interesser i hele PHP samfundet, ikke kun framework og Open Source CMS projektudviklere. Den skal repræsenteres af udviklerne af PHP programmeringssproget selv, og den skal være repræsenteret af et meget større medlemskab med stemmeret.</p>
+<p>Hvis du vælger at adoptere de standarder, der er udviklet af PHP-FIG, er du nødt til at forstå at nogle af disse standarder - såsom autoloader standarderne PSR-0 og PSR-4, og flere andre standarder - har en direkte indvirkning på hvordan du koder din software.</p>
+<p>Mange virksomheder kræver meget skalerbar, run-time kritisk og omkostningseffektiv software, der simpelthen ikke kan udvikles ved hjælp af disse standarder fra PHP-FIG.</p>
+<p><strong>Den forkerte måde</strong>: At følge PHP-FIG religiøst. <img src="/img/thumbs-down.png" alt="Thumbs down" /></p>
+<h1 id="at-forsømme-sikkerhed">At forsømme sikkerhed</h1>
+<blockquote>
+<p>Problemet med programmører er at du kan aldrig vide hvad en programmør laver før det er for sent.</p>
+<p>– <a href="http://www.defprogramming.com/q/6e61ae30a855/">Seymour Cray</a></p>
+</blockquote>
+<p>Sikker kodning er den praksis at skrive programmer der er modstandsdygtige overfor angreb af ondsindede eller drillesyge mennesker eller andre programmer. Sikker kodning hjælper med at beskytte data imod tyveri eller korruption. Derudover kan et usikkert program give adgang til at en angriber kan tage kontrol over en server eller en brugers identitet, og det kan resultere i alt fra et “denial of service” mod en enkelt bruger til at hemmeligheder kompromitteres, services forsvinder, eller flere tusinde brugere får skade på deres systemer.</p>
+<p>Ethvert computerprogram er et potentielt mål for et sikkerhedsangreb. Angribere vil forsøge at finde sikkerhedsfejl i dine applikationer. De vil så forsøge at udnytte disse sikkerhedsfejl til at stjæle hemmeligheder, ødelægge programmer og data, og opnå kontrol over servere og netværk. Dine kunders ejendom og dit rygte er på spild.</p>
+<p><strong>Sikkerhed er ikke noget der kan tilføjes til software!</strong></p>
+<p>En usikker applikation kan kræve omfattende redesign for at sikre den. Du er nød til at identificerer naturen af de trusler din software står overfor, og så inkorporere sikker kodning fra begyndelsen og igennem hele planlægningen og udviklingen af din applikation.</p>
+<p>Det at sikre software ressourcer er blevet mere vigtigt end nogensinde da fokus fra angriberne stødt har bevæget til imod applikationslaget. En 2009 SANS undersøgelse fandt at angreb imod webapplikationer udgør mere end 60% af den samlede mængde af angreb observeret på internettet.</p>
+<p>PHP er usædvanlig i at det både er et programmeringssprog og et web-framework på samme tid. Dette betyder at PHP har en stor del indbygget funktionalitet i sproget der gør det meget let at skrive usikker kode.</p>
+<h2 id="sikker-som-standard">Sikker som standard</h2>
+<blockquote>
+<p>Kompleksitet dræber. Det suger livet ud af udviklere, det gør produkter vanskelige at planlægge, bygge og teste, det medfører sikkerhedsmæssige udfordringer, og det forårsager frustrationer for slutbrugeren og administratoren.</p>
+<p>– <a href="www.azquotes.com/quote/585933">Ray Ozzie</a></p>
+</blockquote>
+<p>For at applikationer skal designes og implementeres med sikkerhedskrav der er i orden, skal sikre kodningsprocedurer og fokus på sikkerhedsrisiko integreres i dag-til-dags operationer, tanker, og i selve udviklingsprocessen.</p>
+<p>Generelt er det meget billigere at bygge sikkert software end det er at rette sikkerhedsfejl efter at et stykke software er blevet færdiggjort, for ikke at tale om omkostningerne forbundet med et sikkerhedsbrist.</p>
+<p><strong>Den forkerte måde</strong>: At man ikke udvikler sikker software som standard. <img src="/img/thumbs-down.png" alt="Thumbs down" /></p>
+<h1 id="spørgsmål-og-svar">Spørgsmål og svar</h1>
+<p>Det er nemt at misforstå et skriftligt dokument så lad os præcisere nogle spørgsmål.</p>
+<p><strong>Spørgsmål:</strong> <em>Hvad er pointen med denne hjemmeside? Og hvorfor den konfronterende tilgang?</em></p>
+<p><strong>Svar:</strong> Formålet er at skabe diskussion og overvejelse om den nuværende praksis og de ekstreme synspunkter.</p>
+<p><strong>Spørgsmål:</strong> <em>Siger du at objektorienteret programmering er dårligt eller forkert?</em></p>
+<p><strong>Svar:</strong> Nej, selvfølgelig ikke! Vi siger at det at man altid tænker i, og altid kun bruger det objektorienterede paradigme til at løse problemer er dårligt. Når du tænker i sort og hvidt kun, det er forkert.</p>
+<p>Selv indenfor en enkelt applikation eksisterer der forskellige problemer. Et multi-paradigme er nogle gange den bedste løsning, det hele afhænger af det problem du forsøger at løse.</p>
+<p>Når du stopfodre et specifikt problem til en uegnet løsning sker der dårlige ting.</p>
+<p><strong>Spørgsmål:</strong> <em>Siger du at at alle frameworks er dårlige?</em></p>
+<p><strong>svar:</strong> Vi forsøger ikke at dømme specifikke frameworks. Vi behandler emnet om altid at bruge et framework ovenpå PHP.</p>
+<p><strong>Spørgsmål:</strong> <em>Hvis et framework kan få mig hurtigt op og køre, hvorfor er det så dårligt?</em></p>
+<p>Hvis du har analyseret situationen og de langsigtede konsekvenser, og du derefter kan se at det “at få det op at køre hurtigt”, er det eneste problem du nogensinde bliver nød til at beskæftige dig med, så er det ikke dårligt, men så beskæftiger vi os næppe med programmering eller softwareudvikling, så har vi at gøre det meste med peg-og-klik løsninger.</p>
+<p>At komme op og køre hurtigt er ikke software design, det betyder for det mester, at du ikke har analyseret det problem, du står over for, og at du ikke har forstået de langsigtede konsekvenser af dit valg.</p>
+<p><strong>Spørgsmål:?</strong> <em>Siger du at tredjeparts pakker er dårlige?</em></p>
+<p><strong>Svar:</strong> Nej, vi er fremmer brugen af ​​tredjeparts biblioteker. Kode som du nemt kan integrere i dine egne projekter uden at håndhæve eventuelle begrænsninger eller restriktioner overhovedet. Sådanne er fantastiske!</p>
+<p><strong>Q:</strong> <em>Hvem er du?</em></p>
+<p><strong>A:</strong> Denne hjemmeside handler om ideer og om at bekæmpe ekstremisme i PHP samfundet, den handler ikke om personlig berømmelse eller genkendelse. Offentliggørelse af navne vil kun flytte opmærksomheden væk fra de problemer som hjemmesiden behandler til de mennesker der behandler dem. Bare hold dig fokuseret på ideerne.</p>
+<p><strong>Q:</strong> <em>Hvad er din erfaring med softwareudvikling?</em></p>
+<p><strong>A:</strong> Ideerne, tankerne og konklusionerne der udtrykkes på denne hjemmeside, kræver ikke megen erfaring at komme frem til hvis du blot holder fokus på hovedtemaet, hvilket er at man altid gør én bestemt ting, fordi andre mennesker siger, at man skal.</p>
+<h1 id="anbefalet-læsning">Anbefalet læsning</h1>
+<p><a href="https://news.ycombinator.com/item?id=12318615">PHP The Wrong Way on Hacker News</a></p>
+<ul>
+<li>Da “PHP The Wrong Way” blev lanceret resulterede det i en bunke af kommentarer på Hacker News der har mange værdifulde argumenter der er værd at læse.</li>
+</ul>
+<p><a href="https://news.ycombinator.com/item?id=12377385">Why bad scientific code beats code following “best practices”</a></p>
+<ul>
+<li><p>Simple-minded, care-free near-incompetence can be better than industrial-strength good intentions paving a superhighway to hell. The “real world” outside the computer is full of such examples.</p></li>
+<li><p>Simpel ligegyldig tæt-på-inkompetence kan være bedre end gode intentioner der baner en super motorvej til helvede. Den “virkelige verden” uden for computeren er fuld af sådanne eksempler.</p></li>
+</ul>
+<p><a href="https://medium.com/@brianwill/how-to-program-without-oop-74a46e0e47a3#.squpnjz4n">How to program without OOP</a></p>
+<ul>
+<li>Som et frisk og alternativt perspektiv diskuterer Brian Will i tre videoer hvorfor han mener, at objektorienteret programmering er en dårlig idé til at begynde med, og han afslutter serien med nogle kommentarer om hvordan ikke-OOP kode bør skrives.</li>
+</ul>
+<p><a href="http://codersatwork.com/">Coders at work - Reflections on the Craft of Programming</a></p>
+<ul>
+<li>Baseret på næsten firs timers samtaler med femten af hvor tids store programmører og dataloger. Spørgsmål og svar interviews i “Coders at Work” giver et multifacetteret indblik i hvordan store programmører lærte at programmerer, hvordan de udvikler deres håndværk, og hvad de tænker på om fremtiden for programmering.</li>
+</ul>
+<p><a href="https://www.oreilly.com/ideas/the-traits-of-a-proficient-programmer">The traits of a proficient programmer</a></p>
+<ul>
+<li>Kompetence betyder at have nok erfaring og viden til at få ting gjort. Dygtighed involverer at du ved hvorfor du gør noget bestemt på en særlig måde, og hvordan det passer ind i det store hele. Med andre ord, en dygtig fagmand er altid en kompetent fagmand, men det modsatte behøver ikke at være sandheden.</li>
+</ul>
+<p><a href="https://www.owasp.org/images/0/08/OWASP_SCP_Quick_Reference_Guide_v2.pdf">OWASP Secure Coding Guidelines</a></p>
+<ul>
+<li>Dette tekniske dokument definerer - i tjekliste format - et sæt generelle regler angående sikkerhed indenfor udvikling af software der kan integreres i softwareudviklingens cyklus. Implementeringen af disse regler vil forhindre de fleste kendte sårbarheder i software.</li>
+</ul>
+<p><a href="https://www.owasp.org/index.php/Security_by_Design_Principles">Security by Design Principles</a></p>
+<ul>
+<li>Sikkerhed indenfor webudvikling er en essentiel komponent i ethvert succesfuldt projekt, uanset om det er PHP applikationer med åben kildekode, webservices som “Straight-through processing (STP)”, eller proprietære forretningshjemmesider. Hjemmesidehoteller afskyr (med god ret) usikker kode, og brugere afskyr usikre services der fører til svindel. Formålet med dette udviklingsdokument er at sikre at virksomheder, udviklere, designere, og løsningsarkitekter producerer sikre webapplikationer. Hvis det bliver gjort i de tidligste stadier, så koster en sikre applikationer omtrent det samme at udvikle som usikre applikationer, men de er meget mere omkostningseffektive på det lange sigt.</li>
+</ul>
+<p><a href="http://phpsecurity.readthedocs.io/en/latest/">Survive The Deep End: PHP Security</a></p>
+<ul>
+<li>Enhver der er mål for en alvorlig sikkerhedsbrist vil hurtig nævne i deres pressemeddelelser og på deres hjemmesider: Sikkerhed er meget vigtigt for dem, og det skal tages meget alvorligt. Det er anbefalet at du tager dette synspunkt til hjertet, før du lærer det på den hårde måde.</li>
+</ul>
+<p><a href="https://openlibrary.org/books/OL7407595M/Refactoring">Refactoring Improving the Design of Existing Code</a></p>
+<ul>
+<li>Refaktorering handler om at forbedre udformningen af eksisterende kode. Det er processen om at ændre et softwaresystem på en sådan måde, at det ikke ændrer den ydre opførsel af koden, men forbedrer sin interne struktur. Med refaktorering kan du endda tage et dårligt design og omarbejde det til et godt et. Denne bog giver en grundig gennemgang af principperne for refaktorering, herunder hvordan du opdager muligheder for refaktorering, og hvordan du opsætter de nødvendige tests. Der er også et katalog over mere end 40 gennemprøvede refaktoreringer med detaljer om, hvornår og hvorfor du bør bruge refaktorering, trin for trin instruktioner om at iværksætte det, og et eksempel der illustrerer, hvordan det fungerer. Bogen er skrevet med brugen af Java som sit primære sprog, men ideerne er gældende for alle OO sprog.</li>
+</ul>
+<p><a href="https://openlibrary.org/works/OL15333872W/The_Practice_of_Programming_%28Addison-Wesley_Professional_Computing_Series%29">The Practice of Programming</a></p>
+<ul>
+<li>En samling af praktiske emner af betydning for programmører.</li>
+</ul>
+<p><a href="https://openlibrary.org/works/OL5748544W/The_pragmatic_programmer">The pragmatic programmer</a></p>
+<ul>
+<li>“The Pragmatic Programmer: From Journeyman to Master” undersøger kernen i programmeringsprocessen, det at tage et behov og producere en virkebar og vedligeholdelsesvenlig kode der glæder sine brugere. Den dækker emner lige fra personligt ansvar og karriereudvikling til arkitektoniske teknikker til at holde koden fleksibel, let at tilpasse, og genbruge.</li>
+</ul>
+<p><a href="https://openlibrary.org/works/OL1875800W/Understanding_programming_languages">Understanding programming languages</a></p>
+<ul>
+<li>Valget af et programmeringssprog er en af de vigtigste faktorer, der påvirker den endelige kvalitet af et softwaresystem. Desværre, har for mange programmører dårlige sprogkundskaber: De er lidenskabeligt forelsket i deres “modersmål”, og er ikke i stand til at analysere sproglige begrænsninger. “Understanding programming languages” er skrevet med henblik på at forklare, hvad der findes af alternativer til det sprogdesigneren, hvordan sproglige konstruktioner bør anvendes med hensyn til sikkerhed og læsbarhed, hvordan sproglige konstruktioner gennemføres, og hvilke der effektivt kan overholdes, og hvad er sprogets rolle i at udtrykke og håndhæve abstraktioner.</li>
+</ul>
+<h1 id="hvordan-du-kan-hjælpe">Hvordan du kan hjælpe</h1>
+<p>Bidrag på <a href="https://github.com/binarysanity/phpthewrongway">GitHub</a>.</p>
+<ul>
+<li>Klon og rediger.</li>
+<li>Indsend “pull request” til bedømmelse.</li>
+</ul>
+<p>Tilføj sektioner til <em>sections/SPROG</em> mapperne eller rediger i eksisterende sektioner.</p>
+</body>
+</html>
