@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <meta name="author" content="La mauvaise manière">
+  <title>PHP - La mauvaise manière</title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <link rel="stylesheet" href="/css/html.css">
+<meta name="description" content="Ce site web a été créé dans le but de présenter une vision pragmatique de la programmation en PHP. Une vision dictée par l'expérience et les conséquences pratiques plutôt que par les tendances, la théorie ou le dogme académique.">
+</head>
+<body>
+<header>
+<div id="header-top">
+<a href="https://github.com/binarysanity/phpthewrongway"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/652c5b9acfaddf3a9c326fa6bde407b87f7be0f4/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6f72616e67655f6666373630302e706e67" alt="Fork me on GitHub" data-canonical-src="/img/github-clone.png"></a>
+<h1>PHP</h1>
+<h2>La mauvaise manière</h2>
+<div id="date">Dernière mise à jour : 13/12/2017</div>
+</div>
+</header>
+<div id="cartoon">
+<img src="/img/deviant-code-1000px-fr.png" alt="cartoon">
+</div>
+<nav id="TOC">
+<ul>
+<li><a href="#bienvenue">Bienvenue</a><ul>
+<li><a href="#traductions">Traductions</a></li>
+</ul></li>
+<li><a href="#le-danger-de-lextrémisme">Le danger de l’extrémisme</a></li>
+<li><a href="#toujours-utiliser-un-cadriciel">Toujours utiliser un cadriciel</a></li>
+<li><a href="#toujours-utiliser-un-patron-de-conception">Toujours utiliser un patron de conception</a></li>
+<li><a href="#toujours-utiliser-la-programmation-orientée-objet">Toujours utiliser la programmation orientée objet</a><ul>
+<li><a href="#une-petite-leçon-dhistoire">Une petite leçon d’histoire</a></li>
+</ul></li>
+<li><a href="#avoir-peur-du-code-dautrui">Avoir peur du code d’autrui</a></li>
+<li><a href="#suivre-les-standards-php-fig-religieusement">Suivre les standards PHP-FIG religieusement</a></li>
+<li><a href="#négliger-la-sécurité">Négliger la sécurité</a><ul>
+<li><a href="#sécurisé-par-défaut">Sécurisé par défaut</a></li>
+</ul></li>
+<li><a href="#faq">FAQ</a></li>
+<li><a href="#lecture-recommandée">Lecture recommandée</a></li>
+<li><a href="#comment-contribuer">Comment contribuer</a></li>
+</ul>
+</nav>
+<h1 id="bienvenue">Bienvenue</h1>
+<p>Dans le monde de la programmation en PHP, un ensemble de tendances est massivement propagé par certaines personnes en tant que « PHP moderne » (dans leurs livres et sur leurs sites web), tandis que les autres approches sont considérées comme arriérées, stupides ou fausses.</p>
+<p>Ces personnes semblent travailler sans relâche pour que d’autres suivent leur manière de faire.</p>
+<p>Ce site web a été créé dans le but de présenter une vision pragmatique de la programmation en PHP. Une vision dictée par l’expérience et les conséquences pratiques plutôt que par les tendances, la théorie ou le dogme académique.</p>
+<p>Ce site web <a href="http://www.phpthewrongway.com/fr/">PHP - La mauvaise manière</a> est un document évolutif et continuera à être mis à jour avec davantage d’informations quand elles seront disponibles.</p>
+<p>N’hésitez pas à contribuer.</p>
+<h2 id="traductions">Traductions</h2>
+<ul>
+<li><a href="http://www.phpthewrongway.com/">Anglais</a></li>
+<li><a href="http://www.phpthewrongway.com/da/">Danois</a></li>
+<li><a href="http://www.phpthewrongway.com/es/">Espagnol</a></li>
+<li><a href="http://www.phpthewrongway.com/fr/">Français</a></li>
+<li><a href="http://www.phpthewrongway.com/ja/">Japonais</a></li>
+<li><a href="http://www.phpthewrongway.com/fa/">Perse</a></li>
+<li><a href="http://www.phpthewrongway.com/pt_br/">Portugais</a></li>
+<li><a href="http://www.phpthewrongway.com/ru/">Russe</a></li>
+</ul>
+<h1 id="le-danger-de-lextrémisme">Le danger de l’extrémisme</h1>
+<p>Le problème avec les règles et lignes de conduite en programmation, c’est qu’elles servent un but dans un contexte précis. Sortie du contexte, une bonne règle peut devenir une horrible règle. En effet, toute bonne règle devient mauvaise lorsqu’elle est poussée à l’extrême.</p>
+<p>Ceci est important à comprendre car beaucoup de principes et de règles de développement logiciel développés au cours du temps et présentés par plusieurs personnes deviennent souvent mal utilisées dans les mains d’extrémistes.</p>
+<p>L’expérience nous a appris que la mauvaise utilisation de règles générales et de lignes de conduite a toujours pour effet une complication, un problème de sécurité, des résultats eronnés et dans certains cas un désastre complet.</p>
+<p>Le <a href="https://fr.wikipedia.org/wiki/Principe_KISS">principe KISS</a> qui est un acronyme anglais pour “Keep It Simple, Stupid” (« Garde ça simple, stupide » ndt), est un bon et sage principe qui est généralement vu par les développeurs expérimentés comme un très bon conseil à suivre, mais même ce grand principe devient un danger pour un projet s’il est suivi à la lettre. Une chose « trop simple » conduit à un manque de fonctionnalité.</p>
+<p><strong>La mauvaise manière</strong> : Suivre religieusement les règles et lignes de conduite. <img src="/img/thumbs-down.png" alt="Thumbs down" /></p>
+<h1 id="toujours-utiliser-un-cadriciel">Toujours utiliser un cadriciel</h1>
+<blockquote>
+<p>Tous les cadriciels PHP généralistes craignent !</p>
+<p>– <a href="https://www.youtube.com/watch?v=DuB6UjEsY_Y">Rasmus Lerdorf (en)</a></p>
+</blockquote>
+<p>Dans la communauté PHP, une très mauvaise tendance est devenue un standard de-facto dans le développement des applications web, c’est-à-dire l’utilisation d’un cadriciel généraliste populaire.</p>
+<p>Cette tendance a émergé et est devenue populaire, non pas parce qu’elle améliore le résultat du processus de développement d’une quelconque façon ou parce que c’est la bonne chose à faire d’un point de vue technologique et architectural. Cette tendance est devenue populaire parce que certains développeurs de cadriciels ont réussi à entraîner les masses dans leur polémique envers la programmation à partir de zéro avec des strophes telles que « Ne réinventez pas la roue ! » et « Ne le faites pas vous-même, d’autres sont plus compétents que vous ».</p>
+<p>Nombre de développeurs actuels ignore complètement les principes fondamentaux de la programmation sonore et passe une grande partie de leurs temps à rêver à de nouvelles couches de complexité dans le but d’apparaître plus intelligents, plus cool ou plus acceptables par ceux qu’ils considèrent comme leurs pairs.</p>
+<p>Ces personnes semblent tirer leur fierté dans l’idée d’avoir d’autres gens qui suivent leur « manière de faire les choses », devenant en quelque sorte un meneur de la communauté PHP, et voyant d’autres gens utiliser leurs derniers outils Open Source à la mode, au point d’oublier de s’assurer que le conseil qu’ils donnent est valide.</p>
+<p>Dans l’industrie logicielle, vous pouvez comparer une maison pré-fabriquée à un cadriciel généraliste. Construire un logiciel avec un cadriciel généraliste ne fait pas plus de vous un programmeur qu’assembler une maison pré-fabriquée fait de vous un charpentier.</p>
+<p>Sur ce site, nous différencierons les cadriciels et les bibliothèques de la manière suivante :</p>
+<ul>
+<li>Une bibliothèque est considérée comme une collection de code réutilisable, telle que la bibliothèque standard C, ou la bibliothèque standard Go. Cela consiste en un code que vous pouvez facilement intégrer dans vos propres projets sans limitation ou restriction de quelque sorte.</li>
+<li>Un cadriciel n’est pas seulement une collection de code réutilisable : vous ne pouvez pas simplement prendre un bout de code d’un cadriciel et l’intégrer dans votre propre projet. Un cadriciel est un système qui vous aide à construire un logiciel, mais dans le même temps il vous force à travailler dans les limitations et restrictions du cadriciel lui-même. Le cadriciel a beaucoup de fonctionnalités interdépendantes. Un bout ne peut pas marcher sans l’autre.</li>
+</ul>
+<p>Dans le monde de Python et Ruby, construire des sites web à partir de zéro est fatiguant parce que ni Python, ni Ruby n’ont été créés originellement pour construire des sites web. De ce fait, les cadriciels généralistes tels que <a href="https://fr.wikipedia.org/wiki/Django_(framework)">Django</a> et <a href="https://fr.wikipedia.org/wiki/Ruby_on_Rails">Ruby on Rails</a> devinrent rapidement populaires pour construire des site web dans ces langages.</p>
+<p>PHP d’un autre côté a été créé dès le départ par Rasmus Lerdorf comme une trousse à outils écrite en C qui vous permet de développer du HTML dynamique facilement et rapidement. Cela faisait de PHP, et fait toujours, <strong>un cadriciel lui-même</strong>.</p>
+<p>PHP a évolué massivement depuis lors, et PHP peut désormais être utilisé pour davantage de choses que construire du HTML et des sites web, mais voir PHP comme une sorte de cadriciel n’est pas faux. PHP est par nature une couche d’abstraction pour le développement d’applications web écrit entièrement en C procédural.</p>
+<p>Utiliser une bibliothèque dans votre projet est tout ce qu’il y a de plus naturel. PHP lui-même est livré avec un ensemble de bibliothèques que vous pouvez utiliser pour étendre votre code. PDO par exemple est une bibliothèque légère qui fournit une interface unifiée pour accéder aux bases de données en PHP.</p>
+<p>Utiliser un cadriciel au-dessus de PHP est une toute autre question.</p>
+<p>Lorsque vous utilisez un cadriciel en PHP, vous ajoutez une couche d’abstraction au-dessus d’une autre couche d’abstraction, celle qui était déjà en place pour que vous commenciez. La couche d’abstraction ajoutée que le cadriciel fournit peut simplement servir à organiser votre code en un ensemble pré-établi de schémas, ou il peut ajouter encore plus de complexité en interconnectant des centaines ou des milliers de classes et méthodes en un cauchemar de dépendances, dans tous les cas en ajoutant des couches de complexité à votre code qui ne sont pas nécessaires !</p>
+<p>Toute l’expérience commence par l’interface. L’expérience de l’interface est le résultat de la technologie sous-jacente et du nombre de couches d’abstraction. Plus vous utilisez d’abstractions, moins l’interface est efficace et plus l’application est sujette aux erreurs. Plus l’interface est haut niveau, plus le détail et l’efficacité sont perdus.</p>
+<p>Comprenez bien : <strong>Le nombre idéal de lignes de code dans tout projet est aussi peu que possible tout en étant le plus clair et lisible que possible !</strong></p>
+<blockquote>
+<p>Ce dont tout le monde n’a pas besoin, c’est d’un cadriciel généraliste. Personne n’a un problème général, tout le monde a un problème très précis qu’il tente de résoudre.</p>
+<p>– <a href="https://www.youtube.com/watch?v=anr7DQnMMs0">Rasmus Lerdorf (en)</a></p>
+</blockquote>
+<p>Quelques entreprises commencèrent à entendre l’effet de mode autour des cadriciels PHP et lancèrent leur nouveaux projets en utilisant l’un de ces populaires cadriciels généralistes, pour ne finir que dans un désastre. Non seulement ils découvrirent que le cadriciel généraliste était mauvais pour résoudre leur problème précis, mais il était aussi extrêmement lent à le faire. Il était impossible de suivre l’extensibilité des besoins et de ce fait ils commencèrent à déchirer le cadriciel en morceaux dans une tentative désespérée de sortir les parties dont ils n’avaient pas vraiment besoin.</p>
+<p>Utilisez toujours l’approche pragmatique :</p>
+<blockquote>
+<p>Une action ou une conduite dictée par la considération de conséquences pratiques immédiates plutôt que par la théorie ou le dogme.</p>
+<p>– Dictionnaire anglais Collins, complet et intégral, 12e édition 2014</p>
+</blockquote>
+<p><strong>La mauvaise manière</strong> : Toujours utiliser un cadriciel au-dessus de PHP. <img src="/img/thumbs-down.png" alt="Thumbs down" /></p>
+<h1 id="toujours-utiliser-un-patron-de-conception">Toujours utiliser un patron de conception</h1>
+<blockquote>
+<p>J’ai cette grande allergie envers les conceptions et les patrons de conceptions en tour d’ivoire. Peter Norvig, quand il était à Harlequin, écrivit ce papier sur la manière dont les patrons de conception sont en réalité des défauts dans votre langage de programmation. Trouvez un meilleur langage de programmation. Il a absolument raison. Vénerer les patrons et penser : « Oh, je vais utiliser le patron X ».</p>
+<p>– Brendan Eich dans <a href="http://codersatwork.com/">Coders at work - Reflections on the Craft of Programming (en)</a></p>
+</blockquote>
+<p>En ingénierie logicielle, un patron de conception est une solution réutilisable pour un problème récurrent arrivant en conception logicielle. Un patron de conception n’est pas une conception finie qui peut être transposée directement en code. C’est une description ou une idée sur la manière de résoudre un problème qui peut être utilisée dans différentes situations. Les patrons de conceptions orientés objets montrent typiquement les relations et interactions entre des classes et des objets, sans spécifier l’application finale des classes et objets impliqués.</p>
+<p>PHP supporte les paradigmes impératif, fonctionnel, orienté objet, procédural et réflectif. PHP est une énorme trousse à outils avec beaucoup de différents outils avec lesquels il est possible de résoudre divers problèmes de manières différentes – pas uniquement une seule.</p>
+<p>PHP c’est avant tout la liberté, des solutions rapides et extensibles, et possédant de multiples façons de traiter les problèmes.</p>
+<p>Lorsque nous tentons de nous améliorer, et notre code dans ce cas, nous nous accrochons parfois à la philosophie d’un idée ou d’un patron particulier et tendons à oublier de penser de manière pratique.</p>
+<blockquote>
+<p>Quand je vois des patrons dans mes programmes, je le considère comme une signal d’alarme. La structure d’un programme ne devrait refléter seulement que le problème qu’il tente de résoudre. Tout autre singularité dans le code est un problème, pour moi au moins, que je suis en train d’utiliser des abstractions pas suffisamment efficaces — et souvent que je génère à la main des expansions de quelque macro que j’ai besoin d’écrire.</p>
+<p>– <a href="http://c2.com/cgi/wiki?AreDesignPatternsMissingLanguageFeatures">Paul Graham (en)</a></p>
+</blockquote>
+<p>Nous ne devrions avoir à nous accrocher à une philosophie ou une idée derrière un patron ou une solution spécifique. Notre souci principal est de garder le code aussi facile à naviguer et comprendre que possible et de ce fait facile à maintenir et garder sécurisé.</p>
+<p>Nous devons aussi nous souvenir qu’il existe une chose appelée anti-patron. C’est un patron qui peut être couramment utilisé mais qui n’est pas efficace et / ou contre-productif en pratique.</p>
+<blockquote>
+<p>Je pense que les patrons ont commencé comme les meilleures solutions généralement reconnues pour les problèmes habituels. Mais maintenant qu’ils sont là depuis un moment et que nous subissons des applications dix fois plus compliquées que nécessaires parce que les gens tentent de placer tous les patrons dont ils ont entendu parler (« mon application est bien architecturée, parce qu’elle est construite avec des patrons »), mon impression de la valeur des patrons a changé.</p>
+<p>– Paul Wheaton dans <a href="http://www.javaranch.com/patterns/">Evil Design Patterns (en)</a></p>
+</blockquote>
+<p>Utilisez toujours l’approche pragmatique :</p>
+<blockquote>
+<p>Une action ou une conduite dictée par la considération de conséquences pratiques immédiates plutôt que par la théorie ou le dogme.</p>
+<p>– Dictionnaire anglais Collins, complet et intégral, 12e édition 2014</p>
+</blockquote>
+<p><strong>La mauvaise manière</strong> : Chercher un patron pour résoudre un problème. <img src="/img/thumbs-down.png" alt="Thumbs down" /></p>
+<h1 id="toujours-utiliser-la-programmation-orientée-objet">Toujours utiliser la programmation orientée objet</h1>
+<blockquote>
+<p>Le problème avec les langages orientés objet est qu’ils ont tout cet environnement implicite autour d’eux. Vous vouliez une banane mais ce que vous obtenez c’est un gorille tenant une banane et la jungle tout entière.</p>
+<p>– Joe Armstrong dans <a href="http://codersatwork.com/">Coders at work - Reflections on the Craft of Programming (en)</a></p>
+</blockquote>
+<blockquote>
+<p>L’abstraction est puissante. Ce dont je suis réellement allergique et à quoi j’ai réagi dans les années 90, était tout ces non sens orientés objet tels CORBA, COM, DCOM. Toutes les startups du jour avaient ces bizarreries qui prenaient 200 000 appels de méthodes pour démarrer et afficher un « Hello world ». Quel travestissement ! Vous ne voulez pas être un programmeur associé à ce genre de chose.</p>
+<p>– Brendan Eich dans <a href="http://codersatwork.com/">Coders at work - Reflections on the Craft of Programming (en)</a></p>
+</blockquote>
+<p>Beaucoup de développeurs, et beaucoup d’entreprises, ont le sentiment que la programmation orientée objet est la seule méthode raisonnable pour développer des logiciels de nos jours. Quiconque conteste la programmation orientée objet prend immédiatement conscience qu’il conteste la « sagesse conventionnelle » de l’industrie.</p>
+<p>Sur les forums et les blogs de programmation, il y a une quantité de personnes formidables qui défendent la programmation orientée objet, et qui sont certains qu’ils savent de quoi ils parlent, en dépit du manque d’une définition standard.</p>
+<p>Le fait est que cette soit-disant programmation orientée objet inflige souvent un lourd fardeau de complexité non nécessaire !</p>
+<p>En tant que informaticiens et programmeurs, nous devons apprendre à mettre de côté nos préjugés et trouver la meilleure solution à un problème donné.</p>
+<p>De nos jours, l’une des forces principales de PHP est son support des paradigmes impératif, fonctionnel, orienté objet, procédural et réflectif. PHP est une énorme trousse à outil avec beaucoup d’outils différents qui lui permet de résoudre quantité de problèmes de différentes façons - <strong>pas seulement une seule !</strong></p>
+<p><strong>Aussi longtemps que nous essayons d’imposer aux différents problèmes d’une application un unique et spécifique paradigme de programmation, nous ne pensons pas de manière créative et nous ne travaillons pas efficacement !</strong></p>
+<h2 id="une-petite-leçon-dhistoire">Une petite leçon d’histoire</h2>
+<p>L’une des meilleures manières de comprendre un paradigme de programmation spécifique est de regarder comment il a évolué au préalable. Quelle était la raison de son développement ? Quels problèmes existaient avec les autres paradigmes de programmation qui ont nécessité une nouvelle manière de penser ? Était-ce un problème réel ou un problème académique ? Et comment a-t-il évolué depuis ?</p>
+<p>Cela n’a pas d’importance ce que Untel a dit ou quelle définition Unetelle donne, ce qui est important dans le contexte des paradigmes est l’histoire qui les a créé.</p>
+<blockquote>
+<p>Il y a deux manières de construire une conception logicielle. La première est de la faire si simple qu’il n’y a évidemment aucun défaut. L’autre manière est de la faire si complexe qu’il n’y a aucun défaut évident.</p>
+<p>– <a href="https://en.wikiquote.org/wiki/C._A._R._Hoare">C.A.R. Hoare (en)</a></p>
+</blockquote>
+<p>Dans le passé, avant la venue de la programmation orientée objet, à la fin des années 50, nombre de programmes étaient développés en utilisant des langages mettant en avant une programmation destructurée, parfois appelée langages de première et deuxième génération. La programmation destructurée (ou programmation sans structure) est historiquement le premier des paradigmes de programmation. Il fut massivement accusé de produire du code « spaghetti ».</p>
+<p>Il existe des langages de programmation de haut et de bas niveaux qui utilisent la programmation non structurée. Ceux-ci incluent les premières versions de BASIC, COBOL, MUMPS, JOSS, FOCAL, TELCOMP, le code machine, les premiers systèmes assembleurs (ceux sans les méta-opérateurs procéduraux) et quelques langages de script.</p>
+<p>Un programme dans un langage non structuré consiste habituellement en une séquence ordonnée de commandes, ou instructions, généralement une par ligne. Les lignes sont habituellement numérotées ou peuvent avoir des étiquettes qui permet au flux d’exécution de sauter vers n’importe quelle ligne du programme (comme l’impopulaire instruction GOTO).</p>
+<p>Puis, dans les années 60, la programmation structurée émergea - principalement due au célèbre Edsger W. Dijkstra <a href="http://www.u.arizona.edu/~rubinson/copyright_violations/Go_To_Considered_Harmful.html">L’instruction Go To est considérée dangereuse (en)</a>.</p>
+<p>La programmation structurée est un paradigme de programmation qui améliore la clarté, la qualité et le développement logiciel par l’utilisation de sous-routines, de blocs de structure et de boucles. C’est un contraste à l’utilisation de simples sauts tels que l’instruction GOTO.</p>
+<p>Plus tard, la programmation procédurale fut dérivée de la programmation structurée. La programmation procédurale est basée sur le concept d’« appels de procédures ». Un « appel de procédure » est simplement un autre nom pour « appel de fonction ». Les procédures sont aussi appelées routines, sous-routines ou méthodes. Une procédure contient simplement une séries d’étapes calculatoires à effectuer. Toute procédure peut être appelée à n’importe quel endroit durant l’éxécution du programme, y compris au sein des autres procédures, ou d’elle-même.</p>
+<p>Au départ, toutes les procédures étaient disponibles à n’importe quelle partie du programme en tant que données globales. Dans les petits programmes cela ne représentait aucun problème, mais les choses devinrent plus complexes lorsque la taille du programme augmentait, les petits changements d’une partie du programme affectant beaucoup d’autres parties.</p>
+<p>Personne ne prévoyait de changements dans le programme et il existait quantité de dépendances. Un changement mineur dans une procédure aurait impliqué une cascade d’erreurs dans beaucoup de procédures qui dépendaient du code originel.</p>
+<p>Une nouvelle technique qui permettait aux données d’être divisées en portées cloisonnées appelées « objets » évolua. Seules les procédures appartenant spécifiquement à la même portée pouvaient accéder à la même donnée. On l’appela masquage de données, ou encapsulation. Cela résultat en un code mieux organisé.</p>
+<p>À l’origine, les objets ne s’appelaient pas objets, ils étaient juste vus comme des portées séparées. Plus tard, quand les dépendances furent réduites et les connexions entre les procédures et les variables dans ces portées furent considérées comme des segments isolés, le résultat donna naissance au concept d’« objets » et à la « programmation orientée objet ».</p>
+<p>Plus tard, principalement dû au développement de Java, certains « buzzwords » ont émergé et « une procédure » ou « une fonction » n’était plus appelée une fonction, mais fut renommée « une méthode » quand elle se trouvait dans une portée séparée. Les variables n’étaient plus non plus appelée « variables », mais furent renommées « attributs » quand elles se trouvaient dans une portée séparée.</p>
+<p>Ainsi, un objet est par essence simplement une collection de fonctions et variables désormais appelées « méthodes et attributs ».</p>
+<p>La façon dont les méthodes et attributs sont gardées isolées dans une portée séparée est dans l’usage « une classe ». Une classe, une fois instanciée, est appelée un objet.</p>
+<p>Les objets peuvent se référencer les uns les autres et ainsi, les méthodes à l’intérieur (fonctions) peuvent communiquer. Les objets peuvent aussi « hériter » de méthodes d’autres objets par ce qui est appelé « l’héritage ». Il s’agit d’une méthode pour réutiliser le code et permettre les extensions indépendantes du logiciel via les classes publiques et les interfaces. Les relations d’objets donnent lieu à une hiérarchie. L’héritage fut inventé en 1967 pour le langage de programmation <a href="https://fr.wikipedia.org/wiki/Simula">Simula 67</a>.</p>
+<p>Les objets peuvent aussi hériter de méthodes d’autres objets et les « surcharger » en ajoutant ou changeant des fonctionnalités, cela s’appelle le « polymorphisme ».</p>
+<p>Comment ces différentes idées sont implémentées varie grandement d’un langage de programmation à un autre.</p>
+<p>La programmation orientée objet est une autre manière d’organiser le code qu’auparavant. C’est une extension de la programmation procédurale visant à cacher les données (encapsulation) et éviter la portée globale. Il s’agit d’étendre les fonctions en « empruntant » leurs plans directeurs sans affecter le code originel (héritage). Et il s’agit de surcharger les fonctions sans affecter le code originel (polymorphisme).</p>
+<blockquote>
+<p>Le modèle orienté objet facilite la construction de programmmes, par l’accrétion. Ce qui signifie souvent, en pratique, que ça fournit une manière structurée d’écrire du code spaghetti.</p>
+<p>– Paul Graham dans <a href="https://openlibrary.org/works/OL7944696W/ANSI_Common_Lisp">Ansi Common Lisp (en)</a></p>
+</blockquote>
+<p><strong>La mauvaise manière</strong> : Toujours utiliser la programmation orientée objet. <img src="/img/thumbs-down.png" alt="Thumbs down" /></p>
+<h1 id="avoir-peur-du-code-dautrui">Avoir peur du code d’autrui</h1>
+<p>Un argument souvent entendu en faveur de l’usage de cadriciel est que les gens ne veulent pas gérer les codes écrits de zéro par d’autres.</p>
+<p>C’est une mentalité étrange cependant, principalement rencontrée parmi les web développeurs de la communauté PHP. Elle reflète un manque d’expérience et de professionnalisme.</p>
+<p>Écrire un logiciel et gérer le code d’autrui est normal. C’est une part du travail journalier d’un programmeur professionnel. Ce n’est pas quelques chose dont on doit avoir peur.</p>
+<p>Un programmeur professionnel ne regarde pas le code d’autrui pour commencer à se plaindre qu’il est à la merci du programmeur précédent, qui n’est probablement plus associé à l’entreprise ou au projet, et si seulement le programmeur précédent avait utilisé le cadriciel A ou B, la vie aurait été plus facile.</p>
+<p>Ce n’est pas la mentalité d’un programmeur professionnel. Personne ne fait ça.</p>
+<p>Peut-être que la facilité d’entrée dans le développement web PHP joue un rôle dans ce genre de mentalité. Quoiqu’il en soit, c’est le signe d’une personne étant dans une mauvaise ligne de conduite.</p>
+<p>Une grande partie de la programmation est d’avoir à travailler avec le code d’autrui. C’est une part du travail d’essayer d’améliorer le code existant et parfois cela implique une réécriture complète.</p>
+<p>Prenez note sur les grands maîtres de la programmation en lisant le livre <a href="http://codersatwork.com/">Coders at work - Reflections on the Craft of Programming (en)</a>.</p>
+<p>Certaines des plus grandes et des plus réussies bases de code dans le monde sont des bases de code qui ont été développées par des centaines de personnes qui ne se sont jamais rencontrées, des bases de code développées sans l’utilisation d’aucun cadriciel, des bases de code faites entièrement dans un langage procédural sans rien d’autre que le paradigme procédural, et ils ne rêveraient pas d’en faire autrement.</p>
+<p>Le <a href="https://www.kernel.org/">noyau Linux (en)</a> consiste en plus de 20 millions de lignes de code toutes écrites utilisant la programmation procédurale par plus de 14 000 participants sans aucun cadriciel d’aucune sorte.</p>
+<p>La projet <a href="https://fr.wikipedia.org/wiki/Berkeley_Software_Distribution">BSD</a> et une grande partie de l’<a href="https://www.gnu.org/">espace utilisateur GNU Linux (en)</a> ont été écrits utilisant la programmation procédurale sans aucun cadriciel.</p>
+<p>Même chose pour des centaines de projets Open Source autour du globe qui ont éventuellement été abandonnés par le(s) programmeur(s) original(s) pour être repris par d’autres programmeurs talentueux. Nombre de ces projets ont peu de documentation (voire aucune), aucun commentaire dans le code et aucun guide ou aide à proposer.</p>
+<p>Le code PHP est fait en C, un langage de programmation procédural pur, sans cadriciel.</p>
+<p>Lorsque vous définissez une classe en PHP ou quand vous démarrez votre cadriciel PHP favoris, vous lancez le code procédural de quelqu’un d’autre !</p>
+<p>Certes, le code horrible existe, le code qui n’a pas été conçu dès le départ, ou le code qui est devenu trop grand pour lui-même mais dont le client ne veut pas gérer une réécriture, le code tellement mauvais que vous ne savez pas par quel bout le prendre, mais aucun cadriciel ne pourrait empêcher ça. C’est souvent le processus normal de croissance d’un programme. Probablement que n’importe quel cadriciel aurait été découpé en morceaux.</p>
+<p>Et bien sûr qu’il existe du code spaghetti, mais personne n’écrit du code spaghetti intentionnellement. Parfois, c’est le résultat d’un manque d’expérience, souvent c’est de la faute du client qui change les spécifications plusieurs fois en cours de développement, ou les deux, bien qu’un cadriciel ait été utilisé, le résultat serait quand même du code spaghetti ; peu importe à quel point la programmation orienté objet a été respectée, cela resterait du code spaghetti.</p>
+<p>En tant que programmeurs, nous essayons tous de prévenir ces situations, mais <strong>c’est normal</strong>, c’est <strong>l’art de la programmation</strong>, c’est une partie de ce que ça veut dire d’<strong>être programmeur</strong> !</p>
+<p><strong>La mauvaise manière</strong> : Avoir peur du code d’autrui. <img src="/img/thumbs-down.png" alt="Thumbs down" /></p>
+<h1 id="suivre-les-standards-php-fig-religieusement">Suivre les standards PHP-FIG religieusement</h1>
+<p>Le FIG signifie « Groupe d’interopérabilité de cadriciel » (Framework Interoperability Group)</p>
+<p>Le <a href="http://www.php-fig.org/">PHP-FIG</a> a été créé par un groupe de développeurs de cadriciel au php|tek en 2009. Depuis, de nombreux autres membres se sont inscrit et votent, augmentant la taille du groupe d’origine de 5 à plus de 20.</p>
+<p>Quelques controverses existent concernant le PHP-FIG. Quelques personnes considèrent le PHP-FIG comme la meilleure chose qui soit arrrivée à la communauté PHP depuis PHP lui-même, d’autres considèrent le groupe comme quelques chose qu’il serait mieux d’oublier.</p>
+<p>L’un des problèmes avec le PHP-FIG est qu’il se présente lui-même comme ceci dans leur <a href="http://www.php-fig.org/faqs/">FAQ</a> :</p>
+<blockquote>
+<p>L’idée derrière le groupe est de permettre aux représentants de projets d’échanger autour des points communs entre nos projets et trouver des manières de travailler ensemble. Notre principale audience est l’un l’autre, mais nous somme tout à fait conscients que le reste de la communauté PHP nous observe. Si d’autres gens veulent adopter ce que nous faisons, ils sont les bienvenus même si ce n’est pas l’objectif. Personne dans le groupe ne veut vous dire, en tant que développeur, comment construire votre application.</p>
+</blockquote>
+<p>Néanmois, quand nous voyons le travail de plusieurs membres du groupe, nous voyons clairement que l’objectif est un peu contraire à l’assertion précédente. Ces membres travaillent sans relâche à faire du PHP-FIG un « groupe des standards PHP », <strong>ce qui était aussi le nom originel du groupe</strong>. Ils font cela en classifiant le travail du PHP-FIG comme « PHP moderne » dans leurs livres, sur leurs sites web, blogs, forums, etc., et en décrivant les autres manières comme arriérées.</p>
+<p>L’un des problèmes concernant le PHP-FIG est que même si nombre de cadriciels et projets Open Source ont adopté plusieurs de leurs standards, ceux-ci gèrent principalement les problèmes sous un « angle cadriciel », ce qui les rends pratiquement inutilisables dans beaucoup de situations réelles de l’industrie.</p>
+<p>Beaucoup de gens développent des logiciels pour l’industrie qui ont besoin d’être extrêmement efficaces, sécurisés et à coûts réduits, des logiciels que les clients ont envie d’acheter et d’utiliser. Ils ne peuvent pas s’ennuyer avec des standards qui se conforment aux besoins de fanatiques de cadriciel. S’ils le faisaient, ce serait un désastre pour les affaires.</p>
+<p>Si un groupe de standardisation a besoin d’être créé, c’est pour refléter les intérêts de la communauté PHP, et pas uniquement les développeurs de cadriciel et des CMS Open Source. Il doit être représenté par les développeurs du langage PHP lui-même et être réprésenté par un plus grand nombre ayant le droit de voter.</p>
+<p>Si vous décider d’adopter les standards développés par le PHP-FIG, vous devez comprendre que certains de ces standards - tels que le standards de l’autoloader PSR-0, PSR-4 et quelques autres - ont un impact direct sur votre manière de coder.</p>
+<p>Quantité d’industries demandent des logiciels extensibles, fiables et à coûts réduits, ce qui ne peut simplement pas être effectué en suivant les standards du PHP-FIG.</p>
+<p><strong>La mauvaise manière</strong> : Suivre le PHP-FIG religieusement. <img src="/img/thumbs-down.png" alt="Thumbs down" /></p>
+<h1 id="négliger-la-sécurité">Négliger la sécurité</h1>
+<blockquote>
+<p>Le problème avec les développeurs, c’est que vous ne pouvez jamais dire ce qu’un développeur fait, jusqu’à ce qu’il soit trop tard.</p>
+<p>– Seymour Cray sur <a href="http://www.defprogramming.com/q/6e61ae30a855/">defprogramming.com (en)</a></p>
+</blockquote>
+<p>La programmation sécurisée est la façon d’écrire des programmes résistant à l’attaque de personnes malveillantes ou de d’autres programmes. La programmation sécurisée aide à protéger les données contre le vol et la corruption. De plus, un programme non sécurisé peut permettre à un attaquant de prendre le contrôle d’un serveur ou de l’identité d’une personne, avec des résultats allant d’un déni de service pour un simple utilisateur à la compromission de secrets, une perte de service ou des dommages sur les systèmes pour les milliers d’utilisateurs.</p>
+<p>Tout programme informatique est une cible potentielle pour une attaque. Les attaquants tenteront de trouver des vulnérabilités dans vos applications. Ils tenteront ensuite d’utiliser ces vulnérabilités pour voler des secrets, corrompre les programmes et les données, prendre le contrôle de serveurs et de réseaux. La propriété de vos clients et votre réputation sont en jeu.</p>
+<p><strong>La sécurité n’est pas quelques chose qui peut être ajoutée à un logiciel !</strong></p>
+<p>Un programme non sécurisé peut demander une reconception étendue pour le sécuriser. Vous devez identifier la nature des menaces envers votre logiciel et incorporer des pratiques de codage dès le départ et tout au long du planning et du développement de votre application.</p>
+<p>Sécuriser les ressources critiques d’un logiciel est plus important que jamais, puisque l’attention des attaquants s’est déportée vers la couche d’application. Une étude SANS de 2009 a révélé que les attaques envers les applications web constituent plus de 60% de toutes les attaques observées sur Internet.</p>
+<p>PHP est inhabituel en ce qu’il est à la fois un programme informatique et un cadriciel web. Cela signifie que PHP a beaucoup de fonctionnalités web intégrées dans le langage qui rend très facile d’écrire du code non sécurisé.</p>
+<h2 id="sécurisé-par-défaut">Sécurisé par défaut</h2>
+<blockquote>
+<p>La complexité tue. Elle aspire la vie des développeurs, elle rend les produits difficiles à planifier, construire et tester, elle introduit des défis des sécurité et cause une frustration des utilisateurs finaux et des administrateurs.</p>
+<p>– <a href="www.azquotes.com/quote/585933">Ray Ozzie (en)</a></p>
+</blockquote>
+<p>Afin que les applications soient conçues et implémentées avec de bonnes spécifications de sécurité, les pratiques de programmation sécurisées et une attention sur les risques de sécurités doivent être intégrées dans les opérations journalières et les processus de développement eux-mêmes.</p>
+<p>Généralement, il est moins coûteux de construire des programmes sécurisés que de corriger les problèmes de sécurité après que le logiciel ai été livré, sans évoquer les coûts liés à une brêche de sécurité.</p>
+<p><strong>La mauvaise manière</strong> : Ne pas développer un programme sécurisé par défaut. <img src="/img/thumbs-down.png" alt="Thumbs down" /></p>
+<h1 id="faq">FAQ</h1>
+<p>Il est facile de mal comprendre un document écrit, donc clarifions quelques points.</p>
+<p><strong>Q :</strong> <em>Quel est le but de ce site et pourquoi l’approche par confrontation ?</em></p>
+<p><strong>R :</strong> Pour créer la discussion et la réflexion sur les pratiques actuelles et les vues extrêmes.</p>
+<p><strong>Q :</strong> <em>Êtes-vous en train de dire que la programmation orientée objet est mauvaise ou fausse ?</em></p>
+<p><strong>R :</strong> Bien sûr que non ! Nous disons que toujours penser selon le paradigme orienté objet est mauvais. Lorsque vous pensez seulement en blanc et noir, vous vous trompez.</p>
+<p>Il existe même différents problèmes au sein d’une même application. Le multi-paradigme est parfois la meilleure solution, tout dépend du problème que vous tentez de résoudre.</p>
+<p>Lorsque vous tentez de fourrer un problème spécifique dans une solution inadaptée, de mauvaises choses se produisent.</p>
+<p><strong>Q :</strong> <em>Êtes-vous en train de dire que tous les cadriciels sont mauvais ?</em></p>
+<p><strong>R :</strong> Nous essayons de ne pas juger des cadriciels spécifiques. Nous parlons du fait de toujours utiliser un cadriciel au-dessus de PHP.</p>
+<p><strong>Q :</strong> <em>Si un cadriciel peut démarrer rapidement, quel est le problème ?</em></p>
+<p><strong>R :</strong> Si vous avez analysé la situation et les implications à long terme et que vous voyez que « démarrer rapidement » est le seul problème que vous avez, ce n’est pas si mal, mais alors il ne s’agit plus de développement logiciel, nous ne faisons que des solutions point-and-click.</p>
+<p>Démarrer rapidement n’est pas de la conception logicielle, cela veut simplement dire que vous n’avez pas analysé votre problème et que vous ne comprenez pas les implications à long terme de votre choix.</p>
+<p><strong>Q :</strong> <em>Êtes-vous en train de dire que les paquets tiers sont mauvais ?</em></p>
+<p><strong>R :</strong> Non. Nous favorisons l’usage des bibliothèques tierces. Du code que vous pouvez facilement intégrer dans vos projets sans limitations ou restrictions de quelque sorte. Elles sont géniales !</p>
+<p><strong>Q :</strong> <em>Qui êtes-vous ?</em></p>
+<p><strong>R :</strong> Ce site a trait aux idées et combat les extrémismes dans la communauté PHP, il ne s’agit pas de célébrité ou de reconnaissance. Nommer des gens déplacera seulement l’attention des problèmes évoqués vers les gens qui évoquent ces problèmes. Restez concentré sur les idées.</p>
+<p><strong>Q :</strong> <em>Quelles est votre expérience en développement logiciel ?</em></p>
+<p><strong>R :</strong> Les idées, pensées et conclusions exprimées sur ce site ne prennent pas tant d’expérience que ça si vous restez concentré sur le thème principal qui est de toujours faire une chose uniquement parce que les autres vous le dise.</p>
+<h1 id="lecture-recommandée">Lecture recommandée</h1>
+<p><a href="https://news.ycombinator.com/item?id=12318615">PHP The Wrong Way sur Hacker News (en)</a></p>
+<ul>
+<li>Quand « PHP La mauvaise manière » a été lancé, il généra un paquet de commentaires sur Hacker News avec de précieux arguments à lire.</li>
+</ul>
+<p><a href="https://news.ycombinator.com/item?id=12377385">Pourquoi un mauvais code scientifique bat le code suivant les « bonnes pratiques » (en)</a></p>
+<ul>
+<li>Une incompétence simple et sans soin peut être meilleure que de bonnes intentions de l’industrie menant à une autoroute vers l’enfer. Le « vrai monde » en dehors de l’ordinateur est rempli de ces exemples.</li>
+</ul>
+<p><a href="https://medium.com/@brianwill/how-to-program-without-oop-74a46e0e47a3#.squpnjz4n">Comment programmer sans Programmation Orientée Objet (en)</a></p>
+<ul>
+<li>Pour une perspective fraîche et alternative, Brian Will discute dans trois vidéos pourquoi il pense que la programmation orientée objet est une mauvaise idée avec laquelle commencer et finit la série avec un couple de note sur la manière dont le code non POO doit être écrit.</li>
+</ul>
+<p><a href="http://codersatwork.com/">Coders at work - Reflections on the Craft of Programming (en)</a></p>
+<ul>
+<li>Basée sur pratiquement quatre-vingt heures de conversations avec quinze grands programmeurs et informaticiens, les entrevues dans « Coders at Work » récoltent une vue multiforme sur la façon dont les grands programmeurs apprennent à programmer, comment ils pratiquent leur art, et ce qu’ils pensent de l’avenir de la programmation.</li>
+</ul>
+<p><a href="https://www.oreilly.com/ideas/the-traits-of-a-proficient-programmer">Les traits d’un programmeur efficace (en)</a></p>
+<ul>
+<li>La compétence signifie avoir assez d’expérience et de connaissances pour que le travail soit fait ; l’efficacité implique de savoir pourquoi vous faites quelques chose d’une certaine manière, et comment il s’intègre dans l’image globale. En d’autres termes, un pratiquant efficace est toujours un pratiquant compétent, mais l’inverse n’est pas toujours vrai.</li>
+</ul>
+<p><a href="https://www.owasp.org/images/0/08/OWASP_SCP_Quick_Reference_Guide_v2.pdf">Lignes de conduite OWASP de la programmation sécurisée (en)</a></p>
+<ul>
+<li>Ce document agnostique de toute technologie définit un set de pratiques générales de programmation sécurisée, dans un format check-list, qui peut être intégré dans le cycle de vie de développement du logiciel. L’implémentation de ces pratiques atténuera les vulnérabilités logicielles les plus communes.</li>
+</ul>
+<p><a href="https://www.owasp.org/index.php/Security_by_Design_Principles">Principes de Sécurité par conception (en)</a></p>
+<ul>
+<li>La sécurité d’une application Web est un composant essentiel de tout projet à succès, que ce soit les applications PHP Open Source, les webservices ou les les sites web métiers propriétaires. Les hébergeurs évitent le code non sécurisé et les utilisateurs finaux évitent les services non sécurisés qui sont sujet à la fraude. Le but de ce Guide de Développement est de permettre aux métiers, développeurs, designers et architectes de produire les applications web sécurisées. Si cela est fait dès les premières étapes, les applications sécurisées ont le même coût de développement que les application non sécurisées, mais sont bien moins coûteuses sur le long terme.</li>
+</ul>
+<p><a href="http://phpsecurity.readthedocs.io/en/latest/">Survivre à la Grande Fin : la Sécurité PHP (en)</a></p>
+<ul>
+<li>Comme toute cible d’une sérieuse brêche de sécurité le notera rapidement sur leurs notes de livraison et leurs sites web : la sécurité est très importante pour eux et ils la prennent très aux sérieux. Prendre ce sentiment à bras le corps avant que vous ne l’appreniez à la dure est recommandé.</li>
+</ul>
+<p><a href="https://openlibrary.org/books/OL7407595M/Refactoring">La refactorisation pour améliorer la conception de code existant (en)</a></p>
+<ul>
+<li>La refactorisation est une amélioration de la conception d’un code existant. Il s’agit d’un processus de changement d’un système logiciel d’une façon qui n’altère pas le comportement extérieur du code, en améliorant sa structure interne. Par la refactorisation, vous pouvez même transformer une mauvaise conception en une bonne. Ce livre offre une discussion approfondie sur les principes de refactorisation, y compris où trouver les opportunités de refactorisation et comment créer les tests essentiels. Il y a aussi un catalogue de plus de 40 refactorisations prouvées avec des détails tels que quand et pourquoi utiliser la refactorisation, des instructions pas à pas sur l’implémentation ainsi qu’un exemple illustrant son fonctionnement. Ce livre est écrit avec Java comme langage, mais les idées sont applicables à tout langage objet.</li>
+</ul>
+<p><a href="https://openlibrary.org/works/OL15333872W/The_Practice_of_Programming_%28Addison-Wesley_Professional_Computing_Series%29">La Pratique de la Programmation (en)</a></p>
+<ul>
+<li>Un compendium de sujets pratiques sur l’importance des programmeurs.</li>
+</ul>
+<p><a href="https://openlibrary.org/works/OL5748544W/The_pragmatic_programmer">Le programmeur pragmatique (en)</a></p>
+<ul>
+<li>Le programmeur pragmatique : de débutant à expert, examine le cœur du processus de développement : prendre une spécification et produire un code fonctionnel et maintenable qui satisfait ses utilisateurs. Il couvre des sujets allant de la responsabilité personnelle et la carrière personnelle, aux techniques d’architecture pour conserver un code flexible, facile à adapter et réutilisable.</li>
+</ul>
+<p><a href="https://openlibrary.org/works/OL1875800W/Understanding_programming_languages">Comprendre les langages de programmation (en)</a></p>
+<ul>
+<li>Le choix d’un langage de programmation est l’un des plus importants facteurs qui influencent la qualité d’un système logiciel. Malheureusement, trop de développeurs ont de pauvres compétences linguistiques : ils sont passionnés par leur langage « natif », mais ne sont pas capable d’analyser les contraintes du langage. « Comprendre les langages de programmation » est écrit dans le but d’expliquer quelles alternatives sont disponibles pour le concepteur du langage ; comment les constructions du langages devraient être utilisées en terme de sécurité et lisbilité ; comment les constructions du langages sont implémentées et lesquelles peuvent être compilées efficacement ; et bien sûr quel est le rôle du langage dans l’expression et le renforcement des abstractions.</li>
+</ul>
+<h1 id="comment-contribuer">Comment contribuer</h1>
+<p>Contribuer sur <a href="https://github.com/binarysanity/phpthewrongway">GitHub</a>.</p>
+<p>Clonez, éditez et soumettez la pull request pour examen.</p>
+<p>Ajoutez les sections dans les répertoires <em>sections/LANGUAGE</em> ou éditer les sections existantes</p>
+</body>
+</html>
