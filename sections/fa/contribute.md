@@ -1,6 +1,6 @@
 # چگونگی مشارکت #
 
-در [گیت‌هاب](https://github.com/binarysanity/phpthewrongway) مشارکت کنید.
+در [گیت‌هاب](https://github.com/unixsheikh/phpthewrongway) مشارکت کنید.
 
  * این مخزن را پس از Clone می‌توانید ویرایش کنید.
  * برای اعمال تغییرات خود Pull Request دهید.
