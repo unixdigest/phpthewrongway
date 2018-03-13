@@ -1,6 +1,6 @@
 # How to Contribute #
 
-Contribute on [GitHub](https://github.com/binarysanity/phpthewrongway).
+Contribute on [GitHub](https://github.com/unixsheikh/phpthewrongway).
 
  * Clone and edit.
  * Submit pull request for consideration.

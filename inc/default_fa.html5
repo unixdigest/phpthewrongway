@@ -35,7 +35,7 @@ $endif$
   $if(title)$
   <header>
     <div id="header-top">
-    <a href="https://github.com/binarysanity/phpthewrongway"><img style="position: absolute; top: 0; left: 0; border: 0;" src="../img/github-clone-rtl.png" alt="Fork me on GitHub"></a>
+    <a href="https://github.com/unixsheikh/phpthewrongway"><img style="position: absolute; top: 0; left: 0; border: 0;" src="../img/github-clone-rtl.png" alt="Fork me on GitHub"></a>
     <h1>$title$</h1>
     $if(subtitle)$
     <h1>$subtitle$</h1>

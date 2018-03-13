@@ -12,12 +12,12 @@ Feel free to participate!
 
 ## How to Contribute ##
 
-Contribute on [GitHub](https://github.com/binarysanity/phpthewrongway).
+Contribute on [GitHub](https://github.com/unixsheikh/phpthewrongway).
 
  * Clone and edit (don't touch any files in /docs as they are auto generated).
  * Submit pull request for consideration.
 
-If you have a question or just want to express your mind, feel free to use the "Issues" tab for that. Please notice that we have already discussed a lot of the concepts expressed in this document so take a look at the [closed issues](https://github.com/binarysanity/phpthewrongway/issues?q=is%3Aissue+is%3Aclosed) before you submit something.
+If you have a question or just want to express your mind, feel free to use the "Issues" tab for that. Please notice that we have already discussed a lot of the concepts expressed in this document so take a look at the [closed issues](https://github.com/unixsheikh/phpthewrongway/issues?q=is%3Aissue+is%3Aclosed) before you submit something.
 
 ### Add a new translation ###
 

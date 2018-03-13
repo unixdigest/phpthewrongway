@@ -1,6 +1,6 @@
 # Hvordan du kan hjælpe #
 
-Bidrag på [GitHub](https://github.com/binarysanity/phpthewrongway).
+Bidrag på [GitHub](https://github.com/unixsheikh/phpthewrongway).
 
  * Klon og rediger.
  * Indsend "pull request" til bedømmelse.
