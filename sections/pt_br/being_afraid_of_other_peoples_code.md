@@ -1,37 +1,39 @@
 # Ter medo do código de outras pessoas #
 
-An argument often expressed for the usage of a framework is that people don't want to deal with codebases that has been written from scratch by other people.
+Um argumento frequentemente expresso para o uso de um framework é que as pessoas não querem lidar com códigos que foram escritos do zero por outras pessoas.
 
-This is however a strange mentality, mainly encountered amongst web developers in the PHP community, it's one that exudes a lack of professionalism and experience.
+Esta é, no entanto, uma mentalidade estranha, encontrada principalmente entre web developers na comunidade PHP, que exala uma falta de profissionalismo e experiência.
 
-Writing software and dealing with other peoples code is normal, it's part of the daily work of a professional programmer, it's not something to be afraid of.
+Escrever software e lidar com o código de outras pessoas é normal, é parte do trabalho diário de quem programa profissionalmente, não é algo para se ter medo.
 
-A professional programmer doesn't look at other peoples code and start whining about how he or she is at the complete mercy of the former programmer, who perhaps is no longer associated with the company or project, and if only the former programmer had used framework A or framework B the day would have been saved.
+Quem programa profissionalmente não olha para o código de outras pessoas e começa a se lamentar sobre como está à mercê completa do ex-programador, que talvez não esteja mais associado à empresa ou projeto, e se apenas o antigo programador tivesse usado uma estrutura A ou framework B o dia teria sido salvo.
 
-This is not the mentality of a professional programmer. Nobody does this.
+Esta não é a mentalidade de quem programa de maneira profissional. Ninguém faz isso.
 
-Perhaps the low barrier to entry in PHP web development plays a part in this kind of mentality. Regardless, it is a sign of a person being in the wrong line of work.
+Talvez a facilidade de entrada no desenvolvimento web do PHP desempenhe um papel nesse tipo de mentalidade. Independentemente disso, é um sinal de uma pessoa estar na linha errada de trabalho.
 
-A great part of programming deals with people having to work with other peoples code. It's part of the work trying to improve existing codebase and sometimes that involves a complete re-write.
+Uma grande parte da programação lida com pessoas que precisam trabalhar com código de outras pessoas. Faz parte do trabalho tentar melhorar a base de código existente e, por vezes, isso envolve uma reescrita completa.
 
-Take note from the great masters of programming, read the book [Coders at work - Reflections on the Craft of Programming](http://codersatwork.com/).
+Tome nota de pessoas que são grandes referências da programação, leia o livro [Coders at work - Reflections on the Craft of Programming](http://codersatwork.com/).
 
-Some of the largest and most successful codebases in world are codebases that has been developed by hundreds of people who have never even met each other, codebases developed without the use of any kind of framework, codebases done entirely in a procedural programming language without the use of anything but the procedural paradigm, and they wouldn't dream of doing it differently.
+Algumas das bases de código maiores e mais bem sucedidas do mundo são bases de código que foram desenvolvidas por centenas de pessoas que nunca se conheceram, bases de código desenvolvidas sem o uso de qualquer tipo de framework, bases de código feitas inteiramente em uma linguagem de programação procedural sem o uso de qualquer coisa, mas o paradigma procedural, e eles não sonham em fazê-lo de forma diferente.
 
-The [Linux Kernel](https://www.kernel.org/) consist of more than 20 million lines of code all written entirely using procedural programming by more than 14.000 participants without the usage of any kind of framework.
+O [Kernel do Linux](https://www.kernel.org/) consiste em mais de 20 milhões de linhas de código que foram inteiramente escritas utilizando programação procedural por mais de 14.000 pessoas sem o uso de qualquer tipo de framework.
 
-The different [BSD](https://en.wikipedia.org/wiki/Berkeley_Software_Distribution) flavors and most of the [Linux GNU userland](https://www.gnu.org/) has been written entirely using procedural programming without the use of any kind of framework.
+Os diferentes sabores [BSD](https://en.wikipedia.org/wiki/Berkeley_Software_Distribution) e a maioria do [Linux GNU](https://www.gnu.org/) foram escritos inteiramente usando programação procedural sem o uso de qualquer tipo de framework.
 
-The same goes for hundreds of Open Source projects around that world that eventually was abandoned by the original programmer(s) only to be picked up by other skillful programmers. Many of these projects had very little documentation (if any at all), no comments in the codebase, and no guidelines or help to offer at all.
+O mesmo vale para centenas de projetos de código aberto em torno desse mundo que acabaram sendo abandonados pela (s) pessoa (s) que os desenvolvia (m) originalmente apenas para serem escolhidos por outras pessoas habilidosas. Muitos desses projetos tinham pouca documentação (se é que tinham alguma), nenhum comentário na base de código e nenhuma orientação ou ajuda para oferecer.
 
-The entire PHP codebase is done in C, a pure procedural programming language, without the use of any kind of framework what so ever.
+Toda a base de código PHP é feita em C, uma linguagem de programação puramente procedural, sem o uso de qualquer tipo de framework.
 
-Whenever you define a class in PHP or whenever you fire up that favorite PHP framework of yours, your running on someones else's pure procedural work!
+A base de código PHP inteira é feita em C, uma linguagem de programação processual pura, sem o uso de qualquer tipo de framework que assim sempre.
 
-Sure, there exists such a thing as horrible code, code that perhaps wasn't designed from the onset, or code that perhaps has outgrown itself many times but the client didn't want to deal with a re-write, code that's so bad you cannot make heads or tail of it any longer, but no kind of framework would have prevented this situation. This is often the natural growth process of a program. Eventually any kind of framework would have been torn to pieces anyway.
+Sempre que você define uma classe em PHP ou sempre que usa o seu framework PHP favorito, sua aplicação roda sobre o trabalho puramente procedural de outra pessoa!
 
-And sure there exists horrible spagetti code, but nobody produces horrible spagetti code on purpose. Sometimes this is a result of lack of experience, often times it's the clients fault because they change the specifications several times in the middle of development, either way in both cases, even if a framework was used, the result would still be spagetti code, and no matter how much of the object-oriented paradigm was used, the result would still be spagetti code.
+Claro, existem coisas como código horrível, código que talvez não tenha sido projetado desde o início, ou código que talvez tenha crescido demais, mas o cliente não queria lidar com uma reescrita, código tão ruim você não pode fazer cara ou coroa dele por mais tempo, mas nenhum tipo de framework teria evitado essa situação. Este é frequentemente o processo natural de crescimento de um programa. Eventualmente, qualquer tipo de estrutura teria sido destruída de qualquer maneira.
 
-As programmers we all try to prevent these situations, but **this is normal**, this is **the art of programming**, this is part of what it means **to be a programmer**!
+E com certeza existe código spagetti horrível, mas ninguém produz um código horrível de propósito. Às vezes isso é resultado da falta de experiência, muitas vezes é culpa do cliente porque ele altera as especificações várias vezes no meio do desenvolvimento, em qualquer um dos dois casos, mesmo que um framework seja usado, o resultado ainda seria código spagetti, e não importa quanto do paradigma orientado a objeto fosse usado, o resultado ainda seria código spagetti.
 
-**The wrong way**: Being afraid of other peoples code. ![Thumbs down](/img/thumbs-down.png)
+Como pessoas desenvolvedoras, tentamos evitar essas situações, mas **isso é normal**, isso é **a arte da programação**, isso é parte do que significa **ser uma pessoa que programa**!
+
+**O caminho errado**: Ter medo do código de outras pessoas. ![Thumbs down](/img/thumbs-down.png)
