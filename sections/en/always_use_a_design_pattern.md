@@ -16,7 +16,7 @@ When we try to improve ourselves, and in this case more specifically our code, w
 >
 > -- [Paul Graham](http://c2.com/cgi/wiki?AreDesignPatternsMissingLanguageFeatures)
 
-We shouldn't get to caught up in the philosophy or idea behind a specific pattern or solution. Our main concern is to keep the code as easy to navigate and understand as possible and as a result easy to maintain and easy to keep secure.
+We shouldn't get too caught up in the philosophy or idea behind a specific pattern or solution. Our main concern is to keep the code as easy to navigate and understand as possible and as a result easy to maintain and easy to keep secure.
 
 We must also remember that there exists such a thing as an anti-pattern. It is a pattern that may be commonly used but is ineffective and/or counterproductive in practice.
 
