@@ -14,7 +14,7 @@ However, when we view the work of several members of the group, we can clearly s
 
 One of the problems with the PHP-FIG is that even though many frameworks and Open Source projects have adopted several of their standards, these standards mainly deal with problems from a "framework perspective", which renders them pretty unusable in many real-life industry situations.
 
-Many people develop software for the industry that has to be extremely efficient, secure, and cost-effective, software that customers are willing to buy and use. They cannot be bothered with standards that has to conform to the needs of framework fanatics. If they tried to be it would be a disaster for business.
+Many people develop software for the industry that has to be extremely efficient, secure, and cost-effective, software that customers are willing to buy and use. They cannot be bothered with standards that have to conform to the needs of framework fanatics. If they tried to be it would be a disaster for business.
 
 If some kind of standards group needs to be created it has to reflect the interests of the entire PHP community, not just framework and Open Source CMS project developers. It has to be represented by the developers of the PHP programming language itself and it has to be represented by a much larger membership with the right to vote.
 
