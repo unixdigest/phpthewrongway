@@ -12,7 +12,7 @@ One of the problems with PHP-FIG is that it presents itself like this in their [
 
 However, when we view the work of several members of the group, we can clearly see that the objective is quite contrary to the above statement. These members work tirelessly in an attempt to make PHP-FIG become an accepted "PHP standards group", **which also was the original name of the group**. They do this by classifying the work of the PHP-FIG as "Modern PHP" in their books, on their websites, blog-posts, forums, etc., and by classifying other ways as backwards.
 
-One of the problems with the PHP-FIG is that even though many frameworks and Open Source projects has adopted several of their standards, these standards mainly deal with problems from a "framework perspective", which renders them pretty unusable in many real-life industry situations.
+One of the problems with the PHP-FIG is that even though many frameworks and Open Source projects have adopted several of their standards, these standards mainly deal with problems from a "framework perspective", which renders them pretty unusable in many real-life industry situations.
 
 Many people develop software for the industry that has to be extremely efficient, secure, and cost-effective, software that customers are willing to buy and use. They cannot be bothered with standards that has to conform to the needs of framework fanatics. If they tried to be it would be a disaster for business.
 
