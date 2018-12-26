@@ -20,3 +20,4 @@ Sinta-se livre para contribuir.
 * [Persa](http://www.phpthewrongway.com/fa/)
 * [Português](http://www.phpthewrongway.com/pt_BR/)
 * [Russo](http://www.phpthewrongway.com/ru/)
+* [Türkçe](http://www.phpthewrongway.com/tr/)
