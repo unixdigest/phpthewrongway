@@ -53,4 +53,8 @@ ru:
 ja:
 	$(call translation,ja,最終更新日:,+%Y-%m-%d,$(OUTPUT_DIR)ja/$(FILENAME).html,html.css)
 
-all: da en es fa pt_br ru fr ja
+# Turkish
+tr:
+	$(call translation,tr,Son güncelleme tarihi:,+%Y-%m-%d,$(OUTPUT_DIR)tr/$(FILENAME).html,html.css)
+
+all: da en es fa pt_br ru fr ja tr

@@ -20,3 +20,4 @@ PHPプログラミングの世界では、ある一定のトレンドが「モ�
 * [ポルトガル語](http://www.phpthewrongway.com/pt_br/)
 * [ロシア語](http://www.phpthewrongway.com/ru/)
 * [スペイン語](http://www.phpthewrongway.com/es/)
+<!-- todo: add French, Japanese and Turkish -->

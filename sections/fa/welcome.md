@@ -20,4 +20,4 @@
 * [دانمارکی](http://www.phpthewrongway.com/da/)
 * [روسی](http://www.phpthewrongway.com/ru/)
 * [فارسی](http://www.phpthewrongway.com/fa/)
-<!-- todo: add French and Japanese -->
+<!-- todo: add French, Japanese and Turkish -->
