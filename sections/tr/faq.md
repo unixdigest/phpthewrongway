@@ -1,37 +1,37 @@
-# FAQ #
+# SSS #
 
-It's easy to misunderstand a written document so let's clarify some issues.
+Yazılı belgeleri de yanlış anlamak mümkün. Bunun için bazı konuları aydınlatmak gerekiyor.
 
-**Q:** _What's the point of this site and why the confrontational approach?_
+**Q:** _Bu sitenin amacı nedir ve neden biraz çatışmacı bir yaklaşım seçilmiş?_
 
-**A:** To create discussion and thought about current practices and extreme views.
+**A:** Güncel uygulamalar ve ayrkırı görüşler hakkında tartışma ve düşünme ortamı oluşturmak.
 
-**Q:** _Are you saying the object-oriented programming is bad or wrong?_
+**Q:** _Nesne tabanlı programlamanın kötü mü ya da yanlış mı olduğunu söylüyorsunuz?_
 
-**A:** No of course not! We're saying always thinking in and always using only the object-oriented paradigm in solving problems is bad. Whenever you think in black and white only, that's wrong.
+**A:** Hayır, tabii değil! Sorunları çözerken daima yalnızca ve daima  nesneye yönelik paradigmayı düşünmenin ve kullanmanın kötü olduğunu söylüyoruz. Sadece siyah ya da beyaz şeklinde düşünmenin yanlış olduğunu söylüyoruz.
+       
+Tek bir uygulamada bile bir çok problem vardır. Çoklu paradigma bazen en iyi çözümdür ve bütün çözümler çözmeye çalıştığınız soruna bağlıdır.
 
-Even within a single application different problems exist. Multi-paradigm is sometimes the best solution, it all depends on the problem you're trying to solve.
+Belirli bir sorunu uygun olmayan bir yolla çözmeye çalıştığınız kötü şeyler olur.
 
-Whenever you force-feed a specific problem to an unfit solution bad things happen.
+**Q:** _Bütün uygulama çatılarının (framework) kötü olduğunu mu söylüyorsun?_
 
-**Q:** _Are you saying that all frameworks are bad?_
+**A:** Belirli ya da bütün uygulama çatılarını yargılamaya çalışmıyoruz. PHP'nin üstünde her zaman bir uygulama çatısı kullanma algısı ile mücadele ediyoruz.
 
-**A:** We're not trying to judge specific frameworks. We're dealing with the issue of always using a framework on top of PHP.
+**Q:** _Bir uygulama çatısı beni hızlandırıyorsa, neden kötü olsun ki?_
 
-**Q:** _If a framework can get me up and running quickly, why is that so bad?_
+**A:** Tartışmaya açtığımız durumu ve uzun vadeli sonuçlarını analiz ettiyseniz ve o zaman "hızlı üretmenin" aslında başa çıkmanız gereken tek sorun olduğunu görürsünüz. Bunun yüzünden çoğunlukla programlama veya yazılım geliştirme ile uğraşmak yerine bas ve tıkla çözümleriyle uğraşıyoruz.
 
-**A:** If you have analyzed the situation and long term implications and you then see that "getting up and running quickly" is the only problem you ever have to deal with, then it's not bad, but then we're hardly dealing with programming or software development, we're dealing mostly with point-and-click solutions.
+Hızlı bir şekilde üretmeye  başlamak, yazılım tasarlamamak anlamına gelir; bu çoğunlukla, karşılaştığınız sorunu analiz etmediğiniz ve seçiminizin uzun vadeli sonuçlarını anlamadığınız anlamına gelir.
 
-Getting up and running quickly isn't designing software, it mostly means you haven't analyzed the problem you're facing and you haven't understood the long term implications of your choice.
+**Q:** _Harici paket kullanmanın kötü olduğunu mu söylüyorsunuz?_
 
-**Q:** _Are you saying third party packages are bad?_
+**A:** Hayır. Harici kütüphanelerin kullanımını teşvik ediyoruz. Herhangi bir sınırlama veya kısıtlama yapmadan kendi projelerinize kolayca entegre edebileceğiniz her kütüphaneyi kullanın. Bu kesinlikle harika bir şey!
 
-**A:** No. We're promoting the use of third party libraries. Code that you can easily integrate into your own projects without enforcing any limitations or restrictions what so ever. Those are great!
+**Q:** _Siz kimsiniz?_
 
-**Q:** _Who are you?_
+**A:** Bu web sitesi PHP topluluğundaki fikirler ve aşırılıkçılıkla mücadele hakkındadır, kişisel şöhret ya da tanınma amacı gütmemektedir. İnsanları adlandırmak, odağı yalnızca web sitesinde değinilen sorunlardan sorunları çözen kişilere kaydırır. Sadece fikirlere odaklanmanızı tavsiye ediyoruz.
 
-**A:** This website is about ideas and combating extremism in the PHP community, it's not about personal fame or recognition. Naming people will only shift the focus from the problems addressed on the website to the people addressing the problems. Just stay focused on the ideas.
+**Q:** _Yazılım geliştirme alanındaki tecrübeniz nedir?_
 
-**Q:** _What is your experience in software development?_
-
-**A:** The ideas, thoughts, and conclusions expressed on this website doesn't take much experience to reach if you just stay focused on the main theme which is to always do a particular thing because other people says so.
+**A:** Bu sitede ifade edilen fikirlere ve sonuçlara ulaşmak için çok fazla tecrübeye gerek olmadığını, ana temaya odaklanmanın yeterli olacağını düşünüyoruz. 
