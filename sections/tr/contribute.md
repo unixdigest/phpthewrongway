@@ -1,8 +1,8 @@
-# How to Contribute #
+# Nasıl Katkıda Bulunabilirim? #
 
-Contribute on [GitHub](https://github.com/unixsheikh/phpthewrongway).
+[GitHub](https://github.com/unixsheikh/phpthewrongway)'taki repo ile başlayabilirsiniz.
 
- * Clone and edit.
- * Submit a pull request for consideration.
+ * Klonlayıp gerekli gördüğünüz değişiklikleri ve düzeltmeleri yapabilirsiniz.
+ * Sonra bir "pull request" oluşturup onaya gönderebilirsiniz.
 
-Add sections to the _sections/LANGUAGE_ directory or edit existing sections.
+_sections/LANGUAGE_ klasörüne yeni bölümler ekleyebilir ya da var olanları düzenleyebilirsiniz.
