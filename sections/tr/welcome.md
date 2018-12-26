@@ -1,16 +1,16 @@
-# Welcome #
+# Hoşgeldiniz #
 
-In the world of PHP programming, a set of trends are massively being propagated by some people (in their books and on websites) as "Modern PHP" while all other approaches are frowned upon as backward, stupid, or just plain wrong.
+PHP programlama dünyasında, bir dizi eğilim bazı insanlar tarafından (kendi kitaplarında ve web sitelerinde) "Modern PHP" olarak pazarlanırken, aynı zamanda diğer tüm yaklaşımlar sanki ilkel, aptalca veya yanlış olarak sunuluyor.
 
-These people seem to work tirelessly at getting other people to follow their way of doing things.
+Bu insanlar yorulmadan başkalarının işlerini yaparken kendilerinin yollarını takip etmelerini sağlamaya çalışıyor gibi görünüyorlar.
 
-This website has been created in an attempt to present a pragmatic view on PHP programming. A view dictated by experience and practical consequence rather than popular trends, theory, or academic dogma.
+Bu web sitesi PHP programlama konusunda pragmatik bir bakış sunmak amacıyla oluşturulmuştur. Hedeflenen popüler eğilimler, teori veya akademik dogmalardan ziyade tecrübe ve pratik sonuçlar tarafından oluşturulan bir bakış açısı ortaya çıkarmaktır.
 
-The website [PHP - The Wrong Way](http://www.phpthewrongway.com/) is a living document and will continue to be updated with more information as it becomes available.
+[PHP - The Wrong Way](http://www.phpthewrongway.com/) yaşayan bir site olacak ve yenilikler ortaya çıktıkça site güncellenecektir.
 
-Feel free to contribute.
+Her türlü katkıya ve yardıma açığız.
 
-## Translations ##
+## Diğer Diller ##
 
 * [Danish](http://www.phpthewrongway.com/da/)
 * [English](http://www.phpthewrongway.com/)
@@ -20,4 +20,3 @@ Feel free to contribute.
 * [Portuguese](http://www.phpthewrongway.com/pt_br/)
 * [Russian](http://www.phpthewrongway.com/ru/)
 * [Spanish](http://www.phpthewrongway.com/es/)
-* [Türkçe](http://www.phpthewrongway.com/tr/)
