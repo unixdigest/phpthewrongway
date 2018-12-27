@@ -26,7 +26,7 @@ Anti-patern diye bir şeyin var olduğunu da hatırlamalıyız. Yaygın olarak k
 
 Her zaman en faydalı yolu seçin.
 
-> Ihtiyacımız teori veya dogmadan ziyade acil pratik sonuçların göz önünde bulundurulmasıyla yapılan eylem veya politikalardır.
+> Ihtiyacımız olan teori veya dogmadan ziyade acil pratik sonuçların göz önünde bulundurulmasıyla yapılan eylem veya politikalardır.
 >
 > -- Collins English Dictionary, Complete and Unabridged, 12th Edition 2014
 
