@@ -50,22 +50,22 @@ Verilerin "nesneler" adı verilen ayrı kapsamlara bölünmesine izin veren yeni
 
 Başlangıçta nesneler nesneler olarak adlandırılmadı, sadece ayrı kapsamlar olarak görüldü. Daha sonra bağımlılıklar azaltılarak bu kapsamların içindeki prosedürler ve değişkenler arasındaki bağlantılar yalıtılmış bölümler olarak görüldüğünde, sonuç "nesneler" ve "nesneye tabanlı programlama" kavramlarını doğurdu.
 
-Later, mainly due to the development of Java, certain "buzzwords" arose and "a procedure" or "a function" was no longer called a function, but was renamed "a method" when it resided inside a separate scope. Variables were also no longer called "variables", but were renamed "attributes" when they resided inside a separate scope.
+Daha sonra, esas olarak Java'nın gelişmesi nedeniyle, bazı "buzzwords" ifadeleri ortaya çıktı ve "bir prosedür" veya "bir işlev" artık bir işlev olarak adlandırılmadı, ancak ayrı bir kapsamda bulunduğunda "bir yöntem" olarak yeniden adlandırıldı. Değişkenler artık "değişkenler" olarak da adlandırılmadı, ancak ayrı bir kapsamda bulunduklarında "özellikler" olarak yeniden adlandırıldılar.
 
-So an object is in essence simply a collection of functions and variables now called "methods and attributes".
+Dolayısıyla bir nesne özünde basitçe şimdi "yöntemler ve öznitelikler" olarak adlandırılan fonksiyonlar ve değişkenler topluluğudur.
 
-The way methods and attributes are kept isolated inside a separate scope is by the usage of "a class". A class, once it is instantiated, is called an object.
+Yöntemlerin ve niteliklerin ayrı bir kapsam içinde izole edilmesinin yolu "bir sınıf" kullanımıdır. Bir sınıf, bir kez yaratıldığında nesne olarak adlandırılır.
 
-Objects can reference each other and by such a reference the methods (functions) inside can "communicate" with each other. Objects can also "inherit" methods from other objects thereby extending such, this is called "inheritance".  It is a way to reuse code and allow independent extensions of the software via public classes and interfaces. The relationships of objects give rise to a hierarchy. Inheritance was invented in 1967 for the programming language [Simula 67](http://en.wikipedia.org/wiki/Simula).
+Nesneler birbirlerine referans verebilir ve bu referansla içerideki yöntemler (fonksiyonlar) birbirleriyle "iletişim kurabilir". Nesneler ayrıca yöntemleri diğer nesnelerden "devralabilir" ve bu şekilde genişletilir, buna "miras" denir. Bu, kodu tekrar kullanmanın ve ortak sınıflar ve arabirimler aracılığıyla yazılımın bağımsız uzantılarına izin vermenin bir yoludur. Nesnelerin ilişkileri hiyerarşiye yol açar. Kalıtım, 1967'de programlama dili [Simula 67](http://en.wikipedia.org/wiki/Simula) için icat edildi.
 
-Objects can also inherit methods from other objects and "override" these with added or changed functionality, this is called "polymorphism".
+Nesneler, diğer nesnelerden yöntemleri devralabilir ve bunları eklenmiş veya değiştirilmiş işlevlerle "geçersiz kılabilir", buna "polimorfizm" denir.
 
-How these different ideas are implemented vary greatly from programming language to programming language.
+Bu farklı fikirlerin nasıl uygulandığı, programlama dilden programlama diline kadar büyük ölçüde değişir.
 
-Object-oriented programming is about organizing code in another way than before. It is an extension of procedural programming and it is about hiding data (encapsulation) and avoiding a global scope. It is about extending functions by "borrowing" their blueprints without actually affecting the original code (inheritance). And it is about overriding functions without affecting the original code (polymorphism).
+Nesneye yönelik programlama, kodu öncekinden başka bir şekilde düzenlemekle ilgilidir. Prosedürel programlamanın bir uzantısıdır ve verileri gizleme (kapsülleme) ve küresel bir kapsamdan kaçınma ile ilgilidir. Orijinal kodu (kalıtım) etkilemeden, planlarını "ödünç alarak" işlevlerin genişletilmesiyle ilgilidir. Ve orijinal kodu (polimorfizm) etkilemeden fonksiyonları geçersiz kılmakla ilgilidir.
 
-> The object-oriented model makes it easy to build up programs by accretion. What this often means, in practice, is that it provides a structured way to write spaghetti code.
+> Nesneye yönelik model, programları biriktirerek oluşturmayı kolaylaştırır. Bunun ne anlama geldiği, pratikte spagetti kodu yazmanın yapılandırılmış bir yolunu sağlamasıdır.
 >
-> -- Paul Graham in [Ansi Common Lisp](https://openlibrary.org/works/OL7944696W/ANSI_Common_Lisp)
+> -- Paul Graham [Ansi Common Lisp](https://openlibrary.org/works/OL7944696W/ANSI_Common_Lisp)
 
-**The wrong way**: Always use object-oriented programming. ![Thumbs down](/img/thumbs-down.png)
+**Yanlış yol**: Her zaman nesne tabanlı programlama kullanılmalıdır. ![Thumbs down](/img/thumbs-down.png)
