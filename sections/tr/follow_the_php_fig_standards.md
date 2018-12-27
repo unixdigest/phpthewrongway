@@ -1,25 +1,25 @@
-# Following the PHP-FIG standards religiously #
+# PHP-FIG Standardlarını Takip Etmede Aşırıya Kaçma #
 
-The FIG stands for "Framework Interoperability Group".
+FIG kısaca "Framework Interoperability Group" yani "Çatılarası Uyumluluk Grubu".
 
-The [PHP-FIG](http://www.php-fig.org/) was created by a number of framework developers at php|tek in 2009. Since then various other members have applied and been voted in, increasing the size of the group from the first 5 to over 20.
+[PHP-FIG] (http://www.php-fig.org/), 2009 yılında php | tek'te bir dizi çatı geliştiricisi tarafından oluşturulmuştur. O zamandan beri, diğer birçok üye başvurmuş ve oy kullanmış, büyüklüğü arttırılmıştır. Başlangıçta 5 üyeden oluşuyorken sonradan sayı 20 üyeye çıkmıştır.
 
-A lot of controversy exists regarding the PHP-FIG. Some people consider the PHP-FIG the best thing that has happened to the PHP community since PHP itself while others considers the group as something best to be forgotten.
+PHP-FIG ile ilgili birçok tartışma var. Bazıları PHP-FIG'i PHP topluluğundan beri PHP topluluğunun başına gelen en iyi şey olarak görürken, diğerleri grubu unutulması en iyi şey olarak görür.
 
-One of the problems with PHP-FIG is that it presents itself like this in their [FAQ](http://www.php-fig.org/faqs/):
+PHP-FIG ile ilgili sorunlardan biri, [SSS](http://www.php-fig.org/faqs/)'de şöyle kendini gösterme şeklidir.
 
-> The idea behind the group is for project representatives to talk about the commonalities between our projects and find ways we can work together. Our main audience is each other, but we’re very aware that the rest of the PHP community is watching. If other folks want to adopt what we’re doing they are welcome to do so, but that is not the aim. Nobody in the group wants to tell you, as a programmer, how to build your application.
+> Grubun arkasındaki fikir, proje temsilcilerinin projelerimiz arasındaki ortaklıklar hakkında konuşması ve birlikte çalışabileceğimiz yollar bulması. Ana izleyicilerimiz birbirimizdir, ancak PHP topluluğunun geri kalanının izlediğini çok iyi biliyoruz. Eğer diğer insanlar ne yaptığımızı kabul etmek isterlerse, bunu memnuniyetle kabul ederler, ancak amaç bu değildir. Gruptaki hiç kimse size bir programcı olarak nasıl uygulama geliştireceğinizi söylemek istemez.
 
-However, when we view the work of several members of the group, we can clearly see that the objective is quite contrary to the above statement. These members work tirelessly in an attempt to make PHP-FIG become an accepted "PHP standards group", **which also was the original name of the group**. They do this by classifying the work of the PHP-FIG as "Modern PHP" in their books, on their websites, blog-posts, forums, etc., and by classifying other ways as backwards.
+Ancak, grubun birkaç üyesinin çalışmalarını gördüğümüzde, hedefin yukarıdaki açıklamaya oldukça aykırı olduğunu açıkça görebiliyoruz. Bu üyeler PHP-FIG'in, grubun asıl adı olan **kabul edilen bir "PHP standart grubu"** olması için yorulmadan çalışırlar. Bunu PHP-FIG'in çalışmalarını kitaplarında, web sitelerinde, blog yazılarında, forumlarında vb. "Modern PHP" olarak sınıflandırarak ve diğer yolları geriye dönük olarak sınıflandırarak yaparlar.
 
-One of the problems with the PHP-FIG is that even though many frameworks and Open Source projects have adopted several of their standards, these standards mainly deal with problems from a "framework perspective", which renders them pretty unusable in many real-life industry situations.
+PHP-FIG ile ilgili sorunlardan biri, pek çok çatı ve Açık Kaynaklı projenin standartlarının birçoğunu benimsemiş olmasına rağmen, bu standartların “çatı perspektifinden” sorunları ele almasından dolayı temel olarak gerçek yaşam sorunları karşısında  oldukça kullanışsız kalıyor olmasıdır.
 
-Many people develop software for the industry that has to be extremely efficient, secure, and cost-effective, software that customers are willing to buy and use. They cannot be bothered with standards that have to conform to the needs of framework fanatics. If they tried to be it would be a disaster for business.
+Pek çok insan, müşterilerin satın almak ve kullanmak istedikleri, son derece verimli, güvenli ve uygun maliyetli yazılımlar geliştirmektedir. Çatı fanatiklerinin fikirlerine uyması gereken standartlarla rahatsız edilmemeliler. Eğer bu şekilde olursa, bu sektör için felaket olur.
 
-If some kind of standards group needs to be created it has to reflect the interests of the entire PHP community, not just framework and Open Source CMS project developers. It has to be represented by the developers of the PHP programming language itself and it has to be represented by a much larger membership with the right to vote.
+Bir tür standart grubunun oluşturulması gerekiyorsa, sadece framework ve Open Source CMS proje geliştiricilerinin değil, tüm PHP topluluğunun çıkarlarını yansıtması gerekir. PHP programlama dilinin geliştiricileri tarafından temsil edilmeli ve oy kullanma hakkı olan çok daha büyük bir üyelik ile temsil edilmelidir.
 
-If you choose to adopt the standards developed by the PHP-FIG, you have to understand that some of these standards - such as the autoloader standards PSR-0 and PSR-4 and several other standards - has a direct effect upon how you code your software.
+PHP-FIG tarafından geliştirilen standartları benimsemeyi seçerseniz, bu standartların bazılarının - örneğin PSR-0 ve PSR-4 otomatik yükleyici standartları ve bazı diğer standartların - kodunuzu nasıl değiştirdiğinize doğrudan bir etkisi olduğunu anlamalısınız.
 
-Many industries demand highly scalable, run-time critical, and cost-effective software that simply cannot be developed using these standards of the PHP-FIG.
+Birçok endüstri ölçeklenebilir, çalışma zamanı açısından kritik ve düşük maliyetli bir yazılımlara ihtiyaç duyuyor ama bunun PHP-FIG'in bu standartları kullanılarak geliştirilemeyeceği aşikardır.
 
-**The wrong way**: Following the PHP-FIG religiously. ![Thumbs down](/img/thumbs-down.png)
+**Yanlış yol**: PHP-FIG standardlarını takip etmede aşırıya kaçma. ![Thumbs down](/img/thumbs-down.png)
