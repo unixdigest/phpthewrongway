@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <meta name="author" content="Galat-ı Meşhur">
+  <title>PHP - The Wrong Way</title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <link rel="stylesheet" href="/css/html.css">
+<meta name="description" content="Bu web sitesi PHP programlama konusunda pragmatik bir bakış sunmak amacıyla oluşturulmuştur. Popüler eğilimler, teori veya akademik dogmalardan ziyade tecrübe ve pratik sonuçlar tarafından oluşturulan bir bakış açısı.">
+</head>
+<body>
+<header>
+<div id="header-top">
+<a href="https://github.com/unixsheikh/phpthewrongway"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/652c5b9acfaddf3a9c326fa6bde407b87f7be0f4/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6f72616e67655f6666373630302e706e67" alt="Fork me on GitHub" data-canonical-src="/img/github-clone.png"></a>
+<h1>PHP</h1>
+<h2>Galat-ı Meşhur</h2>
+<div id="date">Son güncelleme tarihi: 2018-12-27</div>
+</div>
+</header>
+<div id="cartoon">
+<img src="/img/deviant-code-1000px-en.png" alt="cartoon">
+</div>
+<nav id="TOC">
+<ul>
+<li><a href="#giriş">Giriş</a><ul>
+<li><a href="#diğer-diller">Diğer Diller</a></li>
+</ul></li>
+<li><a href="#mutlaka-uygulama-çatısı-framework-kullanmak-gerekir">Mutlaka uygulama çatısı (framework) kullanmak gerekir</a></li>
+<li><a href="#her-zaman-bir-tasarım-modeli-kullanılmalı">Her zaman bir tasarım modeli kullanılmalı</a></li>
+<li><a href="#her-zaman-nesne-tabanlı-programlama-yapılmalı">Her zaman nesne tabanlı programlama yapılmalı</a><ul>
+<li><a href="#kıssaden-hisse">Kıssaden hisse</a></li>
+</ul></li>
+<li><a href="#başkalarının-yazdığı-koddan-korkmayın">Başkalarının yazdığı koddan korkmayın</a></li>
+<li><a href="#php-fig-standardlarını-takip-etmede-aşırıya-kaçmayın">PHP-FIG standardlarını takip etmede aşırıya kaçmayın</a></li>
+<li><a href="#yazılım-güvenliğini-gözardı-etmeyin">Yazılım güvenliğini gözardı etmeyin</a><ul>
+<li><a href="#baştan-güvenli">Baştan güvenli</a></li>
+</ul></li>
+<li><a href="#sss">SSS</a></li>
+<li><a href="#nasıl-katkıda-bulunabilirim">Nasıl katkıda bulunabilirim?</a></li>
+</ul>
+</nav>
+<h1 id="giriş">Giriş</h1>
+<p>PHP programlama dünyasında, bir dizi eğilim bazı insanlar tarafından (kendi kitaplarında ve web sitelerinde) “Modern PHP” olarak pazarlanırken, aynı zamanda diğer tüm yaklaşımlar sanki ilkel, aptalca veya yanlış olarak sunuluyor.</p>
+<p>Bu insanlar yorulmadan başkalarının işlerini yaparken kendilerinin yollarını takip etmelerini sağlamaya çalışıyor gibi görünüyorlar.</p>
+<p>Bu web sitesi PHP programlama konusunda pragmatik bir bakış sunmak amacıyla oluşturulmuştur. Hedeflenen popüler eğilimler, teori veya akademik dogmalardan ziyade tecrübe ve pratik sonuçlar tarafından oluşturulan bir bakış açısı ortaya çıkarmaktır.</p>
+<p><a href="http://www.phpthewrongway.com/">PHP - The Wrong Way</a> yaşayan bir site olacak ve yenilikler ortaya çıktıkça site güncellenecektir.</p>
+<p>Her türlü katkıya ve yardıma açığız.</p>
+<h2 id="diğer-diller">Diğer Diller</h2>
+<ul>
+<li><a href="http://www.phpthewrongway.com/da/">Danish</a></li>
+<li><a href="http://www.phpthewrongway.com/">English</a></li>
+<li><a href="http://www.phpthewrongway.com/fr/">French</a></li>
+<li><a href="http://www.phpthewrongway.com/ja/">Japanese</a></li>
+<li><a href="http://www.phpthewrongway.com/fa/">Persian</a></li>
+<li><a href="http://www.phpthewrongway.com/pt_br/">Portuguese</a></li>
+<li><a href="http://www.phpthewrongway.com/ru/">Russian</a></li>
+<li><a href="http://www.phpthewrongway.com/es/">Spanish</a> # Aşırıya kaçma tehlikesi #</li>
+</ul>
+<p>Programlama kuralları ve kılavuzlarıyla ilgili bir sorun, genellikle yalnızca belirli bir bağlamda bir amaca hizmet etmeleridir. Bağlam dışında alındığında, iyi bir kural korkunç bir kural haline gelebilir. Aslında, her iyi kural aşırıya götürüldüğünde kötüye gider.</p>
+<p>Bunun anlaşılması önemlidir, çünkü zamanla geliştirilen ve birçok farklı insan tarafından sunulan yazılım geliştirme ilkeleri ve kurallarının çoğu, aşırılık yanlılarının elinde sık sık suistimal edilir.</p>
+<p>Deneyimler, genel kuralların ve kılavuzların kötüye kullanılmasının her zaman komplikasyon, güvenlik eksikliği, hataya açık sonuçlar ve hatta bazı durumlarda tam felaketle sonuçlandığını göstermiştir.</p>
+<p>“Basit ve Aptal Tutun, (Keep It Simple, Stupid)” ın kısaltması olan [KISS ilkesi] (https://en.wikipedia.org/wiki/KISS_principle), genellikle deneyimli kişiler tarafından çok deneyimli olarak görülen, çok akıllıca ve iyi bir ilkedir. Takip etmek için iyi bir tavsiyedir. Ancak bu büyük prensip bile, aşırıya götürülürse bir proje için tehlike oluşturur. Gerekli işlevsellik eksikliği ile sonuçlanan “çok basit” gibi bir şey de ortaya çıkabilir.</p>
+<p><strong>Yanlış yol</strong>: Kuralları ve kılavuzları din gibi algılama<img src="/img/thumbs-down.png" alt="Thumbs down" /></p>
+<h1 id="mutlaka-uygulama-çatısı-framework-kullanmak-gerekir">Mutlaka uygulama çatısı (framework) kullanmak gerekir</h1>
+<blockquote>
+<p>Tüm genel amaçlı PHP uygulama çatıları mutlaka patlar!</p>
+<p>– <a href="https://www.youtube.com/watch?v=DuB6UjEsY_Y">Rasmus Lerdorf</a></p>
+</blockquote>
+<p>PHP topluluğunda, gerçekten kötü bir eğilim, web uygulamaları geliştirmek için fiili bir standart haline geldi. Bu eğilim mutlaka popüler bir genel amaçlı çerçevenin kullanılması gerektiğinin düşülmesidir.</p>
+<p>Bu eğilim, geliştirme sürecin sonucununun katilesini artırdığı için değil, teknoloji ve mimari açıdan yapılacak doğru şey olduğu için ortaya çıkmış ve popüler hale gelmiştir. Bu eğilimin popüler bir hale gelmesinin bir sebebi de, uygulama çatısı geliştiricilerinden bazılarının kitleleri, “çarkı yeniden icat etmeyin!” ve “Kendin yapmana gerek yok, başkaları senden daha yetenekli olabilir” gibi sloganlarla manipüle etmeleridir.</p>
+<p>Günümüz programcılarının çoğu, sağlıklı programlamanın temel ilkelerini tamamen görmezden geliyorlar ve akranları olarak gördükleri kişiler tarafından daha akıllı, daha havalı ve daha kabul edilebilir görünmek için yeni karmaşık katmanları hayal etmek için çok zaman harcıyorlar.</p>
+<p>Bu tarzı benimseyen insanlar, diğer insanların hep “kendi yollarını” takip etmeleri, kendilerini bir tür PHP topluluğu lideri gibi görmelerini ve başkalarının kendi kullandıkları Açık Kaynak araçlarını kullanmalarını sağlamayı (ki bu araçların bazılarının ne olduğunu kendileri bile unutmuş olabiliyor) sağlamak için deli gibi çaba sarfediyor görünüyorlar.</p>
+<p>Yazılım endüstrisinde önceden inşa edilmiş bir evi genel amaçlı bir yazılım çatısı karşılaştırabilirsiniz. Önceden inşa edilmiş bir evi bir araya getirmekten nasıl sizi iyi bir marangoz yapmazsa, genel amaçlı uygulama çatıları ile uygulama geliştirmek de sizi çok iyi bir kodlayıcı veya programcı yapmaz.</p>
+<p>Bu sitede biz uygulama çatısı kullanmak ile kütüphane kullanmayı birbirinden aşağıdaki maddelerden dolayı ayrı tutuyoruz;</p>
+<ul>
+<li>Bir kütüphane, C standart kütüphanesi veya Go standart kütüphanesi gibi, tekrar kullanılabilir bir kod topluluğu olarak kabul edilir. Herhangi bir sınırlama veya kısıtlama yapmadan kendi projelerinize kolayca entegre edebileceğiniz koddan oluşur. Her biri belirli bir işlevselliğe sahip küçük kod parçalarından oluşur.</li>
+<li>Bir uygulama çatısı yeniden kullanılabilir bir kod koleksiyonu değildir: çerçeveden bir kod parçası alıp kendi projenize entegre etmek çok zordur. Çatı, yazılım oluşturmanıza yardımcı olan bir sistemdir, ancak aynı zamanda çatının kendisinin sınırlamaları ve kısıtlamaları dahilinde çalışmaya zorlar. Çatının kendisinde çok fazla bağımlı işlevsellik var. Bir parça diğer olmadan çalışamaz.</li>
+</ul>
+<p>Python ve Ruby dünyasında, en baştan web siteleri inşa etmek zahmetlidir, çünkü ne Python ne de Ruby aslında web siteleri oluşturmak için yaratılmamıştır. Sonuç olarak, [Django] (https://en.wikipedia.org/wiki/Django_%28web_framework%29) ve [Ruby on Rails] (https://en.wikipedia.org/wiki/Ruby_on_Rails) gibi genel amaçlı çerçeveler hızla bu dillerde web siteleri oluşturmak için popüler oldu.</p>
+<p>Diğer taraftan PHP, başlangıçta Rasmus Lerdorf tarafından C dilinde yazılmış ve dinamik HTML’yi kolayca ve hızlı bir şekilde geliştirmenizi sağlayacak bir dizi araç olarak oluşturulmuştur. Bu tasarımından dolayı PHP hala ** kendi başına bir uygulama çatısıdır **.</p>
+<p>PHP o zamandan beri kitlesel olarak gelişti ve bugün PHP, HTML ve web siteleri oluşturmaktan çok daha fazlası için kullanılabilir, ancak PHP’yi kendi içinde bir tür çatı olarak görmek hala yanlış değildir. PHP, doğası gereği, tamamen bir C prosedüründe yazılmış web uygulamalarını geliştirmek için bir soyutlama katmanıdır.</p>
+<p>Projenizde bir kütüphane kullanmak sadece doğaldır. PHP, kendi kodunuzu genişletmek için kullanabileceğiniz bir dizi kütüphaneyle birlikte gelir. Örneğin PDO, PHP’deki veritabanlarına erişmek için tutarlı bir arayüz sağlayan sade bir kütüphanedir.</p>
+<p>Diğer taraftan PHP’nin üstünde bir çatı kullanmak tamamen başka bir konudur.</p>
+<p>PHP’de bir çatı kullandığınızda, bir soyutlama katmanının üstüne başka bir soyutlama katmanı daha eklemiş olursunuz. Çatının sağladığı ek soyutlama katmanı, kodunuzu önceden sabitlenmiş bir kalıplar dizisi halinde düzenlemeye hizmet edebilir ama yüzlerce hatta binlerce sınıfı ve yöntemi bir ya da daha fazla bağımlılık kabusuyla iç içe geçirerek daha da karmaşıklık kazandırır, yani kodunuza ihtiyaç duyulmayan karmaşıklık katmanları eklemiş olursunuz!</p>
+<p>Tüm deneyim arayüz ile başlar. Arayüz deneyimi, alttaki teknolojinin ve soyutlama katmanlarının sonucudur. Ne kadar çok soyutlama kullanırsanız, arayüz o kadar az verimli olur ve uygulama o kadar hataya açık hale gelir. Soyutlama ne kadar yüksek olursa, detay ve verimlilik o kadar fazla kaybolur.</p>
+<p>Bunu anlamak gerek: <strong>Herhangi bir projede ideal kod satırı sayısı ne kadar az olursa proje o kadar açık ve okunaklıdır.!</strong></p>
+<blockquote>
+<p>Herkesin ihtiyaç duymayacağı tek şey genel amaçlı bir çatıdır. Herkesin sorunu birbirinin aynısı değildir, herkesin çözmeye çalıştığı sorun kendine özeldir.</p>
+<p>– <a href="https://www.youtube.com/watch?v=anr7DQnMMs0">Rasmus Lerdorf</a></p>
+</blockquote>
+<p>Bazı şirketler PHP çatılarıyla ilgili yutturmacaları dinlemeye başladılar ve bir sonraki projelerine bu popüler genel amaçlı çatılardan birini kullandılar ve süreç felaketle sonuçlandı. Sadece genel amaçlı çatının çok özel ihtiyaçlarını çözmede gerçekten kötü olduğunu keşfetmediler, aynı zamanda bunu yapmakta da oldukça yavaş olabileceğini de gördüler. Ölçeklendirmek imkansızdı ve sonuç olarak, çerçeveyi gerçekten ihtiyaç duymadıklarını çıkarmak için çaresiz bir girişimde parçalamaya başladılar.</p>
+<p>Her zaman en faydalı olanı seçin:</p>
+<blockquote>
+<p>Ihtiyacımız olan teori veya dogmadan ziyade acil pratik sonuçların göz önünde bulundurulmasıyla yapılan eylem veya politikalardır.</p>
+<p>– Collins English Dictionary, Complete and Unabridged, 12th Edition 2014</p>
+</blockquote>
+<p><strong>Yanlış yol:</strong> Mutlaka bir uygulama çatısı kullanmak gerekir. <img src="/img/thumbs-down.png" alt="Thumbs down" /></p>
+<h1 id="her-zaman-bir-tasarım-modeli-kullanılmalı">Her zaman bir tasarım modeli kullanılmalı</h1>
+<blockquote>
+<p>Fildişi kule tasarlar gibi düşünmeye ve tasarım modellerine bu büyük alerjim var. Peter Norvig, Harlequin’deyken, tasarım kalıplarının programlama dilinizde nasıl bir kusur olduğunu anlatan bir yazı yazdı. Daha iyi bir programlama dili edinin. Kesinlikle haklı. Desenlere tapmayın ve ve devamlı “Ah, X modelini kullanacağım” diye düşünmeyin.</p>
+<p>– Brendan Eich <a href="http://codersatwork.com/">Coders at work - Reflections on the Craft of Programming</a></p>
+</blockquote>
+<p>Yazılım mühendisliğinde, bir tasarım deseni, yazılım tasarımında yaygın olarak ortaya çıkan bir soruna yeniden kullanılabilir bir çözümdür. Bir tasarım deseni doğrudan koda dönüştürülebilen bitmiş bir tasarım değildir. Birçok farklı durumda kullanılabilecek bir problemin nasıl çözüleceği ile ilgili bir açıklama veya fikirdir. Nesneye yönelik tasarım desenleri tipik olarak, son uygulama sınıflarını veya dahil olan nesneleri belirtmeden, sınıflar veya nesneler arasındaki ilişkileri ve etkileşimleri gösterir.</p>
+<p>PHP imperative, fonksiyonel, nesne tabanlı, prosedürel ve reflective paradigmaları destekler. PHP birçok sorunu farklı şekillerde çözmeyi mümkün kılan çok sayıda farklı araca sahip devasa bir araç kutusudur.</p>
+<p>PHP tamamen özgürdür, hızlı ve ölçeklenebilir çözümler sunar ve sorunlarla başa çıkmanın birçok farklı yoluna sahiptir.</p>
+<p>Kendimizi geliştirmeye çalıştığımızda ve bu durumda daha spesifik olarak kodumuzda, bazen belirli bir örüntü veya düşüncenin felsefesine takılırız ve pratik olarak düşünmeyi unutmaya meyilliyiz.</p>
+<blockquote>
+<p>Programlarımda desenler gördüğümde, bunun bir sorun belirtisi olduğunu düşünüyorum. Bir programın şekli sadece çözmesi gereken sorunu yansıtmalıdır. Koddaki herhangi başka bir düzenlilik, en azından benim için yeterince güçlü olmayan soyutlamalar kullandığımın - genellikle elle yazmam gereken bazı makroların genişlemelerini ürettiğimin bir işaretidir.</p>
+<p>– <a href="http://c2.com/cgi/wiki?AreDesignPatternsMissingLanguageFeatures">Paul Graham</a></p>
+</blockquote>
+<p>Belli bir kalıp veya çözümün arkasındaki felsefe veya düşünceye kapılmamalıyız. Asıl endişemiz, kodun okunmasının ve anlaşılmasının mümkün olduğu kadar kolay tutulması ve bunun sonucunda da bakımı kolay ve güvenli tutulmasıdır.</p>
+<p>Anti-patern diye bir şeyin var olduğunu da hatırlamalıyız. Yaygın olarak kullanılabilecek ancak pratikte etkisiz ve / veya verimsiz bir kalıptır.</p>
+<blockquote>
+<p>Bence kalıplar genel sorunlar için genel olarak en iyi çözümler olarak kabul edildi. Ama şimdi bir süredir buralarda olduklarından ve uygulamaların olması gerekenden on kat daha karmaşık hale getirildiğini gördük, çünkü insanlar okudukları tüm kalıpları kullanmaya çalışıyorlar. Desenin değerine dair izlenimim biraz değişti. (“Uygulamam iyi tasarlandı çünkü desenlerle doludur.”)</p>
+<p>– Paul Weaton <a href="http://www.javaranch.com/patterns/">Evil Design Patterns</a></p>
+</blockquote>
+<p>Her zaman en faydalı yolu seçin.</p>
+<blockquote>
+<p>Ihtiyacımız olan teori veya dogmadan ziyade acil pratik sonuçların göz önünde bulundurulmasıyla yapılan eylem veya politikalardır.</p>
+<p>– Collins English Dictionary, Complete and Unabridged, 12th Edition 2014</p>
+</blockquote>
+<p><strong>Yanlış yol</strong>: Her zaman bir tasarım deseni kullanmaya çalışmak. <img src="/img/thumbs-down.png" alt="Thumbs down" /></p>
+<h1 id="her-zaman-nesne-tabanlı-programlama-yapılmalı">Her zaman nesne tabanlı programlama yapılmalı</h1>
+<blockquote>
+<p>Nesne tabanlı dillerle ilgili sorun, kendileriyle birlikte taşıdıkları bu büyük kapalı ortamlara sahip olmalarıdır. Bir muz istemişsin, fakat tüm ormanı elindeki muz tutan bir goril ile birlikte sana veriyor.</p>
+<p>– Joe Armstrong <a href="http://codersatwork.com/">Coders at work - Reflections on the Craft of Programming</a></p>
+</blockquote>
+<blockquote>
+<p>Soyutlama güçlüdür. Gerçekten alerjim olan ve 90’larda tepki verdiğim şey tüm CORBA, COM, DCOM, nesne tabanlı saçmalıktı. Başlangıç olarak “Merhaba dünya” yazdırmak için 200.000 yöntem çağrısı yapmak çılgınca bir şey. Bu çok komik! Böyle bir tarz ile anılan bir programcı olmak istemezsiniz.</p>
+<p>– Brendan Eich <a href="http://codersatwork.com/">Coders at work - Reflections on the Craft of Programming</a></p>
+</blockquote>
+<p>Birçok yazılım geliştirici ve birçok şirket, nesneye yönelik programlamanın bugün yazılım geliştirmenin tek makul yolu olduğunu düşünüyor. Nesne yönelimli programlamaya karşı çıkan herkes endüstrinin “geleneksel bilgeliğine” karşı çıktıklarının farkına varır.</p>
+<p>Programlama blogları ve forumlarında, nesne tabanlı programlamayı savunan ve standart bir tanımları olmamasına rağmen ne hakkında konuştuklarını bildiklerinden emin olan birçok insan var!</p>
+<p>Gerçek şu ki, nesne tabalı programlama sık sık gereksiz karmaşıklık yükünü doğuruyor!</p>
+<p>Bilgisayar bilimcileri ve programcıları olarak, önyargıları bir kenara bırakmayı ve verilen bir soruna en iyi çözümü bulmayı öğrenmeliyiz.</p>
+<p>Günümüzde PHP’nin en güçlü yanlarından biri, imperatif, fonksiyonel, nesne tabanlı, prosedürel ve reflective paradigmalar için verdiği destek. PHP, birçok sorunu farklı şekillerde çözmeyi mümkün kılan çok sayıda farklı araca sahip devasa bir araç kutusudur. - <strong>Her zaman bir den fazla yol vardır!</strong></p>
+<p><strong>Bir uygulama içindeki farklı sorunları tek bir özel programlama paradigmasına zorlamaya çalışırken, yaratıcı bir şekilde düşünmüyoruz ve verimli çalışmıyoruz!</strong></p>
+<h2 id="kıssaden-hisse">Kıssaden hisse</h2>
+<p>Belirli bir programlama paradigmasını anlamanın en iyi yollarından biri, ilk nasıl geliştiğine bakmaktır. Gelişiminin nedeni neydi? Yeni bir düşünme biçimine ihtiyaç duyan diğer programlama paradigmalarında ne gibi problemler yaşandı? Gerçek bir dünya problemi miydi yoksa sadece akademik bir problem miydi? Ve o zamandan beri nasıl gelişti?</p>
+<p>X kişisinin ne söylediği veya Y kişisinin ne tanımladığı önemli değil, paradigmalar bağlamında önemli olan onları yapan tarih.</p>
+<blockquote>
+<p>Yazılım tasarımı yapmanın iki yolu vardır. Birinci yol, o kadar basit hale getirmek ki açık bir şekilde hiçbir eksikliğin olmamasını sağlamak. Ve diğer yol ise, bariz bir eksiklik olmayacak şekilde karmaşık hale getirmektir.</p>
+<p>– <a href="https://en.wikiquote.org/wiki/C._A._R._Hoare">C.A.R. Hoare</a></p>
+</blockquote>
+<p>Geçmişte, nesne tabanlı programlamanın ortaya çıkmasından önce, ellili yılların sonlarında, bazen birinci ve ikinci nesil dilleri olarak adlandırılan yapılandırılmamış programlama dilleri kullanılarak birçok yazılım geliştirilmiştir. Yapılandırılmamış programlama, tarihsel olarak en eski programlama paradigmasıdır. “Spagetti” kodunu ürettiği için ağır eleştirildi.</p>
+<p>Yapısal olmayan programlama kullanan hem yüksek hem de düşük seviyeli programlama dilleri vardır. Bunlar arasında BASIC, COBOL, MUMPS, JOSS, FOCAL, TELCOMP, makine düzeyinde kod, erken assembler sistemleri (işlemsel meta operatörleri olmayanlar) ve bazı betik dilleri bulunur.</p>
+<p>Yapılandırılmamış bir dilde bir program genellikle sıralı olarak düzenlenmiş komutlardan veya genellikle her satırda bir tane olmak üzere ifadelerden oluşur. Satırlar genellikle numaralandırılır veya yürütme akışının programdaki herhangi bir satıra atlamasına izin veren etiketlere sahip olabilir (popüler olmayan GOTO ifadesinde olduğu gibi).</p>
+<p>Sonra, altmışlı yıllarda, yapısal programlama ortaya çıktı - esas olarak Edsger W. Dijkstra’nın ünlü yazısı nedeniyle [Go To kalıpları zararlı olarak kabul edildi] (http://www.u.arizona.edu/~rubinson/copyright_violations/Go_To_Considered_Harmful.html) .</p>
+<p>Yapısal programlama, alt yordamları, blok yapıları ve döngüleri kullanarak yazılımın netliğini, kalitesini ve kodlanmasını geliştiren bir programlama paradigmasıdır. Bu, GOTO deyimi gibi basit atlamaların kullanılmasının aksinedir.</p>
+<p>Daha sonra, prosedürel programlama yapılandırılmış programlamadan türetilmiştir. Prosedürel programlama “prosedür çağrısı” kavramına dayanır. Bir “prosedür çağrısı”, “işlev çağrısı” için başka bir isimlendirmedir. Prosedürler ayrıca rutinler, alt rutinler veya yöntemler olarak da bilinir. Bir prosedür basitçe gerçekleştirilecek bir dizi hesaplama adımını içerir. Herhangi bir prosedür, başka prosedürler veya kendisi de dahil olmak üzere, programların yürütülmesi sırasında herhangi bir noktada çağrılabilir.</p>
+<p>Başlangıçta, tüm prosedürler bir programın herhangi bir bölümünde global veri olarak mevcuttu. Küçük programlarda bu bir problem teşkil etmedi, ancak işler daha da karmaşıklaştıkça ve programın boyutu büyüdükçe, programın bir kısmındaki küçük değişiklikler diğer birçok bölümü de büyük ölçüde etkiledi.</p>
+<p>Hiç kimse programdaki değişiklikleri planlamıyordu ve çok fazla bağımlılık vardı. Bir prosedürde yapılan küçük bir değişiklik, orijinal koda bağlı olan birçok başka prosedürde bir hata dizisine neden olur.</p>
+<p>Verilerin “nesneler” adı verilen ayrı kapsamlara bölünmesine izin veren yeni bir teknik gelişti. Yalnızca aynı kapsama ait belirli prosedürler aynı verilere erişebilmeli. Buna veri gizleme veya kapsülleme dendi. Sonuç çok daha iyi organize edilmiş kod oldu.</p>
+<p>Başlangıçta nesneler nesneler olarak adlandırılmadı, sadece ayrı kapsamlar olarak görüldü. Daha sonra bağımlılıklar azaltılarak bu kapsamların içindeki prosedürler ve değişkenler arasındaki bağlantılar yalıtılmış bölümler olarak görüldüğünde, sonuç “nesneler” ve “nesneye tabanlı programlama” kavramlarını doğurdu.</p>
+<p>Daha sonra, esas olarak Java’nın gelişmesi nedeniyle, bazı “buzzwords” ifadeleri ortaya çıktı ve “bir prosedür” veya “bir işlev” artık bir işlev olarak adlandırılmadı, ancak ayrı bir kapsamda bulunduğunda “bir yöntem” olarak yeniden adlandırıldı. Değişkenler artık “değişkenler” olarak da adlandırılmadı, ancak ayrı bir kapsamda bulunduklarında “özellikler” olarak yeniden adlandırıldılar.</p>
+<p>Dolayısıyla bir nesne özünde basitçe şimdi “yöntemler ve öznitelikler” olarak adlandırılan fonksiyonlar ve değişkenler topluluğudur.</p>
+<p>Yöntemlerin ve niteliklerin ayrı bir kapsam içinde izole edilmesinin yolu “bir sınıf” kullanımıdır. Bir sınıf, bir kez yaratıldığında nesne olarak adlandırılır.</p>
+<p>Nesneler birbirlerine referans verebilir ve bu referansla içerideki yöntemler (fonksiyonlar) birbirleriyle “iletişim kurabilir”. Nesneler ayrıca yöntemleri diğer nesnelerden “devralabilir” ve bu şekilde genişletilir, buna “miras” denir. Bu, kodu tekrar kullanmanın ve ortak sınıflar ve arabirimler aracılığıyla yazılımın bağımsız uzantılarına izin vermenin bir yoludur. Nesnelerin ilişkileri hiyerarşiye yol açar. Kalıtım, 1967’de programlama dili <a href="http://en.wikipedia.org/wiki/Simula">Simula 67</a> için icat edildi.</p>
+<p>Nesneler, diğer nesnelerden yöntemleri devralabilir ve bunları eklenmiş veya değiştirilmiş işlevlerle “geçersiz kılabilir”, buna “polimorfizm” denir.</p>
+<p>Bu farklı fikirlerin nasıl uygulandığı, programlama dilden programlama diline kadar büyük ölçüde değişir.</p>
+<p>Nesneye yönelik programlama, kodu öncekinden başka bir şekilde düzenlemekle ilgilidir. Prosedürel programlamanın bir uzantısıdır ve verileri gizleme (kapsülleme) ve küresel bir kapsamdan kaçınma ile ilgilidir. Orijinal kodu (kalıtım) etkilemeden, planlarını “ödünç alarak” işlevlerin genişletilmesiyle ilgilidir. Ve orijinal kodu (polimorfizm) etkilemeden fonksiyonları geçersiz kılmakla ilgilidir.</p>
+<blockquote>
+<p>Nesneye yönelik model, programları biriktirerek oluşturmayı kolaylaştırır. Bunun ne anlama geldiği, pratikte spagetti kodu yazmanın yapılandırılmış bir yolunu sağlamasıdır.</p>
+<p>– Paul Graham <a href="https://openlibrary.org/works/OL7944696W/ANSI_Common_Lisp">Ansi Common Lisp</a></p>
+</blockquote>
+<p><strong>Yanlış yol</strong>: Her zaman nesne tabanlı programlama kullanılmalıdır. <img src="/img/thumbs-down.png" alt="Thumbs down" /></p>
+<h1 id="başkalarının-yazdığı-koddan-korkmayın">Başkalarının yazdığı koddan korkmayın</h1>
+<p>Çatı kullanımı için sıklıkla ifade edilen bir argüman da, insanların başkaları tarafından sıfırdan yazılmış kod tabanlarıyla uğraşmak istemedikleridir.</p>
+<p>Ancak bu, PHP topluluğundaki web geliştiricileri arasında çoğunlukla karşılaşılan garip bir zihniyettir. Topluluk içinde profesyonellik ve deneyim eksikliği yayan bir şey.</p>
+<p>Sıfırdan kod yazmak ve başkalarının kodlarıyla ilgilenmek normaldir. Profesyonel bir programcının günlük çalışmasının bir parçası. Korkacak bir şey değil.</p>
+<p>Profesyonel bir programcı, başkalarının kurallarına bakmaz ya da artık şirket veya proje ile ilişkili olmayan eski programcının hangi çatıyı kullandığını ve neden kullandığını düşünmeden işe başlamalıdır.</p>
+<p>Bu profesyonel bir programcının zihniyeti değildir. Bunu kimse yapmaz.</p>
+<p>Belki de PHP web geliştirmeye giriş engelinin düşük olması bu tür bir zihniyette rol oynamaktadır. Ne olursa olsun, bir insanın yanlış iş kolunda olduğuna dair bir işarettir.</p>
+<p>Programlamanın büyük bir kısmı, başkalarının koduyla çalışmak zorunda olan insanlarla ilgilidir. Var olan kod tabanını iyileştirmeye çalışmak ve bazen de yeniden yazmak çalışmanın bir parçasıdır.</p>
+<p>Programlamanın büyük ustalarından not alın, <a href="http://codersatwork.com/">İşyerindeki kodlayıcılar - Programlama Zanaatına Yansımalar</a> adlı kitabı okuyun.</p>
+<p>Dünyadaki en büyük ve en başarılı kod tabanlarından bazıları, birbiriyle hiç tanışmamış yüzlerce insan tarafından geliştirilen kod tabanları, herhangi bir çerçeve kullanmadan geliştirilen kod tabanları, tamamen prosedürel bir programlama dilinde kullanılmayan kod tabanlarıdır. Ve hatta bazıları prosedürel paradigmadan başka bir şey yapmazlar ve farklı yapmayı hayal etmezler.</p>
+<p>[Linux Çekirdeği] (https://www.kernel.org/), herhangi bir çatı kullanmadan 14.000’den fazla katılımcı tarafından tamamen prosedürel programlama kullanılarak yazılmış 20 milyon kod satırından oluşur.</p>
+<p><a href="https://en.wikipedia.org/wiki/Berkeley_Software_Distribution">BSD</a> ve <a href="https://www.gnu.org/">Linux GNU userland</a> ’ın çoğu tamamen prosedürel programlama kullanılarak yazılmıştır, ve Her hangi bir çatı da kullanılmamıştır.</p>
+<p>Aynı şey, sonunda, orijinal programcılar tarafından terk edilen ama diğer yetenekli programcılar tarafından devam edilen dünya çapında yüzlerce Açık Kaynak projesi için de geçerlidir. Bu projelerin birçoğunun dokümantasyonu (eğer varsa) çok azdır, kod tabanında yorum satırları yok denecek kadar azdır ve öneri ya da yönlendirme konusunda hiçbir yardımı yoktur.</p>
+<p>Tüm PHP kod temeli, herhangi bir çerçeve kullanmadan, tamamen prosedürel bir programlama dili olan C ile yazıldı.</p>
+<p>PHP’de bir sınıf tanımladığın zaman, ya da PHP’nin en sevdiğin çatısını ateşlesen, başkasının saf usule ilişkin işlerinde çalışıyorsun demektir!</p>
+<p>Elbette, korkunç bir kod, belki de başlangıçtan tasarlanmamış bir kod, ya da birçok kez kendini aşan bir kod, ancak müşteri yeniden yazma ile baş etmek istemedi. Bu kod ekleme ve çıkarma yapmanıza engel oluyor olabilir, ancak hiçbir çatı bu durumu önleyemezdi. Bu genellikle bir programın doğal büyüme sürecidir. Sonunda her türlü çatı zaten parçalara bölünmüş olacaktı.</p>
+<p>Ve tabii ki korkunç bir spagetti kod gerçeği var, ama kimse bilerek korkunç spagetti kodu üretmiyor. Bazen bu, deneyim eksikliğinin bir sonucudur, çoğu zaman müşteri hatasıdır, çünkü gelişimin ortasında birkaç kez teknik özellikleri değiştirdiler, her iki durumda da, bir çatı kullanılmış olsa bile, sonuç hala spagetti kodu olacaktı. ve nesne tabanlı paradigmanın ne kadarının kullanıldığı önemli değil, sonuç yine de spagetti kodu olacaktı.</p>
+<p>Programcılar hepimiz bu durumları önlemeye çalışıyoruz, ancak ** bu normaldir <strong>, bu </strong> programlama sanatıdır <strong>, bu </strong> programcı olmanın** ne anlama geldiğinin bir parçasıdır!</p>
+<p><strong>Yanlış yol</strong>: Başkalarının yazdığı koddan korkmayın. <img src="/img/thumbs-down.png" alt="Thumbs down" /></p>
+<h1 id="php-fig-standardlarını-takip-etmede-aşırıya-kaçmayın">PHP-FIG standardlarını takip etmede aşırıya kaçmayın</h1>
+<p>FIG kısaca “Framework Interoperability Group” yani “Çatılarası Uyumluluk Grubu”.</p>
+<p>[PHP-FIG] (http://www.php-fig.org/), 2009 yılında php | tek’te bir dizi çatı geliştiricisi tarafından oluşturulmuştur. O zamandan beri, diğer birçok üye başvurmuş ve oy kullanmış, büyüklüğü arttırılmıştır. Başlangıçta 5 üyeden oluşuyorken sonradan sayı 20 üyeye çıkmıştır.</p>
+<p>PHP-FIG ile ilgili birçok tartışma var. Bazıları PHP-FIG’i PHP topluluğundan beri PHP topluluğunun başına gelen en iyi şey olarak görürken, diğerleri grubu unutulması en iyi şey olarak görür.</p>
+<p>PHP-FIG ile ilgili sorunlardan biri, <a href="http://www.php-fig.org/faqs/">SSS</a>’de şöyle kendini gösterme şeklidir.</p>
+<blockquote>
+<p>Grubun arkasındaki fikir, proje temsilcilerinin projelerimiz arasındaki ortaklıklar hakkında konuşması ve birlikte çalışabileceğimiz yollar bulması. Ana izleyicilerimiz birbirimizdir, ancak PHP topluluğunun geri kalanının izlediğini çok iyi biliyoruz. Eğer diğer insanlar ne yaptığımızı kabul etmek isterlerse, bunu memnuniyetle kabul ederler, ancak amaç bu değildir. Gruptaki hiç kimse size bir programcı olarak nasıl uygulama geliştireceğinizi söylemek istemez.</p>
+</blockquote>
+<p>Ancak, grubun birkaç üyesinin çalışmalarını gördüğümüzde, hedefin yukarıdaki açıklamaya oldukça aykırı olduğunu açıkça görebiliyoruz. Bu üyeler PHP-FIG’in, grubun asıl adı olan <strong>kabul edilen bir “PHP standart grubu”</strong> olması için yorulmadan çalışırlar. Bunu PHP-FIG’in çalışmalarını kitaplarında, web sitelerinde, blog yazılarında, forumlarında vb. “Modern PHP” olarak sınıflandırarak ve diğer yolları geriye dönük olarak sınıflandırarak yaparlar.</p>
+<p>PHP-FIG ile ilgili sorunlardan biri, pek çok çatı ve Açık Kaynaklı projenin standartlarının birçoğunu benimsemiş olmasına rağmen, bu standartların “çatı perspektifinden” sorunları ele almasından dolayı temel olarak gerçek yaşam sorunları karşısında oldukça kullanışsız kalıyor olmasıdır.</p>
+<p>Pek çok insan, müşterilerin satın almak ve kullanmak istedikleri, son derece verimli, güvenli ve uygun maliyetli yazılımlar geliştirmektedir. Çatı fanatiklerinin fikirlerine uyması gereken standartlarla rahatsız edilmemeliler. Eğer bu şekilde olursa, bu sektör için felaket olur.</p>
+<p>Bir tür standart grubunun oluşturulması gerekiyorsa, sadece framework ve Open Source CMS proje geliştiricilerinin değil, tüm PHP topluluğunun çıkarlarını yansıtması gerekir. PHP programlama dilinin geliştiricileri tarafından temsil edilmeli ve oy kullanma hakkı olan çok daha büyük bir üyelik ile temsil edilmelidir.</p>
+<p>PHP-FIG tarafından geliştirilen standartları benimsemeyi seçerseniz, bu standartların bazılarının - örneğin PSR-0 ve PSR-4 otomatik yükleyici standartları ve bazı diğer standartların - kodunuzu nasıl değiştirdiğinize doğrudan bir etkisi olduğunu anlamalısınız.</p>
+<p>Birçok endüstri ölçeklenebilir, çalışma zamanı açısından kritik ve düşük maliyetli bir yazılımlara ihtiyaç duyuyor ama bunun PHP-FIG’in bu standartları kullanılarak geliştirilemeyeceği aşikardır.</p>
+<p><strong>Yanlış yol</strong>: PHP-FIG standardlarını takip etmede aşırıya kaçma. <img src="/img/thumbs-down.png" alt="Thumbs down" /></p>
+<h1 id="yazılım-güvenliğini-gözardı-etmeyin">Yazılım güvenliğini gözardı etmeyin</h1>
+<blockquote>
+<p>Programcılarla ilgili en büyük problem iş işten geçene kadar ne yaptıklarını söyleyememeleridir.</p>
+<p>– Seymour Cray, <a href="http://www.defprogramming.com/q/6e61ae30a855/">defprogramming.com</a></p>
+</blockquote>
+<p>Güvenli kodlama, kötü niyetli ya da tehlikeli insanlar ya da diğer programlar tarafından saldırıya dirençli programlar yazma pratiğidir. Güvenli kodlama, verilerin hırsızlık veya bozulmaya karşı korunmasına yardımcı olur. Ek olarak, güvensiz bir program, bir saldırganın bir sunucuyu veya kullanıcının kimliğini kontrol altına almasına erişim sağlayabilir, bu da tek bir kullanıcıya hizmet verilememesinden, binlerce kullanıcının gizli bilgilerin açığa çıkmasına, hizmet kaybına veya sistemlerin zarar görmesine kadar bir çok kötü durumla sonuçlanabilir.</p>
+<p>Her bilgisayar programı bir güvenlik saldırısı için potansiyel bir hedeftir. Saldırganlar, uygulamalarınızdaki güvenlik açıklarını bulmaya çalışacaktır. Daha sonra gizli bilgileri çalmak, programları ve verileri bozmak, sunucu ve ağların kontrolünü ele geçirmek için bu güvenlik açıklarını kullanmaya çalışacaklar. Müşterilerinizin bilgileri ve itibarınız tehlikede altındadır.</p>
+<p><strong>Güvenlik yazılıma eklenebilecek bir özellik değildir.!</strong></p>
+<p>Güvensiz bir uygulama, güvenliğini sağlamak için kapsamlı bir yeniden tasarım gerektirebilir. Yazılımınıza yönelik tehditlerin yapısını tanımlamalı ve uygulamanızın planlaması ve geliştirilmesinden başından itibaren güvenli kodlama uygulamalarını dahil etmelisiniz.</p>
+<p>Kritik yazılım kaynaklarının güvenceye alınması, saldırganların odağı uygulama katmanına doğru olduğundan her zamankinden daha önemlidir. 2009 SANS araştırması, web uygulamalarına yönelik saldırıların İnternette gözlemlenen toplam saldırı girişimlerinin %60’ından fazlasını oluşturduğunu ortaya çıkardı.</p>
+<p>PHP aynı zamanda hem bir programlama dili hem de bir web uygulama çatısı olduğu için olağandışıdır. Bu, PHP’nin, güvensiz kod yazmayı çok kolaylaştıran dile yerleşik bir çok web özelliğine sahip olduğu anlamına gelir.</p>
+<h2 id="baştan-güvenli">Baştan güvenli</h2>
+<blockquote>
+<p>Karmaşıklık çok kötüdür. Geliştiricilerin ömrünü bitirir, ürünleri planlamayı, geliştirmeyi ve test etmeyi zorlaştırır, güvenlikle ilgili zorluklara neden olur ve son kullanıcı ve yönetici sıkıntılarına neden olur.</p>
+<p>– <a href="www.azquotes.com/quote/585933">Ray Ozzie</a></p>
+</blockquote>
+<p>Uygulamaların uygun güvenlik gereksinimleri ile tasarlanması ve uygulanması için, güvenli kodlama uygulamaları ve güvenlik risklerine odaklanma, günlük operasyonlara, düşüncelere ve gelişim süreçlerine dahil edilmelidir</p>
+<p>Genellikle, güvenli bir yazılım oluşturmak, yazılım paketi tamamlandıktan sonra güvenlik sorunlarını düzeltmekten daha ucuzdur. Hele bir de güvenlik ihlaliyle ortaya çıkacak maliyetler de göz önünde bulundurulursa…</p>
+<p><strong>Yanlış yol</strong>: Yazılım geliştirirken güvenlik konusunu hiç düşünmemek. <img src="/img/thumbs-down.png" alt="Thumbs down" /></p>
+<h1 id="sss">SSS</h1>
+<p>Yazılı belgeleri de yanlış anlamak mümkün. Bunun için bazı konuları aydınlatmak gerekiyor.</p>
+<p><strong>Q:</strong> <em>Bu sitenin amacı nedir ve neden biraz çatışmacı bir yaklaşım seçilmiş?</em></p>
+<p><strong>A:</strong> Güncel uygulamalar ve ayrkırı görüşler hakkında tartışma ve düşünme ortamı oluşturmak.</p>
+<p><strong>Q:</strong> <em>Nesne tabanlı programlamanın kötü mü ya da yanlış mı olduğunu söylüyorsunuz?</em></p>
+<p><strong>A:</strong> Hayır, tabii değil! Sorunları çözerken daima yalnızca ve daima nesneye yönelik paradigmayı düşünmenin ve kullanmanın kötü olduğunu söylüyoruz. Sadece siyah ya da beyaz şeklinde düşünmenin yanlış olduğunu söylüyoruz.</p>
+<p>Tek bir uygulamada bile bir çok problem vardır. Çoklu paradigma bazen en iyi çözümdür ve bütün çözümler çözmeye çalıştığınız soruna bağlıdır.</p>
+<p>Belirli bir sorunu uygun olmayan bir yolla çözmeye çalıştığınız kötü şeyler olur.</p>
+<p><strong>Q:</strong> <em>Bütün uygulama çatılarının (framework) kötü olduğunu mu söylüyorsun?</em></p>
+<p><strong>A:</strong> Belirli ya da bütün uygulama çatılarını yargılamaya çalışmıyoruz. PHP’nin üstünde her zaman bir uygulama çatısı kullanma algısı ile mücadele ediyoruz.</p>
+<p><strong>Q:</strong> <em>Bir uygulama çatısı beni hızlandırıyorsa, neden kötü olsun ki?</em></p>
+<p><strong>A:</strong> Tartışmaya açtığımız durumu ve uzun vadeli sonuçlarını analiz ettiyseniz ve o zaman “hızlı üretmenin” aslında başa çıkmanız gereken tek sorun olduğunu görürsünüz. Bunun yüzünden çoğunlukla programlama veya yazılım geliştirme ile uğraşmak yerine bas ve tıkla çözümleriyle uğraşıyoruz.</p>
+<p>Hızlı bir şekilde üretmeye başlamak, yazılım tasarlamamak anlamına gelir; bu çoğunlukla, karşılaştığınız sorunu analiz etmediğiniz ve seçiminizin uzun vadeli sonuçlarını anlamadığınız anlamına gelir.</p>
+<p><strong>Q:</strong> <em>Harici paket kullanmanın kötü olduğunu mu söylüyorsunuz?</em></p>
+<p><strong>A:</strong> Hayır. Harici kütüphanelerin kullanımını teşvik ediyoruz. Herhangi bir sınırlama veya kısıtlama yapmadan kendi projelerinize kolayca entegre edebileceğiniz her kütüphaneyi kullanın. Bu kesinlikle harika bir şey!</p>
+<p><strong>Q:</strong> <em>Siz kimsiniz?</em></p>
+<p><strong>A:</strong> Bu web sitesi PHP topluluğundaki fikirler ve aşırılıkçılıkla mücadele hakkındadır, kişisel şöhret ya da tanınma amacı gütmemektedir. İnsanları adlandırmak, odağı yalnızca web sitesinde değinilen sorunlardan sorunları çözen kişilere kaydırır. Sadece fikirlere odaklanmanızı tavsiye ediyoruz.</p>
+<p><strong>Q:</strong> <em>Yazılım geliştirme alanındaki tecrübeniz nedir?</em></p>
+<p><strong>A:</strong> Bu sitede ifade edilen fikirlere ve sonuçlara ulaşmak için çok fazla tecrübeye gerek olmadığını, ana temaya odaklanmanın yeterli olacağını düşünüyoruz. # Tavsiye edilen diğer kaynaklar #</p>
+<p><a href="https://news.ycombinator.com/item?id=12318615">PHP The Wrong Way on Hacker News</a></p>
+<ul>
+<li>“PHP The Wrong Way” açıldığında, Hacker News üzerinde site hakkında okunmaya değer pek çok argüman içeren yorumlar üretildi.</li>
+</ul>
+<p><a href="https://news.ycombinator.com/item?id=12377385">Why bad scientific code beats code following “best practices”</a></p>
+<ul>
+<li>Yalın ve kayıtsız yetkinlik cehenneme giden bu yolda endüstriyel standartlardan daha iyi olabilir. Bilgisayarın dışındaki “gerçek dünya” bu tür örneklerle doludur.</li>
+</ul>
+<p><a href="https://medium.com/@brianwill/how-to-program-without-oop-74a46e0e47a3#.squpnjz4n">How to program without OOP</a></p>
+<ul>
+<li>Yeni ve alternatif bir bakış açısı olarak Brian Will, üç videoda programlamaya nesne yönelimli programlama ile başlamanın kötü bir fikir olduğunu neden düşündüğünü anlatıyor ve diziyi OOP dışı kodun nasıl yazılacağı konusunda birkaç notla bitiriyor.</li>
+</ul>
+<p><a href="http://codersatwork.com/">Coders at work - Reflections on the Craft of Programming</a></p>
+<ul>
+<li>Tüm zamanların en iyi on beş programcısı ve bilgisayar bilimcisiyle yapılan yaklaşık seksen saat süren konuşmalara ve Work at Coders’taki soru cevap görüşmelerine dayanarak programcıların programlamayı nasıl öğrendiği, zanaatlarını nasıl uyguladıkları ve gelecek hakkında ne düşündükleri hakkında çok yönlü bir belge.</li>
+</ul>
+<p><a href="https://www.oreilly.com/ideas/the-traits-of-a-proficient-programmer">The traits of a proficient programmer</a></p>
+<ul>
+<li>Yetkinlik, işleri yapmak için yeterli tecrübe ve bilgiye sahip olmak anlamına gelir; yeterlilik bir şeyi belirli bir şekilde yaptığınızı ve bunun büyük resme nasıl uyduğunu bilmekle ilgilidir. Başka bir deyişle, uzman bir uygulayıcı her zaman yetkili bir uygulayıcıdır, ancak bunun tersi doğru olmayabilir.</li>
+</ul>
+<p><a href="https://www.owasp.org/images/0/08/OWASP_SCP_Quick_Reference_Guide_v2.pdf">OWASP Secure Coding Guidelines</a></p>
+<ul>
+<li>Bu teknoloji agnostik belge, yazılım geliştirme yaşam döngüsüne entegre edilebilecek kontrol listesi formatında bir dizi yazılım güvenlik kodlama standardı tanımlar. Bu standartların uygulanması en yaygın yazılım açıklarını azaltacaktır.</li>
+</ul>
+<p><a href="https://www.owasp.org/index.php/Security_by_Design_Principles">Security by Design Principles</a></p>
+<ul>
+<li>Web uygulama güvenliği, açık kaynaklı PHP uygulamaları, doğrudan işleme gibi web hizmetleri veya tescilli kurumsal web siteleri gibi başarılı her projenin önemli bir bileşenidir. Uygulama sahipleri (haklı olarak) güvenli olmayan kodları kapatır ve kullanıcılar dolandırıcılık sağlayan güvenli olmayan hizmetleri kapatır. Bu Geliştirme Kılavuzunun amacı işletmelere, geliştiricilere, tasarımcılara ve çözüm mimarlarına güvenli web uygulamaları üretmelerine destek vermektir. En erken aşamalardan yapıldığında, güvenli uygulamalar güvensiz uygulamalarla aynı maliyete gelir ancak uzun vadede çok daha düşük maliyetlidir.</li>
+</ul>
+<p><a href="http://phpsecurity.readthedocs.io/en/latest/">Survive The Deep End: PHP Security</a></p>
+<ul>
+<li>Her önemli güvenlik açığını, bültenlerinde ve web sitelerinde not ediyorlar, bu konuyu çok öensediklerini gösteriyor. Aynı bakış açısıyla kötü bir tecrübe yaşamadan güvenlik konusunu ciddiye almak gerekir.</li>
+</ul>
+<p><a href="https://openlibrary.org/books/OL7407595M/Refactoring">Refactoring Improving the Design of Existing Code</a></p>
+<ul>
+<li>Kodu yeniden yazmak aslında tasarımı geliştirmek demektir. Bu kodun çıktısını değiştirmeden yapısını değiştirmektir. Yeniden yazarak kötü tasarlanmış bir uygulamayı daha doğru bir uygulama haline getirebilirsiniz. Bu kitap yeniden yazma prensiplerini (yeniden yazılacak yerleri tespit etme, gerekli testleri oluşturma gibi) tartışmaya açıyor. Kitapta ayrıca kırktan fazla kabul edilmiş yeniden yazma yöntemi (neden ve nasıl yapılacağı, aşama aşama uygulama ve sonucun nasıl olduğunu göstren örnekler ile) de yer alıyor.</li>
+</ul>
+<p><a href="https://openlibrary.org/works/OL15333872W/The_Practice_of_Programming_%28Addison-Wesley_Professional_Computing_Series%29">The Practice of Programming</a></p>
+<ul>
+<li>Programcılar için önemli pratik konuların bir özeti.</li>
+</ul>
+<p><a href="https://openlibrary.org/works/OL5748544W/The_pragmatic_programmer">The pragmatic programmer</a></p>
+<ul>
+<li>Pragmatik Programcı: Acemiden ustaya çekirdek programlama sürecini inceler; gereksinim alma ve kullanıcılarını memnun eden çalışma, bakım kodu üretme. Kişisel sorumluluk ve kariyer gelişiminden, kodu esnek tutmak, uyarlamak ve yeniden kullanmak için mimari tekniklere kadar uzanan konuları kapsar.</li>
+</ul>
+<p><a href="https://openlibrary.org/works/OL1875800W/Understanding_programming_languages">Understanding programming languages</a></p>
+<ul>
+<li>Bir programlama dilinin seçimi, bir yazılım sisteminin nihai kalitesini etkileyen en önemli faktörlerden biridir. Ne yazık ki, çok fazla programcının dil becerisi zayıf: bildikleri dillere tutkuyla anadil dilleri gibi âşıklar ve dil kısıtlamalarını analiz edemiyorlar. “Programlama Dillerini Anlamak” adlı kitap dil tasarımcıları için hangi alternatiflerin mevcut olduğunu, dil yapılarının güvenlik ve okunabilirlik açısından nasıl kullanılması gerektiğini, dil yapılarının nasıl uygulandığını, hangilerinin verimli bir şekilde yerine getirilebileceğini ve dilin soyutlamaları ifade etmedeki ve uygulamasındaki rolünü açıklama amacıyla yazılmıştır.</li>
+</ul>
+<h1 id="nasıl-katkıda-bulunabilirim">Nasıl katkıda bulunabilirim?</h1>
+<p><a href="https://github.com/unixsheikh/phpthewrongway">GitHub</a>’taki repo ile başlayabilirsiniz.</p>
+<ul>
+<li>Klonlayıp gerekli gördüğünüz değişiklikleri ve düzeltmeleri yapabilirsiniz.</li>
+<li>Sonra bir “pull request” oluşturup onaya gönderebilirsiniz.</li>
+</ul>
+<p><em>sections/LANGUAGE</em> klasörüne yeni bölümler ekleyebilir ya da var olanları düzenleyebilirsiniz.</p>
+</body>
+</html>
