@@ -22,8 +22,8 @@ PHP aynı zamanda hem bir programlama dili hem de bir web uygulama çatısı old
 >
 > -- [Ray Ozzie](www.azquotes.com/quote/585933)
 
-In order for applications to be designed and implemented with proper security requirements, secure coding practices and a focus on security risks must be integrated into the day-to-day operations, thoughts, and the development processes themselves.
+Uygulamaların uygun güvenlik gereksinimleri ile tasarlanması ve uygulanması için, güvenli kodlama uygulamaları ve güvenlik risklerine odaklanma, günlük operasyonlara, düşüncelere ve gelişim süreçlerine dahil edilmelidir
 
-Generally, it is much less expensive to build secure software than to correct security issues after the software package has been completed, not to mention the costs that may be associated with a security breach.
+Genellikle, güvenli bir yazılım oluşturmak, yazılım paketi tamamlandıktan sonra güvenlik sorunlarını düzeltmekten daha ucuzdur. Hele bir de güvenlik ihlaliyle ortaya çıkacak maliyetler de göz önünde bulundurulursa...
 
-**The wrong way**: Not developing secure software by default. ![Thumbs down](/img/thumbs-down.png)
+**Yanlış olan**: Yazılım geliştirirken güvenlik konusunu hiç düşünmemek. ![Thumbs down](/img/thumbs-down.png)
