@@ -26,4 +26,4 @@ Uygulamaların uygun güvenlik gereksinimleri ile tasarlanması ve uygulanması 
 
 Genellikle, güvenli bir yazılım oluşturmak, yazılım paketi tamamlandıktan sonra güvenlik sorunlarını düzeltmekten daha ucuzdur. Hele bir de güvenlik ihlaliyle ortaya çıkacak maliyetler de göz önünde bulundurulursa...
 
-**Yanlış olan**: Yazılım geliştirirken güvenlik konusunu hiç düşünmemek. ![Thumbs down](/img/thumbs-down.png)
+**Yanlış yol**: Yazılım geliştirirken güvenlik konusunu hiç düşünmemek. ![Thumbs down](/img/thumbs-down.png)
