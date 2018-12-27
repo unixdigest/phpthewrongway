@@ -1,28 +1,28 @@
-# Recommended reading #
+# Tavsiye Edilen Diğer Kaynaklar #
 
 [PHP The Wrong Way on Hacker News](https://news.ycombinator.com/item?id=12318615)
 
-* When "PHP The Wrong Way" was launched it spawned a bunch of comments on Hacker News that has many valuable arguments worth reading.
+* "PHP The Wrong Way" açıldığında, Hacker News üzerinde site hakkında okunmaya değer pek çok argüman içeren yorumlar üretildi.
 
 [Why bad scientific code beats code following "best practices"](https://news.ycombinator.com/item?id=12377385)
 
-* Simple-minded, care-free near-incompetence can be better than industrial-strength good intentions paving a superhighway to hell. The "real world" outside the computer is full of such examples.
+* Yalın ve kayıtsız yetkinlik cehenneme giden bu yolda endüstriyel standartlardan daha iyi olabilir. Bilgisayarın dışındaki "gerçek dünya" bu tür örneklerle doludur.
 
 [How to program without OOP](https://medium.com/@brianwill/how-to-program-without-oop-74a46e0e47a3#.squpnjz4n)
 
-* As a fresh and alternative perspective Brian Will discusses in three videos why he thinks object-oriented programming is a bad idea to begin with and he finishes up the series with a couple of notes on how non-OOP code should be written.
+* Yeni ve alternatif bir bakış açısı olarak Brian Will, üç videoda programlamaya nesne yönelimli programlama ile başlamanın kötü bir fikir olduğunu neden düşündüğünü anlatıyor ve diziyi OOP dışı kodun nasıl yazılacağı konusunda birkaç notla bitiriyor.
 
 [Coders at work - Reflections on the Craft of Programming](http://codersatwork.com/)
 
-* Based on nearly eighty hours of conversations with fifteen all-time great programmers and computer scientists, the Q&A interviews in Coders at Work provide a multifaceted view into how great programmers learn to program, how they practice their craft, and what they think about the future of programming.
+* Tüm zamanların en iyi on beş programcısı ve bilgisayar bilimcisiyle yapılan yaklaşık seksen saat süren konuşmalara ve Work at Coders'taki soru cevap görüşmelerine dayanarak programcıların programlamayı nasıl öğrendiği, zanaatlarını nasıl uyguladıkları ve gelecek hakkında ne düşündükleri hakkında çok yönlü bir belge.
 
 [The traits of a proficient programmer](https://www.oreilly.com/ideas/the-traits-of-a-proficient-programmer)
 
-* Competence means having enough experience and knowledge to get stuff done; proficiency involves knowing why you are doing something in a certain way, and how it fits into the big picture. In other words, a proficient practitioner is always a competent practitioner, but the opposite may not be true.
+* Yetkinlik, işleri yapmak için yeterli tecrübe ve bilgiye sahip olmak anlamına gelir; yeterlilik bir şeyi belirli bir şekilde yaptığınızı ve bunun büyük resme nasıl uyduğunu bilmekle ilgilidir. Başka bir deyişle, uzman bir uygulayıcı her zaman yetkili bir uygulayıcıdır, ancak bunun tersi doğru olmayabilir.
 
 [OWASP Secure Coding Guidelines](https://www.owasp.org/images/0/08/OWASP_SCP_Quick_Reference_Guide_v2.pdf)
 
-* This technology agnostic document defines a set of general software security coding practices, in a checklist format, that can be integrated into the software development life-cycle. Implementation of these practices will mitigate most common software vulnerabilities.
+* Bu teknoloji agnostik belge, yazılım geliştirme yaşam döngüsüne entegre edilebilecek kontrol listesi formatında bir dizi yazılım güvenlik kodlama standardı tanımlar. Bu standartların uygulanması en yaygın yazılım açıklarını azaltacaktır.
 
 [Security by Design Principles](https://www.owasp.org/index.php/Security_by_Design_Principles)
 
