@@ -1,50 +1,50 @@
 # Always use a framework #
 
-> All general purpose PHP frameworks suck!
+> Tüm genel amaçlı PHP uygulama çatıları mutlaka patlar!
 >
 > -- [Rasmus Lerdorf](https://www.youtube.com/watch?v=DuB6UjEsY_Y)
 
-In the PHP community a really bad trend has become de-facto standard for developing web applications and that is by the usage of a popular general purpose framework.
+PHP topluluğunda, gerçekten kötü bir eğilim, web uygulamaları geliştirmek için fiili bir standart haline geldi. Bu eğilim mutlaka popüler bir genel amaçlı çerçevenin kullanılması gerektiğinin düşülmesidir.
 
-This trend has emerged and become popular not because it in any way improves the result of the developing process, or because it is the right thing to do from a technology and architectural point of view. This trend has become popular because some of the developers of frameworks have managed to sweep away the masses with their polemic against programming from the ground up with stanzas like "Don't re-invent the wheel!" and "Don't do it yourself, others are more skillful than you".
+Bu eğilim, geliştirme sürecin sonucununun katilesini artırdığı için değil, teknoloji ve mimari açıdan yapılacak doğru şey olduğu için ortaya çıkmış ve popüler hale gelmiştir. Bu eğilimin popüler bir hale gelmesinin bir sebebi de, uygulama çatısı geliştiricilerinden bazılarının kitleleri, "çarkı yeniden icat etmeyin!" ve "Kendin yapmana gerek yok, başkaları senden daha yetenekli olabilir" gibi sloganlarla manipüle etmeleridir.
 
-Many of today's programmers completely ignore the fundamental principles of sound programming and they spend a large amount of time fantasizing new layers of complexity in order to appear more clever, more cool, and more acceptable by whomever they regard as their peers.
+Günümüz programcılarının çoğu, sağlıklı programlamanın temel ilkelerini tamamen görmezden geliyorlar ve akranları olarak gördükleri kişiler tarafından daha akıllı, daha havalı ve daha kabul edilebilir görünmek için yeni karmaşık katmanları hayal etmek için çok zaman harcıyorlar.
 
-These people seems to be infatuated by the thought of having other people follow their "way of doing things", becoming some kind of PHP community leaders, and having other people use their latest "hip" Open Source tools, that they forget to make sure that the advice they are giving is sound and solid.
+Bu tarzı benimseyen insanlar, diğer insanların hep "kendi yollarını" takip etmeleri, kendilerini bir tür PHP topluluğu lideri gibi görmelerini ve başkalarının kendi kullandıkları Açık Kaynak araçlarını kullanmalarını sağlamayı (ki bu araçların bazılarının ne olduğunu kendileri bile unutmuş olabiliyor) sağlamak için deli gibi çaba sarfediyor görünüyorlar.
 
-In the software industry you can compare a pre-built house to a general purpose framework. Building software using general purpose frameworks doesn't make you a coder or a programmer any more than putting together a pre-built house makes you a carpenter.
+Yazılım endüstrisinde önceden inşa edilmiş bir evi genel amaçlı bir yazılım çatısı karşılaştırabilirsiniz. Önceden inşa edilmiş bir evi bir araya getirmekten nasıl sizi iyi bir marangoz yapmazsa, genel amaçlı uygulama çatıları ile uygulama geliştirmek de sizi çok iyi bir kodlayıcı veya programcı yapmaz.
 
-On this website, we differentiate between frameworks and libraries in the following way:
+Bu sitede biz uygulama çatısı kullanmak ile kütüphane kullanmayı birbirinden aşağıdaki maddelerden dolayı ayrı tutuyoruz;
 
-* A library is considered a collection of reusable code, like the C standard library, or the Go standard library. It consists of code that you easily integrate into your own projects without enforcing any limitations or restrictions whatsoever. It consists of small pieces of code with one specific functionality each.
-* A framework is not just a collection of reusable code: you cannot simply take a piece of code from the framework and integrate it into your own project. A framework is a system that helps you build software, but at the same time it forces you to work within the limitations and restrictions of the framework itself. The framework itself has lot of interdependent functionality. One piece cannot work without the other.
+* Bir kütüphane, C standart kütüphanesi veya Go standart kütüphanesi gibi, tekrar kullanılabilir bir kod topluluğu olarak kabul edilir. Herhangi bir sınırlama veya kısıtlama yapmadan kendi projelerinize kolayca entegre edebileceğiniz koddan oluşur. Her biri belirli bir işlevselliğe sahip küçük kod parçalarından oluşur.
+* Bir uygulama çatısı yeniden kullanılabilir bir kod koleksiyonu değildir: çerçeveden bir kod parçası alıp kendi projenize entegre etmek çok zordur. Çatı, yazılım oluşturmanıza yardımcı olan bir sistemdir, ancak aynı zamanda çatının kendisinin sınırlamaları ve kısıtlamaları dahilinde çalışmaya zorlar. Çatının kendisinde çok fazla bağımlı işlevsellik var. Bir parça diğer olmadan çalışamaz.
 
-In the world of Python and Ruby, building websites from the ground up is tiresome because neither Python nor Ruby was originally created to build websites. As a result general-purpose frameworks such as [Django](https://en.wikipedia.org/wiki/Django_%28web_framework%29) and [Ruby on Rails](https://en.wikipedia.org/wiki/Ruby_on_Rails) quickly became popular for building websites in these languages.
+Python ve Ruby dünyasında, en baştan web siteleri inşa etmek zahmetlidir, çünkü ne Python ne de Ruby aslında web siteleri oluşturmak için yaratılmamıştır. Sonuç olarak, [Django] (https://en.wikipedia.org/wiki/Django_%28web_framework%29) ve [Ruby on Rails] (https://en.wikipedia.org/wiki/Ruby_on_Rails) gibi genel amaçlı çerçeveler  hızla bu dillerde web siteleri oluşturmak için popüler oldu.
 
-PHP on the other hand was created in the beginning by Rasmus Lerdorf as a set of tools written in C that would enable you to easily and quickly develop dynamic HTML. As such PHP was, and still is, **a framework in and of itself**.
+Diğer taraftan PHP, başlangıçta Rasmus Lerdorf tarafından C dilinde yazılmış ve dinamik HTML'yi kolayca ve hızlı bir şekilde geliştirmenizi sağlayacak bir dizi araç olarak oluşturulmuştur. Bu tasarımından dolayı PHP hala ** kendi başına bir uygulama çatısıdır **.
 
-PHP has evolved massively since then and today PHP can be used for much more than building HTML and websites, but viewing PHP as a sort of framework in itself is not wrong. PHP is by nature a layer of abstraction for developing web applications written entirely in a procedural C.
+PHP o zamandan beri kitlesel olarak gelişti ve bugün PHP, HTML ve web siteleri oluşturmaktan çok daha fazlası için kullanılabilir, ancak PHP'yi kendi içinde bir tür çatı olarak görmek hala yanlış değildir. PHP, doğası gereği, tamamen bir C prosedüründe yazılmış web uygulamalarını geliştirmek için bir soyutlama katmanıdır.
 
-Using a library within your project is only natural. PHP itself comes bundled with a set of libraries that you can use to extend your own code. PDO for example is a lightweight library that provides a consistent interface for accessing databases in PHP.
+Projenizde bir kütüphane kullanmak sadece doğaldır. PHP, kendi kodunuzu genişletmek için kullanabileceğiniz bir dizi kütüphaneyle birlikte gelir. Örneğin PDO, PHP'deki veritabanlarına erişmek için tutarlı bir arayüz sağlayan sade bir kütüphanedir.
 
-Using a framework on top of PHP on the other hand is another matter entirely.
+Diğer taraftan PHP'nin üstünde bir çatı kullanmak tamamen başka bir konudur.
 
-When you use a framework in PHP you add a layer of abstraction on top of yet another layer of abstraction, one that was already in place for you to use to begin with. The added layer of abstraction that the framework provides may simply serve to organize your code into a pre-fixed set of patterns, or it may add even more complexity by intertwining hundreds or even thousands of classes and methods into a nightmare of dependencies, either way you're adding layers of complexity to your code that isn't needed!
+PHP'de bir çatı kullandığınızda, bir soyutlama katmanının üstüne başka bir soyutlama katmanı daha eklemiş olursunuz. Çatının sağladığı ek soyutlama katmanı, kodunuzu önceden sabitlenmiş bir kalıplar dizisi halinde düzenlemeye hizmet edebilir ama yüzlerce hatta binlerce sınıfı ve yöntemi bir ya da daha fazla bağımlılık kabusuyla iç içe geçirerek daha da karmaşıklık kazandırır, yani kodunuza ihtiyaç duyulmayan karmaşıklık katmanları eklemiş olursunuz!
 
-All experience starts with the interface. The interface experience is the result of the underlying technology and the amount of layers of abstraction. The more abstraction you use, the less efficient the interface becomes and the more error-prone the application becomes. The higher the abstraction, the more detail and efficiency is lost.
+Tüm deneyim arayüz ile başlar. Arayüz deneyimi, alttaki teknolojinin ve soyutlama katmanlarının sonucudur. Ne kadar çok soyutlama kullanırsanız, arayüz o kadar az verimli olur ve uygulama o kadar hataya açık hale gelir. Soyutlama ne kadar yüksek olursa, detay ve verimlilik o kadar fazla kaybolur.
 
-Understand this clearly: **The ideal number of lines of code in any project is as few as possible whilst being as clear and readable as possible!**
+Bunu anlamak gerek: **Herhangi bir projede ideal kod satırı sayısı ne kadar az olursa proje o kadar açık ve okunaklıdır.!**
 
-> What everyone doesn't need is a general purpose framework. Nobody has a general problem, everyone has a very specific problem they are trying to solve.
+> Herkesin ihtiyaç duymayacağı tek şey genel amaçlı bir çatıdır. Herkesin sorunu birbirinin aynısı değildir, herkesin çözmeye çalıştığı sorun kendine özeldir.
 >
 > -- [Rasmus Lerdorf](https://www.youtube.com/watch?v=anr7DQnMMs0)
 
-Some companies began listening to the hype about PHP frameworks and they started their next projects using one of these popular general purpose frameworks only to end up in a disaster. Not only did they discover that the general purpose framework was really bad at solving their very specific need, but it was also extremely slow in doing so. It was impossible to scale and as a result they started ripping the framework apart in a desperate attempt to pull out all those things they really didn't need.
+Bazı şirketler PHP çatılarıyla ilgili yutturmacaları dinlemeye başladılar ve bir sonraki projelerine bu popüler genel amaçlı çatılardan birini kullandılar ve süreç felaketle sonuçlandı. Sadece genel amaçlı çatının çok özel ihtiyaçlarını çözmede gerçekten kötü olduğunu keşfetmediler, aynı zamanda bunu yapmakta da oldukça yavaş olabileceğini de gördüler. Ölçeklendirmek imkansızdı ve sonuç olarak, çerçeveyi gerçekten ihtiyaç duymadıklarını çıkarmak için çaresiz bir girişimde parçalamaya başladılar.
 
-Always use the pragmatic approach:
+Her zaman en faydalı olanı seçin:
 
 > Action or policy dictated by consideration of the immediate practical consequences rather than by theory or dogma.
 >
 > -- Collins English Dictionary, Complete and Unabridged, 12th Edition 2014
 
-**The wrong way:** Always use a framework on top of PHP. ![Thumbs down](/img/thumbs-down.png)
+**Yanlış yol:** Always use a framework on top of PHP. ![Thumbs down](/img/thumbs-down.png)
