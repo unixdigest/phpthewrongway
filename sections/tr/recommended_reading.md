@@ -1,4 +1,4 @@
-# Tavsiye Edilen Diğer Kaynaklar #
+# Tavsiye edilen diğer kaynaklar #
 
 [PHP The Wrong Way on Hacker News](https://news.ycombinator.com/item?id=12318615)
 

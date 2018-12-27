@@ -1,4 +1,4 @@
-# PHP-FIG Standardlarını Takip Etmede Aşırıya Kaçma #
+# PHP-FIG standardlarını takip etmede aşırıya kaçmayın #
 
 FIG kısaca "Framework Interoperability Group" yani "Çatılarası Uyumluluk Grubu".
 
