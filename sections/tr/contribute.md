@@ -1,4 +1,4 @@
-# Nasıl Katkıda Bulunabilirim? #
+# Nasıl katkıda bulunabilirim? #
 
 [GitHub](https://github.com/unixsheikh/phpthewrongway)'taki repo ile başlayabilirsiniz.
 

@@ -1,4 +1,4 @@
-# Aşırıya Kaçma Tehlikesi #
+# Aşırıya kaçma tehlikesi #
 
 Programlama kuralları ve kılavuzlarıyla ilgili bir sorun, genellikle yalnızca belirli bir bağlamda bir amaca hizmet etmeleridir. Bağlam dışında alındığında, iyi bir kural korkunç bir kural haline gelebilir. Aslında, her iyi kural aşırıya götürüldüğünde kötüye gider.
 

@@ -1,4 +1,4 @@
-# Hoşgeldiniz #
+# Giriş #
 
 PHP programlama dünyasında, bir dizi eğilim bazı insanlar tarafından (kendi kitaplarında ve web sitelerinde) "Modern PHP" olarak pazarlanırken, aynı zamanda diğer tüm yaklaşımlar sanki ilkel, aptalca veya yanlış olarak sunuluyor.
 

@@ -1,4 +1,4 @@
-# Always use a design pattern #
+# Her zaman bir tasarım modeli kullanılmalı #
 
 > Fildişi kule tasarlar gibi düşünmeye ve tasarım modellerine bu büyük alerjim var. Peter Norvig, Harlequin'deyken, tasarım kalıplarının programlama dilinizde nasıl bir kusur olduğunu anlatan bir yazı yazdı. Daha iyi bir programlama dili edinin. Kesinlikle haklı. Desenlere tapmayın ve ve devamlı "Ah, X modelini kullanacağım" diye düşünmeyin.
 >

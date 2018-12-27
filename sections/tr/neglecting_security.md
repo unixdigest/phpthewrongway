@@ -1,4 +1,4 @@
-# Yazılım Güvenliğini Gözardı Etme #
+# Yazılım güvenliğini gözardı etmeyin #
 
 > Programcılarla ilgili en büyük problem iş işten geçene kadar ne yaptıklarını söyleyememeleridir.
 >

@@ -1,4 +1,4 @@
-# Always use a framework #
+# Mutlaka uygulama çatısı (framework) kullanmak gerekir #
 
 > Tüm genel amaçlı PHP uygulama çatıları mutlaka patlar!
 >
