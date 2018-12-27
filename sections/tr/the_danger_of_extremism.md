@@ -1,11 +1,11 @@
-# The danger of extremism #
+# Aşırıya kaçma tehlikesi #
 
-One problem with programming rules and guidelines is that they often only serve a purpose within a specific context. Taken out of context, a good rule can become a horrible rule. In fact, every good rule becomes bad when taken to the extreme.
+Programlama kuralları ve kılavuzlarıyla ilgili bir sorun, genellikle yalnızca belirli bir bağlamda bir amaca hizmet etmeleridir. Bağlam dışında alındığında, iyi bir kural korkunç bir kural haline gelebilir. Aslında, her iyi kural aşırıya götürüldüğünde kötüye gider.
 
-This is important to understand because many of the software development principles and rules developed over time and presented by many different people often become misused in the hands of extremists.
+Bunun anlaşılması önemlidir, çünkü zamanla geliştirilen ve birçok farklı insan tarafından sunulan yazılım geliştirme ilkeleri ve kurallarının çoğu, aşırılık yanlılarının elinde sık sık suistimal edilir.
 
-Experience has taught that misuse of general rules and guidelines always results in complication, lack of security, error-prone results, and in some cases complete and utter disaster.
+Deneyimler, genel kuralların ve kılavuzların kötüye kullanılmasının her zaman komplikasyon, güvenlik eksikliği, hataya açık sonuçlar ve hatta bazı durumlarda tam felaketle sonuçlandığını göstermiştir.
 
-The [KISS principle](https://en.wikipedia.org/wiki/KISS_principle), which is an acronym for "Keep It Simple, Stupid", is an extremely wise and good principle that is generally viewed by experienced people as very good advice to follow. But even this great principle becomes a danger to a project if it is taken to the extreme. There is such a thing as "too simple" resulting in a lack of needed functionality.
+"Basit ve Aptal Tutun, (Keep It Simple, Stupid)" ın kısaltması olan [KISS ilkesi] (https://en.wikipedia.org/wiki/KISS_principle), genellikle deneyimli kişiler tarafından çok deneyimli olarak görülen, çok akıllıca ve iyi bir ilkedir. Takip etmek için iyi bir tavsiyedir. Ancak bu büyük prensip bile, aşırıya götürülürse bir proje için tehlike oluşturur. Gerekli işlevsellik eksikliği ile sonuçlanan "çok basit" gibi bir şey de ortaya çıkabilir.
 
-**The wrong way**: The religious following of rules and guidelines. ![Thumbs down](/img/thumbs-down.png)
+**Yanlış yol**: Kuralları ve kılavuzları din gibi algılama![Thumbs down](/img/thumbs-down.png)
