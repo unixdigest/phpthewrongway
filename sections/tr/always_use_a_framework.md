@@ -43,8 +43,8 @@ Bazı şirketler PHP çatılarıyla ilgili yutturmacaları dinlemeye başladıla
 
 Her zaman en faydalı olanı seçin:
 
-> Action or policy dictated by consideration of the immediate practical consequences rather than by theory or dogma.
+> Ihtiyacımız olan teori veya dogmadan ziyade acil pratik sonuçların göz önünde bulundurulmasıyla yapılan eylem veya politikalardır.
 >
 > -- Collins English Dictionary, Complete and Unabridged, 12th Edition 2014
 
-**Yanlış yol:** Always use a framework on top of PHP. ![Thumbs down](/img/thumbs-down.png)
+**Yanlış yol:** Mutlaka bir uygulama çatısı kullanmak gerekir. ![Thumbs down](/img/thumbs-down.png)
