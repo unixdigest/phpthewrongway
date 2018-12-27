@@ -1,54 +1,54 @@
-# Always use object-oriented Programming #
+# Her zaman nesne tabanlı programlama yapılmalı #
 
-> The problem with object-oriented languages is they’ve got all this implicit environment that they carry around with them. You wanted a banana but what you got was a gorilla holding the banana and the entire jungle.
+> Nesne tabanlı dillerle ilgili sorun, kendileriyle birlikte taşıdıkları bu büyük kapalı ortamlara sahip olmalarıdır. Bir muz istemişsin, fakat tüm ormanı elindeki muz tutan bir goril ile birlikte sana veriyor.
 >
-> -- Joe Armstrong in [Coders at work - Reflections on the Craft of Programming](http://codersatwork.com/)
+> -- Joe Armstrong [Coders at work - Reflections on the Craft of Programming](http://codersatwork.com/)
 
-> Abstraction is powerful. What I'm really allergic to, and what I had a reaction to in the '90s, was all the CORBA, COM, DCOM, object-oriented nonsense. Every startup of the day had some crazy thing that would take 200.000 method calls to start up and print "Hello world". That's a travesty! You don't want to be a programmer associated with that sort of thing.
+> Soyutlama güçlüdür. Gerçekten alerjim olan ve 90'larda tepki verdiğim şey tüm CORBA, COM, DCOM, nesne tabanlı saçmalıktı. Başlangıç olarak "Merhaba dünya" yazdırmak için 200.000 yöntem çağrısı yapmak çılgınca bir şey. Bu çok komik! Böyle bir tarz ile anılan bir programcı olmak istemezsiniz.
 >
-> -- Brendan Eich in [Coders at work - Reflections on the Craft of Programming](http://codersatwork.com/)
+> -- Brendan Eich  [Coders at work - Reflections on the Craft of Programming](http://codersatwork.com/)
 
-Many software developers, and many companies, feel that object-oriented programming is the only reasonable way to develop software today. Any one who argues against object-oriented programming is immediately made conscious of the fact that they are arguing against the "conventional wisdom" of the industry.
+Birçok yazılım geliştirici ve birçok şirket, nesneye yönelik programlamanın bugün yazılım geliştirmenin tek makul yolu olduğunu düşünüyor. Nesne yönelimli programlamaya karşı çıkan herkes endüstrinin "geleneksel bilgeliğine" karşı çıktıklarının farkına varır.
 
-On programming blogs and forums, there are a great many people who defend object-oriented programming, and who feel certain that they know what they are talking about, despite the lack of any standard definition!
+Programlama blogları ve forumlarında, nesne tabanlı programlamayı savunan ve standart bir tanımları olmamasına rağmen ne hakkında konuştuklarını bildiklerinden emin olan birçok insan var!
 
-The fact is that so-called object-oriented programming as such often inflicts a heavy burden of unneeded complexity!
+Gerçek şu ki, nesne tabalı programlama sık sık gereksiz karmaşıklık yükünü doğuruyor!
 
-As computer scientists and programmers we must learn to set aside prejudices and find the best solution to a given problem.
+Bilgisayar bilimcileri ve programcıları olarak, önyargıları bir kenara bırakmayı ve verilen bir soruna en iyi çözümü bulmayı öğrenmeliyiz.
 
-Today, one of the main strengths of PHP is its support for both imperative, functional, object-oriented, procedural, and reflective paradigms. PHP is a huge toolbox with lots of different tools that makes it possible to solve many problems in many different ways - **not just one way!**
+Günümüzde PHP'nin en güçlü yanlarından biri, imperatif, fonksiyonel, nesne tabanlı, prosedürel ve reflective paradigmalar için verdiği destek. PHP, birçok sorunu farklı şekillerde çözmeyi mümkün kılan çok sayıda farklı araca sahip devasa bir araç kutusudur. - **Her zaman bir den fazla yol vardır!**
 
-**As soon as we try to force-feed different problems within an application to a single specific programming paradigm, we're not thinking creatively and we're not working efficiently!**
+**Bir uygulama içindeki farklı sorunları tek bir özel programlama paradigmasına zorlamaya çalışırken, yaratıcı bir şekilde düşünmüyoruz ve verimli çalışmıyoruz!**
 
-## A small history lesson ##
+## Kıssaden hisse ##
 
-One of the greatest ways to understand a specific programming paradigm is to look at how it first evolved. What was the reason for its development? What problems existed with other programming paradigms that needed a new way of thinking? Was it a real world problem or simply an academic problem? And how has it since evolved?
+Belirli bir programlama paradigmasını anlamanın en iyi yollarından biri, ilk nasıl geliştiğine bakmaktır. Gelişiminin nedeni neydi? Yeni bir düşünme biçimine ihtiyaç duyan diğer programlama paradigmalarında ne gibi problemler yaşandı? Gerçek bir dünya problemi miydi yoksa sadece akademik bir problem miydi? Ve o zamandan beri nasıl gelişti?
 
-It doesn't matter what person X says or what definition person Y gives, what matters in the context of paradigms is the history that made them.
+X kişisinin ne söylediği veya Y kişisinin ne tanımladığı önemli değil, paradigmalar bağlamında önemli olan onları yapan tarih.
 
-> There are two ways of constructing a software design. One way is to make it so simple that there are obviously no deficiencies. And the other way is to make it so complicated that there are no obvious deficiencies.
+> Yazılım tasarımı yapmanın iki yolu vardır. Birinci yol, o kadar basit hale getirmek ki açık bir şekilde hiçbir eksikliğin olmamasını sağlamak. Ve diğer yol ise, bariz bir eksiklik olmayacak şekilde karmaşık hale getirmektir.
 >
 > -- [C.A.R. Hoare](https://en.wikiquote.org/wiki/C._A._R._Hoare)
 
-In the past, before the advent of object-oriented programming, around the end of the fifties, much software was developed using programming languages that emphasized unstructured programming, sometimes referred to as first- and second-generation languages. Unstructured programming (or non-structured programming) is historically the earliest programming paradigm. It was heavily criticized for producing "spaghetti" code.
+Geçmişte, nesne tabanlı programlamanın ortaya çıkmasından önce, ellili yılların sonlarında, bazen birinci ve ikinci nesil dilleri olarak adlandırılan yapılandırılmamış programlama dilleri kullanılarak birçok yazılım geliştirilmiştir. Yapılandırılmamış programlama, tarihsel olarak en eski programlama paradigmasıdır. "Spagetti" kodunu ürettiği için ağır eleştirildi.
 
-There are both high- and low-level programming languages that use non-structured programming. These include early versions of BASIC, COBOL, MUMPS, JOSS, FOCAL, TELCOMP, machine-level code, early assembler systems (those without procedural meta operators) and some scripting languages.
+Yapısal olmayan programlama kullanan hem yüksek hem de düşük seviyeli programlama dilleri vardır. Bunlar arasında BASIC, COBOL, MUMPS, JOSS, FOCAL, TELCOMP, makine düzeyinde kod, erken assembler sistemleri (işlemsel meta operatörleri olmayanlar) ve bazı betik dilleri bulunur.
 
-A program in a non-structured language usually consists of sequentially ordered commands, or statements, usually one in each line. The lines are usually numbered or may have labels which allows the flow of execution to jump to any line in the program (like with the unpopular GOTO statement).
+Yapılandırılmamış bir dilde bir program genellikle sıralı olarak düzenlenmiş komutlardan veya genellikle her satırda bir tane olmak üzere ifadelerden oluşur. Satırlar genellikle numaralandırılır veya yürütme akışının programdaki herhangi bir satıra atlamasına izin veren etiketlere sahip olabilir (popüler olmayan GOTO ifadesinde olduğu gibi).
 
-Then, in the sixties, structured programming emerged - mainly due to the famous letter by Edsger W. Dijkstra [Go To statements considered harmful](http://www.u.arizona.edu/~rubinson/copyright_violations/Go_To_Considered_Harmful.html).
+Sonra, altmışlı yıllarda, yapısal programlama ortaya çıktı - esas olarak Edsger W. Dijkstra'nın ünlü yazısı nedeniyle [Go To kalıpları zararlı olarak kabul edildi] (http://www.u.arizona.edu/~rubinson/copyright_violations/Go_To_Considered_Harmful.html) .
 
-Structured programming is a programming paradigm that improves the clarity, quality, and development of software by making use of subroutines, block structures and loops. This is in contrast to using simple jumps such as the GOTO statement.
+Yapısal programlama, alt yordamları, blok yapıları ve döngüleri kullanarak yazılımın netliğini, kalitesini ve kodlanmasını geliştiren bir programlama paradigmasıdır. Bu, GOTO deyimi gibi basit atlamaların kullanılmasının aksinedir.
 
-Later, procedural programming was derived from structured programming. Procedural programming is based upon the concept of "procedure call". A "procedure call" is just another name for a "function call". Procedures are also known as routines, subroutines or methods. A procedure simply contain a series of computational steps to be carried out. Any given procedure might be called at any point during a programs execution, including by other procedures or itself.
+Daha sonra, prosedürel programlama yapılandırılmış programlamadan türetilmiştir. Prosedürel programlama "prosedür çağrısı" kavramına dayanır. Bir "prosedür çağrısı", "işlev çağrısı" için başka bir isimlendirmedir. Prosedürler ayrıca rutinler, alt rutinler veya yöntemler olarak da bilinir. Bir prosedür basitçe gerçekleştirilecek bir dizi hesaplama adımını içerir. Herhangi bir prosedür, başka prosedürler veya kendisi de dahil olmak üzere, programların yürütülmesi sırasında herhangi bir noktada çağrılabilir.
 
-In the beginning all procedures were available to any part of a program as global data. In small programs this didn't present a problem, but as things got more complicated and as the size of the program grew, small changes to one part of the program greatly effected many other parts.
+Başlangıçta, tüm prosedürler bir programın herhangi bir bölümünde global veri olarak mevcuttu. Küçük programlarda bu bir problem teşkil etmedi, ancak işler daha da karmaşıklaştıkça ve programın boyutu büyüdükçe, programın bir kısmındaki küçük değişiklikler diğer birçok bölümü de büyük ölçüde etkiledi.
 
-Nobody was planning for changes in the program and lots of dependencies existed. A minor change to one procedure would result in a cascade of errors in lots of other procedures that depended on the original code.
+Hiç kimse programdaki değişiklikleri planlamıyordu ve çok fazla bağımlılık vardı. Bir prosedürde yapılan küçük bir değişiklik, orijinal koda bağlı olan birçok başka prosedürde bir hata dizisine neden olur.
 
-A new technique evolved that allowed data to be divided into separated scopes called "objects". Only specific procedures belonging to the same scope could access the same data. This is called data hiding or encapsulation. The result was much better organized code.
+Verilerin "nesneler" adı verilen ayrı kapsamlara bölünmesine izin veren yeni bir teknik gelişti. Yalnızca aynı kapsama ait belirli prosedürler aynı verilere erişebilmeli. Buna veri gizleme veya kapsülleme dendi. Sonuç çok daha iyi organize edilmiş kod oldu.
 
-In the beginning objects were not called objects, they were just viewed upon as separate scopes. Later when dependencies were reduced and connections between procedures and variables inside these scopes were viewed upon as isolated segments, the result gave birth to the concepts of "objects" and "object-oriented programming".
+Başlangıçta nesneler nesneler olarak adlandırılmadı, sadece ayrı kapsamlar olarak görüldü. Daha sonra bağımlılıklar azaltılarak bu kapsamların içindeki prosedürler ve değişkenler arasındaki bağlantılar yalıtılmış bölümler olarak görüldüğünde, sonuç "nesneler" ve "nesneye tabanlı programlama" kavramlarını doğurdu.
 
 Later, mainly due to the development of Java, certain "buzzwords" arose and "a procedure" or "a function" was no longer called a function, but was renamed "a method" when it resided inside a separate scope. Variables were also no longer called "variables", but were renamed "attributes" when they resided inside a separate scope.
 
