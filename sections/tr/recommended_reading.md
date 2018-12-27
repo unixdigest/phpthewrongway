@@ -30,20 +30,20 @@
 
 [Survive The Deep End: PHP Security](http://phpsecurity.readthedocs.io/en/latest/)
 
-* As every target of a serious security breach will quickly note in their press releases and websites: Security is very important to them and take it very seriously. Taking this sentiment to heart before you learn it the hard way is recommended.
+* Her önemli güvenlik açığını, bültenlerinde ve web sitelerinde not ediyorlar, bu konuyu çok öensediklerini gösteriyor. Aynı bakış açısıyla kötü bir tecrübe yaşamadan güvenlik konusunu ciddiye almak gerekir.
 
 [Refactoring Improving the Design of Existing Code](https://openlibrary.org/books/OL7407595M/Refactoring)
 
- * Refactoring is about improving the design of existing code. It is the process of changing a software system in such a way that it does not alter the external behavior of the code, yet improves its internal structure. With refactoring you can even take a bad design and rework it into a good one. This book offers a thorough discussion of the principles of refactoring, including where to spot opportunities for refactoring, and how to set up the required tests. There is also a catalog of more than 40 proven refactorings with details as to when and why to use the refactoring, step by step instructions for implementing it, and an example illustrating how it works. The book is written using Java as its principle language, but the ideas are applicable to any OO language.
+ * Kodu yeniden yazmak aslında tasarımı geliştirmek demektir. Bu kodun çıktısını değiştirmeden yapısını değiştirmektir. Yeniden yazarak kötü tasarlanmış bir uygulamayı daha doğru bir uygulama haline getirebilirsiniz. Bu kitap yeniden yazma prensiplerini (yeniden yazılacak yerleri tespit etme, gerekli testleri oluşturma gibi) tartışmaya açıyor. Kitapta ayrıca kırktan fazla kabul edilmiş yeniden yazma yöntemi (neden ve nasıl yapılacağı, aşama aşama uygulama ve sonucun nasıl olduğunu göstren örnekler ile) de yer alıyor.
 
 [The Practice of Programming](https://openlibrary.org/works/OL15333872W/The_Practice_of_Programming_%28Addison-Wesley_Professional_Computing_Series%29)
 
- * A compendium of practical matters of importance to working programmers.
+ * Programcılar için önemli pratik konuların bir özeti.
 
 [The pragmatic programmer](https://openlibrary.org/works/OL5748544W/The_pragmatic_programmer)
 
- * The Pragmatic Programmer: From Journeyman to Master examines the core programming process: taking a requirement and producing working, maintainable code that delights its users. It covers topics ranging from personal responsibility and career development to architectural techniques for keeping code flexible, easy to adapt, and reuse.
+ * Pragmatik Programcı: Acemiden ustaya çekirdek programlama sürecini inceler; gereksinim alma ve kullanıcılarını memnun eden çalışma, bakım kodu üretme. Kişisel sorumluluk ve kariyer gelişiminden, kodu esnek tutmak, uyarlamak ve yeniden kullanmak için mimari tekniklere kadar uzanan konuları kapsar.
 
 [Understanding programming languages](https://openlibrary.org/works/OL1875800W/Understanding_programming_languages)
 
- * The choice of a programming language is one of the most important factors that influence the ultimate quality of a software system. Unfortunately, too many programmers have poor linguistic skills: they are passionately in love with their "native" language, but are not able to analyze language constraints. "Understanding Programming Languages" is written for the purpose of explaining what alternatives are available to the language designer; how language constructs should be used in terms of safety and readability; how language constructs are implemented and which ones can be efficiently complied; and what is the role of language in expressing and enforcing abstractions.
+ * Bir programlama dilinin seçimi, bir yazılım sisteminin nihai kalitesini etkileyen en önemli faktörlerden biridir. Ne yazık ki, çok fazla programcının dil becerisi zayıf: bildikleri dillere tutkuyla anadil dilleri gibi âşıklar ve dil kısıtlamalarını analiz edemiyorlar. "Programlama Dillerini Anlamak" adlı kitap dil tasarımcıları için hangi alternatiflerin mevcut olduğunu, dil yapılarının güvenlik ve okunabilirlik açısından nasıl kullanılması gerektiğini, dil yapılarının nasıl uygulandığını, hangilerinin verimli bir şekilde yerine getirilebileceğini ve dilin soyutlamaları ifade etmedeki ve uygulamasındaki rolünü açıklama amacıyla yazılmıştır.
