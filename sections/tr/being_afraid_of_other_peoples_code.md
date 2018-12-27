@@ -1,37 +1,37 @@
-# Being afraid of other people's code #
+# Başkalarının yazdığı koddan korkmayın #
 
-An argument often expressed for the usage of a framework is that people don't want to deal with codebases that have been written from scratch by other people.
+Çatı kullanımı için sıklıkla ifade edilen bir argüman da, insanların başkaları tarafından sıfırdan yazılmış kod tabanlarıyla uğraşmak istemedikleridir.
 
-This is however a strange mentality, mainly encountered amongst web developers in the PHP community. It's one that exudes a lack of professionalism and experience.
+Ancak bu, PHP topluluğundaki web geliştiricileri arasında çoğunlukla karşılaşılan garip bir zihniyettir. Topluluk içinde profesyonellik ve deneyim eksikliği yayan bir şey.
 
-Writing software and dealing with other people's code is normal. It's part of the daily work of a professional programmer. It's not something to be afraid of.
+Sıfırdan kod yazmak ve başkalarının kodlarıyla ilgilenmek normaldir. Profesyonel bir programcının günlük çalışmasının bir parçası. Korkacak bir şey değil.
 
-A professional programmer doesn't look at other people's code and start whining about how he or she is at the complete mercy of the former programmer, who is perhaps no longer associated with the company or project, and if only the former programmer had used framework A or framework B the day would have been saved.
+Profesyonel bir programcı, başkalarının kurallarına bakmaz ya da artık şirket veya proje ile ilişkili olmayan eski programcının hangi çatıyı  kullandığını ve neden kullandığını düşünmeden işe başlamalıdır.
 
-This is not the mentality of a professional programmer. Nobody does this.
+Bu profesyonel bir programcının zihniyeti değildir. Bunu kimse yapmaz.
 
-Perhaps the low barrier to entry in PHP web development plays a part in this kind of mentality. Regardless, it is a sign of a person being in the wrong line of work.
+Belki de PHP web geliştirmeye giriş engelinin düşük olması bu tür bir zihniyette rol oynamaktadır. Ne olursa olsun, bir insanın yanlış iş kolunda olduğuna dair bir işarettir.
 
-A great part of programming deals with people having to work with other people's code. It's part of the work trying to improve existing codebase and sometimes that involves a complete re-write.
+Programlamanın büyük bir kısmı, başkalarının koduyla çalışmak zorunda olan insanlarla ilgilidir. Var olan kod tabanını iyileştirmeye çalışmak ve bazen de yeniden yazmak çalışmanın bir parçasıdır.
 
-Take note from the great masters of programming, read the book [Coders at work - Reflections on the Craft of Programming](http://codersatwork.com/).
+Programlamanın büyük ustalarından not alın, [İşyerindeki kodlayıcılar - Programlama Zanaatına Yansımalar](http://codersatwork.com/) adlı kitabı okuyun.
 
-Some of the largest and most successful codebases in world are codebases that has been developed by hundreds of people who have never even met each other, codebases developed without the use of any kind of framework, codebases done entirely in a procedural programming language without the use of anything but the procedural paradigm, and they wouldn't dream of doing it differently.
+Dünyadaki en büyük ve en başarılı kod tabanlarından bazıları, birbiriyle hiç tanışmamış yüzlerce insan tarafından geliştirilen kod tabanları, herhangi bir çerçeve kullanmadan geliştirilen kod tabanları, tamamen prosedürel bir programlama dilinde kullanılmayan kod tabanlarıdır. Ve hatta bazıları prosedürel paradigmadan başka bir şey yapmazlar ve farklı yapmayı hayal etmezler.
 
-The [Linux Kernel](https://www.kernel.org/) consists of more than 20 million lines of code all written entirely using procedural programming by more than 14 000 participants without the use of any kind of framework.
+[Linux Çekirdeği] (https://www.kernel.org/), herhangi bir çatı kullanmadan 14.000'den fazla katılımcı tarafından tamamen prosedürel programlama kullanılarak yazılmış 20 milyon kod satırından oluşur.
 
-The different [BSD](https://en.wikipedia.org/wiki/Berkeley_Software_Distribution) flavors and most of the [Linux GNU userland](https://www.gnu.org/) has been written entirely using procedural programming without the use of any kind of framework.
+[BSD](https://en.wikipedia.org/wiki/Berkeley_Software_Distribution) ve [Linux GNU userland](https://www.gnu.org/) 'ın çoğu tamamen prosedürel programlama kullanılarak yazılmıştır, ve Her hangi bir çatı da kullanılmamıştır.
 
-The same goes for hundreds of Open Source projects around the world that were eventually abandoned by the original programmer(s) only to be picked up by other skillful programmers. Many of these projects had very little documentation (if any at all), no comments in the codebase, and no guidelines or help to offer at all.
+Aynı şey, sonunda, orijinal programcılar tarafından terk edilen ama diğer yetenekli programcılar tarafından devam edilen dünya çapında yüzlerce Açık Kaynak projesi için de geçerlidir. Bu projelerin birçoğunun dokümantasyonu (eğer varsa) çok azdır, kod tabanında yorum satırları yok denecek kadar azdır ve öneri ya da yönlendirme konusunda hiçbir yardımı yoktur.
 
-The entire PHP codebase is done in C, a pure procedural programming language, without the use of any kind of framework whatsoever.
+Tüm PHP kod temeli, herhangi bir çerçeve kullanmadan, tamamen prosedürel bir programlama dili olan C ile yazıldı.
 
-Whenever you define a class in PHP or whenever you fire up that favorite PHP framework of yours, you're running on someone else's pure procedural work!
+PHP'de bir sınıf tanımladığın zaman, ya da PHP'nin en sevdiğin çatısını ateşlesen, başkasının saf usule ilişkin işlerinde çalışıyorsun demektir!
 
-Sure, there exists such a thing as horrible code, code that perhaps wasn't designed from the onset, or code that perhaps has outgrown itself many times but the client didn't want to deal with a re-write, code that's so bad you cannot make heads or tail of it any longer, but no kind of framework would have prevented this situation. This is often the natural growth process of a program. Eventually any kind of framework would have been torn to pieces anyway.
+Elbette, korkunç bir kod, belki de başlangıçtan tasarlanmamış bir kod, ya da birçok kez kendini aşan bir kod, ancak müşteri yeniden yazma ile baş etmek istemedi. Bu kod ekleme ve çıkarma yapmanıza engel oluyor olabilir, ancak hiçbir çatı bu durumu önleyemezdi. Bu genellikle bir programın doğal büyüme sürecidir. Sonunda her türlü çatı zaten parçalara bölünmüş olacaktı.
 
-And sure there exists horrible spagetti code, but nobody produces horrible spagetti code on purpose. Sometimes this is a result of lack of experience, often times it's the clients fault because they change the specifications several times in the middle of development, either way in both cases, even if a framework was used, the result would still be spaghetti code, and no matter how much of the object-oriented paradigm was used, the result would still be spaghetti code.
+Ve tabii ki korkunç bir spagetti kod gerçeği var, ama kimse bilerek korkunç spagetti kodu üretmiyor. Bazen bu, deneyim eksikliğinin bir sonucudur, çoğu zaman müşteri hatasıdır, çünkü gelişimin ortasında birkaç kez teknik özellikleri değiştirdiler, her iki durumda da, bir çatı kullanılmış olsa bile, sonuç hala spagetti kodu olacaktı. ve nesne tabanlı paradigmanın ne kadarının kullanıldığı önemli değil, sonuç yine de spagetti kodu olacaktı.
 
-As programmers we all try to prevent these situations, but **this is normal**, this is **the art of programming**, this is part of what it means **to be a programmer**!
+Programcılar hepimiz bu durumları önlemeye çalışıyoruz, ancak ** bu normaldir **, bu ** programlama sanatıdır **, bu ** programcı olmanın** ne anlama geldiğinin bir parçasıdır!
 
-**The wrong way**: Being afraid of other people's code. ![Thumbs down](/img/thumbs-down.png)
+**Yanlış yol**: Başkalarının yazdığı koddan korkmayın. ![Thumbs down](/img/thumbs-down.png)
