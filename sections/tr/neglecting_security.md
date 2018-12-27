@@ -1,24 +1,24 @@
-# Neglecting security #
+# Yazılım Güvenliğini Gözardı Etme #
 
-> The trouble with programmers is that you can never tell what a programmer is doing until it’s too late.
+> Programcılarla ilgili en büyük problem iş işten geçene kadar ne yaptıklarını söyleyememeleridir.
 >
-> -- Seymour Cray on [defprogramming.com](http://www.defprogramming.com/q/6e61ae30a855/)
+> -- Seymour Cray, [defprogramming.com](http://www.defprogramming.com/q/6e61ae30a855/)
 
-Secure coding is the practice of writing programs that are resistant to attack by malicious or mischievous people or other programs. Secure coding helps protect data from theft or corruption. In addition, an insecure program can provide access for an attacker to take control of a server or a user's identity, resulting in anything from a denial of service to a single user to the compromise of secrets, loss of service, or damage to the systems of thousands of users.
+Güvenli kodlama, kötü niyetli ya da tehlikeli insanlar ya da diğer programlar tarafından saldırıya dirençli programlar yazma pratiğidir. Güvenli kodlama, verilerin hırsızlık veya bozulmaya karşı korunmasına yardımcı olur. Ek olarak, güvensiz bir program, bir saldırganın bir sunucuyu veya kullanıcının kimliğini kontrol altına almasına erişim sağlayabilir, bu da tek bir kullanıcıya hizmet verilememesinden, binlerce kullanıcının gizli bilgilerin açığa çıkmasına, hizmet kaybına veya sistemlerin zarar görmesine kadar bir çok kötü durumla sonuçlanabilir.
 
-Every computer program is a potential target for a security attack. Attackers will try to find security vulnerabilities in your applications. They will then try to use these vulnerabilities to steal secrets, corrupt programs and data, and gain control of servers and networks. Your customers property and your reputation are at stake.
+Her bilgisayar programı bir güvenlik saldırısı için potansiyel bir hedeftir. Saldırganlar, uygulamalarınızdaki güvenlik açıklarını bulmaya çalışacaktır. Daha sonra gizli bilgileri çalmak, programları ve verileri bozmak, sunucu ve ağların kontrolünü ele geçirmek için bu güvenlik açıklarını kullanmaya çalışacaklar. Müşterilerinizin bilgileri ve itibarınız tehlikede altındadır.
 
-**Security is not something that can be added to software!**
+**Güvenlik yazılıma eklenebilecek bir özellik değildir.!**
 
-An insecure application may require extensive redesign to secure it. You must identify the nature of the threats to your software and incorporate secure coding practices from the beginning and throughout the planning and development of your application.
+Güvensiz bir uygulama, güvenliğini sağlamak için kapsamlı bir yeniden tasarım gerektirebilir. Yazılımınıza yönelik tehditlerin yapısını tanımlamalı ve uygulamanızın planlaması ve geliştirilmesinden başından itibaren güvenli kodlama uygulamalarını dahil etmelisiniz.
 
-Securing critical software resources is more important than ever as the focus of attackers has steadily moved toward the application layer. A 2009 SANS study found that attacks against web applications constitute more than 60% of the total attack attempts observed on the Internet.
+Kritik yazılım kaynaklarının güvenceye alınması, saldırganların odağı uygulama katmanına doğru olduğundan her zamankinden daha önemlidir. 2009 SANS araştırması, web uygulamalarına yönelik saldırıların İnternette gözlemlenen toplam saldırı girişimlerinin %60'ından fazlasını oluşturduğunu ortaya çıkardı.
 
-PHP is unusual in that it is both a programming language and a web framework at the same time. This means that PHP has a lot of web features built-in to the language that makes it very easy to write insecure code.
+PHP aynı zamanda hem bir programlama dili hem de bir web uygulama çatısı olduğu için olağandışıdır. Bu, PHP'nin, güvensiz kod yazmayı çok kolaylaştıran dile yerleşik bir çok web özelliğine sahip olduğu anlamına gelir.
 
-## Secure by default ##
+## Baştan güvenli ##
 
-> Complexity kills. It sucks the life out of developers, it makes products difficult to plan, build and test, it introduces security challenges and it causes end-user and administrator frustration.
+> Karmaşıklık çok kötüdür. Geliştiricilerin ömrünü bitirir, ürünleri planlamayı, geliştirmeyi ve test etmeyi zorlaştırır, güvenlikle ilgili zorluklara neden olur ve son kullanıcı ve yönetici sıkıntılarına neden olur.
 >
 > -- [Ray Ozzie](www.azquotes.com/quote/585933)
 
