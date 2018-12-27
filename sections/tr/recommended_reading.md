@@ -26,7 +26,7 @@
 
 [Security by Design Principles](https://www.owasp.org/index.php/Security_by_Design_Principles)
 
-* Web application security is an essential component of any successful project, whether open source PHP applications, web services such as straight through processing, or proprietary business web sites. Hosters (rightly) shun insecure code, and users shun insecure services that lead to fraud. The aim of this Development Guide is to allow businesses, developers, designers and solution architects to produce secure web applications. If done from the earliest stages, secure applications cost about the same to develop as insecure applications, but are far more cost effective in the long run.
+* Web uygulama güvenliği, açık kaynaklı PHP uygulamaları, doğrudan işleme gibi web hizmetleri veya tescilli kurumsal web siteleri gibi başarılı her projenin önemli bir bileşenidir. Uygulama sahipleri (haklı olarak) güvenli olmayan kodları kapatır ve kullanıcılar dolandırıcılık sağlayan güvenli olmayan hizmetleri kapatır. Bu Geliştirme Kılavuzunun amacı işletmelere, geliştiricilere, tasarımcılara ve çözüm mimarlarına güvenli web uygulamaları üretmelerine destek vermektir. En erken aşamalardan yapıldığında, güvenli uygulamalar güvensiz uygulamalarla aynı maliyete gelir ancak uzun vadede çok daha düşük maliyetlidir.
 
 [Survive The Deep End: PHP Security](http://phpsecurity.readthedocs.io/en/latest/)
 
