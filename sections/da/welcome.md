@@ -20,3 +20,4 @@ Du er velkommen til at bidrage.
 * [Portugisisk](http://www.phpthewrongway.com/pt_br/)
 * [Russisk](http://www.phpthewrongway.com/ru/)
 * [Spansk](http://www.phpthewrongway.com/es/)
+* [Türkçe](http://www.phpthewrongway.com/tr/)

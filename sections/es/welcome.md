@@ -22,3 +22,4 @@ Siéntete libre de contribuir.
 * [Persa](http://www.phpthewrongway.com/fa/)
 * [Portugués](http://www.phpthewrongway.com/pt_br/)
 * [Ruso](http://www.phpthewrongway.com/ru/)
+* [Türkçe](http://www.phpthewrongway.com/tr/)
