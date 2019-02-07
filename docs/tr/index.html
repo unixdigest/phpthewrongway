@@ -16,17 +16,18 @@
 <a href="https://github.com/unixsheikh/phpthewrongway"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/652c5b9acfaddf3a9c326fa6bde407b87f7be0f4/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6f72616e67655f6666373630302e706e67" alt="Fork me on GitHub" data-canonical-src="/img/github-clone.png"></a>
 <h1>PHP</h1>
 <h2>Galat-ı Meşhur</h2>
-<div id="date">Son güncelleme tarihi: 2019-01-10</div>
+<div id="date">Son güncelleme tarihi: 2019-02-07</div>
 </div>
 </header>
 <div id="cartoon">
-<img src="/img/deviant-code-1000px-en.png" alt="cartoon">
+<img src="/img/deviant-code-1000px-tr.png" alt="cartoon">
 </div>
 <nav id="TOC">
 <ul>
 <li><a href="#giriş">Giriş</a><ul>
 <li><a href="#diğer-diller">Diğer Diller</a></li>
 </ul></li>
+<li><a href="#aşırıya-kaçma-tehlikesi">Aşırıya kaçma tehlikesi</a></li>
 <li><a href="#mutlaka-uygulama-çatısı-framework-kullanmak-gerekir">Mutlaka uygulama çatısı (framework) kullanmak gerekir</a></li>
 <li><a href="#her-zaman-bir-tasarım-modeli-kullanılmalı">Her zaman bir tasarım modeli kullanılmalı</a></li>
 <li><a href="#her-zaman-nesne-tabanlı-programlama-yapılmalı">Her zaman nesne tabanlı programlama yapılmalı</a><ul>
@@ -56,12 +57,13 @@
 <li><a href="http://www.phpthewrongway.com/fa/">Persian</a></li>
 <li><a href="http://www.phpthewrongway.com/pt_br/">Portuguese</a></li>
 <li><a href="http://www.phpthewrongway.com/ru/">Russian</a></li>
-<li><a href="http://www.phpthewrongway.com/es/">Spanish</a> # Aşırıya kaçma tehlikesi #</li>
+<li><a href="http://www.phpthewrongway.com/es/">Spanish</a></li>
 </ul>
-<p>Programlama kuralları ve kılavuzlarıyla ilgili bir sorun, genellikle yalnızca belirli bir bağlamda bir amaca hizmet etmeleridir. Bağlam dışında alındığında, iyi bir kural korkunç bir kural haline gelebilir. Aslında, her iyi kural aşırıya götürüldüğünde kötüye gider.</p>
+<h1 id="aşırıya-kaçma-tehlikesi">Aşırıya kaçma tehlikesi</h1>
+<p>Programlama kuralları ve kılavuzlarının önemli bir sorunu da, genellikle belirli bir bağlamda bir amaca hizmet etmeleridir. Bağlam dışına alındığında, iyi bir kural korkunç bir kural haline gelebilir. Aslında, her kural aşırıya götürüldüğünde kötü sonuçlar doğurur.</p>
 <p>Bunun anlaşılması önemlidir, çünkü zamanla geliştirilen ve birçok farklı insan tarafından sunulan yazılım geliştirme ilkeleri ve kurallarının çoğu, aşırılık yanlılarının elinde sık sık suistimal edilir.</p>
 <p>Deneyimler, genel kuralların ve kılavuzların kötüye kullanılmasının her zaman komplikasyon, güvenlik eksikliği, hataya açık sonuçlar ve hatta bazı durumlarda tam felaketle sonuçlandığını göstermiştir.</p>
-<p>“Basit ve Aptal Tutun, (Keep It Simple, Stupid)” ın kısaltması olan [KISS ilkesi] (https://en.wikipedia.org/wiki/KISS_principle), genellikle deneyimli kişiler tarafından çok deneyimli olarak görülen, çok akıllıca ve iyi bir ilkedir. Takip etmek için iyi bir tavsiyedir. Ancak bu büyük prensip bile, aşırıya götürülürse bir proje için tehlike oluşturur. Gerekli işlevsellik eksikliği ile sonuçlanan “çok basit” gibi bir şey de ortaya çıkabilir.</p>
+<p>“Basit ve Aptal Tutun, (Keep It Simple, Stupid)” ın kısaltması olan [KISS ilkesi] (https://en.wikipedia.org/wiki/KISS_principle), genellikle deneyimli kişiler tarafından çok yararlı olarak görülen, akıllıca ve iyi bir ilkedir. Takip edilmesi tavsiye edilir. Ancak bu büyük prensip bile, aşırıya götürülürse bir proje için tehlike oluşturur. Gerekli işlevsellikten uzak sadece “çok basit” görünen bir sonuç ortaya çıkabilir.</p>
 <p><strong>Yanlış yol</strong>: Kuralları ve kılavuzları din gibi algılama<img src="/img/thumbs-down.png" alt="Thumbs down" /></p>
 <h1 id="mutlaka-uygulama-çatısı-framework-kullanmak-gerekir">Mutlaka uygulama çatısı (framework) kullanmak gerekir</h1>
 <blockquote>
@@ -99,18 +101,18 @@
 <p><strong>Yanlış yol:</strong> Mutlaka bir uygulama çatısı kullanmak gerekir. <img src="/img/thumbs-down.png" alt="Thumbs down" /></p>
 <h1 id="her-zaman-bir-tasarım-modeli-kullanılmalı">Her zaman bir tasarım modeli kullanılmalı</h1>
 <blockquote>
-<p>Fildişi kule tasarlar gibi düşünmeye ve tasarım modellerine bu büyük alerjim var. Peter Norvig, Harlequin’deyken, tasarım kalıplarının programlama dilinizde nasıl bir kusur olduğunu anlatan bir yazı yazdı. Daha iyi bir programlama dili edinin. Kesinlikle haklı. Desenlere tapmayın ve ve devamlı “Ah, X modelini kullanacağım” diye düşünmeyin.</p>
+<p>Fildişi kule tasarlar gibi düşünmeye ve tasarım modellerine büyük alerjim var. Peter Norvig, Harlequin’deyken, tasarım kalıplarının programlama dillerinde nasıl bir kusur olduğunu anlatan bir yazı yazdı. Daha iyi bir programlama dili edinin. Kesinlikle haklı. Desenlere tapmayın ve devamlı “Ah, X modelini kullanacağım” diye düşünmeyin.</p>
 <p>– Brendan Eich <a href="http://codersatwork.com/">Coders at work - Reflections on the Craft of Programming</a></p>
 </blockquote>
-<p>Yazılım mühendisliğinde, bir tasarım deseni, yazılım tasarımında yaygın olarak ortaya çıkan bir soruna yeniden kullanılabilir bir çözümdür. Bir tasarım deseni doğrudan koda dönüştürülebilen bitmiş bir tasarım değildir. Birçok farklı durumda kullanılabilecek bir problemin nasıl çözüleceği ile ilgili bir açıklama veya fikirdir. Nesneye yönelik tasarım desenleri tipik olarak, son uygulama sınıflarını veya dahil olan nesneleri belirtmeden, sınıflar veya nesneler arasındaki ilişkileri ve etkileşimleri gösterir.</p>
+<p>Yazılım mühendisliğinde, tasarım deseni yazılım tasarımında yaygın olarak ortaya çıkan bir sorunun yeniden kullanılabilir bir çözümüdür. Tasarım deseni doğrudan koda dönüştürülebilen bitmiş bir tasarım değildir. Bir problemin çözümü ile ilgili birçok farklı durumda kullanılabilecek bir açıklama veya fikirdir. Nesneye yönelik tasarım desenleri tipik olarak, son uygulama sınıflarını veya dahil olan nesneleri belirtmeden, sınıflar veya nesneler arasındaki ilişkileri ve etkileşimleri gösterir.</p>
 <p>PHP imperative, fonksiyonel, nesne tabanlı, prosedürel ve reflective paradigmaları destekler. PHP birçok sorunu farklı şekillerde çözmeyi mümkün kılan çok sayıda farklı araca sahip devasa bir araç kutusudur.</p>
 <p>PHP tamamen özgürdür, hızlı ve ölçeklenebilir çözümler sunar ve sorunlarla başa çıkmanın birçok farklı yoluna sahiptir.</p>
-<p>Kendimizi geliştirmeye çalıştığımızda ve bu durumda daha spesifik olarak kodumuzda, bazen belirli bir örüntü veya düşüncenin felsefesine takılırız ve pratik olarak düşünmeyi unutmaya meyilliyiz.</p>
+<p>Kendimizi yada daha spesifik olarak kodumuzu geliştirmeye çalıştığımızda, bazen belirli bir örüntü veya düşüncenin felsefesine takılırız ve pratik düşünmeyi unutmaya meyilliyiz.</p>
 <blockquote>
 <p>Programlarımda desenler gördüğümde, bunun bir sorun belirtisi olduğunu düşünüyorum. Bir programın şekli sadece çözmesi gereken sorunu yansıtmalıdır. Koddaki herhangi başka bir düzenlilik, en azından benim için yeterince güçlü olmayan soyutlamalar kullandığımın - genellikle elle yazmam gereken bazı makroların genişlemelerini ürettiğimin bir işaretidir.</p>
 <p>– <a href="http://c2.com/cgi/wiki?AreDesignPatternsMissingLanguageFeatures">Paul Graham</a></p>
 </blockquote>
-<p>Belli bir kalıp veya çözümün arkasındaki felsefe veya düşünceye kapılmamalıyız. Asıl endişemiz, kodun okunmasının ve anlaşılmasının mümkün olduğu kadar kolay tutulması ve bunun sonucunda da bakımı kolay ve güvenli tutulmasıdır.</p>
+<p>Belli bir kalıp veya çözümün arkasındaki felsefe veya düşünceye kapılmamalıyız. Asıl endişemiz, kodun okunmasının ve anlaşılmasının mümkün olduğu kadar kolay tutulması ve bunun sonucunda da bakımı kolay ve güvenli olmasıdır.</p>
 <p>Anti-patern diye bir şeyin var olduğunu da hatırlamalıyız. Yaygın olarak kullanılabilecek ancak pratikte etkisiz ve / veya verimsiz bir kalıptır.</p>
 <blockquote>
 <p>Bence kalıplar genel sorunlar için genel olarak en iyi çözümler olarak kabul edildi. Ama şimdi bir süredir buralarda olduklarından ve uygulamaların olması gerekenden on kat daha karmaşık hale getirildiğini gördük, çünkü insanlar okudukları tüm kalıpları kullanmaya çalışıyorlar. Desenin değerine dair izlenimim biraz değişti. (“Uygulamam iyi tasarlandı çünkü desenlerle doludur.”)</p>
