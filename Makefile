@@ -41,47 +41,47 @@ default: all
 
 # Danish
 da:
-    $(call checkIfAllFilesExists,da)
-    $(call translation,da,Sidst opdateret:,+%d\/%m-%Y,$(OUTPUT_DIR)da/$(FILENAME).html,html.css)
+	$(call checkIfAllFilesExists,da)
+	$(call translation,da,Sidst opdateret:,+%d\/%m-%Y,$(OUTPUT_DIR)da/$(FILENAME).html,html.css)
 
 # English
 en:
-    $(call checkIfAllFilesExists,en)
-    $(call translation,en,Last updated:,+%Y-%m-%d,$(OUTPUT_DIR)$(FILENAME).html,html.css)
+	$(call checkIfAllFilesExists,en)
+	$(call translation,en,Last updated:,+%Y-%m-%d,$(OUTPUT_DIR)$(FILENAME).html,html.css)
 
 # Spanish
 es:
-    $(call checkIfAllFilesExists,es)
-    $(call translation,es,Última actualización:,+%Y-%m-%d,$(OUTPUT_DIR)es/$(FILENAME).html,html.css)
+	$(call checkIfAllFilesExists,es)
+	$(call translation,es,Última actualización:,+%Y-%m-%d,$(OUTPUT_DIR)es/$(FILENAME).html,html.css)
 
 # Persian (Farsi)
 fa:
-    $(call checkIfAllFilesExists,fa)
-    $(call translation,fa,آخرین بروزرسانی:,+%d-%m-%Y,$(OUTPUT_DIR)fa/$(FILENAME).html,html-rtl.css)
+	$(call checkIfAllFilesExists,fa)
+	$(call translation,fa,آخرین بروزرسانی:,+%d-%m-%Y,$(OUTPUT_DIR)fa/$(FILENAME).html,html-rtl.css)
 
 # French
 fr:
-    $(call checkIfAllFilesExists,fr)
-    $(call translation,fr,Dernière mise à jour :,+%d\/%m\/%Y,$(OUTPUT_DIR)fr/$(FILENAME).html,html.css)
+	$(call checkIfAllFilesExists,fr)
+	$(call translation,fr,Dernière mise à jour :,+%d\/%m\/%Y,$(OUTPUT_DIR)fr/$(FILENAME).html,html.css)
 
 # Portuguese
 pt_br:
-    $(call checkIfAllFilesExists,pt_br)
-    $(call translation,pt_br,Última atualização:,+%Y-%m-%d,$(OUTPUT_DIR)pt_br/$(FILENAME).html,html.css)
+	$(call checkIfAllFilesExists,pt_br)
+	$(call translation,pt_br,Última atualização:,+%Y-%m-%d,$(OUTPUT_DIR)pt_br/$(FILENAME).html,html.css)
 
 # Russian
 ru:
-    $(call checkIfAllFilesExists,ru)
-    $(call translation,ru,Последнее обновление:,+%Y-%m-%d,$(OUTPUT_DIR)ru/$(FILENAME).html,html.css)
+	$(call checkIfAllFilesExists,ru)
+	$(call translation,ru,Последнее обновление:,+%Y-%m-%d,$(OUTPUT_DIR)ru/$(FILENAME).html,html.css)
 
 # Japanese
 ja:
-    $(call checkIfAllFilesExists,ja)
-    $(call translation,ja,最終更新日:,+%Y-%m-%d,$(OUTPUT_DIR)ja/$(FILENAME).html,html.css)
+	$(call checkIfAllFilesExists,ja)
+	$(call translation,ja,最終更新日:,+%Y-%m-%d,$(OUTPUT_DIR)ja/$(FILENAME).html,html.css)
 
 # Turkish
 tr:
-    $(call checkIfAllFilesExists,tr)
-    $(call translation,tr,Son güncelleme tarihi:,+%Y-%m-%d,$(OUTPUT_DIR)tr/$(FILENAME).html,html.css)
+	$(call checkIfAllFilesExists,tr)
+	$(call translation,tr,Son güncelleme tarihi:,+%Y-%m-%d,$(OUTPUT_DIR)tr/$(FILENAME).html,html.css)
 
 all: da en es fa pt_br ru fr ja tr
