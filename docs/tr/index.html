@@ -16,7 +16,7 @@
 <a href="https://github.com/unixsheikh/phpthewrongway"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/652c5b9acfaddf3a9c326fa6bde407b87f7be0f4/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6f72616e67655f6666373630302e706e67" alt="Fork me on GitHub" data-canonical-src="/img/github-clone.png"></a>
 <h1>PHP</h1>
 <h2>Galat-ı Meşhur</h2>
-<div id="date">Son güncelleme tarihi: 2019-02-07</div>
+<div id="date">Son güncelleme tarihi: 2019-03-03</div>
 </div>
 </header>
 <div id="cartoon">
@@ -45,7 +45,7 @@
 <h1 id="giriş">Giriş</h1>
 <p>PHP programlama dünyasında, bir dizi eğilim bazı insanlar tarafından (kendi kitaplarında ve web sitelerinde) “Modern PHP” olarak pazarlanırken, aynı zamanda diğer tüm yaklaşımlar sanki ilkel, aptalca veya yanlış olarak sunuluyor.</p>
 <p>Bu insanlar yorulmadan başkalarının işlerini yaparken kendilerinin yollarını takip etmelerini sağlamaya çalışıyor gibi görünüyorlar.</p>
-<p>Bu web sitesi PHP programlama konusunda pragmatik bir bakış sunmak amacıyla oluşturulmuştur. Hedeflenen popüler eğilimler, teori veya akademik dogmalardan ziyade tecrübe ve pratik sonuçlar tarafından oluşturulan bir bakış açısı ortaya çıkarmaktır.</p>
+<p>Bu web sitesi PHP ile programlama yapanlara pragmatik bir bakış sunmak amacıyla oluşturulmuştur. Hedeflenen popüler eğilimler, teori veya akademik dogmalardan ziyade tecrübeden ve pratik sonuçlardan oluşturulmuş bir bakış açısı ortaya çıkarmaktır.</p>
 <p><a href="http://www.phpthewrongway.com/">PHP - The Wrong Way</a> yaşayan bir site olacak ve yenilikler ortaya çıktıkça site güncellenecektir.</p>
 <p>Her türlü katkıya ve yardıma açığız.</p>
 <h2 id="diğer-diller">Diğer Diller</h2>
@@ -61,8 +61,8 @@
 </ul>
 <h1 id="aşırıya-kaçma-tehlikesi">Aşırıya kaçma tehlikesi</h1>
 <p>Programlama kuralları ve kılavuzlarının önemli bir sorunu da, genellikle belirli bir bağlamda bir amaca hizmet etmeleridir. Bağlam dışına alındığında, iyi bir kural korkunç bir kural haline gelebilir. Aslında, her kural aşırıya götürüldüğünde kötü sonuçlar doğurur.</p>
-<p>Bunun anlaşılması önemlidir, çünkü zamanla geliştirilen ve birçok farklı insan tarafından sunulan yazılım geliştirme ilkeleri ve kurallarının çoğu, aşırılık yanlılarının elinde sık sık suistimal edilir.</p>
-<p>Deneyimler, genel kuralların ve kılavuzların kötüye kullanılmasının her zaman komplikasyon, güvenlik eksikliği, hataya açık sonuçlar ve hatta bazı durumlarda tam felaketle sonuçlandığını göstermiştir.</p>
+<p>Bunun anlaşılması önemlidir, çünkü zamanla geliştirilen ve birçok farklı insan tarafından sunulan yazılım geliştirme ilkeleri ve kurallarının çoğu aşırılık yanlılarının elinde çoğunlukla yanlış kullanılır.</p>
+<p>Deneyimler genel kuralların ve kılavuzların kötüye kullanılmasının her zaman karmaşıklıkla, güvenlik eksikliğiyle, hataya açık sonuçlarla ve hatta bazı durumlarda felaketle sonuçlandığını göstermiştir.</p>
 <p>“Basit ve Aptal Tutun, (Keep It Simple, Stupid)” ın kısaltması olan [KISS ilkesi] (https://en.wikipedia.org/wiki/KISS_principle), genellikle deneyimli kişiler tarafından çok yararlı olarak görülen, akıllıca ve iyi bir ilkedir. Takip edilmesi tavsiye edilir. Ancak bu büyük prensip bile, aşırıya götürülürse bir proje için tehlike oluşturur. Gerekli işlevsellikten uzak sadece “çok basit” görünen bir sonuç ortaya çıkabilir.</p>
 <p><strong>Yanlış yol</strong>: Kuralları ve kılavuzları din gibi algılama<img src="/img/thumbs-down.png" alt="Thumbs down" /></p>
 <h1 id="mutlaka-uygulama-çatısı-framework-kullanmak-gerekir">Mutlaka uygulama çatısı (framework) kullanmak gerekir</h1>
@@ -70,20 +70,20 @@
 <p>Tüm genel amaçlı PHP uygulama çatıları mutlaka patlar!</p>
 <p>– <a href="https://www.youtube.com/watch?v=DuB6UjEsY_Y">Rasmus Lerdorf</a></p>
 </blockquote>
-<p>PHP topluluğunda, gerçekten kötü bir eğilim, web uygulamaları geliştirmek için fiili bir standart haline geldi. Bu eğilim mutlaka popüler bir genel amaçlı çerçevenin kullanılması gerektiğinin düşülmesidir.</p>
-<p>Bu eğilim, geliştirme sürecin sonucununun katilesini artırdığı için değil, teknoloji ve mimari açıdan yapılacak doğru şey olduğu için ortaya çıkmış ve popüler hale gelmiştir. Bu eğilimin popüler bir hale gelmesinin bir sebebi de, uygulama çatısı geliştiricilerinden bazılarının kitleleri, “çarkı yeniden icat etmeyin!” ve “Kendin yapmana gerek yok, başkaları senden daha yetenekli olabilir” gibi sloganlarla manipüle etmeleridir.</p>
-<p>Günümüz programcılarının çoğu, sağlıklı programlamanın temel ilkelerini tamamen görmezden geliyorlar ve akranları olarak gördükleri kişiler tarafından daha akıllı, daha havalı ve daha kabul edilebilir görünmek için yeni karmaşık katmanları hayal etmek için çok zaman harcıyorlar.</p>
+<p>PHP topluluğunda, gerçekten çok kötü bir eğilim web uygulamaları geliştirmek için fiili bir standart haline geldi. Bu eğilim mutlaka popüler bir genel amaçlı uygulama çatısının kullanılması gerektiğinin düşülmesidir.</p>
+<p>Bu eğilim geliştirme sürecinin kalitesini artırdığı için değil, teknolojik ve mimari açıdan yapılacak doğru şey olduğu için ortaya çıkmış ve popüler hale gelmiştir. Bu eğilimin popüler bir hale gelmesinin bir sebebi de, uygulama çatısı geliştiricilerinden bazılarının kitleleri, “Çarkı yeniden icat etmeyin!” ve “Kendin yapmana gerek yok, başkaları senden daha yetenekli olabilir.” gibi sloganlarla manipüle etmeleridir.</p>
+<p>Günümüz programcılarının çoğu, sağlıklı programlamanın temel ilkelerini tamamen görmezden geliyorlar. Akranları olarak gördükleri kişiler tarafından daha akıllı, daha havalı ve daha kabul edilebilir görünmek için ve yeni karmaşık katmanları hayal etmek için çok zaman harcıyorlar.</p>
 <p>Bu tarzı benimseyen insanlar, diğer insanların hep “kendi yollarını” takip etmeleri, kendilerini bir tür PHP topluluğu lideri gibi görmelerini ve başkalarının kendi kullandıkları Açık Kaynak araçlarını kullanmalarını sağlamayı (ki bu araçların bazılarının ne olduğunu kendileri bile unutmuş olabiliyor) sağlamak için deli gibi çaba sarfediyor görünüyorlar.</p>
-<p>Yazılım endüstrisinde önceden inşa edilmiş bir evi genel amaçlı bir yazılım çatısı karşılaştırabilirsiniz. Önceden inşa edilmiş bir evi bir araya getirmekten nasıl sizi iyi bir marangoz yapmazsa, genel amaçlı uygulama çatıları ile uygulama geliştirmek de sizi çok iyi bir kodlayıcı veya programcı yapmaz.</p>
+<p>Yazılım endüstrisinde genel amaçlı bir yazılım çatısını önceden inşa edilmiş bir evi ile eşleştirebilirsiniz. Önceden inşa edilmiş bir evi bir araya getirmek nasıl sizi iyi bir marangoz yapmazsa, genel amaçlı uygulama çatıları ile uygulama geliştirmek de sizi çok iyi bir kodlayıcı veya programcı yapmaz.</p>
 <p>Bu sitede biz uygulama çatısı kullanmak ile kütüphane kullanmayı birbirinden aşağıdaki maddelerden dolayı ayrı tutuyoruz;</p>
 <ul>
 <li>Bir kütüphane, C standart kütüphanesi veya Go standart kütüphanesi gibi, tekrar kullanılabilir bir kod topluluğu olarak kabul edilir. Herhangi bir sınırlama veya kısıtlama yapmadan kendi projelerinize kolayca entegre edebileceğiniz koddan oluşur. Her biri belirli bir işlevselliğe sahip küçük kod parçalarından oluşur.</li>
-<li>Bir uygulama çatısı yeniden kullanılabilir bir kod koleksiyonu değildir: çerçeveden bir kod parçası alıp kendi projenize entegre etmek çok zordur. Çatı, yazılım oluşturmanıza yardımcı olan bir sistemdir, ancak aynı zamanda çatının kendisinin sınırlamaları ve kısıtlamaları dahilinde çalışmaya zorlar. Çatının kendisinde çok fazla bağımlı işlevsellik var. Bir parça diğer olmadan çalışamaz.</li>
+<li>Bir uygulama çatısı yeniden kullanılabilir bir kod koleksiyonu değildir ve içinden bir kod parçası alıp kendi projenize entegre etmek çok zordur. Çatı, yazılım oluşturmanıza yardımcı olan bir sistemdir, ancak aynı zamanda çatının kendisinin sınırlamaları ve kısıtlamaları dahilinde çalışmaya zorlar. Çatının kendisinde çok fazla bağımlı işlevsellik bulunabilir. Bir parça diğer olmadan çalışamaz.</li>
 </ul>
 <p>Python ve Ruby dünyasında, en baştan web siteleri inşa etmek zahmetlidir, çünkü ne Python ne de Ruby aslında web siteleri oluşturmak için yaratılmamıştır. Sonuç olarak, [Django] (https://en.wikipedia.org/wiki/Django_%28web_framework%29) ve [Ruby on Rails] (https://en.wikipedia.org/wiki/Ruby_on_Rails) gibi genel amaçlı çerçeveler hızla bu dillerde web siteleri oluşturmak için popüler oldu.</p>
 <p>Diğer taraftan PHP, başlangıçta Rasmus Lerdorf tarafından C dilinde yazılmış ve dinamik HTML’yi kolayca ve hızlı bir şekilde geliştirmenizi sağlayacak bir dizi araç olarak oluşturulmuştur. Bu tasarımından dolayı PHP hala ** kendi başına bir uygulama çatısıdır **.</p>
-<p>PHP o zamandan beri kitlesel olarak gelişti ve bugün PHP, HTML ve web siteleri oluşturmaktan çok daha fazlası için kullanılabilir, ancak PHP’yi kendi içinde bir tür çatı olarak görmek hala yanlış değildir. PHP, doğası gereği, tamamen bir C prosedüründe yazılmış web uygulamalarını geliştirmek için bir soyutlama katmanıdır.</p>
-<p>Projenizde bir kütüphane kullanmak sadece doğaldır. PHP, kendi kodunuzu genişletmek için kullanabileceğiniz bir dizi kütüphaneyle birlikte gelir. Örneğin PDO, PHP’deki veritabanlarına erişmek için tutarlı bir arayüz sağlayan sade bir kütüphanedir.</p>
+<p>PHP ilk zamandan beri kitlesel olarak gelişti ve bugün PHP, HTML ve web siteleri oluşturmaktan çok daha fazlası için kullanılabilir, ancak PHP’yi kendi içinde bir tür çatı olarak görmek hala yanlış değildir. PHP, doğası gereği, tamamen bir C prosedüründe yazılmış web uygulamalarını geliştirmek için bir soyutlama katmanıdır.</p>
+<p>Projenizde herhangi bir kütüphane kullanmak son derece doğaldır. PHP, kendi kodunuzu genişletmek için kullanabileceğiniz bir dizi kütüphaneyle birlikte gelir. Örneğin PDO, PHP’deki veritabanlarına erişmek için tutarlı bir arayüz sağlayan sade bir kütüphanedir.</p>
 <p>Diğer taraftan PHP’nin üstünde bir çatı kullanmak tamamen başka bir konudur.</p>
 <p>PHP’de bir çatı kullandığınızda, bir soyutlama katmanının üstüne başka bir soyutlama katmanı daha eklemiş olursunuz. Çatının sağladığı ek soyutlama katmanı, kodunuzu önceden sabitlenmiş bir kalıplar dizisi halinde düzenlemeye hizmet edebilir ama yüzlerce hatta binlerce sınıfı ve yöntemi bir ya da daha fazla bağımlılık kabusuyla iç içe geçirerek daha da karmaşıklık kazandırır, yani kodunuza ihtiyaç duyulmayan karmaşıklık katmanları eklemiş olursunuz!</p>
 <p>Tüm deneyim arayüz ile başlar. Arayüz deneyimi, alttaki teknolojinin ve soyutlama katmanlarının sonucudur. Ne kadar çok soyutlama kullanırsanız, arayüz o kadar az verimli olur ve uygulama o kadar hataya açık hale gelir. Soyutlama ne kadar yüksek olursa, detay ve verimlilik o kadar fazla kaybolur.</p>
@@ -95,7 +95,7 @@
 <p>Bazı şirketler PHP çatılarıyla ilgili yutturmacaları dinlemeye başladılar ve bir sonraki projelerine bu popüler genel amaçlı çatılardan birini kullandılar ve süreç felaketle sonuçlandı. Sadece genel amaçlı çatının çok özel ihtiyaçlarını çözmede gerçekten kötü olduğunu keşfetmediler, aynı zamanda bunu yapmakta da oldukça yavaş olabileceğini de gördüler. Ölçeklendirmek imkansızdı ve sonuç olarak, çerçeveyi gerçekten ihtiyaç duymadıklarını çıkarmak için çaresiz bir girişimde parçalamaya başladılar.</p>
 <p>Her zaman en faydalı olanı seçin:</p>
 <blockquote>
-<p>Ihtiyacımız olan teori veya dogmadan ziyade acil pratik sonuçların göz önünde bulundurulmasıyla yapılan eylem veya politikalardır.</p>
+<p>Ihtiyacımız olan teori veya dogmadan ziyade pratik sonuçların göz önünde bulundurulmasıyla oluşturulan eylem veya politikalardır.</p>
 <p>– Collins English Dictionary, Complete and Unabridged, 12th Edition 2014</p>
 </blockquote>
 <p><strong>Yanlış yol:</strong> Mutlaka bir uygulama çatısı kullanmak gerekir. <img src="/img/thumbs-down.png" alt="Thumbs down" /></p>
@@ -126,7 +126,7 @@
 <p><strong>Yanlış yol</strong>: Her zaman bir tasarım deseni kullanmaya çalışmak. <img src="/img/thumbs-down.png" alt="Thumbs down" /></p>
 <h1 id="her-zaman-nesne-tabanlı-programlama-yapılmalı">Her zaman nesne tabanlı programlama yapılmalı</h1>
 <blockquote>
-<p>Nesne tabanlı dillerle ilgili sorun, kendileriyle birlikte taşıdıkları bu büyük kapalı ortamlara sahip olmalarıdır. Bir muz istemişsin, fakat tüm ormanı elindeki muz tutan bir goril ile birlikte sana veriyor.</p>
+<p>Nesne tabanlı dillerle ilgili sorun, kendileriyle birlikte taşıdıkları büyük kapalı ortamlara sahip olmalarıdır. Bir muz istemişsin, fakat tüm ormanı elindeki muz tutan bir goril ile birlikte sana veriyor.</p>
 <p>– Joe Armstrong <a href="http://codersatwork.com/">Coders at work - Reflections on the Craft of Programming</a></p>
 </blockquote>
 <blockquote>
@@ -135,13 +135,13 @@
 </blockquote>
 <p>Birçok yazılım geliştirici ve birçok şirket, nesneye yönelik programlamanın bugün yazılım geliştirmenin tek makul yolu olduğunu düşünüyor. Nesne yönelimli programlamaya karşı çıkan herkes endüstrinin “geleneksel bilgeliğine” karşı çıktıklarının farkına varır.</p>
 <p>Programlama blogları ve forumlarında, nesne tabanlı programlamayı savunan ve standart bir tanımları olmamasına rağmen ne hakkında konuştuklarını bildiklerinden emin olan birçok insan var!</p>
-<p>Gerçek şu ki, nesne tabalı programlama sık sık gereksiz karmaşıklık yükünü doğuruyor!</p>
+<p>Gerçek şu ki, nesne tabalı programlama sık sık gereksiz karmaşıklık yükünü doğurur!</p>
 <p>Bilgisayar bilimcileri ve programcıları olarak, önyargıları bir kenara bırakmayı ve verilen bir soruna en iyi çözümü bulmayı öğrenmeliyiz.</p>
 <p>Günümüzde PHP’nin en güçlü yanlarından biri, imperatif, fonksiyonel, nesne tabanlı, prosedürel ve reflective paradigmalar için verdiği destek. PHP, birçok sorunu farklı şekillerde çözmeyi mümkün kılan çok sayıda farklı araca sahip devasa bir araç kutusudur. - <strong>Her zaman bir den fazla yol vardır!</strong></p>
 <p><strong>Bir uygulama içindeki farklı sorunları tek bir özel programlama paradigmasına zorlamaya çalışırken, yaratıcı bir şekilde düşünmüyoruz ve verimli çalışmıyoruz!</strong></p>
 <h2 id="kıssaden-hisse">Kıssaden hisse</h2>
-<p>Belirli bir programlama paradigmasını anlamanın en iyi yollarından biri, ilk nasıl geliştiğine bakmaktır. Gelişiminin nedeni neydi? Yeni bir düşünme biçimine ihtiyaç duyan diğer programlama paradigmalarında ne gibi problemler yaşandı? Gerçek bir dünya problemi miydi yoksa sadece akademik bir problem miydi? Ve o zamandan beri nasıl gelişti?</p>
-<p>X kişisinin ne söylediği veya Y kişisinin ne tanımladığı önemli değil, paradigmalar bağlamında önemli olan onları yapan tarih.</p>
+<p>Belirli bir programlama paradigmasını anlamanın en iyi yollarından biri, ilk olarak nasıl ortaya çıktığına bakmaktır. Gelişiminin nedeni neydi? Yeni bir düşünme biçimine ihtiyaç duyan diğer programlama paradigmalarında ne gibi problemler yaşandı? Gerçek bir dünya problemi miydi yoksa sadece akademik bir problem miydi? Ve o zamandan beri nasıl gelişti?</p>
+<p>X kişisinin ne söylediği veya Y kişisinin ne tanımladığı önemli değil, paradigmalar bağlamında önemli olan onları oluşturan tarih.</p>
 <blockquote>
 <p>Yazılım tasarımı yapmanın iki yolu vardır. Birinci yol, o kadar basit hale getirmek ki açık bir şekilde hiçbir eksikliğin olmamasını sağlamak. Ve diğer yol ise, bariz bir eksiklik olmayacak şekilde karmaşık hale getirmektir.</p>
 <p>– <a href="https://en.wikiquote.org/wiki/C._A._R._Hoare">C.A.R. Hoare</a></p>
@@ -150,12 +150,12 @@
 <p>Yapısal olmayan programlama kullanan hem yüksek hem de düşük seviyeli programlama dilleri vardır. Bunlar arasında BASIC, COBOL, MUMPS, JOSS, FOCAL, TELCOMP, makine düzeyinde kod, erken assembler sistemleri (işlemsel meta operatörleri olmayanlar) ve bazı betik dilleri bulunur.</p>
 <p>Yapılandırılmamış bir dilde bir program genellikle sıralı olarak düzenlenmiş komutlardan veya genellikle her satırda bir tane olmak üzere ifadelerden oluşur. Satırlar genellikle numaralandırılır veya yürütme akışının programdaki herhangi bir satıra atlamasına izin veren etiketlere sahip olabilir (popüler olmayan GOTO ifadesinde olduğu gibi).</p>
 <p>Sonra, altmışlı yıllarda, yapısal programlama ortaya çıktı - esas olarak Edsger W. Dijkstra’nın ünlü yazısı nedeniyle [Go To kalıpları zararlı olarak kabul edildi] (http://www.u.arizona.edu/~rubinson/copyright_violations/Go_To_Considered_Harmful.html) .</p>
-<p>Yapısal programlama, alt yordamları, blok yapıları ve döngüleri kullanarak yazılımın netliğini, kalitesini ve kodlanmasını geliştiren bir programlama paradigmasıdır. Bu, GOTO deyimi gibi basit atlamaların kullanılmasının aksinedir.</p>
+<p>Yapısal programlama, alt yordamları, blok yapıları ve döngüleri kullanarak yazılımın sadeliğini, kalitesini ve kodlanmasını geliştiren bir programlama paradigmasıdır. Bu, GOTO deyimi gibi basit atlamaların kullanılmasının aksinedir.</p>
 <p>Daha sonra, prosedürel programlama yapılandırılmış programlamadan türetilmiştir. Prosedürel programlama “prosedür çağrısı” kavramına dayanır. Bir “prosedür çağrısı”, “işlev çağrısı” için başka bir isimlendirmedir. Prosedürler ayrıca rutinler, alt rutinler veya yöntemler olarak da bilinir. Bir prosedür basitçe gerçekleştirilecek bir dizi hesaplama adımını içerir. Herhangi bir prosedür, başka prosedürler veya kendisi de dahil olmak üzere, programların yürütülmesi sırasında herhangi bir noktada çağrılabilir.</p>
 <p>Başlangıçta, tüm prosedürler bir programın herhangi bir bölümünde global veri olarak mevcuttu. Küçük programlarda bu bir problem teşkil etmedi, ancak işler daha da karmaşıklaştıkça ve programın boyutu büyüdükçe, programın bir kısmındaki küçük değişiklikler diğer birçok bölümü de büyük ölçüde etkiledi.</p>
 <p>Hiç kimse programdaki değişiklikleri planlamıyordu ve çok fazla bağımlılık vardı. Bir prosedürde yapılan küçük bir değişiklik, orijinal koda bağlı olan birçok başka prosedürde bir hata dizisine neden olur.</p>
 <p>Verilerin “nesneler” adı verilen ayrı kapsamlara bölünmesine izin veren yeni bir teknik gelişti. Yalnızca aynı kapsama ait belirli prosedürler aynı verilere erişebilmeli. Buna veri gizleme veya kapsülleme dendi. Sonuç çok daha iyi organize edilmiş kod oldu.</p>
-<p>Başlangıçta nesneler nesneler olarak adlandırılmadı, sadece ayrı kapsamlar olarak görüldü. Daha sonra bağımlılıklar azaltılarak bu kapsamların içindeki prosedürler ve değişkenler arasındaki bağlantılar yalıtılmış bölümler olarak görüldüğünde, sonuç “nesneler” ve “nesneye tabanlı programlama” kavramlarını doğurdu.</p>
+<p>Başlangıçta nesneler nesne olarak adlandırılmadı, sadece ayrı kapsamlar olarak görüldü. Daha sonra bağımlılıklar azaltılarak bu kapsamların içindeki prosedürler ve değişkenler arasındaki bağlantılar yalıtılmış bölümler olarak görüldüğünde, sonuç “nesneler” ve “nesneye tabanlı programlama” kavramlarını doğurdu.</p>
 <p>Daha sonra, esas olarak Java’nın gelişmesi nedeniyle, bazı “buzzwords” ifadeleri ortaya çıktı ve “bir prosedür” veya “bir işlev” artık bir işlev olarak adlandırılmadı, ancak ayrı bir kapsamda bulunduğunda “bir yöntem” olarak yeniden adlandırıldı. Değişkenler artık “değişkenler” olarak da adlandırılmadı, ancak ayrı bir kapsamda bulunduklarında “özellikler” olarak yeniden adlandırıldılar.</p>
 <p>Dolayısıyla bir nesne özünde basitçe şimdi “yöntemler ve öznitelikler” olarak adlandırılan fonksiyonlar ve değişkenler topluluğudur.</p>
 <p>Yöntemlerin ve niteliklerin ayrı bir kapsam içinde izole edilmesinin yolu “bir sınıf” kullanımıdır. Bir sınıf, bir kez yaratıldığında nesne olarak adlandırılır.</p>
