@@ -4,28 +4,28 @@
 >
 > -- [Rasmus Lerdorf](https://www.youtube.com/watch?v=DuB6UjEsY_Y)
 
-PHP topluluğunda, gerçekten kötü bir eğilim, web uygulamaları geliştirmek için fiili bir standart haline geldi. Bu eğilim mutlaka popüler bir genel amaçlı çerçevenin kullanılması gerektiğinin düşülmesidir.
+PHP topluluğunda, gerçekten çok kötü bir eğilim web uygulamaları geliştirmek için fiili bir standart haline geldi. Bu eğilim mutlaka popüler bir genel amaçlı uygulama çatısının kullanılması gerektiğinin düşülmesidir.
 
-Bu eğilim, geliştirme sürecin sonucununun katilesini artırdığı için değil, teknoloji ve mimari açıdan yapılacak doğru şey olduğu için ortaya çıkmış ve popüler hale gelmiştir. Bu eğilimin popüler bir hale gelmesinin bir sebebi de, uygulama çatısı geliştiricilerinden bazılarının kitleleri, "çarkı yeniden icat etmeyin!" ve "Kendin yapmana gerek yok, başkaları senden daha yetenekli olabilir" gibi sloganlarla manipüle etmeleridir.
+Bu eğilim geliştirme sürecinin kalitesini artırdığı için değil, teknolojik ve mimari açıdan yapılacak doğru şey olduğu için ortaya çıkmış ve popüler hale gelmiştir. Bu eğilimin popüler bir hale gelmesinin bir sebebi de, uygulama çatısı geliştiricilerinden bazılarının kitleleri, "Çarkı yeniden icat etmeyin!" ve "Kendin yapmana gerek yok, başkaları senden daha yetenekli olabilir." gibi sloganlarla manipüle etmeleridir.
 
-Günümüz programcılarının çoğu, sağlıklı programlamanın temel ilkelerini tamamen görmezden geliyorlar ve akranları olarak gördükleri kişiler tarafından daha akıllı, daha havalı ve daha kabul edilebilir görünmek için yeni karmaşık katmanları hayal etmek için çok zaman harcıyorlar.
+Günümüz programcılarının çoğu, sağlıklı programlamanın temel ilkelerini tamamen görmezden geliyorlar. Akranları olarak gördükleri kişiler tarafından daha akıllı, daha havalı ve daha kabul edilebilir görünmek için ve yeni karmaşık katmanları hayal etmek için çok zaman harcıyorlar.
 
 Bu tarzı benimseyen insanlar, diğer insanların hep "kendi yollarını" takip etmeleri, kendilerini bir tür PHP topluluğu lideri gibi görmelerini ve başkalarının kendi kullandıkları Açık Kaynak araçlarını kullanmalarını sağlamayı (ki bu araçların bazılarının ne olduğunu kendileri bile unutmuş olabiliyor) sağlamak için deli gibi çaba sarfediyor görünüyorlar.
 
-Yazılım endüstrisinde önceden inşa edilmiş bir evi genel amaçlı bir yazılım çatısı karşılaştırabilirsiniz. Önceden inşa edilmiş bir evi bir araya getirmekten nasıl sizi iyi bir marangoz yapmazsa, genel amaçlı uygulama çatıları ile uygulama geliştirmek de sizi çok iyi bir kodlayıcı veya programcı yapmaz.
+Yazılım endüstrisinde genel amaçlı bir yazılım çatısını önceden inşa edilmiş bir evi ile eşleştirebilirsiniz. Önceden inşa edilmiş bir evi bir araya getirmek nasıl sizi iyi bir marangoz yapmazsa, genel amaçlı uygulama çatıları ile uygulama geliştirmek de sizi çok iyi bir kodlayıcı veya programcı yapmaz.
 
 Bu sitede biz uygulama çatısı kullanmak ile kütüphane kullanmayı birbirinden aşağıdaki maddelerden dolayı ayrı tutuyoruz;
 
 * Bir kütüphane, C standart kütüphanesi veya Go standart kütüphanesi gibi, tekrar kullanılabilir bir kod topluluğu olarak kabul edilir. Herhangi bir sınırlama veya kısıtlama yapmadan kendi projelerinize kolayca entegre edebileceğiniz koddan oluşur. Her biri belirli bir işlevselliğe sahip küçük kod parçalarından oluşur.
-* Bir uygulama çatısı yeniden kullanılabilir bir kod koleksiyonu değildir: çerçeveden bir kod parçası alıp kendi projenize entegre etmek çok zordur. Çatı, yazılım oluşturmanıza yardımcı olan bir sistemdir, ancak aynı zamanda çatının kendisinin sınırlamaları ve kısıtlamaları dahilinde çalışmaya zorlar. Çatının kendisinde çok fazla bağımlı işlevsellik var. Bir parça diğer olmadan çalışamaz.
+* Bir uygulama çatısı yeniden kullanılabilir bir kod koleksiyonu değildir ve içinden bir kod parçası alıp kendi projenize entegre etmek çok zordur. Çatı, yazılım oluşturmanıza yardımcı olan bir sistemdir, ancak aynı zamanda çatının kendisinin sınırlamaları ve kısıtlamaları dahilinde çalışmaya zorlar. Çatının kendisinde çok fazla bağımlı işlevsellik bulunabilir. Bir parça diğer olmadan çalışamaz.
 
 Python ve Ruby dünyasında, en baştan web siteleri inşa etmek zahmetlidir, çünkü ne Python ne de Ruby aslında web siteleri oluşturmak için yaratılmamıştır. Sonuç olarak, [Django] (https://en.wikipedia.org/wiki/Django_%28web_framework%29) ve [Ruby on Rails] (https://en.wikipedia.org/wiki/Ruby_on_Rails) gibi genel amaçlı çerçeveler  hızla bu dillerde web siteleri oluşturmak için popüler oldu.
 
 Diğer taraftan PHP, başlangıçta Rasmus Lerdorf tarafından C dilinde yazılmış ve dinamik HTML'yi kolayca ve hızlı bir şekilde geliştirmenizi sağlayacak bir dizi araç olarak oluşturulmuştur. Bu tasarımından dolayı PHP hala ** kendi başına bir uygulama çatısıdır **.
 
-PHP o zamandan beri kitlesel olarak gelişti ve bugün PHP, HTML ve web siteleri oluşturmaktan çok daha fazlası için kullanılabilir, ancak PHP'yi kendi içinde bir tür çatı olarak görmek hala yanlış değildir. PHP, doğası gereği, tamamen bir C prosedüründe yazılmış web uygulamalarını geliştirmek için bir soyutlama katmanıdır.
+PHP ilk zamandan beri kitlesel olarak gelişti ve bugün PHP, HTML ve web siteleri oluşturmaktan çok daha fazlası için kullanılabilir, ancak PHP'yi kendi içinde bir tür çatı olarak görmek hala yanlış değildir. PHP, doğası gereği, tamamen bir C prosedüründe yazılmış web uygulamalarını geliştirmek için bir soyutlama katmanıdır.
 
-Projenizde bir kütüphane kullanmak sadece doğaldır. PHP, kendi kodunuzu genişletmek için kullanabileceğiniz bir dizi kütüphaneyle birlikte gelir. Örneğin PDO, PHP'deki veritabanlarına erişmek için tutarlı bir arayüz sağlayan sade bir kütüphanedir.
+Projenizde herhangi bir kütüphane kullanmak son derece doğaldır. PHP, kendi kodunuzu genişletmek için kullanabileceğiniz bir dizi kütüphaneyle birlikte gelir. Örneğin PDO, PHP'deki veritabanlarına erişmek için tutarlı bir arayüz sağlayan sade bir kütüphanedir.
 
 Diğer taraftan PHP'nin üstünde bir çatı kullanmak tamamen başka bir konudur.
 
@@ -43,7 +43,7 @@ Bazı şirketler PHP çatılarıyla ilgili yutturmacaları dinlemeye başladıla
 
 Her zaman en faydalı olanı seçin:
 
-> Ihtiyacımız olan teori veya dogmadan ziyade acil pratik sonuçların göz önünde bulundurulmasıyla yapılan eylem veya politikalardır.
+> Ihtiyacımız olan teori veya dogmadan ziyade pratik sonuçların göz önünde bulundurulmasıyla oluşturulan eylem veya politikalardır.
 >
 > -- Collins English Dictionary, Complete and Unabridged, 12th Edition 2014
 
