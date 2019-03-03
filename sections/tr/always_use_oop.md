@@ -1,6 +1,6 @@
 # Her zaman nesne tabanlı programlama yapılmalı #
 
-> Nesne tabanlı dillerle ilgili sorun, kendileriyle birlikte taşıdıkları bu büyük kapalı ortamlara sahip olmalarıdır. Bir muz istemişsin, fakat tüm ormanı elindeki muz tutan bir goril ile birlikte sana veriyor.
+> Nesne tabanlı dillerle ilgili sorun, kendileriyle birlikte taşıdıkları büyük kapalı ortamlara sahip olmalarıdır. Bir muz istemişsin, fakat tüm ormanı elindeki muz tutan bir goril ile birlikte sana veriyor.
 >
 > -- Joe Armstrong [Coders at work - Reflections on the Craft of Programming](http://codersatwork.com/)
 
@@ -12,7 +12,7 @@ Birçok yazılım geliştirici ve birçok şirket, nesneye yönelik programlaman
 
 Programlama blogları ve forumlarında, nesne tabanlı programlamayı savunan ve standart bir tanımları olmamasına rağmen ne hakkında konuştuklarını bildiklerinden emin olan birçok insan var!
 
-Gerçek şu ki, nesne tabalı programlama sık sık gereksiz karmaşıklık yükünü doğuruyor!
+Gerçek şu ki, nesne tabalı programlama sık sık gereksiz karmaşıklık yükünü doğurur!
 
 Bilgisayar bilimcileri ve programcıları olarak, önyargıları bir kenara bırakmayı ve verilen bir soruna en iyi çözümü bulmayı öğrenmeliyiz.
 
@@ -22,9 +22,9 @@ Günümüzde PHP'nin en güçlü yanlarından biri, imperatif, fonksiyonel, nesn
 
 ## Kıssaden hisse ##
 
-Belirli bir programlama paradigmasını anlamanın en iyi yollarından biri, ilk nasıl geliştiğine bakmaktır. Gelişiminin nedeni neydi? Yeni bir düşünme biçimine ihtiyaç duyan diğer programlama paradigmalarında ne gibi problemler yaşandı? Gerçek bir dünya problemi miydi yoksa sadece akademik bir problem miydi? Ve o zamandan beri nasıl gelişti?
+Belirli bir programlama paradigmasını anlamanın en iyi yollarından biri, ilk olarak nasıl ortaya çıktığına bakmaktır. Gelişiminin nedeni neydi? Yeni bir düşünme biçimine ihtiyaç duyan diğer programlama paradigmalarında ne gibi problemler yaşandı? Gerçek bir dünya problemi miydi yoksa sadece akademik bir problem miydi? Ve o zamandan beri nasıl gelişti?
 
-X kişisinin ne söylediği veya Y kişisinin ne tanımladığı önemli değil, paradigmalar bağlamında önemli olan onları yapan tarih.
+X kişisinin ne söylediği veya Y kişisinin ne tanımladığı önemli değil, paradigmalar bağlamında önemli olan onları oluşturan tarih.
 
 > Yazılım tasarımı yapmanın iki yolu vardır. Birinci yol, o kadar basit hale getirmek ki açık bir şekilde hiçbir eksikliğin olmamasını sağlamak. Ve diğer yol ise, bariz bir eksiklik olmayacak şekilde karmaşık hale getirmektir.
 >
@@ -38,7 +38,7 @@ Yapılandırılmamış bir dilde bir program genellikle sıralı olarak düzenle
 
 Sonra, altmışlı yıllarda, yapısal programlama ortaya çıktı - esas olarak Edsger W. Dijkstra'nın ünlü yazısı nedeniyle [Go To kalıpları zararlı olarak kabul edildi] (http://www.u.arizona.edu/~rubinson/copyright_violations/Go_To_Considered_Harmful.html) .
 
-Yapısal programlama, alt yordamları, blok yapıları ve döngüleri kullanarak yazılımın netliğini, kalitesini ve kodlanmasını geliştiren bir programlama paradigmasıdır. Bu, GOTO deyimi gibi basit atlamaların kullanılmasının aksinedir.
+Yapısal programlama, alt yordamları, blok yapıları ve döngüleri kullanarak yazılımın sadeliğini, kalitesini ve kodlanmasını geliştiren bir programlama paradigmasıdır. Bu, GOTO deyimi gibi basit atlamaların kullanılmasının aksinedir.
 
 Daha sonra, prosedürel programlama yapılandırılmış programlamadan türetilmiştir. Prosedürel programlama "prosedür çağrısı" kavramına dayanır. Bir "prosedür çağrısı", "işlev çağrısı" için başka bir isimlendirmedir. Prosedürler ayrıca rutinler, alt rutinler veya yöntemler olarak da bilinir. Bir prosedür basitçe gerçekleştirilecek bir dizi hesaplama adımını içerir. Herhangi bir prosedür, başka prosedürler veya kendisi de dahil olmak üzere, programların yürütülmesi sırasında herhangi bir noktada çağrılabilir.
 
@@ -48,7 +48,7 @@ Hiç kimse programdaki değişiklikleri planlamıyordu ve çok fazla bağımlıl
 
 Verilerin "nesneler" adı verilen ayrı kapsamlara bölünmesine izin veren yeni bir teknik gelişti. Yalnızca aynı kapsama ait belirli prosedürler aynı verilere erişebilmeli. Buna veri gizleme veya kapsülleme dendi. Sonuç çok daha iyi organize edilmiş kod oldu.
 
-Başlangıçta nesneler nesneler olarak adlandırılmadı, sadece ayrı kapsamlar olarak görüldü. Daha sonra bağımlılıklar azaltılarak bu kapsamların içindeki prosedürler ve değişkenler arasındaki bağlantılar yalıtılmış bölümler olarak görüldüğünde, sonuç "nesneler" ve "nesneye tabanlı programlama" kavramlarını doğurdu.
+Başlangıçta nesneler nesne olarak adlandırılmadı, sadece ayrı kapsamlar olarak görüldü. Daha sonra bağımlılıklar azaltılarak bu kapsamların içindeki prosedürler ve değişkenler arasındaki bağlantılar yalıtılmış bölümler olarak görüldüğünde, sonuç "nesneler" ve "nesneye tabanlı programlama" kavramlarını doğurdu.
 
 Daha sonra, esas olarak Java'nın gelişmesi nedeniyle, bazı "buzzwords" ifadeleri ortaya çıktı ve "bir prosedür" veya "bir işlev" artık bir işlev olarak adlandırılmadı, ancak ayrı bir kapsamda bulunduğunda "bir yöntem" olarak yeniden adlandırıldı. Değişkenler artık "değişkenler" olarak da adlandırılmadı, ancak ayrı bir kapsamda bulunduklarında "özellikler" olarak yeniden adlandırıldılar.
 
