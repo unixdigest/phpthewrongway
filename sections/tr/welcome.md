@@ -4,7 +4,7 @@ PHP programlama dünyasında, bir dizi eğilim bazı insanlar tarafından (kendi
 
 Bu insanlar yorulmadan başkalarının işlerini yaparken kendilerinin yollarını takip etmelerini sağlamaya çalışıyor gibi görünüyorlar.
 
-Bu web sitesi PHP programlama konusunda pragmatik bir bakış sunmak amacıyla oluşturulmuştur. Hedeflenen popüler eğilimler, teori veya akademik dogmalardan ziyade tecrübe ve pratik sonuçlar tarafından oluşturulan bir bakış açısı ortaya çıkarmaktır.
+Bu web sitesi PHP ile programlama yapanlara pragmatik bir bakış sunmak amacıyla oluşturulmuştur. Hedeflenen popüler eğilimler, teori veya akademik dogmalardan ziyade tecrübeden ve pratik sonuçlardan oluşturulmuş bir bakış açısı ortaya çıkarmaktır.
 
 [PHP - The Wrong Way](http://www.phpthewrongway.com/) yaşayan bir site olacak ve yenilikler ortaya çıktıkça site güncellenecektir.
 
