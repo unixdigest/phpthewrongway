@@ -4,7 +4,7 @@ FIG står for "Framework Interoperability Group".
 
 [PHP-FIG](http://www.php-fig.org/) blev udviklet af en gruppe framework udviklere ved php|tek 2009. Siden da har forskellige andre medlemmer tilmeldt sig, og er blevet stemt ind.
 
-Der eksisterer en masse kontroverser angående PHP-fig. Nogle mennesker mener at PHP-FIG er det bedste der er sket for PHP samfundet siden PHP selv, mens andre betragter gruppen som noget der skal gå i glemmebogen.
+Der eksisterer en masse kontroverser angående PHP-fig. Nogle mennesker mener at PHP-FIG er det bedste, der er sket for PHP samfundet siden PHP selv, mens andre betragter gruppen som noget der skal gå i glemmebogen.
 
 Et af problemerne med PHP-FIG er at den præsenterer sig selv på følgende måde i deres [spørgsmål/svar sektion](http://www.php-fig.org/faqs/):
 
