@@ -36,7 +36,7 @@ Yapısal olmayan programlama kullanan hem yüksek hem de düşük seviyeli progr
 
 Yapılandırılmamış bir dilde bir program genellikle sıralı olarak düzenlenmiş komutlardan veya genellikle her satırda bir tane olmak üzere ifadelerden oluşur. Satırlar genellikle numaralandırılır veya yürütme akışının programdaki herhangi bir satıra atlamasına izin veren etiketlere sahip olabilir (popüler olmayan GOTO ifadesinde olduğu gibi).
 
-Sonra, altmışlı yıllarda, yapısal programlama ortaya çıktı - esas olarak Edsger W. Dijkstra'nın ünlü yazısı nedeniyle [Go To kalıpları zararlı olarak kabul edildi] (http://www.u.arizona.edu/~rubinson/copyright_violations/Go_To_Considered_Harmful.html) .
+Sonra, altmışlı yıllarda, yapısal programlama ortaya çıktı - esas olarak Edsger W. Dijkstra'nın ünlü yazısı nedeniyle [Go To kalıpları zararlı olarak kabul edildi](http://www.u.arizona.edu/~rubinson/copyright_violations/Go_To_Considered_Harmful.html) .
 
 Yapısal programlama, alt yordamları, blok yapıları ve döngüleri kullanarak yazılımın sadeliğini, kalitesini ve kodlanmasını geliştiren bir programlama paradigmasıdır. Bu, GOTO deyimi gibi basit atlamaların kullanılmasının aksinedir.
 

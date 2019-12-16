@@ -18,9 +18,9 @@ Tag ved lære af de store programmeringsmestre, læs bogen [Coders at work - Ref
 
 Nogle af de største og mest succesfulde kodebaser i verden er kodebaser der er blevet udviklet af hundredvis af mennesker, der aldrig har mødt hinanden, kodebaser udviklet uden brug af nogen former for frameworks, kodebaser udelukkende udført i et proceduremæssig programmeringssprog uden brug af andet end det proceduremæssige paradigme, og de ville aldrig drømme om at gøre det anderledes.
 
-[Linux Kernen] (https://www.kernel.org/) består af mere end 20 millioner linjer kode alle skrevet udelukkende ved hjælp proceduremæssig programmering af mere end 14.000 deltagere uden brug af nogen former for frameworks.
+[Linux Kernen](https://www.kernel.org/) består af mere end 20 millioner linjer kode alle skrevet udelukkende ved hjælp proceduremæssig programmering af mere end 14.000 deltagere uden brug af nogen former for frameworks.
 
-De forskellige [BSD] (https://en.wikipedia.org/wiki/Berkeley_Software_Distribution) varianter og det meste af [Linux GNU userland] (https://www.gnu.org/) er blevet skrevet udelukkende via proceduremæssig programmering uden anvendelsen af nogen former for frameworks.
+De forskellige [BSD](https://en.wikipedia.org/wiki/Berkeley_Software_Distribution) varianter og det meste af [Linux GNU userland](https://www.gnu.org/) er blevet skrevet udelukkende via proceduremæssig programmering uden anvendelsen af nogen former for frameworks.
 
 Det samme gælder for hundredvis af Open Source projekter rundt om i verdenen der til sidst blev opgivet af de oprindelige programmører kun at blive adopteret af andre dygtige programmører. Mange af disse projekter havde meget lidt dokumentation (hvis nogen overhovedet), ingen kommentarer i kodebasen, og ingen retningslinjer eller hjælp at tilbyde overhovedet.
 

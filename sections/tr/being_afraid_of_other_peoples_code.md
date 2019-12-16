@@ -18,7 +18,7 @@ Programlamanın büyük ustalarından not alın, [İşyerindeki kodlayıcılar -
 
 Dünyadaki en büyük ve en başarılı kod tabanlarından bazıları, birbiriyle hiç tanışmamış yüzlerce insan tarafından geliştirilen kod tabanları, herhangi bir çerçeve kullanmadan geliştirilen kod tabanları, tamamen prosedürel bir programlama dilinde kullanılmayan kod tabanlarıdır. Ve hatta bazıları prosedürel paradigmadan başka bir şey yapmazlar ve farklı yapmayı hayal etmezler.
 
-[Linux Çekirdeği] (https://www.kernel.org/), herhangi bir çatı kullanmadan 14.000'den fazla katılımcı tarafından tamamen prosedürel programlama kullanılarak yazılmış 20 milyon kod satırından oluşur.
+[Linux Çekirdeği](https://www.kernel.org/), herhangi bir çatı kullanmadan 14.000'den fazla katılımcı tarafından tamamen prosedürel programlama kullanılarak yazılmış 20 milyon kod satırından oluşur.
 
 [BSD](https://en.wikipedia.org/wiki/Berkeley_Software_Distribution) ve [Linux GNU userland](https://www.gnu.org/) 'ın çoğu tamamen prosedürel programlama kullanılarak yazılmıştır, ve Her hangi bir çatı da kullanılmamıştır.
 
