@@ -6,6 +6,6 @@ Bunun anlaşılması önemlidir, çünkü zamanla geliştirilen ve birçok farkl
 
 Deneyimler genel kuralların ve kılavuzların kötüye kullanılmasının her zaman karmaşıklıkla, güvenlik eksikliğiyle, hataya açık sonuçlarla ve hatta bazı durumlarda felaketle sonuçlandığını göstermiştir.
 
-"Basit ve Aptal Tutun, (Keep It Simple, Stupid)" ın kısaltması olan [KISS ilkesi] (https://en.wikipedia.org/wiki/KISS_principle), genellikle deneyimli kişiler tarafından çok yararlı olarak görülen, akıllıca ve iyi bir ilkedir. Takip edilmesi tavsiye edilir. Ancak bu büyük prensip bile, aşırıya götürülürse bir proje için tehlike oluşturur. Gerekli işlevsellikten uzak sadece "çok basit" görünen bir sonuç ortaya çıkabilir.
+"Basit ve Aptal Tutun, (Keep It Simple, Stupid)" ın kısaltması olan [KISS ilkesi](https://en.wikipedia.org/wiki/KISS_principle), genellikle deneyimli kişiler tarafından çok yararlı olarak görülen, akıllıca ve iyi bir ilkedir. Takip edilmesi tavsiye edilir. Ancak bu büyük prensip bile, aşırıya götürülürse bir proje için tehlike oluşturur. Gerekli işlevsellikten uzak sadece "çok basit" görünen bir sonuç ortaya çıkabilir.
 
 **Yanlış yol**: Kuralları ve kılavuzları din gibi algılama![Thumbs down](/img/thumbs-down.png)

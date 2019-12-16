@@ -2,7 +2,7 @@
 
 FIG kısaca "Framework Interoperability Group" yani "Çatılarası Uyumluluk Grubu".
 
-[PHP-FIG] (http://www.php-fig.org/), 2009 yılında php | tek'te bir dizi çatı geliştiricisi tarafından oluşturulmuştur. O zamandan beri, diğer birçok üye başvurmuş ve oy kullanmış, büyüklüğü arttırılmıştır. Başlangıçta 5 üyeden oluşuyorken sonradan sayı 20 üyeye çıkmıştır.
+[PHP-FIG](http://www.php-fig.org/), 2009 yılında php | tek'te bir dizi çatı geliştiricisi tarafından oluşturulmuştur. O zamandan beri, diğer birçok üye başvurmuş ve oy kullanmış, büyüklüğü arttırılmıştır. Başlangıçta 5 üyeden oluşuyorken sonradan sayı 20 üyeye çıkmıştır.
 
 PHP-FIG ile ilgili birçok tartışma var. Bazıları PHP-FIG'i PHP topluluğundan beri PHP topluluğunun başına gelen en iyi şey olarak görürken, diğerleri grubu unutulması en iyi şey olarak görür.
 
