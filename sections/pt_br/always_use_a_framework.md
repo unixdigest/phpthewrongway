@@ -1,50 +1,50 @@
-# Sempre use um framework #
+# Sempre use um 'framework' #
 
-> All general purpose PHP frameworks suck!
+> Todas as estruturas de uso geral ('frameworks') são uma merda!
 >
 > -- [Rasmus Lerdorf](https://www.youtube.com/watch?v=DuB6UjEsY_Y)
 
-In the PHP community a really bad trend has become de-facto standard for developing web applications and that is by the usage of a popular general purpose framework.
+Na comunidade PHP uma tendência muito ruim se tornou um padrão para o desenvolvimento de aplicações 'Web', e isso é pelo uso de um 'framework' popular.
 
-This trend has emerged and become popular not because it in any way improves the result of the developing process, or because it is the right thing to do from a technology and architectural point of view. This trend has become popular because some of the developers of frameworks have managed to sweep away the masses with their polemic against programming from the ground up with stanzas like "Don't re-invent the wheel!" and "Don't do it yourself, others are more skillful than you".
+Essa tendência surgiu e se tornou popular, não porque de alguma forma melhore o resultado do processo de desenvolvimento ou é a coisa certa a se fazer do ponto de vista da tecnologia e da arquitetura. Essa tendência se tornou popular porque alguns dos desenvolvedores que trabalham com 'frameworks' conseguiram espalhar para um grande público a polêmica opinião contra a programação do zero, usando frases como "Não reinvente a roda!" e "Não faça você mesmo, os outros são mais hábeis que você".
 
-Many of today's programmers completely ignore the fundamental principles of sound programming and they spend a large amount of time fantasizing new layers of complexity in order to appear more clever, more cool, and more acceptable by whomever they regard as their peers.
+Muitos dos programadores de hoje ignoram completamente os princípios fundamentais da programação e passam muito tempo fantasiando novas camadas de complexidade, de modo a parecerem mais inteligentes, mais legais e mais aceitáveis ​​em seu meio.
 
-These people seems to be infatuated by the thought of having other people follow their "way of doing things", becoming some kind of PHP community leaders, and having other people use their latest "hip" Open Source tools, that they forget to make sure that the advice they are giving is sound and solid.
+Essas pessoas parecem estar apaixonadas pelo pensamento de fazer com que outras sigam a sua "maneira de fazer as coisas", tornando-se algum líder da comunidade PHP e fazendo com que outras pessoas usem suas mais recentes ferramentas de código-fonte "modernas", que esquecem de garantir que os conselhos que estão dando são sólidos.
 
-In the software industry you can compare a pre-built house to a general purpose framework. Building software using general purpose frameworks doesn't make you a coder or a programmer any more than putting together a pre-built house makes you a carpenter.
+Nessa indústria de 'software' você pode comparar uma casa pré-construída com um 'framework'. Construir um 'software' usando um 'framework' faz de você um desenvolvedor ou programador que monta uma casa já pronta, um carpinteiro.
 
-On this website, we differentiate between frameworks and libraries in the following way:
+Nesse 'site', nós diferenciamos 'frameworks' de bibliotecas dessa maneira:
 
-* A library is considered a collection of reusable code, like the C standard library, or the Go standard library. It consists of code that you easily integrate into your own projects without enforcing any limitations or restrictions whatsoever. It consists of small pieces of code with one specific functionality each.
-* A framework is not just a collection of reusable code: you cannot simply take a piece of code from the framework and integrate it into your own project. A framework is a system that helps you build software, but at the same time it forces you to work within the limitations and restrictions of the framework itself. The framework itself has lot of interdependent functionality. One piece cannot work without the other.
+* Uma biblioteca é considerada uma coleção de códigos reutilizáveis, como a biblioteca padrão C, ou a biblioteca padrão Go. Consiste no código que você facilmente integra no seu projeto sem impor nenhuma limitação ou restrição. Consiste em pequenos pedaços de código com uma funcionalidade específica.
+* Um 'framework' não é uma coleção de códigos reutilizáveis: você não pode simplesmente pegar um pedaço de código do 'framework' e integrar dentro do seu projeto. Um 'framework' é um sistema que ajuda você a construir um 'software', mas, ao mesmo tempo te força nas limitações e restrições do prórprio 'framework'. O 'framework' tem muitas funcionalidades que se interdependem. Um pedaço não pode trabalhar sem outro.
 
-In the world of Python and Ruby, building websites from the ground up is tiresome because neither Python nor Ruby was originally created to build websites. As a result general-purpose frameworks such as [Django](https://en.wikipedia.org/wiki/Django_%28web_framework%29) and [Ruby on Rails](https://en.wikipedia.org/wiki/Ruby_on_Rails) quickly became popular for building websites in these languages.
+No mundo do Python e Ruby, construir um 'site' do zero é cansativo, porque nem o Python e nem o Ruby foi originado para criação de 'sites'. Como resultado, 'frameworks' como o [Django](https://en.wikipedia.org/wiki/Django_%28web_framework%29) e o [Ruby on Rails](https://en.wikipedia.org/wiki/Ruby_on_Rails) rapidamente se tornaram porpulares entre os desenvolvedores de 'sites' dessas linguagens.
 
-PHP on the other hand was created in the beginning by Rasmus Lerdorf as a set of tools written in C that would enable you to easily and quickly develop dynamic HTML. As such PHP was, and still is, **a framework in and of itself**.
+O PHP, no entanto foi criado desde o início por Rasmus Lerdorf como um conjunto de ferramentas escritas em C que permitiam desenvolver de forma fácil e rápida um HTML dinâmico. Como tal, PHP era, e ainda é, **um 'framework' por si só**.
 
-PHP has evolved massively since then and today PHP can be used for much more than building HTML and websites, but viewing PHP as a sort of framework in itself is not wrong. PHP is by nature a layer of abstraction for developing web applications written entirely in a procedural C.
+O PHP evoluiu bastante desde então, e hoje o PHP pode ser para mais do que construir 'sites', mas olhar para o PHP como um 'framework' não é errado. PHP é por natureza uma camada de abstração para desenvolvimento de aplicações 'web' escritos inteiramente em C procedural.
 
-Using a library within your project is only natural. PHP itself comes bundled with a set of libraries that you can use to extend your own code. PDO for example is a lightweight library that provides a consistent interface for accessing databases in PHP.
+Usar uma biblioteca dentro do seu projeto é normal. O próprio PHP vem com um conjunto de bibliotecas que você pode usar para estender para seu código. O PDO, por exemplo, é uma leve biblioteca que fornece uma interface consistente para conectar ao banco de dados pelo PHP.
 
-Using a framework on top of PHP on the other hand is another matter entirely.
+Usar um 'framework' por cima do PHP é outra coisa.
 
-When you use a framework in PHP you add a layer of abstraction on top of yet another layer of abstraction, one that was already in place for you to use to begin with. The added layer of abstraction that the framework provides may simply serve to organize your code into a pre-fixed set of patterns, or it may add even more complexity by intertwining hundreds or even thousands of classes and methods into a nightmare of dependencies, either way you're adding layers of complexity to your code that isn't needed!
+Quando você usa um 'framework' no PHP, você adiciona uma camada de abstração em cima de outra camada de abstração, uma que já foi colocada para você no início. Adicionada a segunda camada de abstração, ou seja, o 'framework' pode simplesmente servir para organizar o seu código em um conjunto de padrões pré-fixados, ou pode adicionar ainda mais complexidade entrelaçando centenas, ou até milhares de classes e métodos dentro de um pesadelo de dependências. De qualquer maneira você está adicionando camadas de complexidade para seu código que não são necessárias.
 
-All experience starts with the interface. The interface experience is the result of the underlying technology and the amount of layers of abstraction. The more abstraction you use, the less efficient the interface becomes and the more error-prone the application becomes. The higher the abstraction, the more detail and efficiency is lost.
+Toda a experiência começa com a interface. A experiência da interface é o resultado da tecnologia subjacente e da quantidade de camadas de abstração. Quanto mais abstração você usa, menos eficiente a interface se torna e mais suscetível a erros a aplicação se torna. Quanto maior a abstração, mais detalhes e eficiência são perdidos.
 
-Understand this clearly: **The ideal number of lines of code in any project is as few as possible whilst being as clear and readable as possible!**
+Entenda isso claramente: **O número ideal de linhas de código em qualquer projeto é o mínimo possível, ao mesmo tempo que é o mais claro e legível possível!**
 
-> What everyone doesn't need is a general purpose framework. Nobody has a general problem, everyone has a very specific problem they are trying to solve.
+> O que todo mundo não precisa é de um 'framework' genérico. Ninguém tem um problema genérico, todo mundo tem um problema muito específico que está tentando resolver.
 >
 > -- [Rasmus Lerdorf](https://www.youtube.com/watch?v=anr7DQnMMs0)
 
-Some companies began listening to the hype about PHP frameworks and they started their next projects using one of these popular general purpose frameworks only to end up in a disaster. Not only did they discover that the general purpose framework was really bad at solving their very specific need, but it was also extremely slow in doing so. It was impossible to scale and as a result they started ripping the framework apart in a desperate attempt to pull out all those things they really didn't need.
+Algumas empresas começaram a ouvir o borborinho sobre os 'frameworks' PHP e elas começaram seus projetos com esses 'frameworks' genéricos só para ver esses projetos acabarem em um desastre. Eles não apenas descobriram que um 'framework' genérico era muito ruim para resolver suas necessidades muito específicas, mas eles eram extremamente lentos em fazê-los. Era impossível escalar, e como resultado, eles começaram a mexer no 'framework' a parte, numa tentativa desesperada de retirar todas as coisas que realmente não precisavam.
 
-Always use the pragmatic approach:
+Sempre use a abordagem pragmática:
 
-> Action or policy dictated by consideration of the immediate practical consequences rather than by theory or dogma.
+> Ação ou política ditada pela consideração das consequências práticas imediatas ao invés de pôr teoria ou dogma.
 >
 > -- Collins English Dictionary, Complete and Unabridged, 12th Edition 2014
 
-**The wrong way:** Always use a framework on top of PHP. ![Thumbs down](/img/thumbs-down.png)
+**A maneira errada:** Sempre use um 'framework' em cima do PHP. ![Thumbs down](/img/thumbs-down.png)
