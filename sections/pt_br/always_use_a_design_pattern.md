@@ -1,33 +1,33 @@
-# Sempre use padrões de projeto #
+# Sempre use Padrões de Projeto (Design Pattern) #
 
-> I have this big allergy to ivory-tower design and design patterns. Peter Norvig, when he was at Harlequin, he did this paper about how design patterns are really just flaws in your programming language. Get a better programming language. He’s absolutely right. Worshiping patterns and thinking about, "Oh, I’ll use the X pattern."
->
-> -- Brendan Eich in [Coders at work - Reflections on the Craft of Programming](http://codersatwork.com/)
+> Tenho uma grande alergia aos Padrões de Projeto (Design Pattern). Peter Norvig, quando estava na Harlequin, ele escreveu esse artigo sobre como os padrões de projetos são apenas falhas nas suas linguagens de programação. Pegue uma linguagem de programação melhor. Ele estava absolutamente certo. Adorando padrões de e pensando "Oh! Vou usar o padrão X."
 
-In software engineering, a design pattern is a reusable solution to a commonly occurring problem in software design. A design pattern is not a finished design that can be transformed directly into code. It is a description or an idea for how to solve a problem that can be used in many different situations. Object-oriented design patterns typically show relationships and interactions between classes or objects, without specifying the final application classes or objects that are involved.
+> -- Brendan Eich em [Coders at work - Reflections on the Craft of Programming](http://codersatwork.com/)
 
-PHP supports imperative, functional, object-oriented, procedural, and reflective paradigms. PHP is a huge toolbox with lots of different tools that makes it possible to solve many problems in many different ways - not just one way.
+Na engenharia de 'software', um padrão de projeto é uma solução reutilizável para um problema no 'design' de 'software'. Um padrão de projeto não é um 'design' acabado que pode ser transformado diretamente em código. É uma descrição ou uma ideia de como solucionar um problema que pode vir a aparecer em muitas situações diferentes. Orientação a Objetos tipicamente demonstra relações e interações entre classes e objetos, sem especificar a aplicação final destes que estão envolvidos.
 
-PHP is all about freedom, fast and scalable solutions, and having many different ways to deal with problems.
+O PHP suporta paradigmas imperativos, funcionais, orientados a objetos, procedural e paradigmas reflexivos. O PHP é uma enorme caixa de ferramentas que faz o possível para solucionar muitos problemas de maneiras diferentes - não de um único jeito.
 
-When we try to improve ourselves, and in this case more specifically our code, we sometimes get hung up in the philosophy of a particular pattern or idea and tend to forget to think practically.
+O PHP disponibiliza liberdade, soluções rápidas e escaláveis, e muitas outras maneiras diferentes de lidar com os problemas.
 
-> When I see patterns in my programs, I consider it a sign of trouble. The shape of a program should reflect only the problem it needs to solve. Any other regularity in the code is a sign, to me at least, that I'm using abstractions that aren't powerful enough - often that I'm generating by hand the expansions of some macro that I need to write.
+Quando tenta melhorar a si mesmo, e, neste caso, mais especificamente o código, às vezes fica-se presos a filosofia de um padrão ou ideia e tende-se a esquecer das situações que possuem suas próprias particularidades.
+
+> Quando vejo um padrão de projeto em meu programa, considero um sinal de problema. A forma de programar deve refletir somente os problemas que precisam de solução. Qualquer outra regularidade é um sinal, pelo menos pra mim, que estou usando abstrações que não são suficientes - frequentemente estou gerando manualmente algumas expansões macro que eu preciso escrever.
 >
 > -- [Paul Graham](http://c2.com/cgi/wiki?AreDesignPatternsMissingLanguageFeatures)
 
-We shouldn't get to caught up in the philosophy or idea behind a specific pattern or solution. Our main concern is to keep the code as easy to navigate and understand as possible and as a result easy to maintain and easy to keep secure.
+Não se deve agarrar em uma filosofia ou ideia por trás de um padrão específico ou solução. A principal preocupação é manter o código fácil de navegar e entender o máximo possível e como resultado, será manutenível e seguro.
 
-We must also remember that there exists such a thing as an anti-pattern. It is a pattern that may be commonly used but is ineffective and/or counterproductive in practice.
+Deve-se lembrar sempre que existem antipadrões. É um padrão comumente utilizado, mas é ineficiente e/ou contraprodutivo na prática.
 
-> I think patterns started off as generally recognized best solutions for common problems. But now that they have been around for a while and we have experienced applications being made ten times more complicated than they need to be because people try to cram in all the patterns that they have read about ("my application is well architected, because it is loaded to the gills with patterns.") my impression of the value of the pattern has shifted a bit.
+> Penso que os padrões começaram como melhores soluções para problemas comuns. Mas agora eles já existem há um tempo e temos experienciado aplicativos feitos dez vezes mais complicados que eles necessitavam, por conta das pessoas tentarem se concentrar em todos os padrões sobre os quais leram ("minha aplicação está muito bem arquitetada, porque é feita com padrões de projetos.") minha impressão do valor de um padrão de projeto mudou um pouco.
 >
 > -- Paul Weaton in [Evil Design Patterns](http://www.javaranch.com/patterns/)
 
-Always use the pragmatic approach:
+Sempre use a abordagem pragmática:
 
-> Action or policy dictated by consideration of the immediate practical consequences rather than by theory or dogma.
+> Ação ou política ditada pela consideração das consequências práticas imediatas ao invés de pôr teoria ou dogma.
 >
 > -- Collins English Dictionary, Complete and Unabridged, 12th Edition 2014
 
-**The wrong way**: Looking for a pattern to solve a problem. ![Thumbs down](/img/thumbs-down.png)
+**A maneira errada**: Procure um padrão de projeto para resolver um problema. ![Thumbs down](/img/thumbs-down.png)
