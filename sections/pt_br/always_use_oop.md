@@ -1,40 +1,37 @@
 # Sempre use orientação a objetos #
 
-> The problem with object-oriented languages is they’ve got all this implicit environment that they carry around with them. You wanted a banana but what you got was a gorilla holding the banana and the entire jungle.
->
-> -- Joe Armstrong in [Coders at work - Reflections on the Craft of Programming](http://codersatwork.com/)
+> O problema com programação orientação a objetos é que ela possui todo um contexto. Você queria uma banana, mas você acaba recebendo um gorila segurando uma banana e toda a floresta.
+> -- Joe Armstrong no [Coders at work - Reflections on the Craft of Programming](http://codersatwork.com/)
 
-> Abstraction is powerful. What I'm really allergic to, and what I had a reaction to in the '90s, was all the CORBA, COM, DCOM, object-oriented nonsense. Every startup of the day had some crazy thing that would take 200.000 method calls to start up and print "Hello world". That's a travesty! You don't want to be a programmer associated with that sort of thing.
->
-> -- Brendan Eich in [Coders at work - Reflections on the Craft of Programming](http://codersatwork.com/)
+> Abstração é poderosa. O que eu realmente sou alérgico, e o que eu tive reação nos anos 90, foi todo o COBRA, COM, DCOM e orientação objetos sem noção. Toda 'stratup' unicórnio tinha algo extraordinário que levava 200 mil chamadas de métodos para iniciar e exibir um "Olá mundo". Isso é uma tragédia! Você não quer ser um programador que associa-se a esse tipo de coisa.
+> -- Brendan Eich no [Coders at work - Reflections on the Craft of Programming](http://codersatwork.com/)
 
-Many software developers, and many companies, feel that object-oriented programming is the only reasonable way to develop software today. Any one who argues against object-oriented programming is immediately made conscious of the fact that they are arguing against the "conventional wisdom" of the industry.
+Muitos outros desenvolvedores, e muitas empresas, acham que a orientação a objetos é a única maneira de razoável para desenvolver 'softwares' no atualmente. Qualquer um que argumenta contra a programação orientada a objetos é imediatamente conscientizada do fato de estarem argumentando contra a "sabedoria convencional" da indústria.
 
-On programming blogs and forums, there are a great many people who defend object-oriented programming, and who feel certain that they know what they are talking about, despite the lack of any standard definition!
+Nos blogs e foruns de programação, existem muitas pessoas que defendem a programação orientada a objetos, e que tem certeza de que sabem do que estão falando, apesar da falta de qualquer padrão de definição.
 
-The fact is that so-called object-oriented programming as such often inflicts a heavy burden of unneeded complexity!
+O fato é que a chamada programação orientada a objetos, como tal, frequentemente inflige um fardo pesado de complexidade desnecessária!
 
-As computer scientists and programmers we must learn to set aside prejudices and find the best solution to a given problem.
+Como cientistas computacionais e programadores, devemos aprender a deixar de lado os preconceitos e encontrar a melhor solução para um determinado problema.
 
-Today, one of the main strengths of PHP is its support for both imperative, functional, object-oriented, procedural, and reflective paradigms. PHP is a huge toolbox with lots of different tools that makes it possible to solve many problems in many different ways - **not just one way!**
+Hoje em dia, um dos principais pontos fortes do PHP é o suporte a paradigmas imperativos, funcionais, orientado a objetos, procedural e paradigmas reflexivos. O PHP é uma enorme caixa de ferramentas com muitas ferramentas diferentes que possibilitam resolver muitros problemas de várias maneiras - **não apenas de uma maneira!**
 
-**As soon as we try to force-feed different problems within an application to a single specific programming paradigm, we're not thinking creatively and we're not working efficiently!**
+**Assim que tentá-se forçar a alimentação de diferentes problemas dentro de uma aplicação para o único paradigma de orientação a objetos, não está trabalhando com eficiência!**
 
-## A small history lesson ##
+## Uma pequena lição de história ##
+Uma das inúmeras formas de entender um específico paradigma de programação é olhar como ele evoluiu. Qual foi a razão para esse desenvolvimento? Quais problemas existem com outros paradigmas de programação e do que precisavam de novo para resolver? Era um problema comum no trabalho ou simplesmente academico? E como isso evoluiu desde então?
 
-One of the greatest ways to understand a specific programming paradigm is to look at how it first evolved. What was the reason for its development? What problems existed with other programming paradigms that needed a new way of thinking? Was it a real world problem or simply an academic problem? And how has it since evolved?
+Isso não importa que pessoa X disse ou qual a definição que a pessoa Y desenvolveu, o que importa no contexto do paradigma é a história que o criou.
 
-It doesn't matter what person X says or what definition person Y gives, what matters in the context of paradigms is the history that made them.
-
-> There are two ways of constructing a software design. One way is to make it so simple that there are obviously no deficiencies. And the other way is to make it so complicated that there are no obvious deficiencies.
+> Existem duas formas de construir um 'design' de software. Um das formas é deixa-lo simples para que não aja deficiências. E outra forma é deixa-lo tão complicado que não existem deficiências óbvias.
 >
 > -- [C.A.R. Hoare](https://en.wikiquote.org/wiki/C._A._R._Hoare)
 
-In the past, before the advent of object-oriented programming, around the end of the fifties, much software was developed using programming languages that emphasized unstructured programming, sometimes referred to as first- and second-generation languages. Unstructured programming (or non-structured programming) is historically the earliest programming paradigm. It was heavily criticized for producing "spaghetti" code.
+No passado, antes do advento da programação orientada a objetos, cerca dos anos 50, muitos 'softwares' foram desenvolvidos usando a linguagem de programação que enfatizavam a programação não estruturada, algumas vezes denominada de linguagens de primeira e segunda geração. Programação não estruturada é historicamente o paradigma de programação mais antigo. Foi muito criticado por porduzir código "espaguete".
 
-There are both high- and low-level programming languages that use non-structured programming. These include early versions of BASIC, COBOL, MUMPS, JOSS, FOCAL, TELCOMP, machine-level code, early assembler systems (those without procedural meta operators) and some scripting languages.
+Existem linguagens programação de alto e baixo nível que usam programação não estruturada. Isso inclui versões anteriores do BASIC, COBOL, MUMPS, JOSS, FOCAL, TELCOMP, nível-máquina, novos sistemas assemblers (estas sem meta operadores procedurais) e algumas linguagens de scripts.
 
-A program in a non-structured language usually consists of sequentially ordered commands, or statements, usually one in each line. The lines are usually numbered or may have labels which allows the flow of execution to jump to any line in the program (like with the unpopular GOTO statement).
+Um programa em uma linguagem não estruturada usualmente consiste do sequenciamento ordenado de comandos ou declarados, usualmente um em cada linha. As linhas são usualmente numeradas ou podem ter rótulos que permitem que o fluxo de execução salte para qualquer linha do programa (como na declaração impopular GOTO).
 
 Then, in the sixties, structured programming emerged - mainly due to the famous letter by Edsger W. Dijkstra [Go To statements considered harmful](http://www.u.arizona.edu/~rubinson/copyright_violations/Go_To_Considered_Harmful.html).
 
