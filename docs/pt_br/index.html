@@ -16,7 +16,7 @@
 <a href="https://github.com/unixsheikh/phpthewrongway"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/652c5b9acfaddf3a9c326fa6bde407b87f7be0f4/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6f72616e67655f6666373630302e706e67" alt="Fork me on GitHub" data-canonical-src="/img/github-clone.png"></a>
 <h1>PHP</h1>
 <h2>A maneira errada</h2>
-<div id="date">Última atualização: 2020-05-20</div>
+<div id="date">Última atualização: 2020-06-04</div>
 </div>
 </header>
 <div id="cartoon">
@@ -33,7 +33,7 @@
 <li><a href="#sempre-use-padrões-de-projeto-design-pattern">Sempre use Padrões de Projeto (Design Pattern)</a></li>
 <li><a href="#sempre-use-orientação-a-objetos">Sempre use orientação a objetos</a>
 <ul>
-<li><a href="#a-small-history-lesson">A small history lesson</a></li>
+<li><a href="#uma-pequena-lição-de-história">Uma pequena lição de história</a></li>
 </ul></li>
 <li><a href="#ter-medo-do-código-de-outras-pessoas">Ter medo do código de outras pessoas</a></li>
 <li><a href="#following-the-php-fig-standards-religiously">Following the PHP-FIG standards religiously</a></li>
@@ -134,48 +134,46 @@
 <p><strong>A maneira errada</strong>: Procure um padrão de projeto para resolver um problema. <img src="/img/thumbs-down.png" alt="Thumbs down" /></p>
 <h1 id="sempre-use-orientação-a-objetos">Sempre use orientação a objetos</h1>
 <blockquote>
-<p>The problem with object-oriented languages is they’ve got all this implicit environment that they carry around with them. You wanted a banana but what you got was a gorilla holding the banana and the entire jungle.</p>
-<p>– Joe Armstrong in <a href="http://codersatwork.com/">Coders at work - Reflections on the Craft of Programming</a></p>
+<p>O problema com programação orientação a objetos é que ela possui todo um contexto. Você queria uma banana, mas você acaba recebendo um gorila segurando uma banana e toda a floresta. – Joe Armstrong no <a href="http://codersatwork.com/">Coders at work - Reflections on the Craft of Programming</a></p>
 </blockquote>
 <blockquote>
-<p>Abstraction is powerful. What I’m really allergic to, and what I had a reaction to in the ’90s, was all the CORBA, COM, DCOM, object-oriented nonsense. Every startup of the day had some crazy thing that would take 200.000 method calls to start up and print “Hello world”. That’s a travesty! You don’t want to be a programmer associated with that sort of thing.</p>
-<p>– Brendan Eich in <a href="http://codersatwork.com/">Coders at work - Reflections on the Craft of Programming</a></p>
+<p>Abstração é poderosa. O que eu realmente sou alérgico, e o que eu tive reação nos anos 90, foi todo o COBRA, COM, DCOM e orientação objetos sem noção. Toda ‘stratup’ unicórnio tinha algo extraordinário que levava 200 mil chamadas de métodos para iniciar e exibir um “Olá mundo”. Isso é uma tragédia! Você não quer ser um programador que associa-se a esse tipo de coisa. – Brendan Eich no <a href="http://codersatwork.com/">Coders at work - Reflections on the Craft of Programming</a></p>
 </blockquote>
-<p>Many software developers, and many companies, feel that object-oriented programming is the only reasonable way to develop software today. Any one who argues against object-oriented programming is immediately made conscious of the fact that they are arguing against the “conventional wisdom” of the industry.</p>
-<p>On programming blogs and forums, there are a great many people who defend object-oriented programming, and who feel certain that they know what they are talking about, despite the lack of any standard definition!</p>
-<p>The fact is that so-called object-oriented programming as such often inflicts a heavy burden of unneeded complexity!</p>
-<p>As computer scientists and programmers we must learn to set aside prejudices and find the best solution to a given problem.</p>
-<p>Today, one of the main strengths of PHP is its support for both imperative, functional, object-oriented, procedural, and reflective paradigms. PHP is a huge toolbox with lots of different tools that makes it possible to solve many problems in many different ways - <strong>not just one way!</strong></p>
-<p><strong>As soon as we try to force-feed different problems within an application to a single specific programming paradigm, we’re not thinking creatively and we’re not working efficiently!</strong></p>
-<h2 id="a-small-history-lesson">A small history lesson</h2>
-<p>One of the greatest ways to understand a specific programming paradigm is to look at how it first evolved. What was the reason for its development? What problems existed with other programming paradigms that needed a new way of thinking? Was it a real world problem or simply an academic problem? And how has it since evolved?</p>
-<p>It doesn’t matter what person X says or what definition person Y gives, what matters in the context of paradigms is the history that made them.</p>
+<p>Muitos outros desenvolvedores, e muitas empresas, acham que a orientação a objetos é a única maneira de razoável para desenvolver ‘softwares’ no atualmente. Qualquer um que argumenta contra a programação orientada a objetos é imediatamente conscientizada do fato de estarem argumentando contra a “sabedoria convencional” da indústria.</p>
+<p>Nos blogs e foruns de programação, existem muitas pessoas que defendem a programação orientada a objetos, e que tem certeza de que sabem do que estão falando, apesar da falta de qualquer padrão de definição.</p>
+<p>O fato é que a chamada programação orientada a objetos, como tal, frequentemente inflige um fardo pesado de complexidade desnecessária!</p>
+<p>Como cientistas computacionais e programadores, devemos aprender a deixar de lado os preconceitos e encontrar a melhor solução para um determinado problema.</p>
+<p>Hoje em dia, um dos principais pontos fortes do PHP é o suporte a paradigmas imperativos, funcionais, orientado a objetos, procedural e paradigmas reflexivos. O PHP é uma enorme caixa de ferramentas com muitas ferramentas diferentes que possibilitam resolver muitros problemas de várias maneiras - <strong>não apenas de uma maneira!</strong></p>
+<p><strong>Assim que tentá-se forçar a alimentação de diferentes problemas dentro de uma aplicação para o único paradigma de orientação a objetos, não está trabalhando com eficiência!</strong></p>
+<h2 id="uma-pequena-lição-de-história">Uma pequena lição de história</h2>
+<p>Uma das inúmeras formas de entender um específico paradigma de programação é olhar como ele evoluiu. Qual foi a razão para esse desenvolvimento? Quais problemas existem com outros paradigmas de programação e do que precisavam de novo para resolver? Era um problema comum no trabalho ou simplesmente academico? E como isso evoluiu desde então?</p>
+<p>Isso não importa que pessoa X disse ou qual a definição que a pessoa Y desenvolveu, o que importa no contexto do paradigma é a história que o criou.</p>
 <blockquote>
-<p>There are two ways of constructing a software design. One way is to make it so simple that there are obviously no deficiencies. And the other way is to make it so complicated that there are no obvious deficiencies.</p>
+<p>Existem duas formas de construir um ‘design’ de software. Um das formas é deixa-lo simples para que não aja deficiências. E outra forma é deixa-lo tão complicado que não existem deficiências óbvias.</p>
 <p>– <a href="https://en.wikiquote.org/wiki/C._A._R._Hoare">C.A.R. Hoare</a></p>
 </blockquote>
-<p>In the past, before the advent of object-oriented programming, around the end of the fifties, much software was developed using programming languages that emphasized unstructured programming, sometimes referred to as first- and second-generation languages. Unstructured programming (or non-structured programming) is historically the earliest programming paradigm. It was heavily criticized for producing “spaghetti” code.</p>
-<p>There are both high- and low-level programming languages that use non-structured programming. These include early versions of BASIC, COBOL, MUMPS, JOSS, FOCAL, TELCOMP, machine-level code, early assembler systems (those without procedural meta operators) and some scripting languages.</p>
-<p>A program in a non-structured language usually consists of sequentially ordered commands, or statements, usually one in each line. The lines are usually numbered or may have labels which allows the flow of execution to jump to any line in the program (like with the unpopular GOTO statement).</p>
-<p>Then, in the sixties, structured programming emerged - mainly due to the famous letter by Edsger W. Dijkstra <a href="http://www.u.arizona.edu/~rubinson/copyright_violations/Go_To_Considered_Harmful.html">Go To statements considered harmful</a>.</p>
-<p>Structured programming is a programming paradigm that improves the clarity, quality, and development of software by making use of subroutines, block structures and loops. This is in contrast to using simple jumps such as the GOTO statement.</p>
-<p>Later, procedural programming was derived from structured programming. Procedural programming is based upon the concept of “procedure call”. A “procedure call” is just another name for a “function call”. Procedures are also known as routines, subroutines or methods. A procedure simply contain a series of computational steps to be carried out. Any given procedure might be called at any point during a programs execution, including by other procedures or itself.</p>
-<p>In the beginning all procedures were available to any part of a program as global data. In small programs this didn’t present a problem, but as things got more complicated and as the size of the program grew, small changes to one part of the program greatly effected many other parts.</p>
-<p>Nobody was planning for changes in the program and lots of dependencies existed. A minor change to one procedure would result in a cascade of errors in lots of other procedures that depended on the original code.</p>
-<p>A new technique evolved that allowed data to be divided into separated scopes called “objects”. Only specific procedures belonging to the same scope could access the same data. This is called data hiding or encapsulation. The result was much better organized code.</p>
-<p>In the beginning objects were not called objects, they were just viewed upon as separate scopes. Later when dependencies were reduced and connections between procedures and variables inside these scopes were viewed upon as isolated segments, the result gave birth to the concepts of “objects” and “object-oriented programming”.</p>
-<p>Later, mainly due to the development of Java, certain “buzzwords” arose and “a procedure” or “a function” was no longer called a function, but was renamed “a method” when it resided inside a separate scope. Variables were also no longer called “variables”, but were renamed “attributes” when they resided inside a separate scope.</p>
-<p>So an object is in essence simply a collection of functions and variables now called “methods and attributes”.</p>
-<p>The way methods and attributes are kept isolated inside a separate scope is by the usage of “a class”. A class, once it is instantiated, is called an object.</p>
-<p>Objects can reference each other and by such a reference the methods (functions) inside can “communicate” with each other. Objects can also “inherit” methods from other objects thereby extending such, this is called “inheritance”. It is a way to reuse code and allow independent extensions of the software via public classes and interfaces. The relationships of objects give rise to a hierarchy. Inheritance was invented in 1967 for the programming language <a href="http://en.wikipedia.org/wiki/Simula">Simula 67</a>.</p>
-<p>Objects can also inherit methods from other objects and “override” these with added or changed functionality, this is called “polymorphism”.</p>
-<p>How these different ideas are implemented vary greatly from programming language to programming language.</p>
-<p>Object-oriented programming is about organizing code in another way than before. It is an extension of procedural programming and it is about hiding data (encapsulation) and avoiding a global scope. It is about extending functions by “borrowing” their blueprints without actually affecting the original code (inheritance). And it is about overriding functions without affecting the original code (polymorphism).</p>
+<p>No passado, antes do advento da programação orientada a objetos, cerca dos anos 50, muitos ‘softwares’ foram desenvolvidos usando a linguagem de programação que enfatizavam a programação não estruturada, algumas vezes denominada de linguagens de primeira e segunda geração. Programação não estruturada é historicamente o paradigma de programação mais antigo. Foi muito criticado por porduzir código “espaguete”.</p>
+<p>Existem linguagens programação de alto e baixo nível que usam programação não estruturada. Isso inclui versões anteriores do BASIC, COBOL, MUMPS, JOSS, FOCAL, TELCOMP, nível-máquina, novos sistemas assemblers (estas sem meta operadores procedurais) e algumas linguagens de scripts.</p>
+<p>Um programa em uma linguagem não estruturada usualmente consiste do sequenciamento ordenado de comandos ou declarados, usualmente um em cada linha. As linhas são usualmente numeradas ou podem ter rótulos que permitem que o fluxo de execução salte para qualquer linha do programa (como na declaração impopular GOTO).</p>
+<p>Então, nos anos sessenta, a programação estruturada surgiu - principalmente devido à famosa carta de Edsger W. Dijkstra <a href="http://www.u.arizona.edu/~rubinson/copyright_violations/Go_To_Considered_Harmful.html">Go To statements considered harmful</a>.</p>
+<p>Programação estruturada é um paradigma de programação que melhora a clareza, qualidade e desenvolvimento do software por meio de sub-rotinas, estruturas de blocos e laços de repetições. Isso constrata com o uso de saltos como a declaração GOTO.</p>
+<p>Mais tarde, a programação procedural foi derivada da programação estruturada; Programação procedural é baseada no conceito de “chamada de procedimmento”. Uma chamada de procedimento é apenas um outro nome para chamada de função. Os procedimentos também são chamados de rotinas, subrotinas e métodos. Um procedimento simplesmente contém uma série de etapas computacionais a serem executadas. Qualquer procedimento pode ser chamado a qualquer momento durante a execução do programa, incluindo por outros procedimentos ou a si próprio.</p>
+<p>No começo, todos os procedimentos eram disponibilizados para qualquer parte do programa, como dados globais. Em programas pequenos não apresentava problemas, mas conforme a complexidade do programa aumentava e o programa crescia, pequenas mudanças em uma parte do programa afetavam muitas outras partes.</p>
+<p>Ninguém estava planejando mudanças no programa e muitas dependências existiam. Um pequena alteração em um procedimento resultaria em uma cascata de erros em muitos outros procedimentos que dependiam do código original.</p>
+<p>Uma nova técnica surgiu e permita que os dados fossem divididos entre escopos separados chamados “objetos”. Apenas procedimentos específicos pertencentes ao mesmo escopo poderia acessar os mesmos dados. Isso é chamado de encapsulamento. O resultado foi um código muito mais organizado.</p>
+<p>No começo, os objetos não eram chamados de objetos, eram apenas vistos como escopos separados. Mais tarde, quando as dependências foram reduzidas e as conexões entre procedimentos e variáveis dentro desses escopos foram vistas como segmentos isolados, do resultado nasceu os conceitos de “objetos” e “programação orientada a objetos”.</p>
+<p>Mais tarde, principalmente devido ao desenvolvimento do Java, surgiram certas “palavras-chave” e um “procedimento” (ou “função”, não era mais chamado de função, mas foi renomeado para “método”, quando residia dentro de um escopo separado. As variáveis foram também deixaram de ser “variáveis” e foram renomeadas para “atributos”, quando residia dentro de um escopo separado.</p>
+<p>Então, um objeto é uma coleção de funções e variáveis, que agora se chamam de “métodos” e “atributos”, respectivamente.</p>
+<p>O modo que os métodos e atributos são isolados dentro de um escopo separado é pelo uso de uma “classe”. Uma classe, uma vez instanciada, é chamada de objeto.</p>
+<p>Objetos podem referenciar outros objetos por métodos (funções) internas, podendo comunicar-se entre si. Objetos também podem “herdar” métodos de outros objetos estendendo-os, isso é chamado de “herança”. Isso é uma maneira de reusar código e permitir extensões independentes de <em>software</em> por meio classes e interfaces públicas. O relacionamento dos objetos dão origem a uma hierarquia. Herança foi inventada em 1967 para a linguagem de programação <a href="http://en.wikipedia.org/wiki/Simula">Simula 67</a>.</p>
+<p>Objetos também podem herdar métodos de outros objetos e sobrescrevê-los com funcionalidades adicionais, isso é chamado “polimorfismo”.</p>
+<p>Como essas ideias diferentes são implementadas variam muito de linguagem de programação para linguagem de programação.</p>
+<p>Programação orientada a objetos trata-se de organizar o código de uma maneira diferente das anteriores. É uma extensão da programação procedural e trata-se de ocultar dados (encapsulamento) e evitar o escopo global. Trata-se de estender funções herdando seu escopo sem afetar atualmente o código original (herança). Trata-se de sobrescrever funções sem afetar o código original (polimorfismo).</p>
 <blockquote>
-<p>The object-oriented model makes it easy to build up programs by accretion. What this often means, in practice, is that it provides a structured way to write spaghetti code.</p>
-<p>– Paul Graham in <a href="https://openlibrary.org/works/OL7944696W/ANSI_Common_Lisp">Ansi Common Lisp</a></p>
+<p>O modelo de orientação a objeto torna fácil a criação de programas por acréscimo. O que frequentemente significa, na prática, é o que fornece uma maneira estruturada para código espaguete.</p>
+<p>– Paul Graham em <a href="https://openlibrary.org/works/OL7944696W/ANSI_Common_Lisp">Ansi Common Lisp</a></p>
 </blockquote>
-<p><strong>The wrong way</strong>: Always use object-oriented programming. <img src="/img/thumbs-down.png" alt="Thumbs down" /></p>
+<p><strong>A maneira errada</strong>: Sempre use programação orientada a objetos. <img src="/img/thumbs-down.png" alt="Thumbs down" /></p>
 <h1 id="ter-medo-do-código-de-outras-pessoas">Ter medo do código de outras pessoas</h1>
 <p>Um argumento frequentemente expresso para o uso de um framework é que as pessoas não querem lidar com códigos que foram escritos do zero por outras pessoas.</p>
 <p>Esta é, no entanto, uma mentalidade estranha, encontrada principalmente entre web developers na comunidade PHP, que exala uma falta de profissionalismo e experiência.</p>
