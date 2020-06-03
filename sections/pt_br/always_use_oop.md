@@ -33,36 +33,36 @@ Existem linguagens programação de alto e baixo nível que usam programação n
 
 Um programa em uma linguagem não estruturada usualmente consiste do sequenciamento ordenado de comandos ou declarados, usualmente um em cada linha. As linhas são usualmente numeradas ou podem ter rótulos que permitem que o fluxo de execução salte para qualquer linha do programa (como na declaração impopular GOTO).
 
-Then, in the sixties, structured programming emerged - mainly due to the famous letter by Edsger W. Dijkstra [Go To statements considered harmful](http://www.u.arizona.edu/~rubinson/copyright_violations/Go_To_Considered_Harmful.html).
+Então, nos anos sessenta, a programação estruturada surgiu - principalmente devido à famosa carta de Edsger W. Dijkstra [Go To statements considered harmful](http://www.u.arizona.edu/~rubinson/copyright_violations/Go_To_Considered_Harmful.html).
 
-Structured programming is a programming paradigm that improves the clarity, quality, and development of software by making use of subroutines, block structures and loops. This is in contrast to using simple jumps such as the GOTO statement.
+Programação estruturada é um paradigma de programação que melhora a clareza, qualidade e desenvolvimento do software por meio de sub-rotinas, estruturas de blocos e laços de repetições. Isso constrata com o uso de saltos como a declaração GOTO.
 
-Later, procedural programming was derived from structured programming. Procedural programming is based upon the concept of "procedure call". A "procedure call" is just another name for a "function call". Procedures are also known as routines, subroutines or methods. A procedure simply contain a series of computational steps to be carried out. Any given procedure might be called at any point during a programs execution, including by other procedures or itself.
+Mais tarde, a programação procedural foi derivada da programação estruturada; Programação procedural é baseada no conceito de "chamada de procedimmento". Uma chamada de procedimento é apenas um outro nome para chamada de função. Os procedimentos também são chamados de rotinas, subrotinas e métodos. Um procedimento simplesmente contém uma série de etapas computacionais a serem executadas. Qualquer procedimento pode ser chamado a qualquer momento durante a execução do programa, incluindo por outros procedimentos ou a si próprio.
 
-In the beginning all procedures were available to any part of a program as global data. In small programs this didn't present a problem, but as things got more complicated and as the size of the program grew, small changes to one part of the program greatly effected many other parts.
+No começo, todos os procedimentos eram disponibilizados para qualquer parte do programa, como dados globais. Em programas pequenos não apresentava problemas, mas conforme a complexidade do programa aumentava e o programa crescia, pequenas mudanças em uma parte do programa afetavam muitas outras partes.
 
-Nobody was planning for changes in the program and lots of dependencies existed. A minor change to one procedure would result in a cascade of errors in lots of other procedures that depended on the original code.
+Ninguém estava planejando mudanças no programa e muitas dependências existiam. Um pequena alteração em um procedimento resultaria em uma cascata de erros em muitos outros procedimentos que dependiam do código original.
 
-A new technique evolved that allowed data to be divided into separated scopes called "objects". Only specific procedures belonging to the same scope could access the same data. This is called data hiding or encapsulation. The result was much better organized code.
+Uma nova técnica surgiu e permita que os dados fossem divididos entre escopos separados chamados "objetos". Apenas procedimentos específicos pertencentes ao mesmo escopo poderia acessar os mesmos dados. Isso é chamado de encapsulamento. O resultado foi um código muito mais organizado.
 
-In the beginning objects were not called objects, they were just viewed upon as separate scopes. Later when dependencies were reduced and connections between procedures and variables inside these scopes were viewed upon as isolated segments, the result gave birth to the concepts of "objects" and "object-oriented programming".
+No começo, os objetos não eram chamados de objetos, eram apenas vistos como escopos separados. Mais tarde, quando as dependências foram reduzidas e as conexões entre procedimentos e variáveis dentro desses escopos foram vistas como segmentos isolados, do resultado nasceu os conceitos de "objetos" e "programação orientada a objetos".
 
-Later, mainly due to the development of Java, certain "buzzwords" arose and "a procedure" or "a function" was no longer called a function, but was renamed "a method" when it resided inside a separate scope. Variables were also no longer called "variables", but were renamed "attributes" when they resided inside a separate scope.
+Mais tarde, principalmente devido ao desenvolvimento do Java, surgiram certas "palavras-chave" e um "procedimento" (ou "função", não era mais chamado de função, mas foi renomeado para "método", quando residia dentro de um escopo separado. As variáveis foram também deixaram de ser "variáveis" e foram renomeadas para "atributos", quando residia dentro de um escopo separado.
 
-So an object is in essence simply a collection of functions and variables now called "methods and attributes".
+Então, um objeto é uma coleção de funções e variáveis, que agora se chamam de "métodos" e "atributos", respectivamente.
 
-The way methods and attributes are kept isolated inside a separate scope is by the usage of "a class". A class, once it is instantiated, is called an object.
+O modo que os métodos e atributos são isolados dentro de um escopo separado é pelo uso de uma "classe". Uma classe, uma vez instanciada, é chamada de objeto.
 
-Objects can reference each other and by such a reference the methods (functions) inside can "communicate" with each other. Objects can also "inherit" methods from other objects thereby extending such, this is called "inheritance".  It is a way to reuse code and allow independent extensions of the software via public classes and interfaces. The relationships of objects give rise to a hierarchy. Inheritance was invented in 1967 for the programming language [Simula 67](http://en.wikipedia.org/wiki/Simula).
+Objetos podem referenciar outros objetos por métodos (funções) internas, podendo comunicar-se entre si. Objetos também podem "herdar" métodos de outros objetos estendendo-os, isso é chamado de "herança". Isso é uma maneira de reusar código e permitir extensões independentes de _software_ por meio classes e interfaces públicas. O relacionamento dos objetos dão origem a uma hierarquia. Herança foi inventada em 1967 para a linguagem de programação [Simula 67](http://en.wikipedia.org/wiki/Simula).
 
-Objects can also inherit methods from other objects and "override" these with added or changed functionality, this is called "polymorphism".
+Objetos também podem herdar métodos de outros objetos e sobrescrevê-los com funcionalidades adicionais, isso é chamado "polimorfismo".
 
-How these different ideas are implemented vary greatly from programming language to programming language.
+Como essas ideias diferentes são implementadas variam muito de linguagem de programação para linguagem de programação.
 
-Object-oriented programming is about organizing code in another way than before. It is an extension of procedural programming and it is about hiding data (encapsulation) and avoiding a global scope. It is about extending functions by "borrowing" their blueprints without actually affecting the original code (inheritance). And it is about overriding functions without affecting the original code (polymorphism).
+Programação orientada a objetos trata-se de organizar o código de uma maneira diferente das anteriores. É uma extensão da programação procedural e trata-se de ocultar dados (encapsulamento) e evitar o escopo global. Trata-se de estender funções herdando seu escopo sem afetar atualmente o código original (herança). Trata-se de sobrescrever funções sem afetar o código original (polimorfismo).
 
-> The object-oriented model makes it easy to build up programs by accretion. What this often means, in practice, is that it provides a structured way to write spaghetti code.
+> O modelo de orientação a objeto torna fácil a criação de programas por acréscimo. O que frequentemente significa, na prática, é o que fornece uma maneira estruturada para código espaguete.
 >
-> -- Paul Graham in [Ansi Common Lisp](https://openlibrary.org/works/OL7944696W/ANSI_Common_Lisp)
+> -- Paul Graham em [Ansi Common Lisp](https://openlibrary.org/works/OL7944696W/ANSI_Common_Lisp)
 
-**The wrong way**: Always use object-oriented programming. ![Thumbs down](/img/thumbs-down.png)
+**A maneira errada**: Sempre use programação orientada a objetos. ![Thumbs down](/img/thumbs-down.png)
