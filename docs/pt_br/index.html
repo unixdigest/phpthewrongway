@@ -16,7 +16,7 @@
 <a href="https://github.com/unixsheikh/phpthewrongway"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/652c5b9acfaddf3a9c326fa6bde407b87f7be0f4/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6f72616e67655f6666373630302e706e67" alt="Fork me on GitHub" data-canonical-src="/img/github-clone.png"></a>
 <h1>PHP</h1>
 <h2>A maneira errada</h2>
-<div id="date">Última atualização: 2020-06-04</div>
+<div id="date">Última atualização: 2020-08-06</div>
 </div>
 </header>
 <div id="cartoon">
@@ -29,8 +29,8 @@
 <li><a href="#traduções">Traduções</a></li>
 </ul></li>
 <li><a href="#o-perigo-do-extremismo">O perigo do extremismo</a></li>
-<li><a href="#sempre-use-um-framework">Sempre use um ‘framework’</a></li>
-<li><a href="#sempre-use-padrões-de-projeto-design-pattern">Sempre use Padrões de Projeto (Design Pattern)</a></li>
+<li><a href="#sempre-use-um-framework">Sempre use um framework</a></li>
+<li><a href="#sempre-use-padrões-de-projeto-design-patterns">Sempre use Padrões de Projeto (Design Patterns)</a></li>
 <li><a href="#sempre-use-orientação-a-objetos">Sempre use orientação a objetos</a>
 <ul>
 <li><a href="#uma-pequena-lição-de-história">Uma pequena lição de história</a></li>
@@ -67,52 +67,51 @@
 <h1 id="o-perigo-do-extremismo">O perigo do extremismo</h1>
 <p>Um problema com regras e diretrizes na programação é que elas geralmente só servem a um propósito em um contexto específico. Saindo desse contexto, uma boa regra pode se tornar uma regra horrível. De fato, toda boa regra se torna ruim quando levada ao extremo.</p>
 <p>Isso é importante entender porque muitos princípios e regras do desenvolvimento de software desenvolvidas ao longo do tempo e apresentadas por diferentes pessoas frequentemente se tornam mal utilizadas nas mãos de extremistas.</p>
-<p>Experience has taught that misuse of general rules and guidelines always results in complication, lack of security, error-prone results, and in some cases complete and utter disaster.</p>
 <p>A experiência ensinou que o uso indevido de regras e diretrizes gerais sempre resulta em complicações, falta de segurança, resultados propensos a erros e, em alguns casos, desastre total e completo.</p>
 <p>O <a href="https://en.wikipedia.org/wiki/KISS_principle">princípio KISS</a>, que é um acrônimo para “Keep It Simple, Stupid”, é um bom e extremamente sábio princípio que geralmente é visto por pessoas experientes como um conselho muito bom a seguir, mas mesmo este grande princípio torna-se um perigo para um projeto, se levado ao extremo. Existe tal coisa como “muito simples” resultando em falta de funcionalidade necessária.</p>
 <p><strong>A maneira errada</strong>: Aplicação religiosa de regras e diretrizes. <img src="/img/thumbs-down.png" alt="Thumbs down" /></p>
-<h1 id="sempre-use-um-framework">Sempre use um ‘framework’</h1>
+<h1 id="sempre-use-um-framework">Sempre use um framework</h1>
 <blockquote>
-<p>Todas as estruturas de uso geral (‘frameworks’) são uma merda!</p>
+<p>Todos os frameworks PHP de uso geral são uma merda!</p>
 <p>– <a href="https://www.youtube.com/watch?v=DuB6UjEsY_Y">Rasmus Lerdorf</a></p>
 </blockquote>
-<p>Na comunidade PHP uma tendência muito ruim se tornou um padrão para o desenvolvimento de aplicações ‘Web’, e isso é pelo uso de um ‘framework’ popular.</p>
-<p>Essa tendência surgiu e se tornou popular, não porque de alguma forma melhore o resultado do processo de desenvolvimento ou é a coisa certa a se fazer do ponto de vista da tecnologia e da arquitetura. Essa tendência se tornou popular porque alguns dos desenvolvedores que trabalham com ‘frameworks’ conseguiram espalhar para um grande público a polêmica opinião contra a programação do zero, usando frases como “Não reinvente a roda!” e “Não faça você mesmo, os outros são mais hábeis que você”.</p>
-<p>Muitos dos programadores de hoje ignoram completamente os princípios fundamentais da programação e passam muito tempo fantasiando novas camadas de complexidade, de modo a parecerem mais inteligentes, mais legais e mais aceitáveis ​​em seu meio.</p>
+<p>Na comunidade PHP uma tendência muito ruim se tornou um padrão no desenvolvimento de aplicações web que é o uso de frameworks populares de uso geral.</p>
+<p>Essa tendência surgiu e se tornou popular, não porque de alguma forma melhore o resultado do processo de desenvolvimento ou é a coisa certa a se fazer do ponto de vista da tecnologia e da arquitetura. Essa tendência se tornou popular porque alguns dos desenvolvedores que trabalham com frameworks conseguiram espalhar para um grande público a polêmica opinião contra a programação do zero, usando frases como “Não reinvente a roda!” e “Não faça você mesmo, os outros são mais hábeis que você”.</p>
+<p>Muitos dos programadores de hoje ignoram completamente os princípios fundamentais da programação e passam muito tempo fantasiando novas camadas de complexidade, de modo a parecerem mais inteligentes, mais legais e mais aceitáveis em seu meio.</p>
 <p>Essas pessoas parecem estar apaixonadas pelo pensamento de fazer com que outras sigam a sua “maneira de fazer as coisas”, tornando-se algum líder da comunidade PHP e fazendo com que outras pessoas usem suas mais recentes ferramentas de código-fonte “modernas”, que esquecem de garantir que os conselhos que estão dando são sólidos.</p>
-<p>Nessa indústria de ‘software’ você pode comparar uma casa pré-construída com um ‘framework’. Construir um ‘software’ usando um ‘framework’ faz de você um desenvolvedor ou programador que monta uma casa já pronta, um carpinteiro.</p>
-<p>Nesse ‘site’, nós diferenciamos ‘frameworks’ de bibliotecas dessa maneira:</p>
+<p>Nessa indústria de software você pode comparar uma casa pré-construída com um framework. Construir um software usando um framework faz de você um desenvolvedor ou programador que monta uma casa já pronta, um carpinteiro.</p>
+<p>Nesse site, nós diferenciamos frameworks de bibliotecas dessa maneira:</p>
 <ul>
 <li>Uma biblioteca é considerada uma coleção de códigos reutilizáveis, como a biblioteca padrão C, ou a biblioteca padrão Go. Consiste no código que você facilmente integra no seu projeto sem impor nenhuma limitação ou restrição. Consiste em pequenos pedaços de código com uma funcionalidade específica.</li>
-<li>Um ‘framework’ não é uma coleção de códigos reutilizáveis: você não pode simplesmente pegar um pedaço de código do ‘framework’ e integrar dentro do seu projeto. Um ‘framework’ é um sistema que ajuda você a construir um ‘software’, mas, ao mesmo tempo te força nas limitações e restrições do prórprio ‘framework’. O ‘framework’ tem muitas funcionalidades que se interdependem. Um pedaço não pode trabalhar sem outro.</li>
+<li>Um framework não é uma coleção de códigos reutilizáveis: você não pode simplesmente pegar um pedaço de código do framework e integrar dentro do seu projeto. Um framework é um sistema que ajuda você a construir um software, mas, ao mesmo tempo te força nas limitações e restrições do prórprio framework. O framework tem muitas funcionalidades que se interdependem. Um pedaço não pode trabalhar sem outro.</li>
 </ul>
-<p>No mundo do Python e Ruby, construir um ‘site’ do zero é cansativo, porque nem o Python e nem o Ruby foi originado para criação de ‘sites’. Como resultado, ‘frameworks’ como o <a href="https://en.wikipedia.org/wiki/Django_%28web_framework%29">Django</a> e o <a href="https://en.wikipedia.org/wiki/Ruby_on_Rails">Ruby on Rails</a> rapidamente se tornaram porpulares entre os desenvolvedores de ‘sites’ dessas linguagens.</p>
-<p>O PHP, no entanto foi criado desde o início por Rasmus Lerdorf como um conjunto de ferramentas escritas em C que permitiam desenvolver de forma fácil e rápida um HTML dinâmico. Como tal, PHP era, e ainda é, <strong>um ‘framework’ por si só</strong>.</p>
-<p>O PHP evoluiu bastante desde então, e hoje o PHP pode ser para mais do que construir ‘sites’, mas olhar para o PHP como um ‘framework’ não é errado. PHP é por natureza uma camada de abstração para desenvolvimento de aplicações ‘web’ escritos inteiramente em C procedural.</p>
+<p>No mundo do Python e Ruby, construir um site do zero é cansativo, porque nem o Python e nem o Ruby foi originado para criação de sites. Como resultado, frameworks como o <a href="https://en.wikipedia.org/wiki/Django_%28web_framework%29">Django</a> e o <a href="https://en.wikipedia.org/wiki/Ruby_on_Rails">Ruby on Rails</a> rapidamente se tornaram porpulares entre os desenvolvedores de sites dessas linguagens.</p>
+<p>O PHP, no entanto foi criado desde o início por Rasmus Lerdorf como um conjunto de ferramentas escritas em C que permitiam desenvolver de forma fácil e rápida um HTML dinâmico. Como tal, PHP era, e ainda é, <strong>um framework por si só</strong>.</p>
+<p>O PHP evoluiu bastante desde então, e hoje o PHP pode ser usado para mais do que construir sites, mas olhar para o PHP como um tipo de framework não é errado. PHP é por natureza uma camada de abstração para desenvolvimento de aplicações web escritos inteiramente em C procedural.</p>
 <p>Usar uma biblioteca dentro do seu projeto é normal. O próprio PHP vem com um conjunto de bibliotecas que você pode usar para estender para seu código. O PDO, por exemplo, é uma leve biblioteca que fornece uma interface consistente para conectar ao banco de dados pelo PHP.</p>
-<p>Usar um ‘framework’ por cima do PHP é outra coisa.</p>
-<p>Quando você usa um ‘framework’ no PHP, você adiciona uma camada de abstração em cima de outra camada de abstração, uma que já foi colocada para você no início. Adicionada a segunda camada de abstração, ou seja, o ‘framework’ pode simplesmente servir para organizar o seu código em um conjunto de padrões pré-fixados, ou pode adicionar ainda mais complexidade entrelaçando centenas, ou até milhares de classes e métodos dentro de um pesadelo de dependências. De qualquer maneira você está adicionando camadas de complexidade para seu código que não são necessárias.</p>
+<p>Usar um framework por cima do PHP é outra coisa.</p>
+<p>Quando você usa um framework no PHP, você adiciona uma camada de abstração em cima de outra camada de abstração, uma que já foi colocada para você no início. Adicionada a segunda camada de abstração, ou seja, o framework pode simplesmente servir para organizar o seu código em um conjunto de padrões pré-fixados, ou pode adicionar ainda mais complexidade entrelaçando centenas, ou até milhares de classes e métodos dentro de um pesadelo de dependências. De qualquer maneira você está adicionando camadas de complexidade para seu código que não são necessárias.</p>
 <p>Toda a experiência começa com a interface. A experiência da interface é o resultado da tecnologia subjacente e da quantidade de camadas de abstração. Quanto mais abstração você usa, menos eficiente a interface se torna e mais suscetível a erros a aplicação se torna. Quanto maior a abstração, mais detalhes e eficiência são perdidos.</p>
 <p>Entenda isso claramente: <strong>O número ideal de linhas de código em qualquer projeto é o mínimo possível, ao mesmo tempo que é o mais claro e legível possível!</strong></p>
 <blockquote>
-<p>O que todo mundo não precisa é de um ‘framework’ genérico. Ninguém tem um problema genérico, todo mundo tem um problema muito específico que está tentando resolver.</p>
+<p>O que todo mundo não precisa é de um framework genérico. Ninguém tem um problema genérico, todo mundo tem um problema muito específico que está tentando resolver.</p>
 <p>– <a href="https://www.youtube.com/watch?v=anr7DQnMMs0">Rasmus Lerdorf</a></p>
 </blockquote>
-<p>Algumas empresas começaram a ouvir o borborinho sobre os ‘frameworks’ PHP e elas começaram seus projetos com esses ‘frameworks’ genéricos só para ver esses projetos acabarem em um desastre. Eles não apenas descobriram que um ‘framework’ genérico era muito ruim para resolver suas necessidades muito específicas, mas eles eram extremamente lentos em fazê-los. Era impossível escalar, e como resultado, eles começaram a mexer no ‘framework’ a parte, numa tentativa desesperada de retirar todas as coisas que realmente não precisavam.</p>
+<p>Algumas empresas começaram a ouvir o borborinho sobre os frameworks PHP e iniciaram seus próximos projetos com esses frameworks genéricos só para ver esses projetos acabarem em um desastre. Eles não apenas descobriram que um framework genérico era muito ruim para resolver suas necessidades muito específicas, mas também eram extremamente lentos em fazê-los. Era impossível escalar, e como resultado, eles começaram a mexer no framework a parte, numa tentativa desesperada de retirar todas as coisas que realmente não precisavam.</p>
 <p>Sempre use a abordagem pragmática:</p>
 <blockquote>
-<p>Ação ou política ditada pela consideração das consequências práticas imediatas ao invés de pôr teoria ou dogma.</p>
+<p>Ação ou política ditada pela consideração das conseqüências práticas imediatas, e não pela teoria ou dogma.</p>
 <p>– Collins English Dictionary, Complete and Unabridged, 12th Edition 2014</p>
 </blockquote>
-<p><strong>A maneira errada:</strong> Sempre use um ‘framework’ em cima do PHP. <img src="/img/thumbs-down.png" alt="Thumbs down" /></p>
-<h1 id="sempre-use-padrões-de-projeto-design-pattern">Sempre use Padrões de Projeto (Design Pattern)</h1>
+<p><strong>A maneira errada:</strong> Sempre use um framework em cima do PHP. <img src="/img/thumbs-down.png" alt="Thumbs down" /></p>
+<h1 id="sempre-use-padrões-de-projeto-design-patterns">Sempre use Padrões de Projeto (Design Patterns)</h1>
 <blockquote>
-<p>Tenho uma grande alergia aos Padrões de Projeto (Design Pattern). Peter Norvig, quando estava na Harlequin, ele escreveu esse artigo sobre como os padrões de projetos são apenas falhas nas suas linguagens de programação. Pegue uma linguagem de programação melhor. Ele estava absolutamente certo. Adorando padrões de e pensando “Oh! Vou usar o padrão X.”</p>
+<p>Tenho uma grande alergia aos Padrões de Projeto (Design Patterns). Peter Norvig, quando estava na Harlequin, escreveu esse artigo sobre como os padrões de projetos são apenas falhas nas suas linguagens de programação. Pegue uma linguagem de programação melhor. Ele estava absolutamente certo. Adorando padrões e pensando “Oh! Vou usar o padrão X.”</p>
 </blockquote>
 <blockquote>
 <p>– Brendan Eich em <a href="http://codersatwork.com/">Coders at work - Reflections on the Craft of Programming</a></p>
 </blockquote>
-<p>Na engenharia de ‘software’, um padrão de projeto é uma solução reutilizável para um problema no ‘design’ de ‘software’. Um padrão de projeto não é um ‘design’ acabado que pode ser transformado diretamente em código. É uma descrição ou uma ideia de como solucionar um problema que pode vir a aparecer em muitas situações diferentes. Orientação a Objetos tipicamente demonstra relações e interações entre classes e objetos, sem especificar a aplicação final destes que estão envolvidos.</p>
+<p>Na engenharia de software, um padrão de projeto é uma solução reutilizável para um problema no design de software. Um padrão de projeto não é um design acabado que pode ser transformado diretamente em código. É uma descrição ou uma ideia de como solucionar um problema que pode vir a aparecer em muitas situações diferentes. Orientação a Objetos tipicamente demonstra relações e interações entre classes e objetos, sem especificar a aplicação final destes que estão envolvidos.</p>
 <p>O PHP suporta paradigmas imperativos, funcionais, orientados a objetos, procedural e paradigmas reflexivos. O PHP é uma enorme caixa de ferramentas que faz o possível para solucionar muitos problemas de maneiras diferentes - não de um único jeito.</p>
 <p>O PHP disponibiliza liberdade, soluções rápidas e escaláveis, e muitas outras maneiras diferentes de lidar com os problemas.</p>
 <p>Quando tenta melhorar a si mesmo, e, neste caso, mais especificamente o código, às vezes fica-se presos a filosofia de um padrão ou ideia e tende-se a esquecer das situações que possuem suas próprias particularidades.</p>
