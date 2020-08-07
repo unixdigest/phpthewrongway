@@ -1,25 +1,25 @@
-# Following the PHP-FIG standards religiously #
+# Siga os padrões PHP-FIG de maneira religiosa #
 
-The FIG stands for "Framework Interoperability Group".
+O acrônimo FIG significa "Framework Interoperability Group" (Grupo de Interoperabilidade de Framework).
 
-The [PHP-FIG](http://www.php-fig.org/) was created by a number of framework developers at php|tek in 2009. Since then various other members have applied and been voted in, increasing the size of the group from the first 5 to over 20.
+O [PHP-FIG](http://www.php-fig.org/) foi criado por alguns desenvolvedores de framework na conferência php|tek em 2009. Desde então vários outros membros foram aceitos, aumentando o tamanho do grupo de 5 para mais de 20.
 
-A lot of controversy exists regarding the PHP-FIG. Some people consider the PHP-FIG the best thing that has happened to the PHP community since PHP itself while others considers the group as something best to be forgotten.
+Muita controvérsia existe a respeito do PHP-FIG. Algumas pessoas consideram o PHP-FIG a melhor coisa que aconteceu para a comunidade PHP desde o PHP em si, enquanto outros consideram o grupo como melhor ser esquecido.
 
-One of the problems with PHP-FIG is that it presents itself like this in their [FAQ](http://www.php-fig.org/faqs/):
+Um dos problemas do PHP-FIG é que ele se apresenta dessa forma no seu [FAQ](http://www.php-fig.org/faqs/):
 
-> The idea behind the group is for project representatives to talk about the commonalities between our projects and find ways we can work together. Our main audience is each other, but we’re very aware that the rest of the PHP community is watching. If other folks want to adopt what we’re doing they are welcome to do so, but that is not the aim. Nobody in the group wants to tell you, as a programmer, how to build your application.
+> A idéia por trás do grupo é que representantes de projetos falem sobre os pontos em comum entre nossos projetos e encontrem maneiras de trabalharmos juntos. Nossa principal audiência somos nós mesmos, mas estamos muito cientes que o resto da comunidade PHP está acompanhando. Se outras pessoas quiserem adotar o que estamos fazendo eles serão bem vindos, mas esse não é o objetivo. Ninguém no grupo quer ensinar você como construir sua aplicação.
 
-However, when we view the work of several members of the group, we can clearly see that the objective is quite contrary to the above statement. These members work tirelessly in an attempt to make PHP-FIG become an accepted "PHP standards group", **which also was the original name of the group**. They do this by classifying the work of the PHP-FIG as "Modern PHP" in their books, on their websites, blog-posts, forums, etc., and by classifying other ways as backwards.
+Entretando, quando vemos o trabalho de vários membros do grupo, podemos ver claramente que o objetivo é exatamente o contrário do que foi dito acima. Estes membros trabalham incansavelmente na tentativa de fazer o PHP-FIG se tornar um padrão PHP aceito ("PHP standards group"), **que aliás era o nome original do grupo**. Eles tentam isso classificando o trabalho do PHP-FIG como "PHP moderno" em seus livros, em seus sites, em seus blogs, fóruns, etc., e classificando as outras formas como antiquadas.
 
-One of the problems with the PHP-FIG is that even though many frameworks and Open Source projects has adopted several of their standards, these standards mainly deal with problems from a "framework perspective", which renders them pretty unusable in many real-life industry situations.
+Um dos problemas do PHP-FIG é que mesmo que muitos projetos de frameworks de código aberto adotem vários de seus padrões, esses padrões lidam com problemas "da perspectiva do framework", que os torna inúteis em várias situações da vida real.
 
-Many people develop software for the industry that has to be extremely efficient, secure, and cost-effective, software that customers are willing to buy and use. They cannot be bothered with standards that has to conform to the needs of framework fanatics. If they tried to be it would be a disaster for business.
+Muitas pessoas desenvolvem softwares para o comércio em geral que devem ser extremamente eficiêntes, seguros, e com bom custo-benefício, softwares que clientes querem comprar e usar. Eles não precisam se incomodar com padrões para atender as necessidades de fanáticos por frameworks. Se eles tentassem seria um desastre para os negócios.
 
-If some kind of standards group needs to be created it has to reflect the interests of the entire PHP community, not just framework and Open Source CMS project developers. It has to be represented by the developers of the PHP programming language itself and it has to be represented by a much larger membership with the right to vote.
+Se algum tipo de grupo de padrõres precisa ser criado ele tem que refletir os interesses da comunidade PHP como um todo, não apenas desenvolvedores de frameworks de código aberto e sistemas de CMS. O grupo terá que ser representado por desenvolvedodres da linguagem PHP e também deverá ter um número maior de membros com o direito de votar.
 
-If you choose to adopt the standards developed by the PHP-FIG, you have to understand that some of these standards - such as the autoloader standards PSR-0 and PSR-4 and several other standards - has a direct effect upon how you code your software.
+Se você escolher adotar os padrões propostos pelo PHP-FIG, você tem que entender que alguns dos padrões - como o de auto-carregamento (autoloader) PSR-0 e PSR-4, entre outros - tem um efeito direto em como você desenvolve seu software.
 
-Many industries demand highly scalable, run-time critical, and cost-effective software that simply cannot be developed using these standards of the PHP-FIG.
+Muitos negócios requerem softwares com alta escalabilidade, sistemas críticos de tempo real, e com bom custo-benefício que simplesmente não podem ser desenvolvidos utilizando estes padrões do PHP-FIG.
 
-**The wrong way**: Following the PHP-FIG religiously. ![Thumbs down](/img/thumbs-down.png)
+**A maneira errada**: Seguir o PHP-FIG de maneira religiosa. ![Thumbs down](/img/thumbs-down.png)
