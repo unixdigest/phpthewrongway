@@ -16,7 +16,7 @@
 <a href="https://github.com/unixsheikh/phpthewrongway"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/652c5b9acfaddf3a9c326fa6bde407b87f7be0f4/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6f72616e67655f6666373630302e706e67" alt="Fork me on GitHub" data-canonical-src="/img/github-clone.png"></a>
 <h1>PHP</h1>
 <h2>A maneira errada</h2>
-<div id="date">Última atualização: 2020-08-06</div>
+<div id="date">Última atualização: 2020-08-07</div>
 </div>
 </header>
 <div id="cartoon">
@@ -36,7 +36,7 @@
 <li><a href="#uma-pequena-lição-de-história">Uma pequena lição de história</a></li>
 </ul></li>
 <li><a href="#ter-medo-do-código-de-outras-pessoas">Ter medo do código de outras pessoas</a></li>
-<li><a href="#following-the-php-fig-standards-religiously">Following the PHP-FIG standards religiously</a></li>
+<li><a href="#siga-os-padrões-php-fig-de-maneira-religiosa">Siga os padrões PHP-FIG de maneira religiosa</a></li>
 <li><a href="#negligenciar-a-segurança">Negligenciar a segurança</a>
 <ul>
 <li><a href="#seguro-por-padrão">Seguro por padrão</a></li>
@@ -193,21 +193,21 @@
 <p>E com certeza existe código spagetti horrível, mas ninguém produz um código horrível de propósito. Às vezes isso é resultado da falta de experiência, muitas vezes é culpa do cliente porque ele altera as especificações várias vezes no meio do desenvolvimento, em qualquer um dos dois casos, mesmo que um framework seja usado, o resultado ainda seria código spagetti, e não importa quanto do paradigma orientado a objeto fosse usado, o resultado ainda seria código spagetti.</p>
 <p>Como pessoas desenvolvedoras, tentamos evitar essas situações, mas <strong>isso é normal</strong>, isso é <strong>a arte da programação</strong>, isso é parte do que significa <strong>ser uma pessoa que programa</strong>!</p>
 <p><strong>O caminho errado</strong>: Ter medo do código de outras pessoas. <img src="/img/thumbs-down.png" alt="Thumbs down" /></p>
-<h1 id="following-the-php-fig-standards-religiously">Following the PHP-FIG standards religiously</h1>
-<p>The FIG stands for “Framework Interoperability Group”.</p>
-<p>The <a href="http://www.php-fig.org/">PHP-FIG</a> was created by a number of framework developers at php|tek in 2009. Since then various other members have applied and been voted in, increasing the size of the group from the first 5 to over 20.</p>
-<p>A lot of controversy exists regarding the PHP-FIG. Some people consider the PHP-FIG the best thing that has happened to the PHP community since PHP itself while others considers the group as something best to be forgotten.</p>
-<p>One of the problems with PHP-FIG is that it presents itself like this in their <a href="http://www.php-fig.org/faqs/">FAQ</a>:</p>
+<h1 id="siga-os-padrões-php-fig-de-maneira-religiosa">Siga os padrões PHP-FIG de maneira religiosa</h1>
+<p>O acrônimo FIG significa “Framework Interoperability Group” (Grupo de Interoperabilidade de Framework).</p>
+<p>O <a href="http://www.php-fig.org/">PHP-FIG</a> foi criado por alguns desenvolvedores de framework na conferência php|tek em 2009. Desde então vários outros membros foram aceitos, aumentando o tamanho do grupo de 5 para mais de 20.</p>
+<p>Muita controvérsia existe a respeito do PHP-FIG. Algumas pessoas consideram o PHP-FIG a melhor coisa que aconteceu para a comunidade PHP desde o PHP em si, enquanto outros consideram o grupo como melhor ser esquecido.</p>
+<p>Um dos problemas do PHP-FIG é que ele se apresenta dessa forma no seu <a href="http://www.php-fig.org/faqs/">FAQ</a>:</p>
 <blockquote>
-<p>The idea behind the group is for project representatives to talk about the commonalities between our projects and find ways we can work together. Our main audience is each other, but we’re very aware that the rest of the PHP community is watching. If other folks want to adopt what we’re doing they are welcome to do so, but that is not the aim. Nobody in the group wants to tell you, as a programmer, how to build your application.</p>
+<p>A idéia por trás do grupo é que representantes de projetos falem sobre os pontos em comum entre nossos projetos e encontrem maneiras de trabalharmos juntos. Nossa principal audiência somos nós mesmos, mas estamos muito cientes que o resto da comunidade PHP está acompanhando. Se outras pessoas quiserem adotar o que estamos fazendo eles serão bem vindos, mas esse não é o objetivo. Ninguém no grupo quer ensinar você como construir sua aplicação.</p>
 </blockquote>
-<p>However, when we view the work of several members of the group, we can clearly see that the objective is quite contrary to the above statement. These members work tirelessly in an attempt to make PHP-FIG become an accepted “PHP standards group”, <strong>which also was the original name of the group</strong>. They do this by classifying the work of the PHP-FIG as “Modern PHP” in their books, on their websites, blog-posts, forums, etc., and by classifying other ways as backwards.</p>
-<p>One of the problems with the PHP-FIG is that even though many frameworks and Open Source projects has adopted several of their standards, these standards mainly deal with problems from a “framework perspective”, which renders them pretty unusable in many real-life industry situations.</p>
-<p>Many people develop software for the industry that has to be extremely efficient, secure, and cost-effective, software that customers are willing to buy and use. They cannot be bothered with standards that has to conform to the needs of framework fanatics. If they tried to be it would be a disaster for business.</p>
-<p>If some kind of standards group needs to be created it has to reflect the interests of the entire PHP community, not just framework and Open Source CMS project developers. It has to be represented by the developers of the PHP programming language itself and it has to be represented by a much larger membership with the right to vote.</p>
-<p>If you choose to adopt the standards developed by the PHP-FIG, you have to understand that some of these standards - such as the autoloader standards PSR-0 and PSR-4 and several other standards - has a direct effect upon how you code your software.</p>
-<p>Many industries demand highly scalable, run-time critical, and cost-effective software that simply cannot be developed using these standards of the PHP-FIG.</p>
-<p><strong>The wrong way</strong>: Following the PHP-FIG religiously. <img src="/img/thumbs-down.png" alt="Thumbs down" /></p>
+<p>Entretando, quando vemos o trabalho de vários membros do grupo, podemos ver claramente que o objetivo é exatamente o contrário do que foi dito acima. Estes membros trabalham incansavelmente na tentativa de fazer o PHP-FIG se tornar um padrão PHP aceito (“PHP standards group”), <strong>que aliás era o nome original do grupo</strong>. Eles tentam isso classificando o trabalho do PHP-FIG como “PHP moderno” em seus livros, em seus sites, em seus blogs, fóruns, etc., e classificando as outras formas como antiquadas.</p>
+<p>Um dos problemas do PHP-FIG é que mesmo que muitos projetos de frameworks de código aberto adotem vários de seus padrões, esses padrões lidam com problemas “da perspectiva do framework”, que os torna inúteis em várias situações da vida real.</p>
+<p>Muitas pessoas desenvolvem softwares para o comércio em geral que devem ser extremamente eficiêntes, seguros, e com bom custo-benefício, softwares que clientes querem comprar e usar. Eles não precisam se incomodar com padrões para atender as necessidades de fanáticos por frameworks. Se eles tentassem seria um desastre para os negócios.</p>
+<p>Se algum tipo de grupo de padrõres precisa ser criado ele tem que refletir os interesses da comunidade PHP como um todo, não apenas desenvolvedores de frameworks de código aberto e sistemas de CMS. O grupo terá que ser representado por desenvolvedodres da linguagem PHP e também deverá ter um número maior de membros com o direito de votar.</p>
+<p>Se você escolher adotar os padrões propostos pelo PHP-FIG, você tem que entender que alguns dos padrões - como o de auto-carregamento (autoloader) PSR-0 e PSR-4, entre outros - tem um efeito direto em como você desenvolve seu software.</p>
+<p>Muitos negócios requerem softwares com alta escalabilidade, sistemas críticos de tempo real, e com bom custo-benefício que simplesmente não podem ser desenvolvidos utilizando estes padrões do PHP-FIG.</p>
+<p><strong>A maneira errada</strong>: Seguir o PHP-FIG de maneira religiosa. <img src="/img/thumbs-down.png" alt="Thumbs down" /></p>
 <h1 id="negligenciar-a-segurança">Negligenciar a segurança</h1>
 <blockquote>
 <p>O problema com os programadores é que você nunca sabe dizer o que eles estão fazendo, até que seja tarde demais.</p>
