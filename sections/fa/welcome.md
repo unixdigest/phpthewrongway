@@ -19,5 +19,6 @@
 * [پرتغالی](http://www.phpthewrongway.com/pt_br/)
 * [دانمارکی](http://www.phpthewrongway.com/da/)
 * [روسی](http://www.phpthewrongway.com/ru/)
+* [الأوكرانية](http://www.phpthewrongway.com/uk/)
 * [فارسی](http://www.phpthewrongway.com/fa/)
 <!-- todo: add French, Japanese and Turkish -->

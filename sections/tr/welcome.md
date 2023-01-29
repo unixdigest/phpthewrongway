@@ -19,4 +19,5 @@ Her türlü katkıya ve yardıma açığız.
 * [Persian](http://www.phpthewrongway.com/fa/)
 * [Portuguese](http://www.phpthewrongway.com/pt_br/)
 * [Russian](http://www.phpthewrongway.com/ru/)
+* [Ukrainian](http://www.phpthewrongway.com/uk/)
 * [Spanish](http://www.phpthewrongway.com/es/)
