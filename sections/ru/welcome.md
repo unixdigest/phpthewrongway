@@ -19,4 +19,5 @@
 * [Персидский](http://www.phpthewrongway.com/fa/)
 * [Португальский](http://www.phpthewrongway.com/pt_br/)
 * [Русский](http://www.phpthewrongway.com/ru/)
+* [Украинский](http://www.phpthewrongway.com/uk/)
 * [турецкий](http://www.phpthewrongway.com/tr/)
