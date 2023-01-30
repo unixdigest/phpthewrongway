@@ -19,5 +19,6 @@ Feel free to contribute.
 * [Persian](http://www.phpthewrongway.com/fa/)
 * [Portuguese](http://www.phpthewrongway.com/pt_br/)
 * [Russian](http://www.phpthewrongway.com/ru/)
+* [Ukrainian](http://www.phpthewrongway.com/uk/)
 * [Spanish](http://www.phpthewrongway.com/es/)
 * [Türkçe](http://www.phpthewrongway.com/tr/)

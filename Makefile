@@ -74,6 +74,11 @@ ru:
 	$(call checkIfAllFilesExists,ru)
 	$(call translation,ru,Последнее обновление:,+%Y-%m-%d,$(OUTPUT_DIR)ru/$(FILENAME).html,html.css)
 
+# Ukrainian
+uk:
+	$(call checkIfAllFilesExists,uk)
+	$(call translation,uk,Останнє оновлення:,+%Y-%m-%d,$(OUTPUT_DIR)uk/$(FILENAME).html,html.css)
+
 # Japanese
 ja:
 	$(call checkIfAllFilesExists,ja)
@@ -84,4 +89,4 @@ tr:
 	$(call checkIfAllFilesExists,tr)
 	$(call translation,tr,Son güncelleme tarihi:,+%Y-%m-%d,$(OUTPUT_DIR)tr/$(FILENAME).html,html.css)
 
-all: da en es fa pt_br ru fr ja tr
+all: da en es fa pt_br ru uk fr ja tr

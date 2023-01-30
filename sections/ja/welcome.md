@@ -19,5 +19,6 @@ PHPプログラミングの世界では、ある一定のトレンドが「モ�
 * [ペルシャ語](http://www.phpthewrongway.com/fa/)
 * [ポルトガル語](http://www.phpthewrongway.com/pt_br/)
 * [ロシア語](http://www.phpthewrongway.com/ru/)
+* [ウクライナ人](http://www.phpthewrongway.com/uk/)
 * [スペイン語](http://www.phpthewrongway.com/es/)
 <!-- todo: add French, Japanese and Turkish -->
