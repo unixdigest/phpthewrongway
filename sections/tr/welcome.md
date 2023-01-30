@@ -6,18 +6,18 @@ Bu insanlar yorulmadan başkalarının işlerini yaparken kendilerinin yolların
 
 Bu web sitesi PHP ile programlama yapanlara pragmatik bir bakış sunmak amacıyla oluşturulmuştur. Hedeflenen popüler eğilimler, teori veya akademik dogmalardan ziyade tecrübeden ve pratik sonuçlardan oluşturulmuş bir bakış açısı ortaya çıkarmaktır.
 
-[PHP - The Wrong Way](http://www.phpthewrongway.com/) yaşayan bir site olacak ve yenilikler ortaya çıktıkça site güncellenecektir.
+[PHP - The Wrong Way](https://www.phpthewrongway.com/) yaşayan bir site olacak ve yenilikler ortaya çıktıkça site güncellenecektir.
 
 Her türlü katkıya ve yardıma açığız.
 
 ## Diğer Diller ##
 
-* [Danish](http://www.phpthewrongway.com/da/)
-* [English](http://www.phpthewrongway.com/)
-* [French](http://www.phpthewrongway.com/fr/)
-* [Japanese](http://www.phpthewrongway.com/ja/)
-* [Persian](http://www.phpthewrongway.com/fa/)
-* [Portuguese](http://www.phpthewrongway.com/pt_br/)
-* [Russian](http://www.phpthewrongway.com/ru/)
-* [Ukrainian](http://www.phpthewrongway.com/uk/)
-* [Spanish](http://www.phpthewrongway.com/es/)
+* [Danish](https://www.phpthewrongway.com/da/)
+* [English](https://www.phpthewrongway.com/)
+* [French](https://www.phpthewrongway.com/fr/)
+* [Japanese](https://www.phpthewrongway.com/ja/)
+* [Persian](https://www.phpthewrongway.com/fa/)
+* [Portuguese](https://www.phpthewrongway.com/pt_br/)
+* [Russian](https://www.phpthewrongway.com/ru/)
+* [Ukrainian](https://www.phpthewrongway.com/uk/)
+* [Spanish](https://www.phpthewrongway.com/es/)
