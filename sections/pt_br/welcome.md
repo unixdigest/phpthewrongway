@@ -6,19 +6,19 @@ Essas pessoas parecem trabalhar incansavelmente no sentido de conseguir que as o
 
 Esse website foi criado numa tentativa de apresentar uma visão pragmática sobre a programação PHP. Uma visão ditada pela experiência e consequências práticas ao invés de tendências populares, teorias, ou dogmas acadêmicos.
 
-O website [PHP - The Wrong Way](http://www.phpthewrongway.com/) é um documento livre e continuará sendo atualizado com mais informações assim que estiverem disponíveis.
+O website [PHP - The Wrong Way](https://www.phpthewrongway.com/) é um documento livre e continuará sendo atualizado com mais informações assim que estiverem disponíveis.
 
 Sinta-se livre para contribuir.
 
 ## Traduções ##
 
-* [Dinamarquês](http://www.phpthewrongway.com/da/)
-* [Espanhol](http://www.phpthewrongway.com/es/)
-* [Francês](http://www.phpthewrongway.com/fr/)
-* [Japonês](http://www.phpthewrongway.com/ja/)
-* [Inglês](http://www.phpthewrongway.com/)
-* [Persa](http://www.phpthewrongway.com/fa/)
-* [Português](http://www.phpthewrongway.com/pt_BR/)
-* [Russo](http://www.phpthewrongway.com/ru/)
-* [Ucraniana](http://www.phpthewrongway.com/uk/)
-* [Türkçe](http://www.phpthewrongway.com/tr/)
+* [Dinamarquês](https://www.phpthewrongway.com/da/)
+* [Espanhol](https://www.phpthewrongway.com/es/)
+* [Francês](https://www.phpthewrongway.com/fr/)
+* [Japonês](https://www.phpthewrongway.com/ja/)
+* [Inglês](https://www.phpthewrongway.com/)
+* [Persa](https://www.phpthewrongway.com/fa/)
+* [Português](https://www.phpthewrongway.com/pt_BR/)
+* [Russo](https://www.phpthewrongway.com/ru/)
+* [Ucraniana](https://www.phpthewrongway.com/uk/)
+* [Türkçe](https://www.phpthewrongway.com/tr/)

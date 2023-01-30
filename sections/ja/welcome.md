@@ -6,19 +6,19 @@ PHPプログラミングの世界では、ある一定のトレンドが「モ�
 
 このウェブサイトは、PHP プログラミングに関する現実的な見解を示すために作られました。流行りのトレンド、理論、学問的な教示ではなく、経験と実践の帰着を書き記した視点です。
 
-ウェブサイト [PHP - The Wrong Way](http://www.phpthewrongway.com/) は生きたドキュメントですので、より多くの情報が明らかになるにしたがって更新され続けます。
+ウェブサイト [PHP - The Wrong Way](https://www.phpthewrongway.com/) は生きたドキュメントですので、より多くの情報が明らかになるにしたがって更新され続けます。
 
 お気軽にコントリビュートしてください。
 
 ## 翻訳 ##
 
-* [ドイツ語](http://www.phpthewrongway.com/da/)
-* [英語](http://www.phpthewrongway.com/)
-* [フランス語](http://www.phpthewrongway.com/fr/)
-* [日本語](http://www.phpthewrongway.com/ja/)
-* [ペルシャ語](http://www.phpthewrongway.com/fa/)
-* [ポルトガル語](http://www.phpthewrongway.com/pt_br/)
-* [ロシア語](http://www.phpthewrongway.com/ru/)
-* [ウクライナ人](http://www.phpthewrongway.com/uk/)
-* [スペイン語](http://www.phpthewrongway.com/es/)
+* [ドイツ語](https://www.phpthewrongway.com/da/)
+* [英語](https://www.phpthewrongway.com/)
+* [フランス語](https://www.phpthewrongway.com/fr/)
+* [日本語](https://www.phpthewrongway.com/ja/)
+* [ペルシャ語](https://www.phpthewrongway.com/fa/)
+* [ポルトガル語](https://www.phpthewrongway.com/pt_br/)
+* [ロシア語](https://www.phpthewrongway.com/ru/)
+* [ウクライナ人](https://www.phpthewrongway.com/uk/)
+* [スペイン語](https://www.phpthewrongway.com/es/)
 <!-- todo: add French, Japanese and Turkish -->

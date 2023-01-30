@@ -11,13 +11,13 @@
 
 ## Переводы ##
 
-* [Английский](http://www.phpthewrongway.com/)
-* [Датский](http://www.phpthewrongway.com/da/)
-* [Французский](http://www.phpthewrongway.com/fr/)
-* [японский](http://www.phpthewrongway.com/ja/)
-* [Испанский](http://www.phpthewrongway.com/es/)
-* [Персидский](http://www.phpthewrongway.com/fa/)
-* [Португальский](http://www.phpthewrongway.com/pt_br/)
-* [Русский](http://www.phpthewrongway.com/ru/)
-* [Украинский](http://www.phpthewrongway.com/uk/)
-* [турецкий](http://www.phpthewrongway.com/tr/)
+* [Английский](https://www.phpthewrongway.com/)
+* [Датский](https://www.phpthewrongway.com/da/)
+* [Французский](https://www.phpthewrongway.com/fr/)
+* [японский](https://www.phpthewrongway.com/ja/)
+* [Испанский](https://www.phpthewrongway.com/es/)
+* [Персидский](https://www.phpthewrongway.com/fa/)
+* [Португальский](https://www.phpthewrongway.com/pt_br/)
+* [Русский](https://www.phpthewrongway.com/ru/)
+* [Украинский](https://www.phpthewrongway.com/uk/)
+* [турецкий](https://www.phpthewrongway.com/tr/)
