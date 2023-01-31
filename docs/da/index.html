@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
   <meta name="author" content="Den forkerte måde">
   <title>PHP - The Wrong Way</title>
-  <style type="text/css">code{white-space: pre;}</style>
+  <style>code{white-space: pre;}</style>
   <link rel="stylesheet" href="/css/html.css">
 <meta name="description" content="Denne hjemmeside er blevet lavet i et forsøg på at præsenterer et pragmatisk syn på PHP programmering. Et syn dikteret af erfaring og praktisk konsekvens fremfor populære tendenser, teori eller akademisk dogme.">
 </head>
@@ -70,7 +70,7 @@
 <p>Det er vigtigt at forstå dette fordi mange af de softwareudviklingsprincipper og regler der udvikles over tid, og som præsenteret af mange forskellige mennesker, ofte bliver misbrugt i hænderne på ekstremister.</p>
 <p>Erfaring har lært os at misbrug af en generelle regler og retningslinjer altid resulterer i komplikationer, mangel på sikkerhed, fejlbehæftede resultater, og i nogle tilfælde, fuldstændig og total katastrofe.</p>
 <p><a href="https://en.wikipedia.org/wiki/KISS_principle">KISS princippet</a>, der er et akronym for “Keep It Simple, Stupid” (Hold Det Simpelt, Dumme), er et meget viis og fornuftigt princip der generelt betragtes af erfarende mennesker som et meget godt råd at følge, men selv dette fremragende princip bliver farligt for et projekt hvis det bliver praktiseret til det ekstreme. Der er sådan en ting som at noget er “for simpelt”, et resultat hvor grundlæggende funktionalitet mangler.</p>
-<p><strong>Den forkerte måde</strong>: Religiøs følgen af regler og retningslinjer. <img src="/img/thumbs-down.png" alt="Thumbs down" /></p>
+<p><strong>Den forkerte måde</strong>: Religiøs følgen af regler og retningslinjer. <img src="/img/thumbs-down.png" alt="Thumbs down"></p>
 <h1 id="altid-bruge-et-framework">Altid bruge et framework</h1>
 <blockquote>
 <p>Alle PHP frameworks der har et generelt formål stinker!</p>
@@ -104,7 +104,7 @@
 <p>Handling eller politik dikteret af hensyn til de umiddelbare praktiske konsekvenser snarere end af teori eller dogme.</p>
 <p>– Collins English Dictionary, Complete and Unabridged, 12th Edition 2014</p>
 </blockquote>
-<p><strong>Den forkerte måde</strong>: Altid at bruge et framework ovenpå PHP. <img src="/img/thumbs-down.png" alt="Thumbs down" /></p>
+<p><strong>Den forkerte måde</strong>: Altid at bruge et framework ovenpå PHP. <img src="/img/thumbs-down.png" alt="Thumbs down"></p>
 <h1 id="altid-bruge-et-designmønster">Altid bruge et designmønster</h1>
 <blockquote>
 <p>Jeg har den her store allergi overfor elfenbenstårn designs og designmønstre. Peter Norvig, da han var på Harlequin, skrev han dette papir om hvordan designmønstre i virkeligheden bare udgør fejl i dit programmeringssprog. Få et bedre programmeringssprog. Han har fuldstændig ret. Tilbede mønstre og tænke: “Åh, jeg skal bruge mønster X.”</p>
@@ -129,7 +129,7 @@
 <p>Handling eller politik dikteret af hensyn til de umiddelbare praktiske konsekvenser snarere end af teori eller dogme.</p>
 <p>– Collins English Dictionary, Complete and Unabridged, 12th Edition 2014</p>
 </blockquote>
-<p><strong>Den forkerte måde</strong>: At lede efter et mønster for at løse et problem. <img src="/img/thumbs-down.png" alt="Thumbs down" /></p>
+<p><strong>Den forkerte måde</strong>: At lede efter et mønster for at løse et problem. <img src="/img/thumbs-down.png" alt="Thumbs down"></p>
 <h1 id="altid-bruge-objektorienteret-programmering">Altid bruge objektorienteret programmering</h1>
 <blockquote>
 <p>Problemet med objektorienterede sprog er at de har fået alt det her implicitte miljø, som de bærer rundt med dem. Du ville have en banan, men det du fik var en gorilla der holder banane og hele junglen.</p>
@@ -173,7 +173,7 @@
 <p>Den objektorienterede model gør det nemt at opbygge programmer ved aggregation. Hvad dette ofte betyder i praksis, er at det giver en struktureret måde at skrive spaghetti kode på.</p>
 <p>– Paul Graham i <a href="https://openlibrary.org/works/OL7944696W/ANSI_Common_Lisp">Ansi Common Lisp</a></p>
 </blockquote>
-<p><strong>Den forkerte måde</strong>: Altid at bruge objektorienteret programmering. <img src="/img/thumbs-down.png" alt="Thumbs down" /></p>
+<p><strong>Den forkerte måde</strong>: Altid at bruge objektorienteret programmering. <img src="/img/thumbs-down.png" alt="Thumbs down"></p>
 <h1 id="at-være-bange-for-andre-menneskers-kode">At være bange for andre menneskers kode</h1>
 <p>Et argument der ofte udtrykkes for brugen af et framework er, at folk ikke ønsker at beskæftige sig med kodebaser, der er blevet skrevet fra bunden af andre mennesker.</p>
 <p>Dette er imidlertid en mærkelig mentalitet, primært stødt på blandt webudviklere i PHP samfundet, det er en mentalitet der udstråler en mangel på professionalisme og erfaring.</p>
@@ -192,7 +192,7 @@
 <p>Selvfølgelig eksisterer der sådan en ting som forfærdelig kode, kode der måske ikke er designet fra starten af, eller kode der måske er vokset fra sig selv mange gange, men kunden ønskede ikke at foretage en renskrivning, kode der er så slem at du kan ikke kan finde hovede eller hale på det længere, men intet framework ville have forhindret denne situation. Dette er ofte den naturlige vækstproces af et program. Til sidst ville ethvert framework være blevet sønderrevet alligevel.</p>
 <p>Og ja, der findes forfærdelig spagetti kode, men ingen skriver forfærdelig spagetti kode med vilje. Nogle gange sker det som et resultat af manglende erfaring, ofte er det kundens skyld fordi de ændrer specifikationen flere gange undervejs i udviklingen, men uanset, i begge tilfælde, selv hvis der blev brugt et framework, så ville resultatet stadig være spagetti kode, og uanset hvor meget af det objektorienterede paradigme der blev anvendt, så ville resultatet stadig være spagetti kode.</p>
 <p>Som programmører forsøger vi alle at forhindre disse situationer, men <strong>det er normalt</strong>, det er <strong>kunsten at programmerer</strong>, det er en del af hvad det vil sige <strong>at være programmør</strong>!</p>
-<p><strong>Den forkerte måde</strong>: At være bange for andre menneskers kode <img src="/img/thumbs-down.png" alt="Thumbs down" /></p>
+<p><strong>Den forkerte måde</strong>: At være bange for andre menneskers kode <img src="/img/thumbs-down.png" alt="Thumbs down"></p>
 <h1 id="at-følge-php-fig-standarderne-religiøst">At følge PHP-FIG standarderne religiøst</h1>
 <p>FIG står for “Framework Interoperability Group”.</p>
 <p><a href="http://www.php-fig.org/">PHP-FIG</a> blev udviklet af en gruppe framework udviklere ved php|tek 2009. Siden da har forskellige andre medlemmer tilmeldt sig, og er blevet stemt ind.</p>
@@ -207,7 +207,7 @@
 <p>Hvis der er behov for at oprette en slags standardgruppe, skal denne afspejle interesser i hele PHP samfundet, ikke kun framework og Open Source CMS projektudviklere. Den skal repræsenteres af udviklerne af PHP programmeringssproget selv, og den skal være repræsenteret af et meget større medlemskab med stemmeret.</p>
 <p>Hvis du vælger at adoptere de standarder, der er udviklet af PHP-FIG, er du nødt til at forstå at nogle af disse standarder - såsom autoloader standarderne PSR-0 og PSR-4, og flere andre standarder - har en direkte indvirkning på hvordan du koder din software.</p>
 <p>Mange virksomheder kræver meget skalerbar, run-time kritisk og omkostningseffektiv software, der simpelthen ikke kan udvikles ved hjælp af disse standarder fra PHP-FIG.</p>
-<p><strong>Den forkerte måde</strong>: At følge PHP-FIG religiøst. <img src="/img/thumbs-down.png" alt="Thumbs down" /></p>
+<p><strong>Den forkerte måde</strong>: At følge PHP-FIG religiøst. <img src="/img/thumbs-down.png" alt="Thumbs down"></p>
 <h1 id="at-forsømme-sikkerhed">At forsømme sikkerhed</h1>
 <blockquote>
 <p>Problemet med programmører er at du kan aldrig vide hvad en programmør laver før det er for sent.</p>
@@ -226,7 +226,7 @@
 </blockquote>
 <p>For at applikationer skal designes og implementeres med sikkerhedskrav der er i orden, skal sikre kodningsprocedurer og fokus på sikkerhedsrisiko integreres i dag-til-dags operationer, tanker, og i selve udviklingsprocessen.</p>
 <p>Generelt er det meget billigere at bygge sikkert software end det er at rette sikkerhedsfejl efter at et stykke software er blevet færdiggjort, for ikke at tale om omkostningerne forbundet med et sikkerhedsbrist.</p>
-<p><strong>Den forkerte måde</strong>: At man ikke udvikler sikker software som standard. <img src="/img/thumbs-down.png" alt="Thumbs down" /></p>
+<p><strong>Den forkerte måde</strong>: At man ikke udvikler sikker software som standard. <img src="/img/thumbs-down.png" alt="Thumbs down"></p>
 <h1 id="spørgsmål-og-svar">Spørgsmål og svar</h1>
 <p>Det er nemt at misforstå et skriftligt dokument så lad os præcisere nogle spørgsmål.</p>
 <p><strong>Spørgsmål:</strong> <em>Hvad er pointen med denne hjemmeside? Og hvorfor den konfronterende tilgang?</em></p>
