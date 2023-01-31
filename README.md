@@ -24,7 +24,7 @@ If you have a question or just want to express your mind, feel free to use the "
 * Clone.
 * Create a subdirectory of your language in the `docs` directory using the [IETF Language Tag](https://en.wikipedia.org/wiki/IETF_language_tag). If I, as an example, are going to make a Danish translation, I create a subdirectory named `da` in `docs`.
 * Copy `docs/index.html` into the newly created subdirectory of your language and translate that.
-* Edit the main `index.html`, which is the English one, and edit the other `index.html` files in the different language subdirectories and insert the relevant link to your translation under the `translations` heading.
+* Edit the main `index.html`, which is the English one, and edit the other `index.html` files in the different language subdirectories and insert the relevant link to your translation under the `translations` heading. Also update the "last updated" date in each file you touch.
 * Copy the image file `docs/img/deviant-code-1000px-en.png` to a filename that matches your language. Again as an example, I would make a file called `docs/img/deviant-code-1000px-da.png` for Danish.
 * Edit the image file and translate the text for the image. If you cannot edit the image file, just leave a text file in the main directory with a text translate of the text from the image. Name it something like `danish-text-for-image.txt`.
 * Submit pull request.
