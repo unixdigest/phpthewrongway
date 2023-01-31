@@ -2,15 +2,329 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <meta name="generator" content="pandoc">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
   <meta name="author" content="The Wrong Way">
   <title>PHP - The Wrong Way</title>
   <style type="text/css">code{white-space: pre;}</style>
   <link rel="stylesheet" href="/css/html.css">
-<meta name="description" content="This website has been created in an attempt to present a pragmatic view on PHP programming. A view dictated by experience and practical consequence rather than popular trends, theory, or academic dogma.">
+  <meta name="description" content="This website has been created in an attempt to present a pragmatic view on PHP programming. A view dictated by experience and practical consequence rather than popular trends, theory, or academic dogma.">
 </head>
 <body>
+<<<<<<< HEAD
+  <header>
+    <div id="header-top">
+      <a href="https://github.com/unixsheikh/phpthewrongway"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/652c5b9acfaddf3a9c326fa6bde407b87f7be0f4/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6f72616e67655f6666373630302e706e67" alt="Fork me on GitHub" data-canonical-src="/img/github-clone.png"></a>
+      <h1>PHP</h1>
+      <h2>The Wrong Way</h2>
+      <div id="date">Last updated: 2020-08-07</div>
+  </div>
+  </header>
+  <div id="cartoon">
+    <img src="/img/deviant-code-1000px-en.png" alt="cartoon">
+  </div>
+  <nav id="TOC">
+    <ul>
+      <li><a href="#welcome">Welcome</a>
+        <ul>
+          <li><a href="#translations">Translations</a></li>
+        </ul>
+      </li>
+      <li><a href="#the-danger-of-extremism">The danger of extremism</a></li>
+      <li><a href="#always-use-a-framework">Always use a framework</a></li>
+      <li><a href="#always-use-a-design-pattern">Always use a design pattern</a></li>
+      <li><a href="#always-use-object-oriented-programming">Always use object-oriented Programming</a>
+        <ul>
+          <li><a href="#a-small-history-lesson">A small history lesson</a></li>
+        </ul>
+      </li>
+      <li><a href="#being-afraid-of-other-peoples-code">Being afraid of other people’s code</a></li>
+      <li><a href="#following-the-php-fig-standards-religiously">Following the PHP-FIG standards religiously</a></li>
+      <li><a href="#neglecting-security">Neglecting security</a>
+        <ul>
+          <li><a href="#secure-by-default">Secure by default</a></li>
+        </ul>
+      </li>
+      <li><a href="#faq">FAQ</a></li>
+      <li><a href="#recommended-reading">Recommended reading</a></li>
+      <li><a href="#how-to-contribute">How to Contribute</a></li>
+    </ul>
+  </nav>
+
+  <h1 id="welcome">Welcome</h1>
+
+  <p>In the world of PHP programming, a set of trends are massively being propagated by some people (in their books and on websites) as “Modern PHP” while all other approaches are frowned upon as backward, stupid, or just plain wrong.</p>
+  <p>These people seem to work tirelessly at getting other people to follow their way of doing things.</p>
+  <p>This website has been created in an attempt to present a pragmatic view on PHP programming. A view dictated by experience and practical consequence rather than popular trends, theory, or academic dogma.</p>
+  <p>The website <a href="http://www.phpthewrongway.com/">PHP - The Wrong Way</a> is a living document and will continue to be updated with more information as it becomes available.</p>
+  <p>Feel free to contribute.</p>
+
+  <h2 id="translations">Translations</h2>
+
+  <ul>
+    <li><a href="http://www.phpthewrongway.com/da/">Danish</a></li>
+    <li><a href="http://www.phpthewrongway.com/">English</a></li>
+    <li><a href="http://www.phpthewrongway.com/fr/">French</a></li>
+    <li><a href="http://www.phpthewrongway.com/ja/">Japanese</a></li>
+    <li><a href="http://www.phpthewrongway.com/fa/">Persian</a></li>
+    <li><a href="http://www.phpthewrongway.com/pt_br/">Portuguese</a></li>
+    <li><a href="http://www.phpthewrongway.com/ru/">Russian</a></li>
+    <li><a href="http://www.phpthewrongway.com/es/">Spanish</a></li>
+    <li><a href="http://www.phpthewrongway.com/tr/">Türkçe</a></li>
+    <li><a href="http://www.phpthewrongway.com/uk/">Ukrainian</a></li>
+  </ul>
+
+  <h1 id="the-danger-of-extremism">The danger of extremism</h1>
+
+  <p>One problem with programming rules and guidelines is that they often only serve a purpose within a specific context. Taken out of context, a good rule can become a horrible rule. In fact, every good rule becomes bad when taken to the extreme.</p>
+  <p>This is important to understand because many of the software development principles and rules developed over time and presented by many different people often become misused in the hands of extremists.</p>
+  <p>Experience has taught that misuse of general rules and guidelines always results in complication, lack of security, error-prone results, and in some cases complete and utter disaster.</p>
+  <p>The <a href="https://en.wikipedia.org/wiki/KISS_principle">KISS principle</a>, which is an acronym for “Keep It Simple, Stupid”, is an extremely wise and good principle that is generally viewed by experienced people as very good advice to follow. But even this great principle becomes a danger to a project if it is taken to the extreme. There is such a thing as “too simple” resulting in a lack of needed functionality.</p>
+  <p><strong>The wrong way</strong>: The religious following of rules and guidelines. <img src="/img/thumbs-down.png" alt="Thumbs down" /></p>
+
+  <h1 id="always-use-a-framework">Always use a framework</h1>
+
+  <blockquote>
+    <p>All general purpose PHP frameworks suck!</p>
+    <p>– <a href="https://www.youtube.com/watch?v=DuB6UjEsY_Y">Rasmus Lerdorf</a></p>
+  </blockquote>
+  <p>In the PHP community a really bad trend has become de-facto standard for developing web applications and that is by the usage of a popular general purpose framework.</p>
+  <p>This trend has emerged and become popular not because it in any way improves the result of the developing process, or because it is the right thing to do from a technology and architectural point of view. This trend has become popular because some of the developers of frameworks have managed to sweep away the masses with their polemic against programming from the ground up with stanzas like “Don’t re-invent the wheel!” and “Don’t do it yourself, others are more skillful than you”.</p>
+  <p>Many of today’s programmers completely ignore the fundamental principles of sound programming and they spend a large amount of time fantasizing new layers of complexity in order to appear more clever, more cool, and more acceptable by whomever they regard as their peers.</p>
+  <p>These people seems to be infatuated by the thought of having other people follow their “way of doing things”, becoming some kind of PHP community leaders, and having other people use their latest “hip” Open Source tools, that they forget to make sure that the advice they are giving is sound and solid.</p>
+  <p>In the software industry you can compare a pre-built house to a general purpose framework. Building software using general purpose frameworks doesn’t make you a coder or a programmer any more than putting together a pre-built house makes you a carpenter.</p>
+  <p>On this website, we differentiate between frameworks and libraries in the following way:</p>
+  <ul>
+    <li>A library is considered a collection of reusable code, like the C standard library, or the Go standard library. It consists of code that you easily integrate into your own projects without enforcing any limitations or restrictions whatsoever. It consists of small pieces of code with one specific functionality each.</li>
+    <li>A framework is not just a collection of reusable code: you cannot simply take a piece of code from the framework and integrate it into your own project. A framework is a system that helps you build software, but at the same time it forces you to work within the limitations and restrictions of the framework itself. The framework itself has lot of interdependent functionality. One piece cannot work without the other.</li>
+  </ul>
+  <p>In the world of Python and Ruby, building websites from the ground up is tiresome because neither Python nor Ruby was originally created to build websites. As a result general-purpose frameworks such as <a href="https://en.wikipedia.org/wiki/Django_%28web_framework%29">Django</a> and <a href="https://en.wikipedia.org/wiki/Ruby_on_Rails">Ruby on Rails</a> quickly became popular for building websites in these languages.</p>
+  <p>PHP on the other hand was created in the beginning by Rasmus Lerdorf as a set of tools written in C that would enable you to easily and quickly develop dynamic HTML. As such PHP was, and still is, <strong>a framework in and of itself</strong>.</p>
+  <p>PHP has evolved massively since then and today PHP can be used for much more than building HTML and websites, but viewing PHP as a sort of framework in itself is not wrong. PHP is by nature a layer of abstraction for developing web applications written entirely in a procedural C.</p>
+  <p>Using a library within your project is only natural. PHP itself comes bundled with a set of libraries that you can use to extend your own code. PDO for example is a lightweight library that provides a consistent interface for accessing databases in PHP.</p>
+  <p>Using a framework on top of PHP on the other hand is another matter entirely.</p>
+  <p>When you use a framework in PHP you add a layer of abstraction on top of yet another layer of abstraction, one that was already in place for you to use to begin with. The added layer of abstraction that the framework provides may simply serve to organize your code into a pre-fixed set of patterns, or it may add even more complexity by intertwining hundreds or even thousands of classes and methods into a nightmare of dependencies, either way you’re adding layers of complexity to your code that isn’t needed!</p>
+  <p>All experience starts with the interface. The interface experience is the result of the underlying technology and the amount of layers of abstraction. The more abstraction you use, the less efficient the interface becomes and the more error-prone the application becomes. The higher the abstraction, the more detail and efficiency is lost.</p>
+  <p>Understand this clearly: <strong>The ideal number of lines of code in any project is as few as possible whilst being as clear and readable as possible!</strong></p>
+  <blockquote>
+    <p>What everyone doesn’t need is a general purpose framework. Nobody has a general problem, everyone has a very specific problem they are trying to solve.</p>
+    <p>– <a href="https://www.youtube.com/watch?v=anr7DQnMMs0">Rasmus Lerdorf</a></p>
+  </blockquote>
+  <p>Some companies began listening to the hype about PHP frameworks and they started their next projects using one of these popular general purpose frameworks only to end up in a disaster. Not only did they discover that the general purpose framework was really bad at solving their very specific need, but it was also extremely slow in doing so. It was impossible to scale and as a result they started ripping the framework apart in a desperate attempt to pull out all those things they really didn’t need.</p>
+  <p>Always use the pragmatic approach:</p>
+  <blockquote>
+    <p>Action or policy dictated by consideration of the immediate practical consequences rather than by theory or dogma.</p>
+    <p>– Collins English Dictionary, Complete and Unabridged, 12th Edition 2014</p>
+  </blockquote>
+  <p><strong>The wrong way:</strong> Always use a framework on top of PHP. <img src="/img/thumbs-down.png" alt="Thumbs down" /></p>
+  <h1 id="always-use-a-design-pattern">Always use a design pattern</h1>
+  <blockquote>
+    <p>I have this big allergy to ivory-tower design and design patterns. Peter Norvig, when he was at Harlequin, he did this paper about how design patterns are really just flaws in your programming language. Get a better programming language. He’s absolutely right. Worshiping patterns and thinking about, “Oh, I’ll use the X pattern.”</p>
+    <p>– Brendan Eich in <a href="http://codersatwork.com/">Coders at work - Reflections on the Craft of Programming</a></p>
+  </blockquote>
+  <p>In software engineering, a design pattern is a reusable solution to a commonly occurring problem in software design. A design pattern is not a finished design that can be transformed directly into code. It is a description or an idea for how to solve a problem that can be used in many different situations. Object-oriented design patterns typically show relationships and interactions between classes or objects, without specifying the final application classes or objects that are involved.</p>
+  <p>PHP supports imperative, functional, object-oriented, procedural, and reflective paradigms. PHP is a huge toolbox with lots of different tools that makes it possible to solve many problems in many different ways - not just one way.</p>
+  <p>PHP is all about freedom, fast and scalable solutions, and having many different ways to deal with problems.</p>
+  <p>When we try to improve ourselves, and in this case more specifically our code, we sometimes get hung up in the philosophy of a particular pattern or idea and tend to forget to think practically.</p>
+  <blockquote>
+    <p>When I see patterns in my programs, I consider it a sign of trouble. The shape of a program should reflect only the problem it needs to solve. Any other regularity in the code is a sign, to me at least, that I’m using abstractions that aren’t powerful enough - often that I’m generating by hand the expansions of some macro that I need to write.</p>
+    <p>– <a href="http://c2.com/cgi/wiki?AreDesignPatternsMissingLanguageFeatures">Paul Graham</a></p>
+  </blockquote>
+  <p>We shouldn’t get too caught up in the philosophy or idea behind a specific pattern or solution. Our main concern is to keep the code as easy to navigate and understand as possible and as a result easy to maintain and easy to keep secure.</p>
+  <p>We must also remember that there exists such a thing as an anti-pattern. It is a pattern that may be commonly used but is ineffective and/or counterproductive in practice.</p>
+  <blockquote>
+    <p>I think patterns started off as generally recognized best solutions for common problems. But now that they have been around for a while and we have experienced applications being made ten times more complicated than they need to be because people try to cram in all the patterns that they have read about (“my application is well architected, because it is loaded to the gills with patterns.”) my impression of the value of the pattern has shifted a bit.</p>
+    <p>– Paul Weaton in <a href="http://www.javaranch.com/patterns/">Evil Design Patterns</a></p>
+  </blockquote>
+  <p>Always use the pragmatic approach:</p>
+  <blockquote>
+    <p>Action or policy dictated by consideration of the immediate practical consequences rather than by theory or dogma.</p>
+    <p>– Collins English Dictionary, Complete and Unabridged, 12th Edition 2014</p>
+  </blockquote>
+  <p><strong>The wrong way</strong>: Looking for a pattern to solve a problem. <img src="/img/thumbs-down.png" alt="Thumbs down" /></p>
+
+  <h1 id="always-use-object-oriented-programming">Always use object-oriented Programming</h1>
+
+  <blockquote>
+    <p>The problem with object-oriented languages is they’ve got all this implicit environment that they carry around with them. You wanted a banana but what you got was a gorilla holding the banana and the entire jungle.</p>
+    <p>– Joe Armstrong in <a href="http://codersatwork.com/">Coders at work - Reflections on the Craft of Programming</a></p>
+  </blockquote>
+  <blockquote>
+    <p>Abstraction is powerful. What I’m really allergic to, and what I had a reaction to in the ’90s, was all the CORBA, COM, DCOM, object-oriented nonsense. Every startup of the day had some crazy thing that would take 200.000 method calls to start up and print “Hello world”. That’s a travesty! You don’t want to be a programmer associated with that sort of thing.</p>
+    <p>– Brendan Eich in <a href="http://codersatwork.com/">Coders at work - Reflections on the Craft of Programming</a></p>
+  </blockquote>
+  <p>Many software developers, and many companies, feel that object-oriented programming is the only reasonable way to develop software today. Any one who argues against object-oriented programming is immediately made conscious of the fact that they are arguing against the “conventional wisdom” of the industry.</p>
+  <p>On programming blogs and forums, there are a great many people who defend object-oriented programming, and who feel certain that they know what they are talking about, despite the lack of any standard definition!</p>
+  <p>The fact is that so-called object-oriented programming as such often inflicts a heavy burden of unneeded complexity!</p>
+  <p>As computer scientists and programmers we must learn to set aside prejudices and find the best solution to a given problem.</p>
+  <p>Today, one of the main strengths of PHP is its support for both imperative, functional, object-oriented, procedural, and reflective paradigms. PHP is a huge toolbox with lots of different tools that makes it possible to solve many problems in many different ways - <strong>not just one way!</strong></p>
+  <p><strong>As soon as we try to force-feed different problems within an application to a single specific programming paradigm, we’re not thinking creatively and we’re not working efficiently!</strong></p>
+  <h2 id="a-small-history-lesson">A small history lesson</h2>
+  <p>One of the greatest ways to understand a specific programming paradigm is to look at how it first evolved. What was the reason for its development? What problems existed with other programming paradigms that needed a new way of thinking? Was it a real world problem or simply an academic problem? And how has it since evolved?</p>
+  <p>It doesn’t matter what person X says or what definition person Y gives, what matters in the context of paradigms is the history that made them.</p>
+  <blockquote>
+    <p>There are two ways of constructing a software design. One way is to make it so simple that there are obviously no deficiencies. And the other way is to make it so complicated that there are no obvious deficiencies.</p>
+    <p>– <a href="https://en.wikiquote.org/wiki/C._A._R._Hoare">C.A.R. Hoare</a></p>
+  </blockquote>
+  <p>In the past, before the advent of object-oriented programming, around the end of the fifties, much software was developed using programming languages that emphasized unstructured programming, sometimes referred to as first- and second-generation languages. Unstructured programming (or non-structured programming) is historically the earliest programming paradigm. It was heavily criticized for producing “spaghetti” code.</p>
+  <p>There are both high- and low-level programming languages that use non-structured programming. These include early versions of BASIC, COBOL, MUMPS, JOSS, FOCAL, TELCOMP, machine-level code, early assembler systems (those without procedural meta operators) and some scripting languages.</p>
+  <p>A program in a non-structured language usually consists of sequentially ordered commands, or statements, usually one in each line. The lines are usually numbered or may have labels which allows the flow of execution to jump to any line in the program (like with the unpopular GOTO statement).</p>
+  <p>Then, in the sixties, structured programming emerged - mainly due to the famous letter by Edsger W. Dijkstra <a href="http://www.u.arizona.edu/~rubinson/copyright_violations/Go_To_Considered_Harmful.html">Go To statements considered harmful</a>.</p>
+  <p>Structured programming is a programming paradigm that improves the clarity, quality, and development of software by making use of subroutines, block structures and loops. This is in contrast to using simple jumps such as the GOTO statement.</p>
+  <p>Later, procedural programming was derived from structured programming. Procedural programming is based upon the concept of “procedure call”. A “procedure call” is just another name for a “function call”. Procedures are also known as routines, subroutines or methods. A procedure simply contain a series of computational steps to be carried out. Any given procedure might be called at any point during a programs execution, including by other procedures or itself.</p>
+  <p>In the beginning all procedures were available to any part of a program as global data. In small programs this didn’t present a problem, but as things got more complicated and as the size of the program grew, small changes to one part of the program greatly effected many other parts.</p>
+  <p>Nobody was planning for changes in the program and lots of dependencies existed. A minor change to one procedure would result in a cascade of errors in lots of other procedures that depended on the original code.</p>
+  <p>A new technique evolved that allowed data to be divided into separated scopes called “objects”. Only specific procedures belonging to the same scope could access the same data. This is called data hiding or encapsulation. The result was much better organized code.</p>
+  <p>In the beginning objects were not called objects, they were just viewed upon as separate scopes. Later when dependencies were reduced and connections between procedures and variables inside these scopes were viewed upon as isolated segments, the result gave birth to the concepts of “objects” and “object-oriented programming”.</p>
+  <p>Later, mainly due to the development of Java, certain “buzzwords” arose and “a procedure” or “a function” was no longer called a function, but was renamed “a method” when it resided inside a separate scope. Variables were also no longer called “variables”, but were renamed “attributes” when they resided inside a separate scope.</p>
+  <p>So an object is in essence simply a collection of functions and variables now called “methods and attributes”.</p>
+  <p>The way methods and attributes are kept isolated inside a separate scope is by the usage of “a class”. A class, once it is instantiated, is called an object.</p>
+  <p>Objects can reference each other and by such a reference the methods (functions) inside can “communicate” with each other. Objects can also “inherit” methods from other objects thereby extending such, this is called “inheritance”. It is a way to reuse code and allow independent extensions of the software via public classes and interfaces. The relationships of objects give rise to a hierarchy. Inheritance was invented in 1967 for the programming language <a href="http://en.wikipedia.org/wiki/Simula">Simula 67</a>.</p>
+  <p>Objects can also inherit methods from other objects and “override” these with added or changed functionality, this is called “polymorphism”.</p>
+  <p>How these different ideas are implemented vary greatly from programming language to programming language.</p>
+  <p>Object-oriented programming is about organizing code in another way than before. It is an extension of procedural programming and it is about hiding data (encapsulation) and avoiding a global scope. It is about extending functions by “borrowing” their blueprints without actually affecting the original code (inheritance). And it is about overriding functions without affecting the original code (polymorphism).</p>
+  <blockquote>
+    <p>The object-oriented model makes it easy to build up programs by accretion. What this often means, in practice, is that it provides a structured way to write spaghetti code.</p>
+    <p>– Paul Graham in <a href="https://openlibrary.org/works/OL7944696W/ANSI_Common_Lisp">Ansi Common Lisp</a></p>
+  </blockquote>
+  <p><strong>The wrong way</strong>: Always use object-oriented programming. <img src="/img/thumbs-down.png" alt="Thumbs down" /></p>
+
+  <h1 id="being-afraid-of-other-peoples-code">Being afraid of other people’s code</h1>
+
+  <p>An argument often expressed for the usage of a framework is that people don’t want to deal with codebases that have been written from scratch by other people.</p>
+  <p>This is however a strange mentality, mainly encountered amongst web developers in the PHP community. It’s one that exudes a lack of professionalism and experience.</p>
+  <p>Writing software and dealing with other people’s code is normal. It’s part of the daily work of a professional programmer. It’s not something to be afraid of.</p>
+  <p>A professional programmer doesn’t look at other people’s code and start whining about how he or she is at the complete mercy of the former programmer, who is perhaps no longer associated with the company or project, and if only the former programmer had used framework A or framework B the day would have been saved.</p>
+  <p>This is not the mentality of a professional programmer. Nobody does this.</p>
+  <p>Perhaps the low barrier to entry in PHP web development plays a part in this kind of mentality. Regardless, it is a sign of a person being in the wrong line of work.</p>
+  <p>A great part of programming deals with people having to work with other people’s code. It’s part of the work trying to improve existing codebase and sometimes that involves a complete re-write.</p>
+  <p>Take note from the great masters of programming, read the book <a href="http://codersatwork.com/">Coders at work - Reflections on the Craft of Programming</a>.</p>
+  <p>Some of the largest and most successful codebases in world are codebases that has been developed by hundreds of people who have never even met each other, codebases developed without the use of any kind of framework, codebases done entirely in a procedural programming language without the use of anything but the procedural paradigm, and they wouldn’t dream of doing it differently.</p>
+  <p>The <a href="https://www.kernel.org/">Linux Kernel</a> consists of more than 20 million lines of code all written entirely using procedural programming by more than 14 000 participants without the use of any kind of framework.</p>
+  <p>The different <a href="https://en.wikipedia.org/wiki/Berkeley_Software_Distribution">BSD</a> flavors and most of the <a href="https://www.gnu.org/">Linux GNU userland</a> has been written entirely using procedural programming without the use of any kind of framework.</p>
+  <p>The same goes for hundreds of Open Source projects around the world that were eventually abandoned by the original programmer(s) only to be picked up by other skillful programmers. Many of these projects had very little documentation (if any at all), no comments in the codebase, and no guidelines or help to offer at all.</p>
+  <p>The entire PHP codebase is done in C, a pure procedural programming language, without the use of any kind of framework whatsoever.</p>
+  <p>Whenever you define a class in PHP or whenever you fire up that favorite PHP framework of yours, you’re running on someone else’s pure procedural work!</p>
+  <p>Sure, there exists such a thing as horrible code, code that perhaps wasn’t designed from the onset, or code that perhaps has outgrown itself many times but the client didn’t want to deal with a re-write, code that’s so bad you cannot make heads or tail of it any longer, but no kind of framework would have prevented this situation. This is often the natural growth process of a program. Eventually any kind of framework would have been torn to pieces anyway.</p>
+  <p>And sure there exists horrible spagetti code, but nobody produces horrible spagetti code on purpose. Sometimes this is a result of lack of experience, often times it’s the clients fault because they change the specifications several times in the middle of development, either way in both cases, even if a framework was used, the result would still be spaghetti code, and no matter how much of the object-oriented paradigm was used, the result would still be spaghetti code.</p>
+  <p>As programmers we all try to prevent these situations, but <strong>this is normal</strong>, this is <strong>the art of programming</strong>, this is part of what it means <strong>to be a programmer</strong>!</p>
+  <p><strong>The wrong way</strong>: Being afraid of other people’s code. <img src="/img/thumbs-down.png" alt="Thumbs down" /></p>
+  <h1 id="following-the-php-fig-standards-religiously">Following the PHP-FIG standards religiously</h1>
+  <p>The FIG stands for “Framework Interoperability Group”.</p>
+  <p>The <a href="http://www.php-fig.org/">PHP-FIG</a> was created by a number of framework developers at php|tek in 2009. Since then various other members have applied and been voted in, increasing the size of the group from the first 5 to over 20.</p>
+  <p>A lot of controversy exists regarding the PHP-FIG. Some people consider the PHP-FIG the best thing that has happened to the PHP community since PHP itself while others considers the group as something best to be forgotten.</p>
+  <p>One of the problems with PHP-FIG is that it presents itself like this in their <a href="http://www.php-fig.org/faqs/">FAQ</a>:</p>
+  <blockquote>
+    <p>The idea behind the group is for project representatives to talk about the commonalities between our projects and find ways we can work together. Our main audience is each other, but we’re very aware that the rest of the PHP community is watching. If other folks want to adopt what we’re doing they are welcome to do so, but that is not the aim. Nobody in the group wants to tell you, as a programmer, how to build your application.</p>
+  </blockquote>
+  <p>However, when we view the work of several members of the group, we can clearly see that the objective is quite contrary to the above statement. These members work tirelessly in an attempt to make PHP-FIG become an accepted “PHP standards group”, <strong>which also was the original name of the group</strong>. They do this by classifying the work of the PHP-FIG as “Modern PHP” in their books, on their websites, blog-posts, forums, etc., and by classifying other ways as backwards.</p>
+  <p>One of the problems with the PHP-FIG is that even though many frameworks and Open Source projects have adopted several of their standards, these standards mainly deal with problems from a “framework perspective”, which renders them pretty unusable in many real-life industry situations.</p>
+  <p>Many people develop software for the industry that has to be extremely efficient, secure, and cost-effective, software that customers are willing to buy and use. They cannot be bothered with standards that have to conform to the needs of framework fanatics. If they tried to be it would be a disaster for business.</p>
+  <p>If some kind of standards group needs to be created it has to reflect the interests of the entire PHP community, not just framework and Open Source CMS project developers. It has to be represented by the developers of the PHP programming language itself and it has to be represented by a much larger membership with the right to vote.</p>
+  <p>If you choose to adopt the standards developed by the PHP-FIG, you have to understand that some of these standards - such as the autoloader standards PSR-0 and PSR-4 and several other standards - has a direct effect upon how you code your software.</p>
+  <p>Many industries demand highly scalable, run-time critical, and cost-effective software that simply cannot be developed using these standards of the PHP-FIG.</p>
+  <p><strong>The wrong way</strong>: Following the PHP-FIG religiously. <img src="/img/thumbs-down.png" alt="Thumbs down" /></p>
+
+  <h1 id="neglecting-security">Neglecting security</h1>
+
+  <blockquote>
+    <p>The trouble with programmers is that you can never tell what a programmer is doing until it’s too late.</p>
+    <p>– Seymour Cray on <a href="http://www.defprogramming.com/q/6e61ae30a855/">defprogramming.com</a></p>
+  </blockquote>
+  <p>Secure coding is the practice of writing programs that are resistant to attack by malicious or mischievous people or other programs. Secure coding helps protect data from theft or corruption. In addition, an insecure program can provide access for an attacker to take control of a server or a user’s identity, resulting in anything from a denial of service to a single user to the compromise of secrets, loss of service, or damage to the systems of thousands of users.</p>
+  <p>Every computer program is a potential target for a security attack. Attackers will try to find security vulnerabilities in your applications. They will then try to use these vulnerabilities to steal secrets, corrupt programs and data, and gain control of servers and networks. Your customers property and your reputation are at stake.</p>
+  <p><strong>Security is not something that can be added to software!</strong></p>
+  <p>An insecure application may require extensive redesign to secure it. You must identify the nature of the threats to your software and incorporate secure coding practices from the beginning and throughout the planning and development of your application.</p>
+  <p>Securing critical software resources is more important than ever as the focus of attackers has steadily moved toward the application layer. A 2009 SANS study found that attacks against web applications constitute more than 60% of the total attack attempts observed on the Internet.</p>
+  <p>PHP is unusual in that it is both a programming language and a web framework at the same time. This means that PHP has a lot of web features built-in to the language that makes it very easy to write insecure code.</p>
+
+  <h2 id="secure-by-default">Secure by default</h2>
+
+  <blockquote>
+    <p>Complexity kills. It sucks the life out of developers, it makes products difficult to plan, build and test, it introduces security challenges and it causes end-user and administrator frustration.</p>
+    <p>– <a href="www.azquotes.com/quote/585933">Ray Ozzie</a></p>
+  </blockquote>
+  <p>In order for applications to be designed and implemented with proper security requirements, secure coding practices and a focus on security risks must be integrated into the day-to-day operations, thoughts, and the development processes themselves.</p>
+  <p>Generally, it is much less expensive to build secure software than to correct security issues after the software package has been completed, not to mention the costs that may be associated with a security breach.</p>
+  <p><strong>The wrong way</strong>: Not developing secure software by default. <img src="/img/thumbs-down.png" alt="Thumbs down" /></p>
+  <h1 id="faq">FAQ</h1>
+  <p>It’s easy to misunderstand a written document so let’s clarify some issues.</p>
+  <p><strong>Q:</strong> <em>What’s the point of this site and why the confrontational approach?</em></p>
+  <p><strong>A:</strong> To create discussion and thought about current practices and extreme views.</p>
+  <p><strong>Q:</strong> <em>Are you saying the object-oriented programming is bad or wrong?</em></p>
+  <p><strong>A:</strong> No of course not! We’re saying always thinking in and always using only the object-oriented paradigm in solving problems is bad. Whenever you think in black and white only, that’s wrong.</p>
+  <p>Even within a single application different problems exist. Multi-paradigm is sometimes the best solution, it all depends on the problem you’re trying to solve.</p>
+  <p>Whenever you force-feed a specific problem to an unfit solution bad things happen.</p>
+  <p><strong>Q:</strong> <em>Are you saying that all frameworks are bad?</em></p>
+  <p><strong>A:</strong> We’re not trying to judge specific frameworks. We’re dealing with the issue of always using a framework on top of PHP.</p>
+  <p><strong>Q:</strong> <em>If a framework can get me up and running quickly, why is that so bad?</em></p>
+  <p><strong>A:</strong> If you have analyzed the situation and long term implications and you then see that “getting up and running quickly” is the only problem you ever have to deal with, then it’s not bad, but then we’re hardly dealing with programming or software development, we’re dealing mostly with point-and-click solutions.</p>
+  <p>Getting up and running quickly isn’t designing software, it mostly means you haven’t analyzed the problem you’re facing and you haven’t understood the long term implications of your choice.</p>
+  <p><strong>Q:</strong> <em>Are you saying third party packages are bad?</em></p>
+  <p><strong>A:</strong> No. We’re promoting the use of third party libraries. Code that you can easily integrate into your own projects without enforcing any limitations or restrictions what so ever. Those are great!</p>
+  <p><strong>Q:</strong> <em>Who are you?</em></p>
+  <p><strong>A:</strong> This website is about ideas and combating extremism in the PHP community, it’s not about personal fame or recognition. Naming people will only shift the focus from the problems addressed on the website to the people addressing the problems. Just stay focused on the ideas.</p>
+  <p><strong>Q:</strong> <em>What is your experience in software development?</em></p>
+  <p><strong>A:</strong> The ideas, thoughts, and conclusions expressed on this website doesn’t take much experience to reach if you just stay focused on the main theme which is to always do a particular thing because other people says so.</p>
+
+  <h1 id="recommended-reading">Recommended reading</h1>
+
+  <p><a href="https://news.ycombinator.com/item?id=12318615">PHP The Wrong Way on Hacker News</a></p>
+  <ul>
+    <li>When “PHP The Wrong Way” was launched it spawned a bunch of comments on Hacker News that has many valuable arguments worth reading.</li>
+  </ul>
+  <p><a href="https://news.ycombinator.com/item?id=12377385">Why bad scientific code beats code following “best practices”</a></p>
+  <ul>
+    <li>Simple-minded, care-free near-incompetence can be better than industrial-strength good intentions paving a superhighway to hell. The “real world” outside the computer is full of such examples.</li>
+  </ul>
+  <p><a href="https://medium.com/@brianwill/how-to-program-without-oop-74a46e0e47a3#.squpnjz4n">How to program without OOP</a></p>
+  <ul>
+    <li>As a fresh and alternative perspective Brian Will discusses in three videos why he thinks object-oriented programming is a bad idea to begin with and he finishes up the series with a couple of notes on how non-OOP code should be written.</li>
+  </ul>
+  <p><a href="http://codersatwork.com/">Coders at work - Reflections on the Craft of Programming</a></p>
+  <ul>
+    <li>Based on nearly eighty hours of conversations with fifteen all-time great programmers and computer scientists, the Q&amp;A interviews in Coders at Work provide a multifaceted view into how great programmers learn to program, how they practice their craft, and what they think about the future of programming.</li>
+  </ul>
+  <p><a href="https://www.oreilly.com/ideas/the-traits-of-a-proficient-programmer">The traits of a proficient programmer</a></p>
+  <ul>
+    <li>Competence means having enough experience and knowledge to get stuff done; proficiency involves knowing why you are doing something in a certain way, and how it fits into the big picture. In other words, a proficient practitioner is always a competent practitioner, but the opposite may not be true.</li>
+  </ul>
+  <p><a href="https://www.owasp.org/images/0/08/OWASP_SCP_Quick_Reference_Guide_v2.pdf">OWASP Secure Coding Guidelines</a></p>
+  <ul>
+    <li>This technology agnostic document defines a set of general software security coding practices, in a checklist format, that can be integrated into the software development life-cycle. Implementation of these practices will mitigate most common software vulnerabilities.</li>
+  </ul>
+  <p><a href="https://www.owasp.org/index.php/Security_by_Design_Principles">Security by Design Principles</a></p>
+  <ul>
+    <li>Web application security is an essential component of any successful project, whether open source PHP applications, web services such as straight through processing, or proprietary business web sites. Hosters (rightly) shun insecure code, and users shun insecure services that lead to fraud. The aim of this Development Guide is to allow businesses, developers, designers and solution architects to produce secure web applications. If done from the earliest stages, secure applications cost about the same to develop as insecure applications, but are far more cost effective in the long run.</li>
+  </ul>
+  <p><a href="http://phpsecurity.readthedocs.io/en/latest/">Survive The Deep End: PHP Security</a></p>
+  <ul>
+    <li>As every target of a serious security breach will quickly note in their press releases and websites: Security is very important to them and take it very seriously. Taking this sentiment to heart before you learn it the hard way is recommended.</li>
+  </ul>
+  <p><a href="https://openlibrary.org/books/OL7407595M/Refactoring">Refactoring Improving the Design of Existing Code</a></p>
+  <ul>
+    <li>Refactoring is about improving the design of existing code. It is the process of changing a software system in such a way that it does not alter the external behavior of the code, yet improves its internal structure. With refactoring you can even take a bad design and rework it into a good one. This book offers a thorough discussion of the principles of refactoring, including where to spot opportunities for refactoring, and how to set up the required tests. There is also a catalog of more than 40 proven refactorings with details as to when and why to use the refactoring, step by step instructions for implementing it, and an example illustrating how it works. The book is written using Java as its principle language, but the ideas are applicable to any OO language.</li>
+  </ul>
+  <p><a href="https://openlibrary.org/works/OL15333872W/The_Practice_of_Programming_%28Addison-Wesley_Professional_Computing_Series%29">The Practice of Programming</a></p>
+  <ul>
+    <li>A compendium of practical matters of importance to working programmers.</li>
+  </ul>
+  <p><a href="https://openlibrary.org/works/OL5748544W/The_pragmatic_programmer">The pragmatic programmer</a></p>
+  <ul>
+    <li>The Pragmatic Programmer: From Journeyman to Master examines the core programming process: taking a requirement and producing working, maintainable code that delights its users. It covers topics ranging from personal responsibility and career development to architectural techniques for keeping code flexible, easy to adapt, and reuse.</li>
+  </ul>
+  <p><a href="https://openlibrary.org/works/OL1875800W/Understanding_programming_languages">Understanding programming languages</a></p>
+  <ul>
+    <li>The choice of a programming language is one of the most important factors that influence the ultimate quality of a software system. Unfortunately, too many programmers have poor linguistic skills: they are passionately in love with their “native” language, but are not able to analyze language constraints. “Understanding Programming Languages” is written for the purpose of explaining what alternatives are available to the language designer; how language constructs should be used in terms of safety and readability; how language constructs are implemented and which ones can be efficiently complied; and what is the role of language in expressing and enforcing abstractions.</li>
+  </ul>
+
+  <h1 id="how-to-contribute">How to Contribute</h1>
+
+  <p>Contribute on <a href="https://github.com/unixsheikh/phpthewrongway">GitHub</a>.</p>
+  <ul>
+    <li>Clone and edit.</li>
+    <li>Submit a pull request for consideration.</li>
+  </ul>
+=======
 <header>
 <div id="header-top">
 <a href="https://github.com/unixsheikh/phpthewrongway"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/652c5b9acfaddf3a9c326fa6bde407b87f7be0f4/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6f72616e67655f6666373630302e706e67" alt="Fork me on GitHub" data-canonical-src="/img/github-clone.png"></a>
@@ -302,5 +616,6 @@
 <li>Submit a pull request for consideration.</li>
 </ul>
 <p>Add sections to the <em>sections/LANGUAGE</em> directory or edit existing sections.</p>
+>>>>>>> fc59ea42fc5b5a1244445b2071d6a8549b43ffee
 </body>
 </html>

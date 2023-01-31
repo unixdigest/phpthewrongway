@@ -1,3 +1,0 @@
-% PHP
-% Den forkerte måde
-% ##DATEFIELD##

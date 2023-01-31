@@ -1,3 +1,0 @@
-Aaargh! Hvad er der i vejen med dig?!!
-Du har ikke brugt et framework og du
-har ikke brugt nogen design patterns! KÆTTER!!!
