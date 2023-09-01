@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <title>PHP - Cara Yang Salah</title>
+  <style>
+    code {
+      white-space: pre;
+    }
+  </style>
+  <link rel="stylesheet" href="/css/html.css">
+  <meta name="description"
+    content="This website has been created in an attempt to present a pragmatic view on PHP programming. A view dictated by experience and practical consequence rather than popular trends, theory, or academic dogma.">
+</head>
+
+<body>
+  <header>
+    <div id="header-top">
+      <a href="https://github.com/unixsheikh/phpthewrongway"><img
+          style="position: absolute; top: 0; right: 0; border: 0;"
+          src="https://camo.githubusercontent.com/652c5b9acfaddf3a9c326fa6bde407b87f7be0f4/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6f72616e67655f6666373630302e706e67"
+          alt="Fork me on GitHub" data-canonical-src="/img/github-clone.png"></a>
+      <h1>PHP</h1>
+      <h2>Cara Yang Salah</h2>
+      <div id="date">Update Terakhir: 2023-09-01</div>
+    </div>
+  </header>
+  <div id="cartoon">
+    <img src="/img/deviant-code-1000px-id.png" alt="cartoon">
+  </div>
+  <nav id="TOC">
+    <ul>
+      <li><a href="#welcome">Selamat Datang</a>
+        <ul>
+          <li><a href="#translations">Terjemahan</a></li>
+        </ul>
+      </li>
+      <li><a href="#the-danger-of-extremism">Bahaya Ekstremisme</a></li>
+      <li><a href="#always-use-a-framework">Selalu menggunakan sebuah framework</a></li>
+      <li><a href="#always-use-a-design-pattern">Selalu menggunakan Pola Desain</a></li>
+      <li><a href="#always-use-object-oriented-programming">Selalu menggunakan Pemerograman Beriorentasi Objek</a>
+        <ul>
+          <li><a href="#a-small-history-lesson">Sebuah pelajaran sejarah kecil</a></li>
+        </ul>
+      </li>
+      <li><a href="#being-afraid-of-other-peoples-code">Takut dengan kode orang lain</a></li>
+      <li><a href="#following-the-php-fig-standards-religiously">Mengikuti standar PHP-FIG dengan taat</a></li>
+      <li><a href="#neglecting-security">Mengabaikan keamanan</a>
+        <ul>
+          <li><a href="#secure-by-default">Aman secara bawaan</a></li>
+        </ul>
+      </li>
+      <li><a href="#faq">FAQ</a></li>
+      <li><a href="#recommended-reading">Bacaan yang direkomendasikan</a></li>
+      <li><a href="#how-to-contribute">Bagaimana berkontribusi</a></li>
+    </ul>
+  </nav>
+
+  <h1 id="welcome">Selamat Datang</h1>
+
+  <p>Dalam dunia pemrograman PHP, serangkaian tren secara besar-besaran disebarkan oleh beberapa orang (dalam buku-buku
+    mereka dan di situs web) sebagai “PHP Modern” sementara semua pendekatan lain tidak disukai karena dianggap
+    terbelakang, bodoh, atau sekadar salah.</p>
+  <p>Orang-orang ini sepertinya bekerja tanpa lelah untuk membuat orang lain mengikuti cara mereka melakukan sesuatu.
+  </p>
+  <p>Website ini dibuat dalam upaya menyajikan pandangan pragmatis tentang pemrograman PHP. Pandangan yang ditentukan
+    oleh pengalaman dan konsekuensi praktis, bukan tren populer, teori, atau doktrin akademis.</p>
+  <p>Website <a href="http://www.phpthewrongway.com/">PHP - The Wrong Way</a> adalah dokumen yang aktif dan akan terus
+    diperbarui dengan lebih banyak informasi saat tersedia.</p>
+  <p>Jangan ragu untuk berkontribusi.</p>
+
+  <h2 id="translations">Terjemahan</h2>
+
+  <ul>
+    <li><a href="http://www.phpthewrongway.com/da/">Danish</a></li>
+    <li><a href="http://www.phpthewrongway.com/">English</a></li>
+    <li><a href="http://www.phpthewrongway.com/fr/">French</a></li>
+    <li><a href="http://www.phpthewrongway.com/ja/">Japanese</a></li>
+    <li><a href="http://www.phpthewrongway.com/fa/">Persian</a></li>
+    <li><a href="http://www.phpthewrongway.com/pt_br/">Portuguese</a></li>
+    <li><a href="http://www.phpthewrongway.com/ru/">Russian</a></li>
+    <li><a href="http://www.phpthewrongway.com/es/">Spanish</a></li>
+    <li><a href="http://www.phpthewrongway.com/tr/">Türkçe</a></li>
+    <li><a href="http://www.phpthewrongway.com/uk/">Ukrainian</a></li>
+    <li><a href="http://www.phpthewrongway.com/id/">Indonesia</a></li>
+  </ul>
+
+  <h1 id="the-danger-of-extremism">Bahaya dari Ekstremisme</h1>
+
+  <p>Salah satu masalah dengan aturan dan pedoman pemrograman pada umumnya aturan dan pedoman tersebut hanya melayani tujuan dalam konteks tertentu. Jika tidak sesuai konteks, peraturan yang baik bisa menjadi peraturan yang buruk. Faktanya, setiap aturan yang baik menjadi buruk jika diterapkan secara ekstrem.</p>
+  <p>Hal ini penting untuk dipahami karena banyak prinsip dan aturan pengembangan software yang dikembangkan dari waktu ke waktu dan disajikan oleh banyak orang sering kali disalahgunakan oleh para ekstremis.</p>
+  <p>Pengalaman telah mengajarkan bahwa penyalahgunaan peraturan dan pedoman umum selalu mengakibatkan komplikasi, kurangnya keamanan, hasil yang rawan kesalahan, dan dalam beberapa kasus menjadi bencana total.</p>
+  <p><a href="https://en.wikipedia.org/wiki/KISS_principle">KISS principle</a>, yang merupakan singkatan dari “Keep It Simple, Stupid”, adalah prinsip yang sangat bijaksana dan baik yang umumnya dipandang oleh orang-orang berpengalaman sebagai anjuran yang sangat baik untuk diikuti. Namun prinsip besar ini pun bisa menjadi bahaya bagi sebuah proyek jika dilakukan secara ekstrem. Ada yang namanya “terlalu sederhana” yang mengakibatkan kurangnya fungsionalitas yang dibutuhkan.</p>
+  <p><strong>Cara yang salah</strong>: Ketaatan pada aturan dan pedoman secara utuh. <img src="/img/thumbs-down.png"
+      alt="Thumbs down"></p>
+
+  <h1 id="always-use-a-framework">Selalu menggunakan sebuah framework</h1>
+
+  <blockquote>
+    <p>Semua framework umum PHP itu payah!</p>
+    <p>– <a href="https://www.youtube.com/watch?v=DuB6UjEsY_Y">Rasmus Lerdorf</a></p>
+  </blockquote>
+  <p>Dalam komunitas PHP, tren yang sangat buruk telah menjadi standar de-facto untuk mengembangkan aplikasi web dan itu adalah dengann menggunakan framework umum PHP yang populer.</p>
+  <p>Tren ini muncul dan menjadi populer bukan karena meningkatkan hasil proses pengembangan, atau karena merupakan hal yang benar untuk dilakukan dari sudut pandang teknologi dan arsitektur. Tren ini menjadi populer karena beberapa pengembang framework telah berhasil menyapu bersih massa dengan polemik mereka terhadap pemrograman dari awal dengan syair seperti “Jangan menulis kembali hal itu!” dan “Jangan lakukan sendiri, orang lain lebih ahli darimu.</p>
+  <p>Banyak programmer masa kini yang sepenuhnya mengabaikan prinsip-prinsip dasar pemrograman dan mereka menghabiskan banyak waktu membayangkan lapisan kompleksitas baru agar terlihat lebih pintar, lebih keren, dan lebih dapat diterima oleh siapa pun yang mereka anggap sebagai rekan mereka.</p>
+  <p>Orang-orang ini tampaknya tergila-gila dengan pemikiran agar orang lain mengikuti “cara melakukan sesuatu” mereka, menjadi semacam pemimpin komunitas PHP, dan meminta orang lain menggunakan alat Open Source “keren” terbaru mereka, sehingga mereka lupa untuk memastikannya bahwa nasihat yang mereka berikan terdengar masuk akal dan berbobot.</p>
+  <p>Dalam industri software kamu dapat membandingkan rumah yang sudah dibangun dengan framework umum. Membangun software menggunakan framework umum tidak menjadikan kamu seorang pembuat kode atau programmer, sama seperti menyusun rumah yang sudah dibangun sebelumnya tidak menjadikan kamu seorang tukang kayu.</p>
+  <p>Di situs web ini, kami membedakan antara framework dan library dengan cara berikut:</p>
+  <ul>
+    <li>Library dianggap sebagai kumpulan kode yang dapat digunakan kembali, seperti library standar C, atau library standar Go. Ini terdiri dari kode yang dengan mudah kamu integrasikan ke dalam proyek kamu sendiri tanpa menerapkan batasan atau resiko apa pun. Ini terdiri dari potongan-potongan kecil kode dengan satu fungsi yang memiliki spesifik masing-masing.</li>
+    <li>Framework bukan sekadar kumpulan kode yang dapat digunakan kembali: kamu tidak bisa begitu saja mengambil sepotong kode dari framework dan mengintegrasikannya ke dalam proyek kamu sendiri. Framework adalah sistem yang membantu kamu membangun software, namun pada saat yang sama memaksa kamu untuk bekerja dalam batasan dan ketentuan framework itu sendiri. Framework itu sendiri memiliki banyak fungsi yang saling bergantung. Satu bagian tidak dapat berfungsi tanpa bagian lainnya.</li>
+  </ul>
+  <p>Dalam dunia Python dan Ruby, membangun situs web dari awal adalah hal yang melelahkan karena baik Python maupun Ruby pada awalnya tidak dibuat untuk membangun situs web. Akibatnya framework seperti <a
+      href="https://en.wikipedia.org/wiki/Django_%28web_framework%29">Django</a> dan <a
+      href="https://en.wikipedia.org/wiki/Ruby_on_Rails">Ruby on Rails</a> dengan cepat menjadi populer untuk membangun situs web dalam bahasa-bahasa ini.</p>
+  <p>PHP di sisi lain diciptakan pada awalnya oleh Rasmus Lerdorf sebagai seperangkat alat yang ditulis dalam C yang memungkinkan kamu mengembangkan HTML dinamis dengan mudah dan cepat. Seperti PHP dulu dan sekarang, <strong>adalah framework itu sendiri</strong>.</p>
+  <p>PHP telah berkembang pesat sejak saat itu dan saat ini PHP dapat digunakan lebih dari sekedar membangun HTML dan situs web, namun melihat PHP sebagai semacam framework itu sendiri tidaklah salah. PHP pada dasarnya adalah lapisan abstraksi untuk mengembangkan aplikasi web yang seluruhnya ditulis dalam prosedural C.</p>
+  <p>Menggunakan library dalam proyek kamu adalah hal yang wajar. PHP sendiri dibundel dengan sekumpulan library yang dapat kamu gunakan untuk memperluas kode kamu sendiri. PDO misalnya adalah library ringan yang menyediakan interface yang konsisten untuk mengakses database di PHP.</p>
+  <p>Sebaliknya, menggunakan framework di atas PHP adalah masalah yang sama sekali berbeda.</p>
+  <p>Saat kamu menggunakan framework di PHP, kamu menambahkan lapisan abstraksi di atas lapisan abstraksi lainnya, yang mana sudah tersedia untuk digunakan sejak awal. Lapisan abstraksi tambahan yang disediakan framework mungkin hanya berfungsi untuk mengatur kode kamu ke dalam serangkaian pola yang telah ditetapkan sebelumnya, atau mungkin menambah kompleksitas dengan menyatukan ratusan atau bahkan ribuan kelas dan metode ke dalam mimpi buruk ketergantungan, apa pun caranya. kamu menambahkan lapisan kerumitan pada kode kamu yang tidak diperlukan!</p>
+  <p>Semua pengalaman dimulai dengan interface. Pengalaman interface adalah hasil dari teknologi yang mendasarinya dan jumlah lapisan abstraksi. Semakin banyak abstraksi yang kamu gunakan, semakin berkurang efisiensi dari interfacenya dan aplikasi menjadi semakin rentan terhadap kesalahan. Semakin tinggi abstraksinya, semakin banyak detail dan efisiensi yang hilang.</p>
+  <p>Pahami ini dengan jelas: <strong>Jumlah baris kode yang ideal dalam proyek apa pun adalah sesedikit mungkin, namun tetap jelas dan mudah dibaca!</strong></p>
+  <blockquote>
+    <p>Yang tidak dibutuhkan semua orang adalah framework tujuan umum. Tidak ada seorang pun yang mempunyai masalah yang sama, setiap orang mempunyai masalah yang sangat spesifik yang ingin mereka selesaikan.</p>
+    <p>– <a href="https://www.youtube.com/watch?v=anr7DQnMMs0">Rasmus Lerdorf</a></p>
+  </blockquote>
+  <p>Beberapa perusahaan mulai mendengarkan hype tentang framework PHP dan mereka memulai proyek berikutnya menggunakan salah satu framework tujuan umum yang populer ini hanya untuk berakhir dengan bencana. Mereka tidak hanya menemukan bahwa framework tujuan umum sangat buruk dalam menyelesaikan kebutuhan spesifik mereka, namun juga sangat lambat dalam menyelesaikannya. Tidak mungkin untuk melakukan penskalaan dan akibatnya mereka mulai merobek framework tersebut dalam upaya putus asa untuk mengeluarkan semua hal yang sebenarnya tidak mereka perlukan.</p>
+  <p>Selalu gunakan pendekatan pragmatis:</p>
+  <blockquote>
+    <p>Tindakan atau kebijakan ditentukan oleh pertimbangan konsekuensi praktis langsung dan bukan berdasarkan teori atau doktrin.</p>
+    <p>– Collins English Dictionary, Complete and Unabridged, 12th Edition 2014</p>
+  </blockquote>
+  <p><strong>Cara yang salah:</strong> Selalu gunakan framework di atas PHP. <img src="/img/thumbs-down.png"
+      alt="Thumbs down"></p>
+  <h1 id="always-use-a-design-pattern">Selalu gunakan pola desain</h1>
+  <blockquote>
+    <p>Saya memiliki alergi besar terhadap desain dan pola desain menara gading. Peter Norvig, ketika dia masih di Harlequin, dia membuat makalah ini tentang bagaimana pola desain sebenarnya hanyalah kelemahan dalam bahasa pemrogramanmu. Dapatkan bahasa pemrograman yang lebih baik. Dia benar sekali. Memuja pola dan memikirkan, “Oh, aku akan menggunakan pola X.”</p>
+    <p>– Brendan Eich pada <a href="http://codersatwork.com/">Coders at work - Reflections on the Craft of Programming</a>
+    </p>
+  </blockquote>
+  <p>Dalam rekayasa software, pola desain adalah solusi yang dapat digunakan kembali untuk masalah yang umum terjadi dalam desain software. Pola desain bukanlah desain akhir yang dapat diubah langsung menjadi kode. Ini adalah deskripsi atau ide tentang cara memecahkan suatu masalah yang dapat digunakan dalam berbagai situasi. Pola desain berorientasi objek biasanya menunjukkan hubungan dan interaksi antar kelas atau objek, tanpa menentukan kelas atau objek aplikasi akhir yang terlibat.</p>
+  <p>PHP mendukung paradigma imperatif, fungsional, berorientasi objek, prosedural, dan reflektif. PHP adalah kotak peralatan besar dengan banyak alat berbeda yang memungkinkan penyelesaian banyak masalah dengan berbagai cara - bukan hanya satu cara.</p>
+  <p>PHP is all about freedom, fast and scalable solutions, and having many different ways to deal with problems.</p>
+  <p>Ketika kita mencoba untuk meningkatkan diri kita sendiri, dan dalam hal ini lebih khusus lagi kode kita, kita terkadang terpaku pada filosofi pola atau ide tertentu dan cenderung lupa untuk berpikir secara praktis.</p>
+  <blockquote>
+    <p>Ketika saya melihat pola dalam program saya, saya menganggapnya sebagai tanda adanya masalah. Bentuk suatu program harus mencerminkan masalah yang perlu dipecahkan. Keteraturan lain dalam kode adalah tanda, setidaknya bagi saya, bahwa saya menggunakan abstraksi yang tidak cukup kuat - sering kali saya membuat sendiri perluasan beberapa makro yang perlu saya tulis.</p>
+    <p>– <a href="http://c2.com/cgi/wiki?AreDesignPatternsMissingLanguageFeatures">Paul Graham</a></p>
+  </blockquote>
+  <p>Kita tidak boleh terlalu terjebak dalam filosofi atau gagasan di balik pola atau solusi tertentu. Perhatian utama kami adalah menjaga kode agar mudah dinavigasi dan dipahami, sehingga mudah dipelihara dan dijaga keamanannya.</p>
+  <p>Kita juga harus ingat bahwa ada yang namanya anti-pola. Ini adalah pola yang umum digunakan namun tidak efektif dan/atau kontraproduktif dalam praktiknya.</p>
+  <blockquote>
+    <p>Saya pikir pola dimulai sebagai solusi terbaik yang diakui secara umum untuk masalah-masalah umum. Namun kini pola tersebut telah ada sejak lama dan kita telah melihat aplikasi dibuat sepuluh kali lebih rumit dari yang seharusnya karena orang-orang mencoba menjejalkan semua pola yang telah mereka baca (“aplikasi saya dirancang dengan baik, karena itu dimuat ke insang dengan pola.”) kesan saya terhadap nilai pola tersebut telah sedikit berubah.</p>
+    <p>– Paul Weaton pada <a href="http://www.javaranch.com/patterns/">Evil Design Patterns</a></p>
+  </blockquote>
+  <p>Selalu gunakan pendekatan pragmatis:</p>
+  <blockquote>
+    <p>Tindakan atau kebijakan ditentukan oleh pertimbangan konsekuensi praktis langsung dan bukan berdasarkan teori atau dogma.</p>
+    <p>– Collins English Dictionary, Complete and Unabridged, 12th Edition 2014</p>
+  </blockquote>
+  <p><strong>Cara yang salah</strong>: Mencari pola untuk memecahkan suatu masalah. <img src="/img/thumbs-down.png"
+      alt="Thumbs down"></p>
+
+  <h1 id="always-use-object-oriented-programming">Selalu menggunakan pemerograman beriorentasi objek</h1>
+
+  <blockquote>
+    <p>Masalah dengan bahasa berorientasi objek adalah mereka mempunyai semua lingkungan implisit yang mereka bawa. Kamu menginginkan pisang tetapi yang kamu dapatkan adalah seekor gorila yang memegang pisang dan seluruh hutan.</p>
+    <p>– Joe Armstrong pada <a href="http://codersatwork.com/">Coders at work - Reflections on the Craft of
+        Programming</a></p>
+  </blockquote>
+  <blockquote>
+    <p>Abstraksi sangat kuat. Apa yang benar-benar membuat saya alergi, dan reaksi saya di tahun 90an, adalah semua omong kosong berorientasi objek CORBA, COM, DCOM. Setiap start up hari ini memiliki sesuatu yang gila yang memerlukan 200.000 panggilan metode untuk memulai dan mencetak “Halo dunia”. Itu sebuah parodi! kamu tidak ingin menjadi seorang programmer yang dikaitkan dengan hal semacam itu.</p>
+    <p>– Brendan Eich pada <a href="http://codersatwork.com/">Coders at work - Reflections on the Craft of Programming</a>
+    </p>
+  </blockquote>
+  <p>Banyak pengembang software, dan banyak perusahaan, merasa bahwa pemrograman berorientasi objek adalah satu-satunya cara yang masuk akal untuk mengembangkan software saat ini. Siapa pun yang menentang pemrograman berorientasi objek akan segera menyadari fakta bahwa mereka menentang “kebijaksanaan konvensional” industri.</p>
+  <p>Di blog dan forum pemrograman, ada banyak sekali orang yang membela pemrograman berorientasi objek, dan merasa yakin bahwa mereka tahu apa yang mereka bicarakan, meskipun tidak ada definisi standar!</p>
+  <p>Faktanya adalah bahwa apa yang disebut pemrograman berorientasi objek sering kali menimbulkan beban berat dengan kompleksitas yang tidak diperlukan!</p>
+  <p>Sebagai ilmuwan dan pemrogram komputer, kita harus belajar mengesampingkan prasangka dan menemukan solusi terbaik terhadap suatu masalah.</p>
+  <p>Saat ini, salah satu kekuatan utama PHP adalah dukungannya terhadap paradigma imperatif, fungsional, berorientasi objek, prosedural, dan reflektif. PHP adalah kotak peralatan besar dengan banyak alat berbeda yang memungkinkan penyelesaian banyak masalah dengan berbagai cara - <strong>bukan hanya satu arah!</strong></p>
+  <p><strong>Segera setelah kami mencoba untuk memaksakan masalah yang berbeda dalam suatu aplikasi ke satu paradigma pemrograman tertentu, kami tidak berpikir kreatif dan kami tidak bekerja secara efisien!</strong></p>
+  <h2 id="a-small-history-lesson">Sebuah pelajaran sejarah kecil</h2>
+  <p>Salah satu cara terbaik untuk memahami paradigma pemrograman tertentu adalah dengan melihat bagaimana paradigma tersebut pertama kali berkembang. Apa alasan perkembangannya? Masalah apa yang ada pada paradigma pemrograman lain yang memerlukan cara berpikir baru? Apakah ini masalah dunia nyata atau sekadar masalah akademis? Dan bagaimana perkembangannya?</p>
+  <p>Tidak peduli apa yang dikatakan oleh orang X atau definisi apa yang diberikan oleh orang Y, yang penting dalam konteks paradigma adalah sejarah yang membentuk paradigma tersebut.</p>
+  <blockquote>
+    <p>Ada dua cara untuk membangun desain software. Salah satu caranya adalah dengan membuatnya sesederhana mungkin sehingga jelas tidak ada kekurangannya. Dan cara lainnya adalah dengan membuatnya sedemikian rumit sehingga tidak ada kekurangan yang terlihat jelas.</p>
+    <p>– <a href="https://en.wikiquote.org/wiki/C._A._R._Hoare">C.A.R. Hoare</a></p>
+  </blockquote>
+  <p>Di masa lalu, sebelum munculnya pemrograman berorientasi objek, sekitar akhir tahun lima puluhan, banyak software dikembangkan menggunakan bahasa pemrograman yang menekankan pemrograman tidak terstruktur, kadang-kadang disebut sebagai bahasa generasi pertama dan kedua. Pemrograman tidak terstruktur (atau pemrograman tidak terstruktur) secara historis merupakan paradigma pemrograman paling awal. Itu dikritik habis-habisan karena menghasilkan kode “spaghetti”.</p>
+  <p>Ada bahasa pemrograman tingkat tinggi dan rendah yang menggunakan pemrograman tidak terstruktur. Ini termasuk versi awal BASIC, COBOL, MUMPS, JOSS, FOCAL, TELCOMP, kode tingkat mesin, sistem assembler awal (yang tidak memiliki operator meta prosedural) dan beberapa bahasa skrip.</p>
+  <p>Sebuah program dalam bahasa tidak terstruktur biasanya terdiri dari perintah atau pernyataan yang diurutkan secara berurutan, biasanya satu di setiap baris. Baris biasanya diberi nomor atau mungkin memiliki label yang memungkinkan alur eksekusi melompat ke baris mana pun dalam program (seperti pernyataan GOTO yang tidak populer).</p>
+  <p>Kemudian, pada tahun enam puluhan, pemrograman terstruktur muncul - terutama karena surat terkenal dari Edsger W. Dijkstra<a
+      href="http://www.u.arizona.edu/~rubinson/copyright_violations/Go_To_Considered_Harmful.html">Pernyataan Go To dianggap berbahaya</a>.</p>
+  <p>Pemrograman terstruktur adalah paradigma pemrograman yang meningkatkan kejelasan, kualitas, dan pengembangan software dengan memanfaatkan subrutin, struktur blok, dan loop. Hal ini berbeda dengan penggunaan lompatan sederhana seperti pernyataan GOTO.</p>
+  <p>Kemudian, pemrograman prosedural diturunkan dari pemrograman terstruktur. Pemrograman prosedural didasarkan pada konsep “panggilan prosedur”. Sebuah "panggilan prosedur" hanyalah nama lain untuk "panggilan fungsi". Prosedur juga dikenal sebagai rutinitas, subrutin, atau metode. Prosedur hanya berisi serangkaian langkah komputasi yang harus dilakukan. Setiap prosedur tertentu dapat dipanggil kapan saja selama eksekusi program, termasuk oleh prosedur lain atau prosedur itu sendiri.</p>
+  <p>Pada awalnya semua prosedur tersedia untuk setiap bagian program sebagai data global. Dalam program-program kecil, hal ini tidak menimbulkan masalah, namun seiring dengan semakin rumitnya dan semakin besarnya ukuran program, perubahan kecil pada satu bagian program akan berdampak besar pada banyak bagian lainnya.</p>
+  <p>Tidak ada yang merencanakan perubahan dalam program dan banyak ketergantungan yang muncul. Perubahan kecil pada satu prosedur akan mengakibatkan serangkaian kesalahan di banyak prosedur lain yang bergantung pada kode aslinya.</p>
+  <p>Sebuah teknik baru berkembang yang memungkinkan data dibagi ke dalam cakupan terpisah yang disebut “objek”. Hanya prosedur spesifik dalam lingkup yang sama yang dapat mengakses data yang sama. Ini disebut penyembunyian data atau enkapsulasi. Hasilnya adalah kode yang terorganisir jauh lebih baik.</p>
+  <p>Pada awalnya objek tidak disebut objek, mereka hanya dipandang sebagai lingkup yang terpisah. Kemudian ketika ketergantungan dikurangi dan hubungan antara prosedur dan variabel dalam lingkup ini dipandang sebagai segmen yang terisolasi, hasilnya melahirkan konsep “objek” dan “pemrograman berorientasi objek”.</p>
+  <p>Kemudian, terutama karena perkembangan Java, “kata kunci” tertentu muncul dan “prosedur” atau “fungsi” tidak lagi disebut fungsi, namun diganti namanya menjadi “metode” ketika berada dalam lingkup yang terpisah. Variabel juga tidak lagi disebut “variabel”, tetapi diganti namanya menjadi “atribut” ketika berada dalam lingkup terpisah.</p>
+  <p>Jadi suatu objek pada dasarnya hanyalah kumpulan fungsi dan variabel yang sekarang disebut “metode dan atribut”.</p>
+  <p>Cara metode dan atribut tetap terisolasi dalam lingkup terpisah adalah dengan menggunakan “kelas”. Sebuah kelas, setelah dibuat instance-nya, disebut objek.</p>
+  <p>Objek dapat saling mereferensikan dan dengan referensi tersebut metode (fungsi) di dalamnya dapat “berkomunikasi” satu sama lain. Objek juga dapat “mewarisi” metode dari objek lain sehingga memperluas metode tersebut, hal ini disebut “pewarisan”. Ini adalah cara untuk menggunakan kembali kode dan mengizinkan ekstensi independen software melalui kelas dan antarmuka publik. Hubungan objek menimbulkan hierarki. Warisan ditemukan pada tahun 1967 untuk bahasa pemrograman<a
+      href="http://en.wikipedia.org/wiki/Simula"> Simula 67</a>.</p>
+  <p>Objek juga dapat mewarisi metode dari objek lain dan “menimpa” metode tersebut dengan menambahkan atau mengubah fungsionalitas, hal ini disebut “polimorfisme”.</p>
+  <p>Bagaimana ide-ide yang berbeda ini diimplementasikan sangat bervariasi dari satu bahasa pemrograman ke bahasa pemrograman lainnya.</p>
+  <p>Pemrograman berorientasi objek adalah tentang mengatur kode dengan cara yang berbeda dari sebelumnya. Ini adalah perpanjangan dari pemrograman prosedural dan tentang menyembunyikan data (enkapsulasi) dan menghindari cakupan global. Ini tentang memperluas fungsi dengan “meminjam” cetak birunya tanpa benar-benar mempengaruhi kode aslinya (warisan). Dan ini tentang mengganti fungsi tanpa mempengaruhi kode asli (polimorfisme).</p>
+  <blockquote>
+    <p>Model berorientasi objek memudahkan pembuatan program secara bertahap. Artinya, dalam praktiknya, hal ini menyediakan cara terstruktur untuk menulis kode yang berantakan.</p>
+    <p>– Paul Graham pada <a href="https://openlibrary.org/works/OL7944696W/ANSI_Common_Lisp">Ansi Common Lisp</a></p>
+  </blockquote>
+  <p><strong>Cara yang salah</strong>: Selalu menggunakan pemerograman beriorentasi objek. <img src="/img/thumbs-down.png"
+      alt="Thumbs down"></p>
+
+  <h1 id="being-afraid-of-other-peoples-code">Takut dengan kode orang lain</h1>
+
+  <p>Argumen yang sering dikemukakan untuk penggunaan framework adalah bahwa orang tidak ingin berurusan dengan basis kode yang telah ditulis dari awal oleh orang lain.</p>
+  <p>Namun ini adalah mentalitas yang aneh, terutama ditemui di kalangan pengembang web di komunitas PHP. Ini menunjukkan kurangnya profesionalisme dan pengalaman.</p>
+  <p>Menulis software dan menangani kode orang lain adalah hal yang normal. Itu adalah bagian dari pekerjaan sehari-hari seorang programmer profesional. Ini bukanlah sesuatu yang perlu ditakuti.</p>
+  <p>Seorang pemrogram profesional tidak akan melihat kode orang lain dan mulai mengeluh tentang bagaimana dia sepenuhnya bergantung pada mantan pemrogram, yang mungkin tidak lagi terkait dengan perusahaan atau proyek, dan andai saja mantan pemrogram tersebut menggunakan framework A atau framework B hari itu akan terselamatkan.</p>
+  <p>Ini bukanlah mentalitas seorang programmer profesional. Tidak ada yang melakukan ini.</p>
+  <p>Mungkin rendahnya hambatan masuk dalam pengembangan web PHP berperan dalam mentalitas seperti ini. Apapun itu, itu tandanya seseorang berada di bidang pekerjaan yang salah.</p>
+  <p>Sebagian besar pemrograman berhubungan dengan orang yang harus bekerja dengan kode orang lain. Ini adalah bagian dari upaya untuk meningkatkan basis kode yang ada dan terkadang melibatkan penulisan ulang secara menyeluruh.</p>
+  <p>Catatlah dari para ahli pemrograman yang hebat, bacalah bukunya <a href="http://codersatwork.com/">Coders at work -
+      Reflections on the Craft of Programming</a>.</p>
+  <p>Beberapa basis kode terbesar dan tersukses di dunia adalah basis kode yang telah dikembangkan oleh ratusan orang yang bahkan belum pernah bertemu satu sama lain, basis kode dikembangkan tanpa menggunakan framework apa pun, basis kode dilakukan seluruhnya dalam bahasa pemrograman prosedural tanpa menggunakan framework apa pun. apa pun kecuali paradigma prosedural, dan mereka tidak akan bermimpi untuk melakukannya secara berbeda.</p>
+  <p>Sebuah <a href="https://www.kernel.org/">Linux Kernel</a> terdiri dari lebih dari 20 juta baris kode yang semuanya ditulis seluruhnya menggunakan pemrograman prosedural oleh lebih dari 14.000 peserta tanpa menggunakan framework apa pun.</p>
+  <p>perbedaan antara <a href="https://en.wikipedia.org/wiki/Berkeley_Software_Distribution">BSD</a> dan kebanyakan <a href="https://www.gnu.org/">Linux GNU userland</a> telah ditulis seluruhnya menggunakan pemrograman prosedural tanpa menggunakan framework apa pun.</p>
+  <p>Hal yang sama berlaku untuk ratusan proyek Open Source di seluruh dunia yang akhirnya ditinggalkan oleh pemrogram aslinya hanya untuk diambil alih oleh pemrogram terampil lainnya. Banyak dari proyek ini yang hanya memiliki sedikit dokumentasi (jika ada), tidak ada komentar dalam basis kode, dan tidak ada pedoman atau bantuan untuk ditawarkan sama sekali.</p>
+  <p>Seluruh basis kode PHP dilakukan dalam C, bahasa pemrograman prosedural murni, tanpa menggunakan framework apa pun.</p>
+  <p>Setiap kali kamu mendefinisikan kelas dalam PHP atau setiap kali kamu menjalankan framework PHP favorit Anda, kamu menjalankan pekerjaan prosedural murni milik orang lain!</p>
+  <p>Tentu saja, ada sesuatu seperti kode yang buruk, kode yang mungkin tidak dirancang sejak awal, atau kode yang mungkin sudah terlalu besar berkali-kali tetapi klien tidak mau menulis ulang, kode yang sangat buruk kamu tidak dapat lagi menyimpulkan apa yang terjadi, namun tidak ada framework yang bisa mencegah situasi ini. Hal ini sering kali merupakan proses pertumbuhan alami suatu program. Pada akhirnya framework apa pun akan hancur berkeping-keping.</p>
+  <p>Dan tentu saja ada kode berantakan yang mengerikan, tetapi tidak ada yang sengaja membuat kode berantakan yang mengerikan. Terkadang hal ini disebabkan oleh kurangnya pengalaman, sering kali ini adalah kesalahan klien karena mereka mengubah spesifikasi beberapa kali di tengah pengembangan, dalam kedua kasus tersebut, bahkan jika framework digunakan, hasilnya tetap berupa kode yang berantkan, dan tidak peduli berapa banyak paradigma berorientasi objek yang digunakan, hasilnya tetap berupa kode yang berantakan.</p>
+  <p>As programmers we all try to prevent these situations, but <strong>this is normal</strong>, this is <strong>the art
+      of programming</strong>, this is part of what it means <strong>to be a programmer</strong>!</p>
+  <p><strong>Cara yang salah</strong>: Takut dengan kode orang lain. <img src="/img/thumbs-down.png"
+      alt="Thumbs down"></p>
+  <h1 id="following-the-php-fig-standards-religiously">Mengikuti standar PHP-FIG dengan taat</h1>
+  <p>FIG adalah singkatan dari “Framework Interoperability Group”.</p>
+  <p><a href="http://www.php-fig.org/">PHP-FIG</a> dibuat oleh sejumlah pengembang framework di php|tek pada tahun 2009. Sejak itu berbagai anggota lainnya telah mendaftar dan dipilih, sehingga meningkatkan ukuran grup dari 5 orang pertama menjadi lebih dari 20 orang.</p>
+  <p>Banyak kontroversi muncul mengenai PHP-FIG. Beberapa orang menganggap PHP-FIG sebagai hal terbaik yang pernah terjadi pada komunitas PHP sejak PHP itu sendiri, sementara yang lain menganggap grup tersebut sebagai sesuatu yang sebaiknya dilupakan. </p>
+  <p>Salah satu masalah dengan PHP-FIG adalah ia menampilkan <a
+    href="http://www.php-fig.org/faqs/">FAQ</a> dirinya seperti ini di dalamnya :</p>
+  <blockquote>
+    <p>Ide di balik kelompok ini adalah agar perwakilan proyek dapat membicarakan kesamaan antara proyek-proyek kami dan menemukan cara untuk bekerja sama. Audiens utama kami adalah satu sama lain, namun kami sangat sadar bahwa komunitas PHP lainnya juga menonton. Jika orang lain ingin mengadopsi apa yang kami lakukan, mereka boleh melakukannya, tapi itu bukan tujuannya. Tidak ada seorang pun di grup yang ingin memberi tahu Anda, sebagai programmer, cara membangun aplikasi Anda.</p>
+  </blockquote>
+  <p>Namun, jika kita melihat pekerjaan beberapa anggota kelompok, kita dapat melihat dengan jelas bahwa tujuannya sangat bertentangan dengan pernyataan di atas. Para anggota ini bekerja tanpa kenal lelah dalam upaya menjadikan PHP-FIG menjadi “kelompok standar PHP” yang diterima. <strong>yang juga merupakan nama asli grup tersebut</strong>. 
+    Mereka melakukan ini dengan mengklasifikasikan pekerjaan PHP-FIG sebagai “PHP Modern” dalam buku-buku mereka, di situs web mereka, posting blog, forum, dll., dan dengan mengklasifikasikan cara-cara lain sebagai kebalikannya.</p>
+  <p>Salah satu masalah dengan PHP-FIG adalah meskipun banyak framework dan proyek Sumber Terbuka telah mengadopsi beberapa standar mereka, standar-standar ini terutama menangani masalah dari “perspektif framework”, yang menjadikannya tidak dapat digunakan di banyak industri kehidupan nyata. situasi.</p>
+  <p>Banyak orang mengembangkan software untuk industri yang harus sangat efisien, aman, dan hemat biaya, software yang ingin dibeli dan digunakan oleh pelanggan. Mereka tidak bisa diganggu dengan standar yang harus disesuaikan dengan kebutuhan para fanatik framework. Jika mereka mencoba melakukannya, itu akan menjadi bencana bagi bisnis.</p>
+  <p>Jika suatu kelompok standar perlu dibuat, hal itu harus mencerminkan kepentingan seluruh komunitas PHP, bukan hanya pengembang proyek framework dan CMS Open Source. Itu harus diwakili oleh pengembang bahasa pemrograman PHP itu sendiri dan harus diwakili oleh keanggotaan yang jauh lebih besar dengan hak untuk memilih.</p>
+  <p>Jika kamu memilih untuk mengadopsi standar yang dikembangkan oleh PHP-FIG, kamu harus memahami bahwa beberapa standar ini - seperti standar autoloader PSR-0 dan PSR-4 dan beberapa standar lainnya - memiliki efek langsung pada cara kamu mengkodekan kode kamu. software.</p>
+  <p>Banyak industri memerlukan software yang sangat skalabel, run-time kritis, dan hemat biaya yang tidak dapat dikembangkan menggunakan standar PHP-FIG ini.</p>
+  <p><strong>Cara yang salah</strong>: Mengikuti standa PHP-FIG secara taat. <img src="/img/thumbs-down.png"
+      alt="Thumbs down"></p>
+
+  <h1 id="neglecting-security">Mengabaikan keamanan</h1>
+
+  <blockquote>
+    <p></p>
+    <p>– Seymour Cray padaMasalah dengan pemrogram adalah kamu tidak akan pernah bisa mengetahui apa yang sedang dilakukan seorang pemrogram sampai semuanya sudah terlambat. <a href="http://www.defprogramming.com/q/6e61ae30a855/">defprogramming.com</a></p>
+  </blockquote>
+  <p>Pengkodean aman adalah praktik penulisan program yang tahan terhadap serangan orang atau program lain yang jahat atau nakal. Pengkodean yang aman membantu melindungi data dari pencurian atau korupsi. Selain itu, program yang tidak aman dapat memberikan akses bagi penyerang untuk mengambil kendali atas server atau identitas pengguna, yang mengakibatkan penolakan layanan kepada satu pengguna hingga kebocoran rahasia, hilangnya layanan, atau kerusakan pada sistem. dari ribuan pengguna.</p>
+  <p>Setiap program komputer merupakan target potensial serangan keamanan. Penyerang akan mencoba menemukan kerentanan keamanan di aplikasi Anda. Mereka kemudian akan mencoba menggunakan kerentanan ini untuk mencuri rahasia, merusak program dan data, serta mendapatkan kendali atas server dan jaringan. Properti pelanggan kamu dan reputasi kamu dipertaruhkan.</p>
+  <p><strong>Keamanan bukanlah sesuatu yang dapat ditambahkan ke software!</strong></p>
+  <p>Aplikasi yang tidak aman mungkin memerlukan desain ulang yang ekstensif untuk mengamankannya. kamu harus mengidentifikasi sifat ancaman terhadap software kamu dan menerapkan praktik pengkodean yang aman sejak awal dan sepanjang perencanaan dan pengembangan aplikasi Anda.</p>
+  <p>Mengamankan sumber daya software penting menjadi lebih penting dari sebelumnya karena fokus penyerang terus berpindah ke lapisan aplikasi. Sebuah studi SANS tahun 2009 menemukan bahwa serangan terhadap aplikasi web mencakup lebih dari 60% total upaya serangan yang diamati di Internet.</p>
+  <p>PHP tidak biasa karena merupakan bahasa pemrograman dan framework web pada saat yang bersamaan. Ini berarti PHP memiliki banyak fitur web bawaan dalam bahasa tersebut yang membuatnya sangat mudah untuk menulis kode yang tidak aman.</p>
+
+  <h2 id="secure-by-default">Aman secara bawaan</h2>
+
+  <blockquote>
+    <p>Kompleksitas membunuh. Hal ini menyedot kehidupan para pengembang, membuat produk sulit untuk direncanakan, dibangun dan diuji, menimbulkan tantangan keamanan dan menyebabkan frustrasi pengguna akhir dan administrator.</p>
+    <p>– <a href="www.azquotes.com/quote/585933">Ray Ozzie</a></p>
+  </blockquote>
+  <p>Agar aplikasi dapat dirancang dan diimplementasikan dengan persyaratan keamanan yang tepat, praktik pengkodean yang aman dan fokus pada risiko keamanan harus diintegrasikan ke dalam operasi sehari-hari, pemikiran, dan proses pengembangan itu sendiri.</p>
+  <p>Secara umum, membangun software yang aman jauh lebih murah dibandingkan memperbaiki masalah keamanan setelah paket software selesai dibuat, belum lagi biaya yang mungkin terkait dengan pelanggaran keamanan.</p>
+  <p><strong>Cara yang salah</strong>: Tidak menggunakan keamanan bawaan software <img src="/img/thumbs-down.png"
+      alt="Thumbs down"></p>
+  <h1 id="faq">FAQ</h1>
+  <p>Sangat mudah untuk salah memahami dokumen tertulis, jadi mari kita perjelas beberapa masalah.</p>
+  <p><strong>Pertanyaan:</strong> <em>Apa gunanya situs ini dan mengapa pendekatannya konfrontatif?</em></p>
+  <p><strong>Jawaban:</strong> Untuk menciptakan diskusi dan pemikiran tentang praktik terkini dan pandangan ekstrem.</p>
+  <p><strong>Pertanyaan:</strong> <em>Apakah kamu mengatakan pemrograman berorientasi objek itu buruk atau salah?</em></p>
+  <p><strong>Jawaban:</strong> Tidak, tentu saja tidak! Kami mengatakan bahwa selalu memikirkan dan hanya menggunakan paradigma berorientasi objek dalam memecahkan masalah adalah hal yang buruk. Kapan pun kamu berpikir hitam-putih saja, itu salah.</p>
+  <p>Bahkan dalam satu aplikasi pun terdapat masalah yang berbeda. Multiparadigma terkadang merupakan solusi terbaik, semuanya tergantung pada masalah yang ingin kamu selesaikan.</p>
+  <p>Setiap kali kamu memaksakan masalah tertentu ke solusi yang tidak tepat, hal buruk akan terjadi.</p>
+  <p><strong>Pertanyaan:</strong> <em>Apakah kamu mengatakan bahwa semua framework itu buruk?</em></p>
+  <p><strong>Jawaban:</strong> Kami tidak mencoba menilai framework tertentu. Kami sedang menghadapi masalah selalu menggunakan framework di atas PHP.</p>
+  <p><strong>Pertanyaan:</strong> <em>Jika suatu framework dapat membuat saya aktif dan berjalan dengan cepat, mengapa hal itu sangat buruk?</em></p>
+  <p><strong>Jawaban:</strong> Jika kamu telah menganalisa situasi dan implikasi jangka panjangnya dan kamu kemudian melihat bahwa “berdiri dan berjalan dengan cepat” adalah satu-satunya masalah yang harus kamu hadapi, maka itu tidak buruk, tapi kita tidak lagi berurusan dengan pemrograman atau pengembangan software. kita kebanyakan berurusan dengan solusi tunjuk-dan-klik.</p>
+  <p>Memulai dan menjalankannya dengan cepat bukanlah berarti merancang software, ini berarti kamu belum menganalisis masalah yang kamu hadapi dan belum memahami implikasi jangka panjang dari pilihan Anda.</p>
+  <p><strong>Pertanyaan:</strong> <em>Apakah menurut kamu package thrid party itu buruk?</em></p>
+  <p><strong>Jawaban:</strong> Tidak. Kami mempromosikan penggunaan library thrid party. Kode yang dapat kamu integrasikan dengan mudah ke dalam proyek kamu sendiri tanpa menerapkan batasan atau batasan apa pun. Itu bagus sekali!</p>
+  <p><strong>Pertanyaan:</strong> <em>Siapa kamu?</em></p>
+  <p><strong>Jawaban:</strong> Situs web ini berisi tentang gagasan dan pemberantasan ekstremisme dalam komunitas PHP, bukan tentang ketenaran atau pengakuan pribadi. Menyebutkan nama orang hanya akan mengalihkan fokus dari masalah yang dibahas di situs web ke orang yang menangani masalah tersebut. Tetap fokus pada ide-idenya.</p>
+  <p><strong>Pertanyaan:</strong> <em>Apa pengalamanmu dalam pengembangan software?</em></p>
+  <p><strong>Jawaban:</strong> Ide, pemikiran dan kesimpulan yang diungkapkan dalam website ini tidak memerlukan banyak pengalaman untuk mencapainya jika kamu tetap fokus pada tema utama yaitu selalu melakukan suatu hal tertentu karena orang lain mengatakan demikian.</p>
+
+  <h1 id="recommended-reading">Bacaan yang direkomendasikan</h1>
+
+  <p><a href="https://news.ycombinator.com/item?id=12318615">PHP The Wrong Way on Hacker News</a></p>
+  <ul>
+    <li>Ketika “PHP The Wrong Way” diluncurkan, hal itu memunculkan banyak komentar di Hacker News yang memiliki banyak argumen berharga yang patut dibaca.</li>
+  </ul>
+  <p><a href="https://news.ycombinator.com/item?id=12377385">Why bad scientific code beats code following “best
+      practices”</a></p>
+  <ul>
+    <li>Ketidakmampuan yang berpikiran sederhana dan tidak peduli bisa lebih baik daripada niat baik kekuatan industri yang membuka jalan raya menuju neraka. “Dunia nyata” di luar komputer penuh dengan contoh-contoh seperti itu.</li>
+  </ul>
+  <p><a href="https://medium.com/@brianwill/how-to-program-without-oop-74a46e0e47a3#.squpnjz4n">How to program without
+      OOP</a></p>
+  <ul>
+    <li>Sebagai perspektif baru dan alternatif, Brian Will membahas dalam tiga video mengapa menurutnya pemrograman berorientasi objek adalah ide yang buruk dan dia menyelesaikan seri ini dengan beberapa catatan tentang bagaimana kode non-OOP harus ditulis.</li>
+  </ul>
+  <p><a href="http://codersatwork.com/">Coders at work - Reflections on the Craft of Programming</a></p>
+  <ul>
+    <li>Berdasarkan hampir delapan puluh jam percakapan dengan lima belas pemrogram dan ilmuwan komputer hebat sepanjang masa,
+       Q&amp;A Wawancara di Coders at Work memberikan pandangan beragam tentang bagaimana programmer hebat belajar memprogram, bagaimana mereka mempraktikkan keahlian mereka, dan apa pendapat mereka tentang masa depan pemrograman.</li>
+  </ul>
+  <p><a href="https://www.oreilly.com/ideas/the-traits-of-a-proficient-programmer">The traits of a proficient
+      programmer</a></p>
+  <ul>
+    <li>Kompetensi berarti memiliki pengalaman dan pengetahuan yang cukup untuk menyelesaikan pekerjaan; kemahiran melibatkan mengetahui mengapa kamu melakukan sesuatu dengan cara tertentu, dan bagaimana hal itu sesuai dengan gambaran besarnya. Dengan kata lain, seorang praktisi yang mahir selalu merupakan seorang praktisi yang kompeten, namun hal sebaliknya mungkin tidak benar.</li>
+  </ul>
+  <p><a href="https://www.owasp.org/images/0/08/OWASP_SCP_Quick_Reference_Guide_v2.pdf">OWASP Secure Coding
+      Guidelines</a></p>
+  <ul>
+    <li>Dokumen agnostik teknologi ini mendefinisikan serangkaian praktik pengkodean keamanan perangkat lunak umum, dalam format daftar periksa, yang dapat diintegrasikan ke dalam siklus hidup pengembangan perangkat lunak. Penerapan praktik-praktik ini akan mengurangi sebagian besar kerentanan perangkat lunak yang umum.</li>
+  </ul>
+  <p><a href="https://www.owasp.org/index.php/Security_by_Design_Principles">Security by Design Principles</a></p>
+  <ul>
+    <li>Keamanan aplikasi web adalah komponen penting dari setiap proyek yang sukses, baik aplikasi PHP sumber terbuka, layanan web seperti pemrosesan langsung, atau situs web bisnis berpemilik. Hoster (dengan benar) menghindari kode tidak aman, dan pengguna menghindari layanan tidak aman yang mengarah pada penipuan. Tujuan dari Panduan Pengembangan ini adalah untuk memungkinkan bisnis, pengembang, perancang, dan arsitek solusi menghasilkan aplikasi web yang aman. Jika dilakukan sejak tahap paling awal, biaya pengembangan aplikasi yang aman hampir sama dengan aplikasi yang tidak aman, namun jauh lebih hemat biaya dalam jangka panjang.</li>
+  </ul>
+  <p><a href="http://phpsecurity.readthedocs.io/en/latest/">Survive The Deep End: PHP Security</a></p>
+  <ul>
+    <li>Seperti yang akan segera dicatat oleh setiap target pelanggaran keamanan serius dalam siaran pers dan situs web mereka: Keamanan sangat penting bagi mereka dan menganggapnya sangat serius. Dianjurkan untuk mengingat sentimen ini sebelum kamu mempelajarinya dengan cara yang sulit.</li>
+  </ul>
+  <p><a href="https://openlibrary.org/books/OL7407595M/Refactoring">Refactoring Improving the Design of Existing
+      Code</a></p>
+  <ul>
+    <li>Refactoring adalah tentang meningkatkan desain kode yang ada. Ini adalah proses mengubah sistem perangkat lunak sedemikian rupa sehingga tidak mengubah perilaku eksternal kode, namun memperbaiki struktur internalnya. Dengan refactoring kamu bahkan dapat mengambil desain yang buruk dan mengolahnya kembali menjadi desain yang bagus. Buku ini menawarkan pembahasan menyeluruh tentang prinsip-prinsip pemfaktoran ulang, termasuk di mana menemukan peluang untuk pemfaktoran ulang, dan cara menyiapkan pengujian yang diperlukan. Ada juga katalog lebih dari 40 pemfaktoran ulang yang telah terbukti dengan rincian kapan dan mengapa menggunakan pemfaktoran ulang, petunjuk langkah demi langkah untuk menerapkannya, dan contoh yang menggambarkan cara kerjanya. Buku ini ditulis menggunakan Java sebagai bahasa prinsipnya, namun gagasannya dapat diterapkan pada bahasa OO apa pun.</li>
+  </ul>
+  <p><a
+      href="https://openlibrary.org/works/OL15333872W/The_Practice_of_Programming_%28Addison-Wesley_Professional_Computing_Series%29">The
+      Practice of Programming</a></p>
+  <ul>
+    <li>Ringkasan hal-hal praktis yang penting bagi programmer yang bekerja.</li>
+  </ul>
+  <p><a href="https://openlibrary.org/works/OL5748544W/The_pragmatic_programmer">The pragmatic programmer</a></p>
+  <ul>
+    <li>Pemrogram Pragmatis: Dari Pekerja Harian hingga Guru memeriksa proses pemrograman inti: mengambil persyaratan dan menghasilkan kode yang berfungsi dan dapat dipelihara yang menyenangkan penggunanya. Ini mencakup topik mulai dari tanggung jawab pribadi dan pengembangan karier hingga teknik arsitektur untuk menjaga kode tetap fleksibel, mudah diadaptasi, dan digunakan kembali.</li>
+  </ul>
+  <p><a href="https://openlibrary.org/works/OL1875800W/Understanding_programming_languages">Understanding programming
+      languages</a></p>
+  <ul>
+    <li>
+      Pilihan bahasa pemrograman adalah salah satu faktor terpenting yang mempengaruhi kualitas sistem perangkat lunak. Sayangnya, terlalu banyak programmer yang memiliki keterampilan linguistik yang buruk: mereka sangat menyukai bahasa “asli” mereka, namun tidak mampu menganalisis batasan bahasa. “Pengertian Bahasa Pemrograman” ditulis dengan tujuan untuk menjelaskan alternatif apa saja yang tersedia bagi perancang bahasa; bagaimana konstruksi bahasa harus digunakan dalam hal keamanan dan keterbacaan; bagaimana konstruksi bahasa diimplementasikan dan mana yang dapat dipatuhi secara efisien; dan apa peran bahasa dalam mengekspresikan dan memaksakan abstraksi.
+    </li>
+  </ul>
+
+  <h1 id="how-to-contribute">Bagaimana untuk berkontribusi</h1>
+
+  <p>Kontribusi pada <a href="https://github.com/unixsheikh/phpthewrongway#how-to-contribute">GitHub</a>.</p>
+</body>
+
+</html>
