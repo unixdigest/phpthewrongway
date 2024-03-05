@@ -10,9 +10,9 @@ Feel free to participate!
 
 ## How to Contribute
 
-Contribute on [GitHub](https://github.com/unixsheikh/phpthewrongway).
+Contribute on [GitHub](https://github.com/unixdigest/phpthewrongway).
 
-If you have a question or just want to express your mind, feel free to use the "Issues" tab for that. Please notice that we have already discussed a lot of the concepts expressed in this document so take a look at the [closed issues](https://github.com/unixsheikh/phpthewrongway/issues?q=is%3Aissue+is%3Aclosed) before you submit something.
+If you have a question or just want to express your mind, feel free to use the "Issues" tab for that. Please notice that we have already discussed a lot of the concepts expressed in this document so take a look at the [closed issues](https://github.com/unixdigest/phpthewrongway/issues?q=is%3Aissue+is%3Aclosed) before you submit something.
 
 ### General contribution
 
